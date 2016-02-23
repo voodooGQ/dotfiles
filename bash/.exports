@@ -1,0 +1,8 @@
+# Main Bin
+export PATH="/usr/local/bin:$PATH"
+# SBIN
+export PATH="/usr/local/sbin:$PATH"
+
+# Mac LS Colors
+export CLICOLOR=1
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
