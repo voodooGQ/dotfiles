@@ -1,0 +1,33 @@
+[user]
+  name = Shane Smith
+  # email - set on each repo
+
+[core]
+  excludesfile = ~/.gitignore_global
+
+[color]
+  ui = true
+
+[alias]
+  co = checkout
+  ci = commit
+  st = status -sb
+  br = branch
+  hist = log --pretty=format:\"%h %ad [%an] | %C(auto)%s%d\" --date=relative --all
+  histt = log --pretty=format:\"%h %ad [%an] | %C(auto)%s%d\" --date=local --all --date-order
+  histg = log --pretty=format:\"%h %ad [%an] | %C(auto)%s%d\" --graph --date=relative --all
+  type = cat-file -t
+  dump = cat-file -p
+  skipped = !git ls-files -v | grep ^[a-z]
+  skip = !git update-index --assume-unchanged
+  unskip = !git update-index --no-assume-unchanged
+  histb = log --graph --decorate --oneline --simplify-by-decoration --all
+
+  # list branches by commit date
+  branches = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
+
+[credential]
+  helper = osxkeychain
+
+[push]
+  default = simple

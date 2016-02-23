@@ -1,0 +1,4 @@
+alias composerdl="curl -sS https://getcomposer.org/installer | php"
+alias dnsflush="dscacheutil -flushcache ; sudo killall -HUP mDNSResponder;"
+alias rake="bundle exec rake"
+alias port="sudo lsof -i"
