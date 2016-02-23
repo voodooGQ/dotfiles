@@ -1,5 +1,6 @@
 [user]
-  name = Shane Smith
+	name = Shane Smith
+	email = ssmith@nerdery.com
   # email - set on each repo
 
 [core]
