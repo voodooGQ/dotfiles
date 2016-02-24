@@ -5,4 +5,4 @@ export PATH="/usr/local/sbin:$PATH"
 
 # Mac LS Colors
 export CLICOLOR=1
-export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+export LSCOLORS=ExfxBxDxCxEgEdxbxgxcad

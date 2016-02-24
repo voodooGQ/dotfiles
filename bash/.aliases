@@ -3,6 +3,7 @@ alias dnsflush="dscacheutil -flushcache ; sudo killall -HUP mDNSResponder;"
 alias rake="bundle exec rake"
 alias port="sudo lsof -i"
 alias ll="ls -la"
+alias la="ls -A"
 
 # IP Helpers
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
