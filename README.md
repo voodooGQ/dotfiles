@@ -10,3 +10,8 @@ Use [stow](https://www.gnu.org/software/stow/) to install the desired packages i
 
 ## Files outside of this repo
 For convenience, the `.bash_profile` in this repo will source any files matching the glob `~/.extra*`
+
+## Vim
+  - make sure vim config are installed with `stow vim`
+  - run `./install_vundle.sh`
+  - execute `:PluginInstall` inside vim

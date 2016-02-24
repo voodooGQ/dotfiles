@@ -1,0 +1,28 @@
+if &compatible
+  set nocompatible
+end
+
+filetype on		" added because of https://github.com/gmarik/Vundle.vim/issues/167
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+
+" Let Vundle manage Vundle
+Plugin 'gmarik/Vundle.vim'
+
+" plugins
+Plugin 'kien/ctrlp.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-endwise'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'chriskempson/base16-vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+" Plugin 'scrooloose/nerdtree'
+Plugin 'junegunn/goyo.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'ntpeters/vim-better-whitespace'
+
+call vundle#end()
+filetype on

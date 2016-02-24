@@ -2,12 +2,19 @@ alias composerdl="curl -sS https://getcomposer.org/installer | php"
 alias dnsflush="dscacheutil -flushcache ; sudo killall -HUP mDNSResponder;"
 alias rake="bundle exec rake"
 alias port="sudo lsof -i"
+alias ll="ls -la"
 
+# IP Helpers
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+
+# Directory Traversal
 alias .2="cd ../../"
 alias .3="cd ../../../"
 alias .4="cd ../../../../"
 alias .5="cd ../../../../../"
 
+# Wordpress
 alias wpthemes="cd content/themes"
 alias wpuploads="cd content/uploads"
 alias wpplugins="cd content/plugins"
