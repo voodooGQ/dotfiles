@@ -11,18 +11,22 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " plugins
-Plugin 'kien/ctrlp.vim'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-endwise'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'chriskempson/base16-vim'
-Plugin 'scrooloose/syntastic'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
+"Plugin 'tomtom/tcomment_vim'
+"Plugin 'tpope/vim-endwise'
+"Plugin 'airblade/vim-gitgutter'
+"Plugin 'vim-ruby/vim-ruby'
+"Plugin 'chriskempson/base16-vim'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'tpope/vim-fugitive'
 " Plugin 'scrooloose/nerdtree'
-Plugin 'junegunn/goyo.vim'
-Plugin 'itchyny/lightline.vim'
-Plugin 'ntpeters/vim-better-whitespace'
+"Plugin 'junegunn/goyo.vim'
+"Plugin 'itchyny/lightline.vim'
+"Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'sickill/vim-monokai'
 
 call vundle#end()
 filetype on

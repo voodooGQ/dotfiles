@@ -47,9 +47,11 @@ endif
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " Color overrides
-let base16colorspace=256  " Access colors present in 256 colorspace
-colo base16-default
-set background=dark
+"let base16colorspace=256  " Access colors present in 256 colorspace
+"colo base16-default
+"set background=dark
+syntax enable
+colorscheme monokai
 
 " GitGutter Config
 set updatetime=750
@@ -66,7 +68,7 @@ set numberwidth=5
 set cursorline " highlight current line
 
 " put filename in statusline
-set statusline+=%f
+set statusline+=%{fugitive#statusline()}
 set laststatus=2   " always show status line
 
 " syntastic
