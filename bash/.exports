@@ -7,3 +7,6 @@ export PATH="/usr/local/sbin:$PATH"
 #http://superuser.com/questions/417805/how-to-configure-the-ansi-colors-of-the-command-line-terminal
 export CLICOLOR=1
 export LSCOLORS=ExfxBxDxCxEgEdxbxgxcad 
+
+export VISUAL=vim
+export EDITOR="$VISUAL"

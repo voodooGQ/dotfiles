@@ -142,7 +142,7 @@ fi;
 if [[ "${SSH_TTY}" ]]; then
 	hostStyle="${Red}";
 else
-	hostStyle="${Reset}";
+	hostStyle="${Green}";
 fi;
 
 # Set the terminal title to the current working directory.
