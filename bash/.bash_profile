@@ -8,6 +8,8 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,git-completion.bash};
 done;
 unset file;
 
+# expr causes a command not found error in Mac when sourced but doesn't cause
+# issues beyond that. Best solution I could find.
 if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   [ -r "~/.linux_aliases" ] && [ -f "~/.linux_aliases" ] && source "~/.linux_aliases";
 fi
