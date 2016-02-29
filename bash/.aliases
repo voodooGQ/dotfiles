@@ -8,6 +8,7 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias df="df -Tha --total"
 alias du="du -ach | sort -h"
 alias free="free -mt"
+alias mv="mv -p"
 
 # IP Helpers
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"

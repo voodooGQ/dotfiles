@@ -1,5 +1,7 @@
-# Load the default .profile
+## Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  Load the default .profile
 
+# Load Default profile
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
 
 # Load the shell dotfiles, and then some:
@@ -11,8 +13,5 @@ unset file;
 # expr causes a command not found error in Mac when sourced but doesn't cause
 # issues beyond that. Best solution I could find.
 if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-  [ -r "~/.linux_aliases" ] && [ -f "~/.linux_aliases" ] && source "~/.linux_aliases";
+  [ -r "$HOME/.linux_aliases" ] && [ -f "$HOME/.linux_aliases" ] && source "$HOME/.linux_aliases";
 fi
-
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
