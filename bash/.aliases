@@ -24,3 +24,6 @@ alias .5="cd ../../../../../"
 alias wpthemes="cd content/themes"
 alias wpuploads="cd content/uploads"
 alias wpplugins="cd content/plugins"
+
+# Sites
+alias hoops="cd ~/Sites/prephoops/PREPHOOPS.BUILD"
