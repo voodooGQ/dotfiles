@@ -19,6 +19,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'sickill/vim-monokai'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype on

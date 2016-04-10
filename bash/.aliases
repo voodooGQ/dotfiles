@@ -27,3 +27,5 @@ alias wpplugins="cd content/plugins"
 # Sites
 alias hoops="cd ~/Sites/prephoops/PREPHOOPS.BUILD"
 alias vhoops="cd ~/Sites/prephoops/PREPHOOPS.BUILD/vagrant;vagrant ssh;"
+alias cjak="cd ~/Sites/cjakubek/"
+alias vcjak="cd ~/Sites/cjakubek/vagrant;vagrant ssh;"
