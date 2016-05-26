@@ -22,6 +22,7 @@ brew install git-flow;
 brew install gmp4;
 brew install gnupg;
 brew install heroku-toolbelt;
+brew install hub;
 brew install icu4c;
 brew install imagemagick;
 brew install isl011;
