@@ -15,3 +15,5 @@ unset file;
 if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   [ -r "$HOME/.linux_aliases" ] && [ -f "$HOME/.linux_aliases" ] && source "$HOME/.linux_aliases";
 fi
+
+
