@@ -1,6 +1,7 @@
 #!/bin/sh 
 # Assumes homebrew and git are already installed (otherwise how'd you get this?)
 brew tap caskroom/cask;
+brew install bash-completion
 brew install brew-cask;
 brew install android-sdk;
 brew install ansible;
