@@ -9,6 +9,7 @@ alias df="df -Tha --total"
 alias du="du -ach | sort -h"
 alias free="free -mt"
 alias git="hub"
+alias sshcopy="pbcopy < ~/.ssh/id_rsa.pub"
 
 # IP Helpers
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
