@@ -34,3 +34,6 @@ alias vcjak="cd ~/Sites/cjakubek/vagrant;vagrant ssh;"
 alias ntrain="cd ~/Sites/nerdery-training"
 alias vntrain="cd ~/Sites/nerdery-training/vagrant;vagrant ssh;"
 
+# Site Specific
+alias gamcsandbox="heroku run bundle exec rails console --sandbox --app guideline-production-cedar"
+
