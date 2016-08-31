@@ -10,6 +10,8 @@ alias du="du -ach | sort -h"
 alias free="free -mt"
 alias git="hub"
 alias sshcopy="pbcopy < ~/.ssh/id_rsa.pub"
+alias sshvoodoo="ssh-add -D; ssh-add ~/.ssh/id_rsa;"
+alias sshnerd="ssh-add -D; ssh-add ~/.ssh/id_rsa_nerdery;"
 
 # IP Helpers
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
