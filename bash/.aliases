@@ -10,8 +10,8 @@ alias du="du -ach | sort -h"
 alias free="free -mt"
 alias git="hub"
 alias sshcopy="pbcopy < ~/.ssh/id_rsa.pub"
-alias sshvoodoo="ssh-add -D; ssh-add ~/.ssh/id_rsa;"
-alias sshnerd="ssh-add -D; ssh-add ~/.ssh/id_rsa_nerdery;"
+alias gitvoodoo="ssh-add -D; ssh-add ~/.ssh/id_rsa; git config user.email 'voodoogq@gmail.com';"
+alias gitnerd="ssh-add -D; ssh-add ~/.ssh/id_rsa_nerdery; git config user.email 'ssmith+github@nerdery.com';"
 
 # IP Helpers
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -38,4 +38,4 @@ alias vntrain="cd ~/Sites/nerdery-training/vagrant;vagrant ssh;"
 
 # Site Specific
 alias gamcsandbox="heroku run bundle exec rails console --sandbox --app guideline-production-cedar"
-
+alias fodvm="java -jar -XstartOnFirstThread /Applications/webOS\ Signage\ SDK/webOS\ Signage\ Emulator\ v2.1.3/Contents/Resources/Java/LG_webOS_SIGNAGE_Emulator_mac.jar"

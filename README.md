@@ -15,3 +15,7 @@ For convenience, the `.bash_profile` in this repo will source any files matching
   - make sure vim config are installed with `stow vim`
   - run `./install_vundle.sh`
   - execute `:PluginInstall` inside vim
+
+## Tampermonkey
+  - Tampermonkey export for
+    https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en
