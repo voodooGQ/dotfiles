@@ -75,19 +75,22 @@ set statusline+=%{fugitive#statusline()}
 set laststatus=2   " always show status line
 
 " syntastic
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " nerdtree
-" let NERDTreeShowHidden=1
-" map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+map <C-n> :NERDTreeToggle<CR>
+autocmd vimenter * NERDTree
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
 
 " set default list style for Explore
 let g:netrw_liststyle=3
 " open up Explore
-map <C-n> :Sexplore<cr>
+" map <C-n> :Sexplore<cr>
