@@ -20,9 +20,10 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
-" Softtabs, 2 spaces
-set tabstop=2
-set shiftwidth=2
+" Softtabs, 4 spaces
+set tabstop=4
+set shiftwidth=4
+autocmd FileType sass,scss,ruby,erb setlocal shiftwidth=2 tabstop=2
 set shiftround
 set expandtab
 
