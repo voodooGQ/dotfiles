@@ -21,6 +21,8 @@ Plugin 'sickill/vim-monokai'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'ap/vim-css-color'
 
 call vundle#end()
 filetype on

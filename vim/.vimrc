@@ -86,11 +86,9 @@ let g:syntastic_check_on_wq = 0
 " nerdtree
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
 " set default list style for Explore
 let g:netrw_liststyle=3
-" open up Explore
-" map <C-n> :Sexplore<cr>
