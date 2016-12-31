@@ -97,3 +97,5 @@ nnoremap <C-Right> :tabnext<CR>
 
 " set default list style for Explore
 let g:netrw_liststyle=3
+
+set clipboard=unnamed
