@@ -9,7 +9,6 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias df="df -Tha --total"
 alias du="du -ach | sort -h"
 alias free="free -mt"
-alias git="hub"
 alias vim=nvim
 alias sshcopy="pbcopy < ~/.ssh/id_rsa.pub"
 alias gitvoodoo="ssh-add -D; ssh-add ~/.ssh/id_rsa; git config user.email 'voodoogq@gmail.com';"
