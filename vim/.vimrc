@@ -21,8 +21,9 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 " Softtabs, 4 spaces
-set tabstop=4
-set shiftwidth=4
+" set tabstop=4
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+" set shiftwidth=4
 autocmd FileType sass,scss,ruby,erb setlocal shiftwidth=2 tabstop=2
 set shiftround
 set expandtab
@@ -87,6 +88,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+au BufRead,BufNewFile *.twig set filetype=htmljinja
 
 " nerdtree
 let NERDTreeShowHidden=1
