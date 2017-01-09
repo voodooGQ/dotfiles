@@ -12,6 +12,7 @@ alias free="free -mt"
 alias sshcopy="pbcopy < ~/.ssh/id_rsa.pub"
 alias gitvoodoo="ssh-add -D; ssh-add ~/.ssh/id_rsa; git config user.email 'voodoogq@gmail.com';"
 alias gitnerd="ssh-add -D; ssh-add ~/.ssh/id_rsa_nerdery; git config user.email 'ssmith+github@nerdery.com';"
+alias mux="tmuxinator"
 alias sas="ssh ssmith@shaneallensmith.com"
 
 # IP Helpers

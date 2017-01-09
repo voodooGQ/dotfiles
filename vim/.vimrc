@@ -24,7 +24,7 @@ endif
 " set tabstop=4
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 " set shiftwidth=4
-autocmd FileType sass,scss,ruby,erb setlocal shiftwidth=2 tabstop=2
+autocmd FileType sass,scss,ruby,erb,yml,yaml,json setlocal shiftwidth=2 tabstop=2
 set shiftround
 set expandtab
 
@@ -107,3 +107,4 @@ set pastetoggle=<F2>
 set showmode
 nn <F7> :setlocal spell! spell?<CR>
 
+let vim_markdown_preview_github=1

@@ -2,36 +2,30 @@
 
 name: phoji-service
 root: ~/Sites/phoji/phoji-service
-
-# Optional tmux socket
-# socket_name: foo
-
-# Runs before everything. Use it to start daemons etc.
-# pre: sudo /etc/rc.d/mysqld start
-
-# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
-
-# Pass command line options to tmux. Useful for specifying a different tmux.conf.
-# tmux_options: -f ~/.tmux.mac.conf
-
-# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
-# tmux_command: byobu
-
-# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-# startup_window: editor
-
-# Specitifes (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
-# startup_pane: 1
-
-# Controls whether the tmux session should be attached to automatically. Defaults to true.
-# attach: false
-
-# Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t phoji-service
-
+startup_window: editor
+pre_window: rvm use 2.2.2
 windows:
-  - editor: vim
-  - terminal:
-  - server: bundle exec rails s
-  - logs: tail -f log/development.log
+  - editor:
+    - vim +NERDTree
+  - terminal: #empty
+  - console: rails c
+  - log: tail -f log/development.log
+  - frontend:
+      pre: nvm use v0.10.32
+      layout: tiled
+      panes:
+        - grunt:
+          - grunt
+          - grunt watch
+  - servers:
+      layout: tiled
+      panes:
+        - postgres: postgres -D /usr/local/var/postgres/
+        - redis: redis-server
+        - rails:
+          - bundle install
+          - bundle exec rake db:migrate
+          - bundle exec rake db:seed
+          - bundle exec foreman start
+  - test: bundle exec guard
+
