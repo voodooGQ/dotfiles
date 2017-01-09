@@ -27,15 +27,15 @@ Plugin 'Valloric/YouCompleteMe'
 " Plugin 'evidens/vim-twig'
 
 " All the following were recommended for orgmode
-" Plugin 'vim-scripts/utl.vim'
- Plugin 'jceb/vim-orgmode'
-" Plugin 'tpope/vim-repeat'
-"Plugin 'vim-scripts/taglist.vim'
-"Plugin 'majutsushi/tagbar'
+Plugin 'vim-scripts/utl.vim'
+Plugin 'jceb/vim-orgmode'
+Plugin 'tpope/vim-repeat'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-speeddating'
-"Plugin 'chrisbra/NrrwRgn'
-"Plugin 'mattn/calendar-vim'
-"Plugin 'vim-scripts/SyntaxRange'
+Plugin 'chrisbra/NrrwRgn'
+Plugin 'mattn/calendar-vim'
+Plugin 'vim-scripts/SyntaxRange'
 
 call vundle#end()
 filetype on

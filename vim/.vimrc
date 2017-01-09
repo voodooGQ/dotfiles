@@ -101,3 +101,9 @@ nnoremap <C-Right> :tabnext<CR>
 let g:netrw_liststyle=3
 
 set clipboard=unnamed
+nn <F8> :TagbarToggle<CR>
+nn <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+nn <F7> :setlocal spell! spell?<CR>
+
