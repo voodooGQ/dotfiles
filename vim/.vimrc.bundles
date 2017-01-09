@@ -24,7 +24,18 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'ap/vim-css-color'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'evidens/vim-twig'
+" Plugin 'evidens/vim-twig'
+
+" All the following were recommended for orgmode
+" Plugin 'vim-scripts/utl.vim'
+ Plugin 'jceb/vim-orgmode'
+" Plugin 'tpope/vim-repeat'
+"Plugin 'vim-scripts/taglist.vim'
+"Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-speeddating'
+"Plugin 'chrisbra/NrrwRgn'
+"Plugin 'mattn/calendar-vim'
+"Plugin 'vim-scripts/SyntaxRange'
 
 call vundle#end()
 filetype on
