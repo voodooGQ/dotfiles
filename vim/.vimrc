@@ -6,10 +6,10 @@ set nobackup
 set nowritebackup
 set noswapfile
 set linebreak
-":filetype on
 filetype plugin on
 filetype plugin indent on
 
+" Load plugins
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
@@ -21,13 +21,11 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 " Softtabs, 4 spaces
-" set tabstop=4
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-" set shiftwidth=4
 autocmd FileType sass,scss,ruby,erb,yml,yaml,json setlocal shiftwidth=2 tabstop=2
 set shiftround
 set expandtab
-
+set autoindent
 set smartindent
 
 " make delete key work like normal apps
@@ -35,15 +33,15 @@ set backspace=indent,eol,start
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
+" Automatically strip whitespace on save.
+autocmd BufWritePre * StripWhitespace
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
-
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
-
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
@@ -62,6 +60,11 @@ if &term =~ '256color'
     set t_ut=
 endif
 
+" Set airline top tab and colors
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='powerlineish'
+let g:airline_powerline_fonts = 1
+
 " GitGutter Config
 set updatetime=750
 
@@ -74,7 +77,8 @@ set fo-=t           " turn off the auto-newline
 set number
 set numberwidth=5
 
-set cursorline " highlight current line
+" highlight current line
+set cursorline
 
 " put filename in statusline
 set statusline+=%{fugitive#statusline()}
@@ -93,20 +97,23 @@ au BufRead,BufNewFile *.twig set filetype=htmljinja
 " nerdtree
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
-"autocmd vimenter * NERDTree
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
 " set default list style for Explore
 let g:netrw_liststyle=3
 
+" Make it so clipboard copy/paste works with Mac OSX
 set clipboard=unnamed
-nn <F8> :TagbarToggle<CR>
+
+" VIM Markdown Preview
+let vim_markdown_preview_github=1
+
+" Function mappings
 nn <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 nn <F7> :setlocal spell! spell?<CR>
+nn <F8> :TagbarToggle<CR>
 
-let vim_markdown_preview_github=1
 
-autocmd BufWritePre * StripWhitespace

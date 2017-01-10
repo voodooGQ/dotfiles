@@ -25,21 +25,13 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ap/vim-css-color'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'JamshedVesuna/vim-markdown-preview'
-" Plugin 'evidens/vim-twig'
 Plugin 'tpope/vim-repeat'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ntpeters/vim-better-whitespace'
-" All the following were recommended for orgmode
-"Plugin 'vim-scripts/utl.vim'
-"Plugin 'jceb/vim-orgmode'
-"Plugin 'vim-scripts/taglist.vim'
-"Plugin 'majutsushi/tagbar'
-"Plugin 'tpope/vim-speeddating'
-"Plugin 'chrisbra/NrrwRgn'
-"Plugin 'mattn/calendar-vim'
-"Plugin 'vim-scripts/SyntaxRange'
+Plugin 'Powerline/powerline'
+Plugin 'mattn/calendar-vim'
 
 call vundle#end()
 filetype on
