@@ -10,9 +10,10 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,git-completion.bash};
 done;
 unset file;
 
-# expr causes a command not found error in Mac when sourced but doesn't cause
-# issues beyond that. Best solution I could find.
-if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+if [ "$(uname)" == "Darwin"  ]; then
+    # Just ignore, this gets around an error in mac where it doesn't understand
+    clear;
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   [ -r "$HOME/.linux_aliases" ] && [ -f "$HOME/.linux_aliases" ] && source "$HOME/.linux_aliases";
 fi
 
