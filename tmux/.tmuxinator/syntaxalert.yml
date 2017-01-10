@@ -1,0 +1,25 @@
+# ~/.tmuxinator/syntaxalert.yml
+
+name: syntaxalert
+root: ~/Sites/syntaxalert
+startup_window: editor
+windows:
+  - editor: vim +NERDTree
+  - terminal: #empty
+  - frontend:
+      pre: nvm use v7.4.0
+      root: ~/Sites/syntaxalert/build
+      panes:
+        - gulp:
+          - gulp
+          - gulp watch
+  - vagrant:
+      root: ~/Sites/syntaxalert/vagrant
+      layout: tiled
+      panes:
+        - vagrant:
+          - vagrant up
+          - vagrant ssh
+  - ssh:
+      - ssh ssmith@syntaxalert.com
+
