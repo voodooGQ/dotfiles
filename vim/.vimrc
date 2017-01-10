@@ -108,3 +108,5 @@ set showmode
 nn <F7> :setlocal spell! spell?<CR>
 
 let vim_markdown_preview_github=1
+
+autocmd BufWritePre * StripWhitespace
