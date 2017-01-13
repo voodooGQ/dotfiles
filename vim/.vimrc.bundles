@@ -32,6 +32,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'Powerline/powerline'
 Plugin 'mattn/calendar-vim'
+Plugin 'vim-scripts/BufOnly.vim'
+Plugin 'rizzatti/dash.vim'
 
 call vundle#end()
 filetype on
