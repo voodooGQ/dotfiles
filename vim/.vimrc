@@ -94,7 +94,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_id_checkers = 1
+let g:syntastic_aggregate_errors = 1
 au BufRead,BufNewFile *.twig set filetype=htmljinja
+map <F12> :SyntasticCheck rubocop<CR>
 
 " nerdtree
 let NERDTreeShowHidden=1

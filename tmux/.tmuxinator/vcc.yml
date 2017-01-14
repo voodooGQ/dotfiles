@@ -1,0 +1,23 @@
+# ~/.tmuxinator/vcc.yml
+
+name: vcc
+root: ~/Sites/vcc
+startup_window: editor
+windows:
+  - editor: vim +NERDTree
+  - terminal: #empty
+  - frontend:
+      pre: nvm use v7.4.0
+      root: ~/Sites/vcc/fesrc
+      panes:
+        - gulp:
+          - gulp
+          - gulp watch
+  - vagrant:
+      root: ~/Sites/vcc/vagrant
+      layout: tiled
+      panes:
+        - vagrant:
+          - vagrant up
+          - vagrant ssh
+
