@@ -1,0 +1,25 @@
+# ~/.tmuxinator/railsblog.yml
+
+name: railsblog
+root: ~/Sites/rails/blog
+startup_window: editor
+pre_window: rvm use ruby-2.3.3
+windows:
+  - editor:
+    - vim +NERDTree
+  - terminal: #empty
+  - console: rails c
+  - log: tail -f log/development.log
+  - servers:
+      layout: tiled
+      panes:
+        - postgres:
+          - postgres -D /usr/local/var/postgres/
+          - psql blog_development
+        - rails:
+          - bundle install
+          - bundle exec rake db:migrate
+          - bundle exec rake db:seed
+          - rails s puma
+  - test: bundle exec guard
+
