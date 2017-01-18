@@ -93,7 +93,7 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
 let g:syntastic_id_checkers = 1
 let g:syntastic_aggregate_errors = 1
 au BufRead,BufNewFile *.twig set filetype=htmljinja
@@ -144,3 +144,5 @@ nnoremap <Leader>0 :10b<CR>
 " It's useful to show the buffer number in the status line.
 set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
+" Local Vim
+let g:localvimrc_ask = 0

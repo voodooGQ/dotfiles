@@ -34,6 +34,11 @@ Plugin 'Powerline/powerline'
 Plugin 'mattn/calendar-vim'
 Plugin 'vim-scripts/BufOnly.vim'
 Plugin 'rizzatti/dash.vim'
+Plugin 'embear/vim-localvimrc'
+Plugin 'craigemery/vim-autotag'
+Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-bundler'
 
 call vundle#end()
 filetype on

@@ -6,4 +6,6 @@
 /_local
 railways.cache
 *.rdb
+.lvimrc
+tags
 coverletters

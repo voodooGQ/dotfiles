@@ -1,0 +1,12 @@
+# ~/.tmuxinator/dotfiles.yml
+
+name: dotfiles
+root: ~/dotfiles
+startup_window: editor
+windows:
+  - editor: vim +NERDTree
+  - terminal:
+      layout: tiled
+      panes:
+        - git: git status
+        - cli: clear

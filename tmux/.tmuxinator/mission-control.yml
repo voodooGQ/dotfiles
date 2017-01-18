@@ -1,0 +1,12 @@
+# ~/.tmuxinator/mission-control.yml
+
+name: mission-control
+root: ~/
+startup_window: editor
+windows:
+  - editor: vim +NERDTree
+  - terminal: #empty
+  - monitor:
+      layout: tiled
+      panes:
+        - htop: htop

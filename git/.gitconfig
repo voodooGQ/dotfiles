@@ -23,7 +23,6 @@
   skip = !git update-index --assume-unchanged
   unskip = !git update-index --no-assume-unchanged
   histb = log --graph --decorate --oneline --simplify-by-decoration --all
-
   # list branches by commit date
   branches = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
 
@@ -34,7 +33,7 @@
   default = simple
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
