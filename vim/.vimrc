@@ -81,7 +81,6 @@ set numberwidth=5
 set cursorline
 highlight LineNr ctermfg=45
 highlight CursorLineNr ctermfg=163
-highlight CursorLine ctermbg=16
 
 " put filename in statusline
 set statusline+=%{fugitive#statusline()}
