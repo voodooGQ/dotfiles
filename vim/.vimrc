@@ -78,6 +78,8 @@ set fo-=t           " turn off the auto-newline
 " Numbers
 set number
 set numberwidth=5
+highlight LineNr ctermfg=10
+highlight CursorLineNr ctermfg=164
 
 " highlight current line
 set cursorline
