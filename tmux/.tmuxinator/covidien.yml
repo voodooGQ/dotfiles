@@ -1,0 +1,9 @@
+# ~/.tmuxinator/covidien.yml
+
+name: covidien
+root: ~/Sites/covidien
+startup_window: editor
+windows:
+  - editor: vim +NERDTree
+  - terminal: #empty
+
