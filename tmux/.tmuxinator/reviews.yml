@@ -1,0 +1,8 @@
+# ~/.tmuxinator/reviews.yml
+
+name: reviews
+root: ~/Sites/reviews
+startup_window: editor
+windows:
+  - editor: vim +NERDTree
+  - terminal: #empty
