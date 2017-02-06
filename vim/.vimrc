@@ -113,6 +113,7 @@ set clipboard=unnamed
 
 " VIM Markdown Preview
 let vim_markdown_preview_github=1
+let vim_markdown_preview_hotkey='<C-m>'
 
 " Function mappings
 nn <F2> :set invpaste paste?<CR>
@@ -146,3 +147,7 @@ set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " Local Vim
 let g:localvimrc_ask = 0
+
+" vim-rest-console
+" Allow request body on get requests
+let g:vrc_allow_get_request_body = 1
