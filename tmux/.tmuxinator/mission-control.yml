@@ -10,5 +10,5 @@ windows:
       layout: tiled
       panes:
         - htop: htop
-  - hangouts: hangups
+  - hangouts: hangups --col-scheme=solarized-dark
   - slack: slack
