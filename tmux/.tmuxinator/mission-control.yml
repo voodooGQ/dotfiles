@@ -10,3 +10,5 @@ windows:
       layout: tiled
       panes:
         - htop: htop
+  - hangouts: hangups
+  - slack: slack

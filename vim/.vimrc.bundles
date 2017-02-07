@@ -39,8 +39,6 @@ Plugin 'craigemery/vim-autotag'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
-Plugin 'tyru/open-browser.vim'
-Plugin 'tyru/open-browser-github.vim'
 Plugin 'diepm/vim-rest-console'
 
 call vundle#end()
