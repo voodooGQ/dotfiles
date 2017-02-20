@@ -6,9 +6,8 @@ startup_window: editor
 windows:
   - editor: vim +NERDTree
   - terminal: #empty
+  - timesheet: mfp
   - monitor:
       layout: tiled
       panes:
         - htop: htop
-  - hangouts: hangups --col-scheme=solarized-dark
-  - slack: slack

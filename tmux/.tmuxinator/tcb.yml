@@ -1,0 +1,11 @@
+# ~/.tmuxinator/tcb.yml
+
+name: tcb
+root: ~/Sites/tcb
+startup_window: editor
+windows:
+  - editor: vim +NERDTree
+  - terminal: #empty
+  - db:
+    - vagrant ssh
+    - mysql -u tcb -p4NyPcdxMy62@8HEt5tdmT tcb_dev # Just a vagrant pwd. This is ok! :)

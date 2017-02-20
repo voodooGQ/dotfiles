@@ -40,6 +40,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'diepm/vim-rest-console'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 filetype on

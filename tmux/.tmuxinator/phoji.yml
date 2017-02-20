@@ -1,20 +1,24 @@
-# ~/.tmuxinator/phoji-service.yml
+# ~/.tmuxinator/phoji.yml
 
-name: phoji-service
-root: ~/Sites/phoji/phoji-service
+name: phoji
+root: ~/Sites/phoji
 startup_window: editor
 pre_window: rvm use 2.2.2
 windows:
   - editor:
     - vim +NERDTree
   - terminal: #empty
-  - console: rails c
-  - log: tail -f log/development.log
+  - console:
+      - cd phoji-application
+      - rails c
+  - log:
+      - tail -f phoji-application/log/development.log
   - frontend:
       pre: nvm use v0.10.32
       layout: tiled
       panes:
         - grunt:
+          - cd phoji-application
           - grunt
           - grunt watch
   - servers:
@@ -23,9 +27,17 @@ windows:
         - postgres: postgres -D /usr/local/var/postgres/
         - redis: redis-server
         - rails:
+          - cd phoji-application
           - bundle install
           - bundle exec rake db:migrate
           - bundle exec rake db:seed
           - bundle exec foreman start
-  - test: bundle exec guard
+  - ssh:
+      layout: tiled
+      panes:
+        - staging: ssh ssmith@qa.phojiapp.com
+        - production: ssh ssmith@broadcaster.phojiapp.com
+  - test:
+    - cd phoji-application
+    - bundle exec guard
 

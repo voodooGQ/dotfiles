@@ -11,6 +11,7 @@ alias sas="ssh ssmith@shaneallensmith.com"
 alias spec="rspec"
 alias slack="node ~/bin/terminal-slack/main.js"
 alias hangout="open -a /Applications/Google\ Chrome.app/ https://hangouts.google.com/hangouts/_/"
+alias mfp="~/bin/mainframe-terminal/mfp"
 
 # IP Helpers
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
