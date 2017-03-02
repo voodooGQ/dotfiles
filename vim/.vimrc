@@ -60,7 +60,7 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
 syntax enable
-colorscheme automation
+colorscheme ghoul
 if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes
     " work properly when Vim is used inside tmux and GNU screen.
