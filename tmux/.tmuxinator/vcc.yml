@@ -4,7 +4,7 @@ name: vcc
 root: ~/Sites/vcc
 startup_window: editor
 windows:
-  - editor: vim +NERDTree
+  - editor: vim
   - terminal: #empty
   - frontend:
       pre: nvm use v7.4.0

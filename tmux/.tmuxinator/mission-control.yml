@@ -4,7 +4,7 @@ name: mission-control
 root: ~/
 startup_window: editor
 windows:
-  - editor: vim +NERDTree
+  - editor: vim
   - terminal: #empty
   - timesheet: mfp
   - reddit: rtv

@@ -4,6 +4,6 @@ name: gbpackers
 root: ~/Sites/gbpackers
 startup_window: editor
 windows:
-  - editor: vim +NERDTree
+  - editor: vim
   - terminal: #empty
 

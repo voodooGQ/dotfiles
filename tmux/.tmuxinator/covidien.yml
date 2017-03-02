@@ -4,6 +4,6 @@ name: covidien
 root: ~/Sites/covidien
 startup_window: editor
 windows:
-  - editor: vim +NERDTree
+  - editor: vim
   - terminal: #empty
 

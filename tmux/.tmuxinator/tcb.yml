@@ -4,7 +4,7 @@ name: tcb
 root: ~/Sites/tcb
 startup_window: editor
 windows:
-  - editor: vim +NERDTree
+  - editor: vim
   - terminal: #empty
   - log:
     - tail -f data/logs/phperrors.log
