@@ -24,9 +24,10 @@ hi Visual term=bold cterm=bold gui=bold guifg=Grey guibg=fg
 hi VisualNOS term=underline,bold cterm=underline,bold gui=underline,bold
 hi DiffText term=reverse cterm=bold ctermbg=Red gui=bold guibg=Red
 hi Cursor guibg=Black guifg=Black
+hi CursorLineNR term=bold ctermfg=Yellow ctermbg=235
 hi lCursor guibg=Cyan guifg=Black
-hi Directory term=bold ctermfg=LightCyan guifg=DarkBlue
-hi LineNr term=underline ctermfg=DarkGrey guifg=DarkGrey guibg=LightGrey
+hi Directory term=bold ctermfg=DarkCyan guifg=DarkBlue
+hi LineNr term=underline ctermfg=DarkGray guifg=DarkGrey guibg=LightGrey
 hi MoreMsg term=bold ctermfg=LightGreen gui=bold guifg=SeaGreen
 hi NonText term=bold ctermfg=LightBlue gui=bold guifg=DarkGreen guibg=grey80
 hi Question term=standout ctermfg=LightGreen gui=bold guifg=Green
