@@ -60,7 +60,7 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
 syntax enable
-colorscheme monokai
+colorscheme automation
 if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes
     " work properly when Vim is used inside tmux and GNU screen.
@@ -105,10 +105,6 @@ let g:syntastic_id_checkers = 1
 let g:syntastic_aggregate_errors = 1
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 map <F12> :SyntasticCheck rubocop<CR>
-
-" nerdtree
-let NERDTreeShowHidden=1
-map <C-n> :NERDTreeToggle<CR>
 
 " set default list style for Explore
 let g:netrw_liststyle=4
