@@ -17,11 +17,6 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   [ -r "$HOME/.linux_aliases" ] && [ -f "$HOME/.linux_aliases" ] && source "$HOME/.linux_aliases";
 fi
 
-# Bash Completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
-
 source /usr/local/etc/bash_completion.d/tmuxinator
 
 PATH="/usr/local/bin:$PATH"

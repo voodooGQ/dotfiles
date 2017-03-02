@@ -1,7 +1,6 @@
 # !/bin/sh
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-$DIR/scripts/./install_homebrew.sh
 stow bash git vim
 $DIR/scripts/./install_vundle.sh
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-";
