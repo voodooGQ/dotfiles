@@ -1,6 +1,6 @@
 # thanks to https://github.com/mathiasbynens/dotfiles
 
-if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
+if [[ $COLORTERM = dnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
 	export TERM='gnome-256color';
 elif infocmp xterm-256color >/dev/null 2>&1; then
 	export TERM='xterm-256color';
@@ -121,11 +121,9 @@ prompt_git() {
 			git rev-parse --short HEAD 2> /dev/null || \
 			echo '(unknown)')";
 
-		[ -n "${s}" ] && s=" [${s}]";
+		[ -n "${s}" ] && s=" ${s}";
 
 		echo -e "${1}${branchName}${2}${s}";
-
-		# echo -e "${1}${branchName}${2}${s}";
 	else
 		return;
 	fi;
@@ -157,6 +155,9 @@ PS1+="\[${Yellow}\]\w"; # working directory
 PS1+="\$(prompt_git \"${IBlack} on ${Reset}\" \"${Reset}\")"; # Git repository details
 PS1+="\n";
 PS1+="\[${IBlack}\]\$ \[${Reset}\]"; # `$` (and reset color)
+
+PS1="\n\[${Purple}\]\w\[${Reset}\] (\$(prompt_git))\n➠  ";
+
 export PS1;
 
 PS2="\[$Yellow}\]→ \[${Reset}\]";

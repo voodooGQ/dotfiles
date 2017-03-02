@@ -102,8 +102,6 @@ map <F12> :SyntasticCheck rubocop<CR>
 " nerdtree
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
 
 " set default list style for Explore
 let g:netrw_liststyle=3
@@ -144,7 +142,6 @@ nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
 " It's useful to show the buffer number in the status line.
 set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-
 " Local Vim
 let g:localvimrc_ask = 0
 
