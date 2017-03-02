@@ -123,25 +123,18 @@ prompt_git() {
 
 		[ -n "${s}" ] && s=" ${s}";
 
-		echo -e "${1}${branchName}${2}${s}";
+		echo -e "(${1}${branchName}${2}${s})";
 	else
 		return;
 	fi;
 }
 
-# Highlight the user name when logged in as root.
-if [[ "${USER}" == "root" ]]; then
-	userStyle="${Red}";
+# Check to see if the last command succeeded or failed
+if [ $? -eq 0 ]; then
+    arrow="\[${Blue}\]➠  \[${Reset}\]"
 else
-	userStyle="${Reset}";
-fi;
-
-# Highlight the hostname when connected via SSH.
-if [[ "${SSH_TTY}" ]]; then
-	hostStyle="${Red}";
-else
-	hostStyle="${Green}";
-fi;
+    arrow="\[${Red}\]➠  \[${Reset}\]"
+fi
 
 # Set the terminal title to the current working directory.
 PS1="\[\033]0;\w\007\]";
@@ -156,7 +149,7 @@ PS1+="\$(prompt_git \"${IBlack} on ${Reset}\" \"${Reset}\")"; # Git repository d
 PS1+="\n";
 PS1+="\[${IBlack}\]\$ \[${Reset}\]"; # `$` (and reset color)
 
-PS1="\n\[${Purple}\]\w\[${Reset}\] (\$(prompt_git))\n➠  ";
+PS1="\n\[${IGreen}\]\w\[${Reset}\] \$(prompt_git)\n\[${arrow}\]";
 
 export PS1;
 
