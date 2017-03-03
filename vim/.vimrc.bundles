@@ -40,7 +40,6 @@ Plugin 'craigemery/vim-autotag'
 Plugin 'majutsushi/tagbar'
 Plugin 'diepm/vim-rest-console'
 Plugin 'mileszs/ack.vim'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'felixhummel/setcolors.vim'
 
 call vundle#end()

@@ -3,6 +3,10 @@
 
 set nocompatible
 
+" Swap around ; and : for easier access to commands
+nnoremap ; :
+nnoremap : ;
+
 " Make sure undos are persistent even after exit
 set nobackup
 set nowritebackup
@@ -58,9 +62,9 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " Color overrides
 let base16colorspace=256  " Access colors present in 256 colorspace
-set background=dark
+set background=light
 syntax enable
-colorscheme ghoul
+colorscheme monokai
 if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes
     " work properly when Vim is used inside tmux and GNU screen.
