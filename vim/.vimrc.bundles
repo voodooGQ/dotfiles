@@ -41,6 +41,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'diepm/vim-rest-console'
 Plugin 'mileszs/ack.vim'
 Plugin 'felixhummel/setcolors.vim'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'duff/vim-scratch'
 
 call vundle#end()
 filetype on

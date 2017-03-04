@@ -3,10 +3,6 @@
 
 set nocompatible
 
-" Swap around ; and : for easier access to commands
-nnoremap ; :
-nnoremap : ;
-
 " Make sure undos are persistent even after exit
 set nobackup
 set nowritebackup
@@ -95,7 +91,7 @@ highlight CursorLineNr ctermfg=163
 
 " put filename in statusline
 set statusline+=%{fugitive#statusline()}
-set laststatus=2   " always show status line
+set laststatus=2  " always show status line
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -108,7 +104,6 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_id_checkers = 1
 let g:syntastic_aggregate_errors = 1
 au BufRead,BufNewFile *.twig set filetype=htmljinja
-map <F12> :SyntasticCheck rubocop<CR>
 
 " set default list style for Explore
 let g:netrw_liststyle=4
@@ -120,12 +115,19 @@ set clipboard=unnamed
 let vim_markdown_preview_github=1
 let vim_markdown_preview_hotkey='<C-m>'
 
-" Function mappings
+" Scratch file
+nn <F1> :Scratch<CR>
+" Paste
 nn <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+nn <F3> :so %<CR>
+" Spellcheck
 nn <F7> :setlocal spell! spell?<CR>
+" Tagbar
 nn <F8> :TagbarToggle<CR>
+" Rubocop
+nn <F12> :SyntasticCheck rubocop<CR>
 
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 
@@ -137,3 +139,9 @@ let g:localvimrc_ask = 0
 " vim-rest-console
 " Allow request body on get requests
 let g:vrc_allow_get_request_body = 1
+
+" start searching before hitting enter
+set incsearch
+
+" Make sure cursor stays centered on the screen
+set scrolloff=999
