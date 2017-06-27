@@ -1,0 +1,20 @@
+# ~/.tmuxinator/hyvee.yml
+
+name: hyvee
+root: ~/Sites/hyvee
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty
+    pre: git pull
+    panes:
+      terminal:
+        - git status
+  - server:
+    pre: nvm use
+    panes:
+      yarn:
+        - yarn install
+        - yarn example
+  - test: yarn test
+

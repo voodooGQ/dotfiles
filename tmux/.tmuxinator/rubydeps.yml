@@ -1,0 +1,12 @@
+# ~/.tmuxinator/rubydeps.yml
+
+name: rubydeps
+root: ~/
+startup_window: servers
+windows:
+  - servers:
+      layout: tiled
+      panes:
+        - postgres: postgres -D /usr/local/var/postgres-9.6/
+        - redis: redis-server
+

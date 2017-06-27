@@ -1,0 +1,9 @@
+# ~/.tmuxinator/wp-test-bed.yml
+
+name: wp-test-bed
+root: ~/Sites/wp-test-bed
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty
+

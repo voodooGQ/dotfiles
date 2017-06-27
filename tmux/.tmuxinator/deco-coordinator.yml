@@ -1,0 +1,11 @@
+# ~/.tmuxinator/deco-coordinator.yml
+
+name: deco-coordinator
+root: ~/Sites/decopac/deco-coordinator
+startup_window: editor
+pre_window: rvm use 2.2.2
+windows:
+  - editor:
+    - vim
+  - terminal: #empty
+

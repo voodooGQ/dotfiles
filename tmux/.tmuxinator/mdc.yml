@@ -1,0 +1,30 @@
+# ~/.tmuxinator/mdc.yml
+
+name: mdc
+root: ~/Sites/mdc
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty
+  - frontend:
+      pre:
+          - nvm use v7.4.0
+          - sudo npm install
+          - sudo npm install grunt-beautify
+          - sudo npm install grunt-contrib
+          - sudo npm install grunt-css
+          - sudo gem update --system
+          - sudo gem install compass
+      root: ~/Sites/mdc/build
+      panes:
+        - grunt:
+          - grunt
+          - grunt watch
+  - vagrant:
+      root: ~/Sites/mdc/vagrant
+      layout: tiled
+      panes:
+        - vagrant:
+          - vagrant up
+          - vagrant ssh
+

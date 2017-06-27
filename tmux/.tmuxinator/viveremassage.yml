@@ -1,0 +1,25 @@
+# ~/.tmuxinator/viveremssage.yml
+
+name: viveremssage
+root: ~/Sites/viveremssage
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty
+  - frontend:
+      pre: nvm use v7.4.0
+      layout: tiled
+      panes:
+        - gulp:
+          - gulp
+          - gulp watch
+  - vagrant:
+      root: ~/Sites/nicolesippola/vagrant
+      layout: tiled
+      panes:
+        - vagrant:
+          - vagrant up
+          - vagrant ssh
+  - ssh:
+      - ssh ssmith@nicolesippolamassage.com
+

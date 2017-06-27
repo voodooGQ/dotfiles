@@ -13,6 +13,8 @@ alias slack="node ~/bin/terminal-slack/main.js"
 alias hangout="open -a /Applications/Google\ Chrome.app/ https://hangouts.google.com/hangouts/_/"
 alias mfp="~/bin/mainframe-terminal/mfp"
 alias spot="spotify"
+alias :q="exit"
+alias psqlstart="postgres -D /usr/local/var/postgres-9.6"
 
 # IP Helpers
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"

@@ -1,0 +1,9 @@
+# ~/.tmuxinator/myvice.yml
+
+name: myvice
+root: ~/Sites/myvice
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty
+

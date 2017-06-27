@@ -1,0 +1,9 @@
+# ~/.tmuxinator/hqpackaging.yml
+
+name: hqpackaging
+root: ~/Sites/hqpackaging
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty
+  - ssh: ssh hqpagcom@hqpackaging.com

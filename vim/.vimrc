@@ -57,8 +57,9 @@ endif
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " Color overrides
+
 let base16colorspace=256  " Access colors present in 256 colorspace
-set background=light
+set background=dark
 syntax enable
 colorscheme monokai
 if &term =~ '256color'
@@ -139,9 +140,28 @@ let g:localvimrc_ask = 0
 " vim-rest-console
 " Allow request body on get requests
 let g:vrc_allow_get_request_body = 1
+let g:vrc_connect_timeout = 600
 
 " start searching before hitting enter
 set incsearch
 
 " Make sure cursor stays centered on the screen
 set scrolloff=999
+
+" Enable seeing-is-believing mappings only for Ruby
+augroup seeingIsBelievingSettings
+  autocmd!
+
+  autocmd FileType ruby nmap <buffer> <Enter> <Plug>(seeing-is-believing-mark-and-run)
+  autocmd FileType ruby xmap <buffer> <Enter> <Plug>(seeing-is-believing-mark-and-run)
+
+  autocmd FileType ruby nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+  autocmd FileType ruby xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+  autocmd FileType ruby imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
+
+  autocmd FileType ruby nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
+  autocmd FileType ruby imap <buffer> <F5> <Plug>(seeing-is-believing-run)
+augroup END
+
+let skeletons#autoRegister = 1
+let skeletons#skeletonsDir = "~/.vim/skeletons"

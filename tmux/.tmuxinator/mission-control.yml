@@ -7,7 +7,11 @@ windows:
   - editor: vim
   - terminal: #empty
   - timesheet: mfp
-  - reddit: rtv
+  - servers:
+      layout: tiled
+      panes:
+        - redis: redis-server
+        - postgresql: psqlstart
   - monitor:
       layout: tiled
       panes:
