@@ -1,3 +1,3 @@
-class Model < ApplicationRecord
+class MODEL_NAME < ApplicationRecord
 
 end

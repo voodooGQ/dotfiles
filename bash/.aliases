@@ -16,6 +16,12 @@ alias spot="spotify"
 alias :q="exit"
 alias psqlstart="postgres -D /usr/local/var/postgres-9.6"
 
+# Rails
+alias be="bin/bundle exec"
+alias brails="bin/bundle exec rails"
+alias brake="bin/bundle exec bin/rake"
+alias brspec="bin/bundle exec rspec"
+
 # IP Helpers
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"

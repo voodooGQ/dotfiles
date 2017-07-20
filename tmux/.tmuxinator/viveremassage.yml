@@ -1,12 +1,13 @@
-# ~/.tmuxinator/viveremssage.yml
+# ~/.tmuxinator/viveremassage.yml
 
-name: viveremssage
-root: ~/Sites/viveremssage
+name: viveremassage
+root: ~/Sites/viveremassage
 startup_window: editor
 windows:
   - editor: vim
   - terminal: #empty
   - frontend:
+      root: ~/Sites/viveremassage/build
       pre: nvm use v7.4.0
       layout: tiled
       panes:
@@ -14,12 +15,12 @@ windows:
           - gulp
           - gulp watch
   - vagrant:
-      root: ~/Sites/nicolesippola/vagrant
+      root: ~/Sites/viveremassage/vagrant
       layout: tiled
       panes:
         - vagrant:
           - vagrant up
           - vagrant ssh
   - ssh:
-      - ssh ssmith@nicolesippolamassage.com
+      - ssh nisi@nicolesippolamassage.com
 

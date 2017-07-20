@@ -1,3 +1,3 @@
-class Controller < ActionController::Base
+class CONTROLLER_NAME < ActionController::Base
 
 end

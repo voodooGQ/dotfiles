@@ -1,0 +1,11 @@
+# ~/.tmuxinator/deco-b2c.yml
+
+name: deco-b2c
+root: ~/Sites/decopac/b2c
+startup_window: editor
+pre_window: rvm use 2.1.2
+windows:
+  - editor:
+    - vim
+  - terminal: #empty
+
