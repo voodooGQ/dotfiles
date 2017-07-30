@@ -11,7 +11,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " plugins
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
@@ -26,13 +25,11 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
 Plugin 'ap/vim-css-color'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'Powerline/powerline'
-Plugin 'mattn/calendar-vim'
 Plugin 'vim-scripts/BufOnly.vim'
 Plugin 'rizzatti/dash.vim'
 Plugin 'embear/vim-localvimrc'
@@ -43,9 +40,10 @@ Plugin 'mileszs/ack.vim'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'duff/vim-scratch'
 Plugin 'mxw/vim-jsx'
-Plugin 'hwartig/vim-seeing-is-believing'
 Plugin 'pgilad/vim-skeletons'
 Plugin 'SirVer/ultisnips'
+Plugin 'junegunn/fzf'
+Plugin 'Shougo/neocomplete.vim'
 
 call vundle#end()
 filetype on

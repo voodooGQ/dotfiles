@@ -1,0 +1,8 @@
+# ~/.tmuxinator/car-wash.yml
+
+name: car-wash
+root: ~/Sites/car-wash
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty

@@ -1,0 +1,10 @@
+# ~/.tmuxinator/deco-cms.yml
+
+name: deco-cms
+root: ~/Sites/decopac/deco-cms
+startup_window: editor
+windows:
+  - editor:
+    - vim
+  - terminal: #empty
+

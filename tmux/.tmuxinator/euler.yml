@@ -1,0 +1,8 @@
+# ~/.tmuxinator/euler.yml
+
+name: euler
+root: ~/Sites/euler
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty
