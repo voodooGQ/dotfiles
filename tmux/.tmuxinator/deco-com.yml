@@ -3,7 +3,6 @@
 name: deco-com
 root: ~/Sites/decopac/decopac.com
 startup_window: editor
-pre_window: rvm use 2.4.0
 windows:
   - editor:
     - vim

@@ -1,6 +1,3 @@
-## Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  Load the default .profile
-
 # Load Default profile
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
 

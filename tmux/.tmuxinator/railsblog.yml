@@ -3,7 +3,6 @@
 name: railsblog
 root: ~/Sites/rails/blog
 startup_window: editor
-pre_window: rvm use ruby-2.3.3
 windows:
   - editor:
     - vim
