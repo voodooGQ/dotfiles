@@ -44,9 +44,12 @@ set list listchars=tab:»·,trail:·
 autocmd BufWritePre * StripWhitespace
 
 " bind K to grep word under cursor
-nnoremap <C-K> :Find "<C-R><C-W>"<CR>
+nnoremap <C-k> :Find <C-R><C-W><CR>
+nnoremap K :Findi <C-R><C-W><CR>
 " Fuzzy Finder mapping
 nnoremap <C-P> :Files<CR>
+
+" -g '!tags': always ignore the tags file
 " --column: Show column number
 " --line-number: Show line number
 " --no-heading: Do not show file headings in results
@@ -57,7 +60,11 @@ nnoremap <C-P> :Files<CR>
 " --follow: Follow symlinks
 " --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 " --color: Search color options
-command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+command! -bang -nargs=* Find call fzf#vim#grep('rg -g "!tags" --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+" Same as above, just respect git ignore
+command! -bang -nargs=* Findi call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+
+
 
 " Color overrides
 let base16colorspace=256  " Access colors present in 256 colorspace
