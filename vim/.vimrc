@@ -131,7 +131,9 @@ nn <F1> :Scratch<CR>
 nn <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
-nn <F3> :so %<CR>
+nn <silent><F3> :so %<CR>
+nn <silent><F4> :let @+=expand("%:p")<CR>
+
 " Spellcheck
 nn <F7> :setlocal spell! spell?<CR>
 " Tagbar
@@ -192,7 +194,7 @@ inoremap <expr><C-l>     neocomplete#complete_common_string()
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+    return pumvisible() ? "\<C-y>" : "\<CR>"
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
