@@ -1,8 +1,0 @@
-# ~/.tmuxinator/lisanelson.yml
-
-name: lisanelson
-root: ~/Sites/lisanelson
-startup_window: editor
-windows:
-  - editor: vim
-  - terminal: #empty

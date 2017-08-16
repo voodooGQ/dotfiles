@@ -1,8 +1,0 @@
-# ~/.tmuxinator/ruby-training.yml
-
-name: ruby-training
-root: ~/Sites/ruby-training
-startup_window: editor
-windows:
-  - editor: vim
-  - terminal: #empty

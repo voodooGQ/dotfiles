@@ -1,8 +1,0 @@
-# ~/.tmuxinator/ruby-standards.yml
-
-name: ruby-standards
-root: ~/Sites/nerdery_rails/ruby-standards
-startup_window: editor
-windows:
-  - editor: vim
-  - terminal: #empty

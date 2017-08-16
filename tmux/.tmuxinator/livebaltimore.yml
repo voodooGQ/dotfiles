@@ -1,8 +1,0 @@
-# ~/.tmuxinator/livebaltimore.yml
-
-name: livebaltimore
-root: ~/Sites/livebaltimore
-startup_window: editor
-windows:
-  - editor: vim
-  - terminal: sudo sshfs -o allow_other,defer_permissions,IdentityFile=~/.ssh/id_rsa ssmith@victoria.nerderylabs.com:/vweb/livebaltimore.nerderylabs.com/docs/public/ ~/Sites/livebaltimore
