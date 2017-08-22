@@ -1,9 +1,8 @@
-# ~/.tmuxinator/covidien.yml
+# ~/.tmuxinator/cloud.yml
 
-name: covidien
-root: ~/Sites/covidien
+name: cloud
+root: ~/Code/cloud_assessments/
 startup_window: editor
 windows:
   - editor: vim
   - terminal: #empty
-

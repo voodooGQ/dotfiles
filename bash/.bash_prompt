@@ -131,7 +131,7 @@ prompt_git() {
 if [ $? -eq 0 ]; then
     arrow="\[${Blue}\]➠  \[${Reset}\]"
 else
-    arrow="\[${Red}\]➠  \[${Reset}\]"
+    arrow="\[${Green}\]➠  \[${Reset}\]"
 fi
 
 PS1="\n\[${IGreen}\]\w\[${Reset}\] \$(prompt_git)\n\[${arrow}\]";

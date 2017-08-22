@@ -1,7 +1,7 @@
 # ~/.tmuxinator/shaneallensmith.yml
 
 name: shaneallensmith
-root: ~/Sites/shaneallensmith
+root: ~/Code/archive/shaneallensmith
 startup_window: editor
 windows:
   - editor: vim
@@ -14,7 +14,7 @@ windows:
           - gulp
           - gulp watch
   - vagrant:
-      root: ~/Sites/shaneallensmith/vagrant
+      root: ~/Code/archive/shaneallensmith/vagrant
       layout: tiled
       panes:
         - vagrant:

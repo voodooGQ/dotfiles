@@ -1,7 +1,7 @@
 # ~/.tmuxinator/sandbox.yml
 
 name: sandbox
-root: ~/Sites/sandbox
+root: ~/Code/archive/sandbox
 startup_window: editor
 windows:
   - editor: vim

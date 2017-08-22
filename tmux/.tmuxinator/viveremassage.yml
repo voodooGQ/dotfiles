@@ -1,13 +1,13 @@
 # ~/.tmuxinator/viveremassage.yml
 
 name: viveremassage
-root: ~/Sites/viveremassage
+root: ~/Code/archive/viveremassage
 startup_window: editor
 windows:
   - editor: vim
   - terminal: #empty
   - frontend:
-      root: ~/Sites/viveremassage/build
+      root: ~/Code/archive/viveremassage/build
       pre: nvm use v7.4.0
       layout: tiled
       panes:
@@ -15,7 +15,7 @@ windows:
           - gulp
           - gulp watch
   - vagrant:
-      root: ~/Sites/viveremassage/vagrant
+      root: ~/Code/archive/viveremassage/vagrant
       layout: tiled
       panes:
         - vagrant:

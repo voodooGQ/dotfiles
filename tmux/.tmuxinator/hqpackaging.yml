@@ -1,7 +1,7 @@
 # ~/.tmuxinator/hqpackaging.yml
 
 name: hqpackaging
-root: ~/Sites/hqpackaging
+root: ~/Code/archive/hqpackaging
 startup_window: editor
 windows:
   - editor: vim

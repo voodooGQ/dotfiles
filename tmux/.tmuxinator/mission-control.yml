@@ -6,12 +6,11 @@ startup_window: editor
 windows:
   - editor: vim
   - terminal: #empty
-  - timesheet: mfp
-  - servers:
-      layout: tiled
-      panes:
-        - redis: redis-server
-        - postgresql: psqlstart
+  #- servers:
+      #layout: tiled
+      #panes:
+        #- redis: redis-server
+        #- postgresql: psqlstart
   - monitor:
       layout: tiled
       panes:

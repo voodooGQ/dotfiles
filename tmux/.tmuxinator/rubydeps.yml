@@ -7,6 +7,6 @@ windows:
   - servers:
       layout: tiled
       panes:
-        - postgres: postgres -D /usr/local/var/postgres-9.6/
+        - postgres: postgres -D /usr/local/var/postgres/
         - redis: redis-server
 

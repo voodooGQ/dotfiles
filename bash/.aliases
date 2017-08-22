@@ -14,7 +14,7 @@ alias hangout="open -a /Applications/Google\ Chrome.app/ https://hangouts.google
 alias mfp="~/bin/mainframe-terminal/mfp"
 alias spot="spotify"
 alias :q="exit"
-alias psqlstart="postgres -D /usr/local/var/postgres-9.6"
+alias psqlstart="postgres -D /usr/local/var/postgres"
 
 # Ruby/Rails
 alias rb="rbenv"

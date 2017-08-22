@@ -1,8 +1,0 @@
-# ~/.tmuxinator/chat.yml
-
-name: chat
-root: ~/
-startup_window: hangouts
-windows:
-  - hangouts: hangups --col-scheme=solarized-dark
-  - slack: slack
