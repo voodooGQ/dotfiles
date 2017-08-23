@@ -6,3 +6,8 @@ startup_window: editor
 windows:
   - editor: vim
   - terminal: #empty
+  - ssh:
+      layout: tiled
+      panes:
+        - aws: ssh root@192.168.56.101
+        - azure: ssh ssmith@192.168.56.103

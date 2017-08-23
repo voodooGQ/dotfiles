@@ -134,7 +134,13 @@ else
     arrow="\[${Green}\]➠  \[${Reset}\]"
 fi
 
-PS1="\n\[${IGreen}\]\w\[${Reset}\] \$(prompt_git)\n\[${arrow}\]";
+
+# Display user & hostname when on SSH
+if [[ "${SSH_TTY}" ]]; then
+	hostSSH="\[${Red}\]\u@\$HOSTNAME\ [${Reset}\]";
+fi;
+
+PS1="\n\[${hostSSH}\]\[${IGreen}\]\w\[${Reset}\] \$(prompt_git)\n\[${arrow}\]";
 export PS1;
 
 PS2="\[${Yellow}\]→ \[${Reset}\]";

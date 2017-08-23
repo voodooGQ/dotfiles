@@ -113,6 +113,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_id_checkers = 1
 let g:syntastic_aggregate_errors = 1
+let g:syntastic_ruby_checkers = ['mri']
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 
 " set default list style for Explore

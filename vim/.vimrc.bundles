@@ -24,7 +24,6 @@ Plugin 'airblade/vim-rooter'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
-Plugin 'scrooloose/syntastic'
 Plugin 'ap/vim-css-color'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jiangmiao/auto-pairs'
@@ -46,6 +45,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 filetype on
