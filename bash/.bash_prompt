@@ -137,7 +137,7 @@ fi
 
 # Display user & hostname when on SSH
 if [[ "${SSH_TTY}" ]]; then
-	hostSSH="\[${Red}\]\u@\$HOSTNAME\ [${Reset}\]";
+	hostSSH="\[${Red}\]\u@\h \[${Reset}\]";
 fi;
 
 PS1="\n\[${hostSSH}\]\[${IGreen}\]\w\[${Reset}\] \$(prompt_git)\n\[${arrow}\]";
