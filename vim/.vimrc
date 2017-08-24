@@ -70,7 +70,7 @@ command! -bang -nargs=* Findi call fzf#vim#grep('rg --column --line-number --no-
 let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
 syntax enable
-colorscheme monokai
+colorscheme Monokai
 if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes
     " work properly when Vim is used inside tmux and GNU screen.
