@@ -1,7 +1,7 @@
 # !/bin/sh
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-stow bash git vim
+stow bash git vim tmux
 $DIR/scripts/./install_vundle.sh
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-";
 echo "";
