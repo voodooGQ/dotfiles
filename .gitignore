@@ -1,3 +1,6 @@
 bash/.private_exports
 vim/.vim/bundle/*
+!vim/.vim/bundle/.gitkeep
+vim/.vim/undodir/*
+!vim/.vim/undodir/.gitkeep
 vim/.vim/.netrwhist
