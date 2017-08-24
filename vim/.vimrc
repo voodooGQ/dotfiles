@@ -64,8 +64,6 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg -g "!tags" --column --line-nu
 " Same as above, just respect git ignore
 command! -bang -nargs=* Findi call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 
-
-
 " Color overrides
 let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
@@ -114,10 +112,13 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_id_checkers = 1
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_ruby_checkers = ['mri']
+
+" twig highlighting
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 
 " set default list style for Explore
 let g:netrw_liststyle=4
+let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 
 " Make it so clipboard copy/paste works with Mac OSX
 set clipboard=unnamed
@@ -132,9 +133,10 @@ nn <F1> :Scratch<CR>
 nn <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+" Source current file
 nn <silent><F3> :so %<CR>
+" Copy filename to clipboard (with path)
 nn <silent><F4> :let @+=expand("%:p")<CR>
-
 " Spellcheck
 nn <F7> :setlocal spell! spell?<CR>
 " Tagbar
@@ -142,7 +144,6 @@ nn <F8> :TagbarToggle<CR>
 " Rubocop
 nn <F12> :SyntasticCheck rubocop<CR>
 
-let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 
 " It's useful to show the buffer number in the status line.
 set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
@@ -164,7 +165,7 @@ set scrolloff=999
 let skeletons#autoRegister = 1
 let skeletons#skeletonsDir = "~/.vim/skeletons"
 
-"Note: This option must be set in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+" Note: This option must be set in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplete.
@@ -203,9 +204,6 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 
-" AutoComplPop like behavior.
-"let g:neocomplete#enable_auto_select = 1
-
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
@@ -222,7 +220,7 @@ let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 " Rooter
 let g:rooter_silent_chdir = 1
 
-"
+" Align = and : items with tabularize
 if exists(":Tabularize")
     nmap <Leader>t= :Tabularize /=\zs<CR>
     vmap <Leader>t= :Tabularize /=\zs<CR>
