@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/shanesmith/dotfiles/tmux'
-let g:netrw_dirhist_2='/Users/shanesmith/dotfiles/tmux/.tmuxinator'
-let g:netrw_dirhist_3='/Users/shanesmith'
-let g:netrw_dirhist_4='/Users/shanesmith/dotfiles'
-let g:netrw_dirhist_5='/Users/shanesmith/dotfiles/tmux'
-let g:netrw_dirhist_6='/Users/shanesmith/dotfiles/tmux/.tmuxinator'
-let g:netrw_dirhist_7='/Users/shanesmith/dotfiles/tmux'
-let g:netrw_dirhist_8='/Users/shanesmith/dotfiles'
-let g:netrw_dirhist_9='/Users/shanesmith/dotfiles/bash'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/shanesmith/Code/cloud_assessments/serverspec-integrations/lib/aws/auto_scaling'
