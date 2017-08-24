@@ -227,3 +227,5 @@ if exists(":Tabularize")
     nmap <Leader>t: :Tabularize /:\zs<CR>
     vmap <Leader>t: :Tabularize /:\zs<CR>
 endif
+
+nmap <Leader>f= i# frozen_string_literal: true<esc>o<esc>x
