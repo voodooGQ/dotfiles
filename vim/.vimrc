@@ -221,3 +221,11 @@ let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 
 " Rooter
 let g:rooter_silent_chdir = 1
+
+"
+if exists(":Tabularize")
+    nmap <Leader>t= :Tabularize /=\zs<CR>
+    vmap <Leader>t= :Tabularize /=\zs<CR>
+    nmap <Leader>t: :Tabularize /:\zs<CR>
+    vmap <Leader>t: :Tabularize /:\zs<CR>
+endif
