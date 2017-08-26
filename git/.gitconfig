@@ -1,10 +1,9 @@
 [user]
 	name = Shane Smith
-	email = ssmith@nerdery.com
-  # email - set on each repo
+	email = voodoogq@gmail.com
 
 [core]
-	excludesfile = /Users/ssmith/.gitignore_global
+	excludesfile = ~/.gitignore_global
 
 [color]
   ui = true

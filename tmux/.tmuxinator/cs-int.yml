@@ -1,0 +1,8 @@
+# ~/.tmuxinator/cs-int.yml
+
+name: cs-int
+root: ~/Code/cloudspec/cloudspec-integration-gem/
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty

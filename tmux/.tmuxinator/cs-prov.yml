@@ -1,0 +1,8 @@
+# ~/.tmuxinator/cs-prov.yml
+
+name: cs-prov
+root: ~/Code/cloudspec/cloudspec-providers-gem/
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty
