@@ -101,18 +101,6 @@ highlight CursorLineNr ctermfg=163
 set statusline+=%{fugitive#statusline()}
 set laststatus=2  " always show status line
 
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_id_checkers = 1
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_ruby_checkers = ['mri']
-
 " twig highlighting
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 
@@ -143,7 +131,6 @@ nn <F7> :setlocal spell! spell?<CR>
 nn <F8> :TagbarToggle<CR>
 " Rubocop
 nn <F12> :SyntasticCheck rubocop<CR>
-
 
 " It's useful to show the buffer number in the status line.
 set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
