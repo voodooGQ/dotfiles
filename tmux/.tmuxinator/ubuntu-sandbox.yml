@@ -1,0 +1,8 @@
+# ~/.tmuxinator/ubuntu-sandbox.yml
+
+name: ubuntu-sandbox
+root: ~/
+startup_window: ssh
+windows:
+  - local: vbox startvm "Ubuntu Sandbox" --type=headless # Start it up
+  - ssh:

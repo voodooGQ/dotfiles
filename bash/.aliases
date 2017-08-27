@@ -8,6 +8,7 @@ alias mux="tmuxinator"
 alias spot="spotify"
 alias :q="exit"
 alias psqlstart="postgres -D /usr/local/var/postgres"
+alias vbox="vboxmanage"
 
 # Ruby/Rails
 alias rb="rbenv"
