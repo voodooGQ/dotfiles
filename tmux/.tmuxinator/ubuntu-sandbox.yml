@@ -5,4 +5,4 @@ root: ~/
 startup_window: ssh
 windows:
   - local: vbox startvm "Ubuntu Sandbox" --type=headless # Start it up
-  - ssh:
+  - ssh: ssh shane@ubuntu-sandbox.dev
