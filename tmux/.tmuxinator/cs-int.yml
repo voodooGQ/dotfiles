@@ -1,8 +1,0 @@
-# ~/.tmuxinator/cs-int.yml
-
-name: cs-int
-root: ~/Code/cloudspec/cloudpsec-integration-gem/
-startup_window: editor
-windows:
-  - editor: vim
-  - terminal: #empty

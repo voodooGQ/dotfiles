@@ -1,8 +1,0 @@
-# ~/.tmuxinator/sandbox.yml
-
-name: sandbox
-root: ~/Code/archive/sandbox
-startup_window: editor
-windows:
-  - editor: vim
-  - terminal: #empty
