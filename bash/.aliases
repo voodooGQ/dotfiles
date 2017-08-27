@@ -18,5 +18,5 @@ alias brake="bundle exec bin/rake"
 alias brspec="bundle exec rspec"
 
 # IP Helpers
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
