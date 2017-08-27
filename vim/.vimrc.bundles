@@ -44,7 +44,6 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'w0rp/ale'
-"Plugin 'vim-syntastic/syntastic'
 Plugin 'godlygeek/tabular'
 
 call vundle#end()
