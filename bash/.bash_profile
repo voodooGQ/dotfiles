@@ -14,6 +14,4 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   [ -r "$HOME/.linux_aliases" ] && [ -f "$HOME/.linux_aliases" ] && source "$HOME/.linux_aliases";
 fi
 
-source /usr/local/etc/bash_completion.d/tmuxinator
-
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:.nvm/versions/node/v5.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"

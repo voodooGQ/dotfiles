@@ -1,15 +1,3 @@
-# get current host related info
-function ii()
-{
-      echo -e "\nHello ${RED}$USER"
-      echo -e "\nSystem information:$NC " ; uname -a
-      echo -e "\n${RED}Machine stats :$NC " ; uptime
-      echo -e "\n${RED}Storage stats :$NC " ; df -h | grep -v /var/run | grep -v /var/lock | grep -v ureadahead | grep -v /dev/shm echo -e "\n${RED}Memory stats :$NC " ; free -m 
-      echo -en "\n${RED}Local IP Address :$NC" ; ifconfig | grep 'inet addr:' | grep -v '127.0.0.1' | cut -d: -f2 | awk '{ printf "%s",$1}'
-      echo -en "\n${RED}ISP Address :$NC" ; wget http://automation.whatismyip.com/n09230945.asp -O - -q
-      echo ""
-}
-
 function extract {
   if [ -z "$1" ]; then
     # display usage if no parameters given

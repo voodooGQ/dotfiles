@@ -1,22 +1,11 @@
-alias composerdl="curl -sS https://getcomposer.org/installer | php"
-alias dnsflush="dscacheutil -flushcache ; sudo killall -HUP mDNSResponder;"
-alias symfcache="rm -rf app/cache/*"
 alias port="sudo lsof -i"
 alias ll="ls -la"
 alias la="ls -A"
-alias mux="tmuxinator"
-alias spot="spotify"
 alias :q="exit"
-alias psqlstart="postgres -D /usr/local/var/postgres"
-alias vbox="vboxmanage"
 
 # Ruby/Rails
 alias rb="rbenv"
 alias be="bundle exec"
 alias brails="bundle exec rails"
-alias brake="bundle exec bin/rake"
+alias brake="bundle exec rake"
 alias brspec="bundle exec rspec"
-
-# IP Helpers
-alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en0"
