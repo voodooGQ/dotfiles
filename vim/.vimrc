@@ -219,4 +219,3 @@ nmap <Leader>f= i# frozen_string_literal: true<esc>o<esc>x
 
 " When you open a readonly file, allows us to save it
 nnoremap <C-s>:w !sudo tee %<CR>
-
