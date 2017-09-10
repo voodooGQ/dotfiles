@@ -6,3 +6,6 @@ vim/.vim/bundle/*
 vim/.vim/undodir/*
 !vim/.vim/undodir/.gitkeep
 vim/.vim/.netrwhist
+!vim/.vim/view/.gitkeep
+vim/.vim/view/*
+
