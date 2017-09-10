@@ -1,5 +1,7 @@
-require 'rails_helper'
+# frozen_string_literal: true
+require "spec_helper"
 
-RSpec.describe TEST_NAME, type: :SOME_TYPE do
+RSpec.describe METHOD, type: :TYPE do
+  let(:subject) { described_class }
 
 end
