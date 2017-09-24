@@ -9,3 +9,6 @@ railways.cache
 .lvimrc
 tags
 coverletters
+
+Gemfile.shane
+Gemfile.shane.lock

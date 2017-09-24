@@ -22,9 +22,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-markdown'
 Plugin 'airblade/vim-rooter'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
-Plugin 'ap/vim-css-color'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdcommenter'
@@ -45,6 +43,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'w0rp/ale'
 Plugin 'godlygeek/tabular'
+Plugin 'Konfekt/FastFold'
 
 call vundle#end()
 filetype on

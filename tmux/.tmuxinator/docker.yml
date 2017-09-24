@@ -1,0 +1,8 @@
+# ~/.tmuxinator/docker.yml
+
+name: docker
+root: ~/Code/docker_tests
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty

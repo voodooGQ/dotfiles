@@ -283,3 +283,13 @@ endfunction
 
 map <Leader>m :call QuickMinimal()<CR>
 map <Leader>M :call ReverseQuickMinimal()<CR>
+
+"===============================================================================
+"UltiSnips
+
+"let g:UltiSnipsSnippetsDir="~/.vim/ultisnips"
+"let g:UltiSnipsSnippetDirectories=["ultisnip"]
+"let g:UltiSnipsExpandTrigger="<c-e>"
+"let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<tab>"
+"let g:UltiSnipsJumpBackwardTrigger="<s-tab>"

@@ -1,0 +1,8 @@
+# ~/.tmuxinator/cs-poc.yml
+
+name: cs-poc
+root: ~/Code/cloudspec/cloudspec-poc/
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty
