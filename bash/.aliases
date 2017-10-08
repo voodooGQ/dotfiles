@@ -7,6 +7,7 @@ alias :q="exit"
 alias psqlstart="postgres -D /usr/local/var/postgres"
 alias vbox="vboxmanage"
 alias gotonow="ntpdate -s time.nist.gov"
+alias weather="curl wttr.in"
 
 # Ruby/Rails
 alias rb="rbenv"
