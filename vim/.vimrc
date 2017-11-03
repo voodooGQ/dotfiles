@@ -272,6 +272,7 @@ nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 
 set foldmethod=syntax
+set foldlevelstart=20
 
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
