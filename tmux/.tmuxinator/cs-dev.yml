@@ -6,5 +6,3 @@ startup_window: editor
 windows:
   - editor: vim
   - terminal: #empty
-  - aws_vm: ssh shane@192.168.56.101
-  - azure_vm: ssh ssmith@192.168.56.103

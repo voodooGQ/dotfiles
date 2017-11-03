@@ -3,12 +3,6 @@
 name: cloud
 root: ~/Code/cloud_assessments/
 startup_window: editor
-pre: vbox startvm "Azure" --type=headless; vbox startvm "AWS" -- type=headless
 windows:
   - editor: vim
   - terminal: #empty
-  - ssh:
-      layout: tiled
-      panes:
-        - aws: ssh shane@aws.dev
-        - azure: ssh ssmith@azure.dev

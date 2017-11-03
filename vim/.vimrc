@@ -30,6 +30,9 @@ set pastetoggle=<F2>
 set showmode
 " It's useful to show the buffer number in the status line.
 set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+" Proper splits
+set splitbelow
+set splitright
 
 " Automatically strip whitespace on save.
 autocmd BufWritePre * StripWhitespace
@@ -51,6 +54,16 @@ nn <F8> :TagbarToggle<CR>
 nn <F12> :SyntasticCheck rubocop<CR>
 " When you open a readonly file, allows us to save it (NOT WORKING, FIX!!)
 nn <C-s>:w !sudo tee %<CR>
+" Faster window movement
+nn <C-j> <C-w>j
+nn <C-k> <C-w>k
+nn <C-h> <C-w>h
+nn <C-l> <C-w>l
+" Hard mode
+nn <Left> :echoe "Use h"<CR>
+nn <Right> :echoe "Use l"<CR>
+nn <Up> :echoe "Use k"<CR>
+nn <Down> :echoe "Use j"<CR>
 
 "===============================================================================
 
@@ -86,15 +99,16 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 " Color overrides
-let base16colorspace=256  " Access colors present in 256 colorspace
+"let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
 syntax enable
-colorscheme Monokai
+colorscheme gruvbox
 if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes
     " work properly when Vim is used inside tmux and GNU screen.
     set t_ut=
 endif
+
 " twig highlighting
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 
@@ -126,9 +140,9 @@ set smartindent
 " Set airline top tab and colors
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline_theme='powerlineish'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#show_tab_type = 0
+let g:airline#extensions#tabline#fnamemod = ':t'
 "===============================================================================
 
 "FZF_AND_RIPGREP (Fuzzy finding)
@@ -237,6 +251,7 @@ let g:rooter_silent_chdir = 1
 
 " LINE_NUMBERS
 set number
+set numberwidth=5
 set cursorline
 
 function! NumberToggle()
@@ -285,11 +300,10 @@ map <Leader>m :call QuickMinimal()<CR>
 map <Leader>M :call ReverseQuickMinimal()<CR>
 
 "===============================================================================
-"UltiSnips
 
-"let g:UltiSnipsSnippetsDir="~/.vim/ultisnips"
-"let g:UltiSnipsSnippetDirectories=["ultisnip"]
-"let g:UltiSnipsExpandTrigger="<c-e>"
-"let g:UltiSnipsExpandTrigger="<tab>"
-"let g:UltiSnipsJumpForwardTrigger="<tab>"
-"let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" ALE
+autocmd BufEnter *.erb ALEDisable
+nnoremap ]r :ALENextWrap<CR>
+nnoremap [r :ALEPreviousWrap<CR>]
+
+"===============================================================================

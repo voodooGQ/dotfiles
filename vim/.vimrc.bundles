@@ -44,6 +44,8 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'w0rp/ale'
 Plugin 'godlygeek/tabular'
 Plugin 'Konfekt/FastFold'
+Plugin 'morhetz/gruvbox'
+Plugin 'brooth/far.vim'
 
 call vundle#end()
 filetype on
