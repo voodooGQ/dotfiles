@@ -46,6 +46,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'Konfekt/FastFold'
 Plugin 'morhetz/gruvbox'
 Plugin 'brooth/far.vim'
+Plugin 'sjl/gundo.vim'
 
 call vundle#end()
 filetype on

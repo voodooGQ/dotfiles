@@ -1,5 +1,9 @@
 " BASE_SETTINGS
 "
+
+" Map leader to space
+let mapleader = " "
+
 " Use Vim settings, rather then Vi settings. This setting must be as early as
 " possible, as it has side effects.
 set nocompatible
@@ -53,7 +57,7 @@ nn <F8> :TagbarToggle<CR>
 " Rubocop
 nn <F12> :SyntasticCheck rubocop<CR>
 " When you open a readonly file, allows us to save it (NOT WORKING, FIX!!)
-nn <C-s>:w !sudo tee %<CR>
+"nn <C-s>:w !sudo tee %<CR>
 " Faster window movement
 nn <C-j> <C-w>j
 nn <C-k> <C-w>k
@@ -81,6 +85,14 @@ endif
 
 " Add a frozen_string_literal line (for Ruby)
 nmap <Leader>f= i# frozen_string_literal: true<esc>o<esc>x
+
+" Faster tab movement
+nn <silent> <Leader>h :tabprev<CR>
+nn <silent> <Leader>l :tabnext<CR>
+nn <silent> <Leader>c :tabnew<CR>
+nn <silent> <Leader>x :tabclose<CR>
+
+nn <Leader>u :GundoToggle<CR>
 "===============================================================================
 
 " LOAD_VIM_PLUGINS
@@ -268,8 +280,7 @@ nnoremap <silent> <C-m> :call NumberOffToggle()<CR>
 "===============================================================================
 
 " CODE_FOLDEING
-nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-vnoremap <Space> zf
+nnoremap <silent> <C-[> za
 
 set foldmethod=syntax
 set foldlevelstart=20
