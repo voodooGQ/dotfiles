@@ -185,6 +185,10 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg -g "!tags" --column --line-nu
 
 " Same as above, just respect gitignore
 command! -bang -nargs=* Findi call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'GruvboxOrange'],
+  \ 'bg':      ['bg', 'CursorLineNr'] }
 "===============================================================================
 
 " EXPLORER
@@ -287,11 +291,10 @@ nnoremap <silent> <Leader>N :call NumberOffToggle()<CR>
 nn <silent> <C-]> za
 
 set foldmethod=syntax
-set foldlevelstart=20
+set foldlevel=99
 
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
-
 "===============================================================================
 
 " QUICK_MINIMAL
