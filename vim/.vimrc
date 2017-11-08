@@ -1,5 +1,4 @@
 " BASE_SETTINGS
-"
 
 " Map leader to space
 let mapleader = " "
@@ -37,6 +36,9 @@ set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 " Proper splits
 set splitbelow
 set splitright
+" Wildmenu
+set wildmenu
+set wildmode=longest:full
 
 " Automatically strip whitespace on save.
 autocmd BufWritePre * StripWhitespace
@@ -87,12 +89,12 @@ endif
 nmap <Leader>f= i# frozen_string_literal: true<esc>o<esc>x
 
 " Faster tab movement
-nn <silent> <Leader>h :tabprev<CR>
-nn <silent> <Leader>l :tabnext<CR>
-nn <silent> <Leader>c :tabnew<CR>
-nn <silent> <Leader>x :tabclose<CR>
+nmap <silent> <Leader>h :tabprev<CR>
+nmap <silent> <Leader>l :tabnext<CR>
+nmap <silent> <Leader>c :tabnew<CR>
+nmap <silent> <Leader>x :tabclose<CR>
 
-nn <Leader>u :GundoToggle<CR>
+nmap <Leader>u :GundoToggle
 "===============================================================================
 
 " LOAD_VIM_PLUGINS
@@ -124,6 +126,8 @@ endif
 " twig highlighting
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 
+" Change directory color
+hi! link Directory GruvboxPurple
 "===============================================================================
 
 " SAVE_PERSISTENT_UNDOS
@@ -275,12 +279,12 @@ function! NumberOffToggle()
 endfunction
 
  "C-n swap relative number
-nnoremap <silent> <C-n> :call NumberToggle()<CR>
-nnoremap <silent> <C-m> :call NumberOffToggle()<CR>
+nnoremap <silent> <Leader>n :call NumberToggle()<CR>
+nnoremap <silent> <Leader>N :call NumberOffToggle()<CR>
 "===============================================================================
 
 " CODE_FOLDEING
-nnoremap <silent> <C-[> za
+nn <silent> <C-]> za
 
 set foldmethod=syntax
 set foldlevelstart=20
@@ -308,14 +312,16 @@ function! ReverseQuickMinimal()
     :exec ":GitGutterEnable"
 endfunction
 
-map <Leader>m :call QuickMinimal()<CR>
-map <Leader>M :call ReverseQuickMinimal()<CR>
-
 "===============================================================================
 
 " ALE
-autocmd BufEnter *.erb ALEDisable
-nnoremap ]r :ALENextWrap<CR>
-nnoremap [r :ALEPreviousWrap<CR>]
+autocmd BufEnter *.erb ALEDisable " Disable on .erb files
+let g:ale_sign_error = "☠'"
+let g:ale_sign_warning = "⚡"
+hi link ALEError        ErrorMsg
+hi link ALEWarning      Search
+hi link ALEErrorSign    CursorColumn
+hi link ALEWarningSign  CursorColumn
 
 "===============================================================================
+
