@@ -67,9 +67,13 @@ nn <C-h> <C-w>h
 nn <C-l> <C-w>l
 " Hard mode
 nn <Left> :echoe "Use h"<CR>
+nn <C-w><Left> :echoe "Use \<C-w\>h"<CR>
 nn <Right> :echoe "Use l"<CR>
+nn <C-w><Right> :echoe "Use \<C-w\>l"<CR>
 nn <Up> :echoe "Use k"<CR>
+nn <C-w><Up> :echoe "Use \<C-w\>k"<CR>
 nn <Down> :echoe "Use j"<CR>
+nn <C-w><Down> :echoe "Use \<C-w\>j"<CR>
 
 "===============================================================================
 
