@@ -1,5 +1,7 @@
 " BASE_SETTINGS
 
+au BufWritePost * :silent! :syntax sync fromstart<cr>:redraw!<cr>
+
 " Map leader to space
 let mapleader = " "
 
@@ -39,6 +41,8 @@ set splitright
 " Wildmenu
 set wildmenu
 set wildmode=longest:full
+" Go up the tree until we find a tags file
+"set tags=./tags;/
 
 " Automatically strip whitespace on save.
 autocmd BufWritePre * StripWhitespace
@@ -74,6 +78,9 @@ nn <Up> :echoe "Use k"<CR>
 nn <C-w><Up> :echoe "Use \<C-w\>k"<CR>
 nn <Down> :echoe "Use j"<CR>
 nn <C-w><Down> :echoe "Use \<C-w\>j"<CR>
+
+" Go Back from tag jump
+nn <C-\> <C-T>
 
 "===============================================================================
 
@@ -132,6 +139,7 @@ au BufRead,BufNewFile *.twig set filetype=htmljinja
 
 " Change directory color
 hi! link Directory GruvboxPurple
+hi! link Folded Tabline
 "===============================================================================
 
 " SAVE_PERSISTENT_UNDOS
@@ -154,6 +162,7 @@ set shiftround
 set expandtab
 set autoindent
 set smartindent
+
 "===============================================================================
 
 " AIRLINE
@@ -292,13 +301,21 @@ nnoremap <silent> <Leader>N :call NumberOffToggle()<CR>
 "===============================================================================
 
 " CODE_FOLDEING
-nn <silent> <C-]> za
+nn <silent> <Leader>] za
 
 set foldmethod=syntax
 set foldlevel=99
+set foldlevelstart=99
 
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
+autocmd FileType ruby,eruby
+    \ set foldmethod=expr |
+    \ set foldexpr=getline(v:lnum)=~'^\\s*#'
+
+"set viewoptions=cursor,folds,slash,unix
+
+
+"autocmd BufWinLeave *.* mkview
+"autocmd BufWinEnter *.* silent loadview
 "===============================================================================
 
 " QUICK_MINIMAL
@@ -332,3 +349,25 @@ hi link ALEWarningSign  CursorColumn
 
 "===============================================================================
 
+" SESSIONS
+fu! SaveSess()
+  execute 'mksession! ' . getcwd() . '/.session.vim'
+endfunction
+
+fu! RestoreSess()
+  if filereadable(getcwd() . '/.session.vim')
+    execute 'so ' . getcwd() . '/.session.vim'
+    if bufexists(1)
+      for l in range(1, bufnr('$'))
+        if bufwinnr(l) == -1
+          exec 'sbuffer ' . l
+        endif
+      endfor
+    endif
+  endif
+endfunction
+
+autocmd VimLeave * call SaveSess()
+autocmd VimEnter * nested call RestoreSess()
+
+set sessionoptions-=options  " Don't save options

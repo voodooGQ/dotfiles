@@ -1,7 +1,7 @@
-# ~/.tmuxinator/mission-control.yml
+# ~/.tmuxinator/dbferuby.yml
 
-name: mission-control
-root: ~/
+name: dbferuby
+root: ~/Code/dbferuby/
 startup_window: editor
 windows:
   - editor: vim
