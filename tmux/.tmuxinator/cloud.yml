@@ -4,5 +4,5 @@ name: cloud
 root: ~/Code/cloud_assessments/
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty

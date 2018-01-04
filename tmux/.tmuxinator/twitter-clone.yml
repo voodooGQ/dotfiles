@@ -4,5 +4,5 @@ name: twitter-clone
 root: ~/Code/twitter-clone
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty

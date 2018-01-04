@@ -5,7 +5,7 @@ root: ~/Code/archive/rails/blog
 startup_window: editor
 windows:
   - editor:
-    - vim
+    - nvim
   - terminal: #empty
   - console: rails c
   - log: tail -f log/development.log

@@ -4,5 +4,5 @@ name: cs-poc
 root: ~/Code/cloudspec/cloudspec-poc/
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty

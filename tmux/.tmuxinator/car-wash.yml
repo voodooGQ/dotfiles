@@ -4,5 +4,5 @@ name: car-wash
 root: ~/Code/archive/car-wash
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty

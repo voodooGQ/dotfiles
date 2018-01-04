@@ -4,7 +4,7 @@ name: dotfiles
 root: ~/dotfiles
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal:
       layout: tiled
       panes:

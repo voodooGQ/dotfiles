@@ -4,7 +4,7 @@ name: syntaxalert
 root: ~/Code/archive/syntaxalert
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty
   - frontend:
       pre: nvm use v7.4.0

@@ -4,5 +4,5 @@ name: mission-control
 root: ~/
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty

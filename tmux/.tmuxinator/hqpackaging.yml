@@ -4,6 +4,6 @@ name: hqpackaging
 root: ~/Code/archive/hqpackaging
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty
   - ssh: ssh hqpagcom@hqpackaging.com

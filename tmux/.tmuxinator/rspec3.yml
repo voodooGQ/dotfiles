@@ -4,5 +4,5 @@ name: rspec3
 root: ~/Code/rspec3/
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty

@@ -4,5 +4,5 @@ name: cs-eng
 root: ~/Code/cloudspec/cloudspec-engine-gem/
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty

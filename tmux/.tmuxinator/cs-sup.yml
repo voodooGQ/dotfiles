@@ -4,5 +4,5 @@ name: cs-sup
 root: ~/Code/cloudspec/cloudspec-support/
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty

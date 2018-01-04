@@ -4,5 +4,5 @@ name: dbferuby
 root: ~/Code/dbferuby/
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty

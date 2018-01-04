@@ -4,5 +4,5 @@ name: cs-prov
 root: ~/Code/cloudspec/cloudspec-providers-gem/
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty

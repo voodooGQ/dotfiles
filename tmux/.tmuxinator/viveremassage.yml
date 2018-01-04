@@ -4,7 +4,7 @@ name: viveremassage
 root: ~/Code/archive/viveremassage
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty
   - frontend:
       root: ~/Code/archive/viveremassage/build

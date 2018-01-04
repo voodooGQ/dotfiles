@@ -3,7 +3,7 @@ name: gotreact
 root: ~/Code/archive/gotreact
 startup_window: editor
 windows:
-  - editor: vim
+  - editor: nvim
   - terminal: #empty
     pre: git pull
     panes:
