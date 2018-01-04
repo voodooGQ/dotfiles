@@ -8,6 +8,7 @@ railways.cache
 *.rdb
 .lvimrc
 .session.vim
+.session.nvim
 tags
 coverletters
 

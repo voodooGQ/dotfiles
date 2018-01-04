@@ -1,0 +1,8 @@
+# ~/.tmuxinator/cs-sup.yml
+
+name: cs-sup
+root: ~/Code/cloudspec/cloudspec-support/
+startup_window: editor
+windows:
+  - editor: vim
+  - terminal: #empty

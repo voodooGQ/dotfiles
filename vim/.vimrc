@@ -1,3 +1,13 @@
+" LOAD_VIM_PLUGINS
+"
+filetype plugin on
+filetype plugin indent on
+" Load plugins
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+"===============================================================================
+
 " BASE_SETTINGS
 
 au BufWritePost * :silent! :syntax sync fromstart<cr>:redraw!<cr>
@@ -5,13 +15,8 @@ au BufWritePost * :silent! :syntax sync fromstart<cr>:redraw!<cr>
 " Map leader to space
 let mapleader = " "
 
-" Use Vim settings, rather then Vi settings. This setting must be as early as
-" possible, as it has side effects.
-set nocompatible
 " Don't wrap lines
 set linebreak
-" Make delete key work like normal apps
-set backspace=indent,eol,start
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 " Make it obvious where 80 characters is
@@ -23,13 +28,16 @@ set fo-=t
 set updatetime=750
 " Make it so clipboard copy/paste works with Mac OSX
 set clipboard=unnamed
-" start searching before hitting enter
-set incsearch
+" ignorecase when searching
+set ignorecase " @n
+" If any capitals are used search by case
+set smartcase " @n
+" Infer the case
+set infercase " @n
 " Make sure cursor stays centered on the screen
 set scrolloff=999
 " Put filename in statusline
 set statusline+=%{fugitive#statusline()}
-set laststatus=2  " always show status line
 " Paste Toggle
 set pastetoggle=<F2>
 set showmode
@@ -39,13 +47,49 @@ set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set splitbelow
 set splitright
 " Wildmenu
-set wildmenu
 set wildmode=longest:full
 " Go up the tree until we find a tags file
 "set tags=./tags;/
+" Sane level for syntax highlight
+set synmaxcol=300 "@n
+" Lazy Redraw
+set lazyredraw "@n
+" Automatically read the file if it changed outside vim @n
+set modeline
+set modelines=1
+" Flash matching braces for 200ms @n
+set showmatch
+set matchtime=2
+" When joining lines, delete comment characters if appropriate
+"set formatoptions+=j
+set nojoinspaces
+
+if !has('nvim')
+    set nocompatible
+    set backspace=indent,eol,start
+    set incsearch
+    set laststatus=2  " always show status line
+    set wildmenu
+	set smarttab
+end
 
 " Automatically strip whitespace on save.
 autocmd BufWritePre * StripWhitespace
+
+" Resize splits when vim itself is resized @n
+augroup ResizeSplits
+    au!
+    au VimResized * :wincmd =
+augroup END
+
+" Only display the cursorline on windows that are in focus
+augroup highlight_follows_focus
+    autocmd!
+    au WinEnter * set cursorline
+    au WinLeave * set nocursorline
+    au FocusGained * set cursorline
+    au FocusLost * set nocursorline
+augroup END
 
 "===============================================================================
 
@@ -60,15 +104,6 @@ nn <F4><silent> :let @+=expand("%:p")<CR>
 nn <F7> :setlocal spell! spell?<CR>
 " Tagbar
 nn <F8> :TagbarToggle<CR>
-" Rubocop
-nn <F12> :SyntasticCheck rubocop<CR>
-" When you open a readonly file, allows us to save it (NOT WORKING, FIX!!)
-"nn <C-s>:w !sudo tee %<CR>
-" Faster window movement
-nn <C-j> <C-w>j
-nn <C-k> <C-w>k
-nn <C-h> <C-w>h
-nn <C-l> <C-w>l
 " Hard mode
 nn <Left> :echoe "Use h"<CR>
 nn <C-w><Left> :echoe "Use \<C-w\>h"<CR>
@@ -82,19 +117,34 @@ nn <C-w><Down> :echoe "Use \<C-w\>j"<CR>
 " Go Back from tag jump
 nn <C-\> <C-T>
 
+"These are to cancel the default behavior of d, D, c, C
+"  to put the text they delete in the default register.
+"  Note that this means e.g. "ad won't copy the text into
+"  register a anymore.  You have to explicitly yank it.
+nnoremap d "_d
+vnoremap d "_d
+nnoremap D "_D
+vnoremap D "_D
+nnoremap c "_c
+vnoremap c "_c
+nnoremap C "_C
+vnoremap C "_C
+
+" Remap H and L to start and end of the line
+nnoremap H ^
+nnoremap L $
+xnoremap H ^
+xnoremap L $
+
+" Shift-X repeats the x macro
+nnoremap X @x
+xnoremap X :normal! @x<CR>
+
 "===============================================================================
 
 " LEADER_MAPS
 " Toggle ALE Linting
-map <Leader>a :ALEToggle<CR>
-
-" Align = and : items with tabularize
-if exists(":Tabularize")
-    nmap <Leader>t= :Tabularize /=\zs<CR>
-    vmap <Leader>t= :Tabularize /=\zs<CR>
-    nmap <Leader>t: :Tabularize /:\zs<CR>
-    vmap <Leader>t: :Tabularize /:\zs<CR>
-endif
+map <Leader>t :ALEToggle<CR>
 
 " Add a frozen_string_literal line (for Ruby)
 nmap <Leader>f= i# frozen_string_literal: true<esc>o<esc>x
@@ -105,16 +155,10 @@ nmap <silent> <Leader>l :tabnext<CR>
 nmap <silent> <Leader>c :tabnew<CR>
 nmap <silent> <Leader>x :tabclose<CR>
 
-nmap <Leader>u :GundoToggle
-"===============================================================================
+nmap <Leader>u :GundoToggle<CR>
 
-" LOAD_VIM_PLUGINS
-filetype plugin on
-filetype plugin indent on
-" Load plugins
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
+" <leader>a selects the whole buffer
+nnoremap <leader>a ggVG
 "===============================================================================
 
 " SYNTAX_COLORS
@@ -134,37 +178,45 @@ if &term =~ '256color'
     set t_ut=
 endif
 
+set termguicolors
+
 " twig highlighting
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 
 " Change directory color
+" @TODO: This isn't working in nvim
 hi! link Directory GruvboxPurple
 hi! link Folded Tabline
 "===============================================================================
 
+" Lion alignment
+let g:lion_squeeze_spaces = 1
+let b:lion_squeeze_spaces = 1
+
+"===============================================================================
 " SAVE_PERSISTENT_UNDOS
 " Make sure undos are persistent even after exit
 set nobackup
 set nowritebackup
 set noswapfile
 if !&diff
-  set undodir=~/.vim/undodir
+  if !has('nvim')
+      set undodir=~/.vim/undodir
+  end
   set undofile
 endif
-"===============================================================================
 
+"===============================================================================
 " CODE_INDENTATION
 " Softtabs, 4 spaces by defaults
-set tabstop=4 softtabstop=0 shiftwidth=4 smarttab expandtab
+set tabstop=4 softtabstop=0 shiftwidth=4 expandtab
 " Switch to a 2 space tab on these files
 autocmd FileType sass,scss,ruby,erb,yml,yaml,json setlocal shiftwidth=2 tabstop=2
 set shiftround
 set expandtab
-set autoindent
 set smartindent
 
 "===============================================================================
-
 " AIRLINE
 " Set airline top tab and colors
 let g:airline#extensions#tabline#enabled = 1
@@ -172,8 +224,8 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#fnamemod = ':t'
-"===============================================================================
 
+"===============================================================================
 "FZF_AND_RIPGREP (Fuzzy finding)
 " C-P calls FZF on all files
 nnoremap <C-P> :Files<CR>
@@ -225,63 +277,21 @@ let g:vrc_allow_get_request_body = 1
 let g:vrc_connect_timeout = 600
 
 "===============================================================================
-
 " VIM SKELETONS
 let skeletons#autoRegister = 1
 let skeletons#skeletonsDir = "~/.vim/skeletons"
 
 "===============================================================================
-" NEOCOMPLETE + OMNICOMPLETION
+" DEOPLETE (Autocompletion)
+if has('nvim')
+  let g:deoplete#enable_at_startup = 1
+endif
 
-" Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
-" Use neocomplete.
-let g:neocomplete#enable_at_startup = 1
-" Use smartcase.
-let g:neocomplete#enable_smart_case = 1
-" Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-" Define dictionary.
-let g:neocomplete#sources#dictionary#dictionaries = {
-    \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
-        \ }
-" Define keyword.
-if !exists('g:neocomplete#keyword_patterns')
-    let g:neocomplete#keyword_patterns = {}
-endif
-let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-" Plugin key-mappings.
-inoremap <expr><C-g>     neocomplete#undo_completion()
-inoremap <expr><C-l>     neocomplete#complete_common_string()
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-    return pumvisible() ? "\<C-y>" : "\<CR>"
-endfunction
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-" Enable heavy omni completion.
-if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
-endif
-let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 "===============================================================================
-
 " ROOTER
 let g:rooter_silent_chdir = 1
-"===============================================================================
 
+"===============================================================================
 " LINE_NUMBERS
 set number
 set numberwidth=5
@@ -299,7 +309,6 @@ endfunction
 nnoremap <silent> <Leader>n :call NumberToggle()<CR>
 nnoremap <silent> <Leader>N :call NumberOffToggle()<CR>
 "===============================================================================
-
 " CODE_FOLDEING
 nn <silent> <Leader>] za
 
@@ -311,13 +320,7 @@ autocmd FileType ruby,eruby
     \ set foldmethod=expr |
     \ set foldexpr=getline(v:lnum)=~'^\\s*#'
 
-"set viewoptions=cursor,folds,slash,unix
-
-
-"autocmd BufWinLeave *.* mkview
-"autocmd BufWinEnter *.* silent loadview
 "===============================================================================
-
 " QUICK_MINIMAL
 
 " Function to quickly turn on a set of minimal settings for really big files.
@@ -337,37 +340,45 @@ function! ReverseQuickMinimal()
 endfunction
 
 "===============================================================================
-
 " ALE
 autocmd BufEnter *.erb ALEDisable " Disable on .erb files
-let g:ale_sign_error = "☠'"
-let g:ale_sign_warning = "⚡"
+let g:ale_sign_error = "✖"
+let g:ale_sign_warning = "𐌏"
+highlight ALEErrorSign ctermbg=237 ctermfg=red
+highlight ALEWarningSign ctermbg=237 ctermfg=yellow
 hi link ALEError        ErrorMsg
 hi link ALEWarning      Search
 hi link ALEErrorSign    CursorColumn
 hi link ALEWarningSign  CursorColumn
 
 "===============================================================================
-
 " SESSIONS
-fu! SaveSess()
-  execute 'mksession! ' . getcwd() . '/.session.vim'
-endfunction
 
-fu! RestoreSess()
-  if filereadable(getcwd() . '/.session.vim')
-    execute 'so ' . getcwd() . '/.session.vim'
-    if bufexists(1)
-      for l in range(1, bufnr('$'))
-        if bufwinnr(l) == -1
-          exec 'sbuffer ' . l
+if has('nvim')
+    fu! SaveSess()
+    execute 'mksession! ' . getcwd() . '/.session.nvim'
+    endfunction
+
+    fu! RestoreSess()
+    if filereadable(getcwd() . '/.session.nvim')
+        execute 'so ' . getcwd() . '/.session.nvim'
+        if bufexists(1)
+        for l in range(1, bufnr('$'))
+            if bufwinnr(l) == -1
+            exec 'sbuffer ' . l
+            endif
+        endfor
         endif
-      endfor
     endif
-  endif
-endfunction
+    endfunction
 
-autocmd VimLeave * call SaveSess()
-autocmd VimEnter * nested call RestoreSess()
+    autocmd VimLeave * call SaveSess()
+    autocmd VimEnter * nested call RestoreSess()
+end
 
-set sessionoptions-=options  " Don't save options
+"===============================================================================
+" RSPEC
+map <Leader>rsf :call RunCurrentSpecFile()<CR>
+map <Leader>rs :call RunNearestSpec()<CR>
+map <Leader>rsl :call RunLastSpec()<CR>
+map <Leader>rsa :call RunAllSpecs()<CR>
