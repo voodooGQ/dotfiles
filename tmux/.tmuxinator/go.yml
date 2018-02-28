@@ -1,7 +1,7 @@
-# ~/.tmuxinator/cloud.yml
+# ~/.tmuxinator/go.yml
 
-name: cloud
-root: ~/Code/cloud_assessments/
+name: go
+root: ~/Code/go/
 startup_window: editor
 windows:
   - editor: nvim

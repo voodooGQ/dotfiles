@@ -50,6 +50,9 @@ Plugin 'sjl/gundo.vim'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'Shougo/deoplete.nvim'
+Plugin 'fatih/vim-go'
+Plugin 'slim-template/vim-slim'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()
 filetype on

@@ -163,30 +163,20 @@ nnoremap <leader>a ggVG
 
 " SYNTAX_COLORS
 " Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 " Color overrides
-"let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
 syntax enable
 colorscheme gruvbox
-if &term =~ '256color'
-    " Disable Background Color Erase (BCE) so that color schemes
-    " work properly when Vim is used inside tmux and GNU screen.
-    set t_ut=
-endif
 
 set termguicolors
 
 " twig highlighting
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 
-" Change directory color
-" @TODO: This isn't working in nvim
-hi! link Directory GruvboxPurple
-hi! link Folded Tabline
+hi Search cterm=reverse ctermfg=108 ctermbg=235 gui=reverse guifg=#8ec07c guibg=#282828
 "===============================================================================
 
 " Lion alignment
@@ -293,7 +283,7 @@ let g:rooter_silent_chdir = 1
 
 "===============================================================================
 " LINE_NUMBERS
-set number
+set relativenumber
 set numberwidth=5
 set cursorline
 
@@ -321,35 +311,14 @@ autocmd FileType ruby,eruby
     \ set foldexpr=getline(v:lnum)=~'^\\s*#'
 
 "===============================================================================
-" QUICK_MINIMAL
-
-" Function to quickly turn on a set of minimal settings for really big files.
-" Keep lag low
-function! QuickMinimal()
-    set number!
-    set cursorline!
-    :exec ":ALEDisable"
-    :exec ":GitGutterDisable"
-endfunction
-
-function! ReverseQuickMinimal()
-    set number
-    set cursorline
-    :exec ":ALEEnable"
-    :exec ":GitGutterEnable"
-endfunction
-
-"===============================================================================
 " ALE
 autocmd BufEnter *.erb ALEDisable " Disable on .erb files
 let g:ale_sign_error = "✖"
 let g:ale_sign_warning = "𐌏"
-highlight ALEErrorSign ctermbg=237 ctermfg=red
-highlight ALEWarningSign ctermbg=237 ctermfg=yellow
-hi link ALEError        ErrorMsg
-hi link ALEWarning      Search
-hi link ALEErrorSign    CursorColumn
-hi link ALEWarningSign  CursorColumn
+hi ALEErrorSign ctermbg=237 ctermfg=red guifg=#fb4934 guibg=#3c3836
+hi ALEWarningSign ctermbg=237 ctermfg=yellow guifg=#fabd2f guibg=#3c3836
+hi ALEError guibg=#fb4934 guifg=#000000
+hi ALEWarning guibg=#fabd2f guifg=#000000
 
 "===============================================================================
 " SESSIONS

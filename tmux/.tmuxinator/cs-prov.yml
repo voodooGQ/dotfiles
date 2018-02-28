@@ -1,7 +1,7 @@
 # ~/.tmuxinator/cs-prov.yml
 
 name: cs-prov
-root: ~/Code/cloudspec/cloudspec-providers-gem/
+root: ~/Code/cloudspec/providers/
 startup_window: editor
 windows:
   - editor: nvim

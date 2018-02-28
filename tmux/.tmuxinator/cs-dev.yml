@@ -1,7 +1,7 @@
 # ~/.tmuxinator/cs-dev.yml
 
 name: cs-dev
-root: ~/Code/cloudspec/cloudspec-develop/
+root: ~/Code/cloudspec/develop/
 startup_window: editor
 windows:
   - editor: nvim

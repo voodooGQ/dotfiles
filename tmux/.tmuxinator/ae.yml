@@ -1,7 +1,7 @@
-# ~/.tmuxinator/cs-eng.yml
+# ~/.tmuxinator/ae.yml
 
-name: cs-eng
-root: ~/Code/cloudspec/engine/
+name: ae
+root: ~/Code/assessments-engine/
 startup_window: editor
 windows:
   - editor: nvim

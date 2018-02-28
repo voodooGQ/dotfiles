@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/shanesmith/Code/cloudspec/cloudspec-poc'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/shanesmith/Code/serverspec-integrations/lib/kubernetes/connect'
+let g:netrw_dirhist_2='/Users/shanesmith/Code/serverspec-integrations/lib/kubernetes'
+let g:netrw_dirhist_3='/Users/shanesmith/Code/serverspec-integrations/lib'
+let g:netrw_dirhist_4='/Users/shanesmith/Code/serverspec-integrations'
+let g:netrw_dirhist_5='/Users/shanesmith/Code/serverspec-integrations/lib/kubernetes/connect'
+let g:netrw_dirhist_6='/Users/shanesmith/Code/serverspec-integrations/lib/openshift/connect'

@@ -1,7 +1,7 @@
-# ~/.tmuxinator/cs-eng.yml
+# ~/.tmuxinator/react.yml
 
-name: cs-eng
-root: ~/Code/cloudspec/engine/
+name: react
+root: ~/Code/react/
 startup_window: editor
 windows:
   - editor: nvim

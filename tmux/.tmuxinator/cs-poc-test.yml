@@ -1,8 +1,0 @@
-# ~/.tmuxinator/cs-poc-test.yml
-
-name: cs-poc-test
-root: ~/Code/cloudspec/cloudspec-poc/
-startup_window: guard
-windows:
-  - guard: bundle exec guard
-  - one-off: #empty
