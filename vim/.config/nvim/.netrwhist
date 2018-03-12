@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/shanesmith/.rbenv/versions/2.3.2/lib/ruby/gems/2.3.0/gems/serverspec-2.41.3'
-let g:netrw_dirhist_2='/Users/shanesmith/.rbenv/versions/2.3.2/lib/ruby/gems/2.3.0/gems/serverspec-2.41.3/lib'
-let g:netrw_dirhist_3='/Users/shanesmith/.rbenv/versions/2.3.2/lib/ruby/gems/2.3.0/gems/serverspec-2.41.3'
-let g:netrw_dirhist_4='/Users/shanesmith/.rbenv/versions/2.3.2/lib/ruby/gems/2.3.0/gems'

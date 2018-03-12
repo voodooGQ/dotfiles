@@ -8,4 +8,4 @@ vim/.vim/undodir/*
 vim/.vim/.netrwhist
 !vim/.vim/view/.gitkeep
 vim/.vim/view/*
-
+.netrwhist
