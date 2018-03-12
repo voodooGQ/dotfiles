@@ -27,19 +27,3 @@ function extract {
     fi
   fi
 }
-
-function gitroll {
-  URL=https://api.rollbar.com/api/1/deploy/
-  ACCESS_TOKEN=c48013b195454dbb831f5a70affbf393
-  ENVIRONMENT=production
-
-  REVISION=`git log -n 1 --pretty=format:"%H"`
-  AUTHOR="`git show --pretty='%an' ${REVISION}  | grep '.'`"
-  COMMENT="`git show --pretty='%b' ${REVISION} | grep '.'`"
-
-
-  curl_cmd="curl ${URL} -F access_token=$ACCESS_TOKEN -F environment=$ENVIRONMENT -F revision=$REVISION -F local_username='${AUTHOR}' -F comment='${COMMENT}'"
-
-  eval "$curl_cmd"
-}
-

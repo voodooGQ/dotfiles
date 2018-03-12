@@ -1,7 +1,7 @@
 # ~/.tmuxinator/docker.yml
 
 name: docker
-root: ~/Code/docker_tests
+root: ~/Code/docker
 startup_window: editor
 windows:
   - editor: nvim

@@ -64,6 +64,8 @@ set matchtime=2
 "set formatoptions+=j
 set nojoinspaces
 
+set shell=/usr/local/bin/zsh
+
 if !has('nvim')
     set nocompatible
     set backspace=indent,eol,start
@@ -159,6 +161,10 @@ nmap <Leader>u :GundoToggle<CR>
 
 " <leader>a selects the whole buffer
 nnoremap <leader>a ggVG
+" <leader>e clears previous search highlighting
+nnoremap <silent> <leader>e :noh<CR>
+" <leader>w cds to the current directory in netrw
+nnoremap <silent> <leader>w :cd %<CR>
 "===============================================================================
 
 " SYNTAX_COLORS
@@ -176,7 +182,10 @@ set termguicolors
 " twig highlighting
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 
-hi Search cterm=reverse ctermfg=108 ctermbg=235 gui=reverse guifg=#8ec07c guibg=#282828
+hi Folded guibg=#333333 guifg=#333333
+hi CursorLine guibg=#333333
+hi Comment guifg=#555555
+hi Search ctermfg=108 ctermbg=235 guifg=#a89984 guibg=#282828
 "===============================================================================
 
 " Lion alignment
@@ -283,6 +292,7 @@ let g:rooter_silent_chdir = 1
 
 "===============================================================================
 " LINE_NUMBERS
+set number
 set relativenumber
 set numberwidth=5
 set cursorline

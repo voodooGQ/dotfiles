@@ -1,0 +1,8 @@
+# ~/.tmuxinator/nationbuilder.yml
+
+name: nationbuilder
+root: ~/Code/archive/sandbox/nationbuilder
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty
