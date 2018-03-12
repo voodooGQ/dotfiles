@@ -82,47 +82,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
- #if [[ -n $SSH_CONNECTION ]]; then
-   #export EDITOR='vi'
- #else
-export EDITOR='/usr/local/bin/nvim'
-export VISUAL='/usr/local/bin/nvim'
- #fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
 source ~/.aliases
+source ~/.exports
+source ~/.zsh_path
 
-export LSCOLORS=ExfxBxDxCxEgEdxbxgxcad
-export FZF_DEFAULT_COMMAND='rg --files --follow --glob "!.git/*"'
-export GOPATH=$HOME/Code/go
-export GOROOT=/usr/local/opt/go/libexec
-#export PATH=$PATH:$GOPATH/bin
-#export PATH=$PATH:$GOROOT/bin
-#export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:.nvm/versions/node/v5.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
-export NVM_DIR="$HOME/.nvm"
-    . "/usr/local/opt/nvm/nvm.sh"
-path+=("$GOPATH/bin")
-path+=("$GOROOT/bin")
-path+=("$HOME/.rbenv/shims")
-path+=("$HOME/.rbenv/bin")
-path+=(".nvm/versions/node/v5.0.0/bin")
-path+=("/usr/local/sbin")
-path+=("/usr/local/bin")
-path+=("/usr/bin")
-path+=("/usr/sbin")
-path+=("/sbin")
-export PATH
 eval "$(rbenv init -)"

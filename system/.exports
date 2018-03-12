@@ -1,18 +1,20 @@
-# Main Bin
-export PATH="/usr/local/bin:$PATH"
-# SBIN
-export PATH="/usr/local/sbin:$PATH"
+export LANG=en_US.UTF-8
 
 # Mac LS Colors
 #http://superuser.com/questions/417805/how-to-configure-the-ansi-colors-of-the-command-line-terminal
 export CLICOLOR=1
 export LSCOLORS=ExfxBxDxCxEgEdxbxgxcad
 
-export VISUAL=vim
+export VISUAL='/usr/local/bin/nvim'
 export EDITOR="$VISUAL"
 
-export NVM_DIR="/Users/ssmith/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+    . "/usr/local/opt/nvm/nvm.sh"
+
+export FZF_DEFAULT_COMMAND='rg --files --follow --glob "!.git/*"'
+
+export GOPATH=$HOME/Code/go
+export GOROOT=/usr/local/opt/go/libexec
 
 # Private export keys
 [ -s "$HOME/.private_exports" ] && source "$HOME/.private_exports"
