@@ -1,6 +1,6 @@
 # ~/.tmuxinator/gotreact.yml
 name: gotreact
-root: ~/Code/archive/gotreact
+root: ~/Code/js/_react/gotreact
 startup_window: editor
 windows:
   - editor: nvim

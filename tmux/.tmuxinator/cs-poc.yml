@@ -1,7 +1,7 @@
 # ~/.tmuxinator/cs-poc.yml
 
 name: cs-poc
-root: ~/Code/cloudspec/poc/
+root: ~/Code/linuxacademy/cloudspec/poc/
 startup_window: editor
 windows:
   - editor: nvim

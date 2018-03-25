@@ -1,7 +1,7 @@
 # ~/.tmuxinator/twitter-clone.yml
 
 name: twitter-clone
-root: ~/Code/twitter-clone
+root: ~/Code/ruby/_rails/twitter-clone
 startup_window: editor
 windows:
   - editor: nvim

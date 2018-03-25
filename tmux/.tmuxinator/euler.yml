@@ -1,7 +1,7 @@
 # ~/.tmuxinator/euler.yml
 
 name: euler
-root: ~/Code/archive/euler
+root: ~/Code/ruby/euler
 startup_window: editor
 windows:
   - editor: nvim

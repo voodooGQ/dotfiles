@@ -1,35 +1,35 @@
 # ~/.tmuxinator/cloudspec.yml
 
 name: cloudspec
-root: ~/Code/cloudspec
+root: ~/Code/linuxacademy/cloudspec
 
 windows:
   - intgeration:
-      root: ~/Code/cloudspec/integration
+      root: ~/Code/linuxacademy/cloudspec/integration
       layout: 5d52,278x73,0,0[278x64,0,0,4,278x8,0,65,12]]
       panes:
         - nvim
         - guard
   - engine:
-      root: ~/Code/cloudspec/engine
+      root: ~/Code/linuxacademy/cloudspec/engine
       layout: 5d52,278x73,0,0[278x64,0,0,4,278x8,0,65,12]]
       panes:
         - nvim
         - guard
   - providers:
-      root: ~/Code/cloudspec/providers
+      root: ~/Code/linuxacademy/cloudspec/providers
       layout: 5d52,278x73,0,0[278x64,0,0,4,278x8,0,65,12]]
       panes:
         - nvim
         - guard
   - support:
-      root: ~/Code/cloudspec/support
+      root: ~/Code/linuxacademy/cloudspec/support
       layout: 5d52,278x73,0,0[278x64,0,0,4,278x8,0,65,12]]
       panes:
         - nvim
         - guard
   - develop:
-      root: ~/Code/cloudspec/develop
+      root: ~/Code/linuxacademy/cloudspec/develop
       layout: 5d52,278x73,0,0[278x64,0,0,4,278x8,0,65,12]]
       panes:
         - nvim

@@ -1,7 +1,7 @@
 # ~/.tmuxinator/dbferuby.yml
 
 name: dbferuby
-root: ~/Code/dbferuby/
+root: ~/Code/ruby/dbferuby/
 startup_window: editor
 windows:
   - editor: nvim

@@ -1,7 +1,7 @@
 # ~/.tmuxinator/car-wash.yml
 
 name: car-wash
-root: ~/Code/archive/car-wash
+root: ~/Code/ruby/car-wash
 startup_window: editor
 windows:
   - editor: nvim

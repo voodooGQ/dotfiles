@@ -1,7 +1,7 @@
 # ~/.tmuxinator/railsblog.yml
 
 name: railsblog
-root: ~/Code/archive/rails/blog
+root: ~/Code/ruby/_rails/blog
 startup_window: editor
 windows:
   - editor:

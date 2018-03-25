@@ -1,7 +1,7 @@
 # ~/.tmuxinator/logikcull.yml
 
 name: swiftype
-root: ~/Code/sandbox/swiftype
+root: ~/Code/challenges/swiftype
 startup_window: editor
 windows:
   - editor: nvim
