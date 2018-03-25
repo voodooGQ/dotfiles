@@ -64,6 +64,7 @@ plugins=(
   colored-man-pages
   colorize
   docker
+  docker-compose
   dotenv
   gem
   git

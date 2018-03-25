@@ -165,6 +165,8 @@ nnoremap <leader>a ggVG
 nnoremap <silent> <leader>e :noh<CR>
 " <leader>w cds to the current directory in netrw
 nnoremap <silent> <leader>w :cd %<CR>
+
+nnoremap <silent> <leader>d :Dash<CR>
 "===============================================================================
 
 " SYNTAX_COLORS

@@ -8,13 +8,13 @@ export LSCOLORS=ExfxBxDxCxEgEdxbxgxcad
 export VISUAL='/usr/local/bin/nvim'
 export EDITOR="$VISUAL"
 
-export NVM_DIR="$HOME/.nvm"
-    . "/usr/local/opt/nvm/nvm.sh"
-
 export FZF_DEFAULT_COMMAND='rg --files --follow --glob "!.git/*"'
 
 export GOPATH=$HOME/Code/go
 export GOROOT=/usr/local/opt/go/libexec
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Private export keys
 [ -s "$HOME/.private_exports" ] && source "$HOME/.private_exports"

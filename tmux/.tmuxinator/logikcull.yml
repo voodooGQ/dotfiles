@@ -1,0 +1,8 @@
+# ~/.tmuxinator/logikcull.yml
+
+name: logikcull
+root: ~/Code/sandbox/rails/logikcull
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty

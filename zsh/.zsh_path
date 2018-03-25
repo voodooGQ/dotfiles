@@ -1,8 +1,10 @@
+# Path for zsh config
 path+=("$GOPATH/bin")
 path+=("$GOROOT/bin")
 path+=("$HOME/.rbenv/shims")
 path+=("$HOME/.rbenv/bin")
 path+=(".nvm/versions/node/v5.0.0/bin")
+path+=("$HOME/bin")
 path+=("/usr/local/sbin")
 path+=("/usr/local/bin")
 path+=("/usr/bin")
