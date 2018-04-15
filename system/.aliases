@@ -8,9 +8,11 @@ alias weather="curl wttr.in"
 alias vim=nvim
 alias vi=nvim
 alias cat="pygmentize -g"
+alias c="clear"
 
 # Ruby/Rails
 alias brspec="be rspec"
+alias rbp="rails_best_practices"
 
 # IP Helpers
 alias extip="dig +short myip.opendns.com @resolver1.opendns.com"

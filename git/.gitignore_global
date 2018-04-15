@@ -10,6 +10,8 @@ railways.cache
 .session.vim
 .session.nvim
 tags
+tags.lock
+tags.temp
 coverletters
 
 Gemfile.shane

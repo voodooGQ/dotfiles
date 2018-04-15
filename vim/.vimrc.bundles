@@ -46,13 +46,14 @@ Plugin 'w0rp/ale'
 Plugin 'tommcdo/vim-lion'
 Plugin 'morhetz/gruvbox'
 Plugin 'brooth/far.vim'
-Plugin 'sjl/gundo.vim'
+Plugin 'mbbill/undotree'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'fatih/vim-go'
 Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'ryanoasis/vim-devicons'
 
 call vundle#end()
 filetype on

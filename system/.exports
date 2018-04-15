@@ -1,5 +1,7 @@
 export LANG=en_US.UTF-8
 
+export NET=192.168.1
+
 # Mac LS Colors
 #http://superuser.com/questions/417805/how-to-configure-the-ansi-colors-of-the-command-line-terminal
 export CLICOLOR=1

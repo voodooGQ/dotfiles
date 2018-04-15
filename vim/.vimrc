@@ -157,7 +157,7 @@ nmap <silent> <Leader>l :tabnext<CR>
 nmap <silent> <Leader>c :tabnew<CR>
 nmap <silent> <Leader>x :tabclose<CR>
 
-nmap <Leader>u :GundoToggle<CR>
+nmap <Leader>u :UndotreeToggle<CR>
 
 " <leader>a selects the whole buffer
 nnoremap <leader>a ggVG
@@ -335,27 +335,27 @@ hi ALEWarning guibg=#fabd2f guifg=#000000
 "===============================================================================
 " SESSIONS
 
-if has('nvim')
-    fu! SaveSess()
-    execute 'mksession! ' . getcwd() . '/.session.nvim'
-    endfunction
+"if has('nvim')
+    "fu! SaveSess()
+    "execute 'mksession! ' . getcwd() . '/.session.nvim'
+    "endfunction
 
-    fu! RestoreSess()
-    if filereadable(getcwd() . '/.session.nvim')
-        execute 'so ' . getcwd() . '/.session.nvim'
-        if bufexists(1)
-        for l in range(1, bufnr('$'))
-            if bufwinnr(l) == -1
-            exec 'sbuffer ' . l
-            endif
-        endfor
-        endif
-    endif
-    endfunction
+    "fu! RestoreSess()
+    "if filereadable(getcwd() . '/.session.nvim')
+        "execute 'so ' . getcwd() . '/.session.nvim'
+        "if bufexists(1)
+        "for l in range(1, bufnr('$'))
+            "if bufwinnr(l) == -1
+            "exec 'sbuffer ' . l
+            "endif
+        "endfor
+        "endif
+    "endif
+    "endfunction
 
-    autocmd VimLeave * call SaveSess()
-    autocmd VimEnter * nested call RestoreSess()
-end
+    "autocmd VimLeave * call SaveSess()
+    "autocmd VimEnter * nested call RestoreSess()
+"end
 
 "===============================================================================
 " RSPEC
