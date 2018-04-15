@@ -8,6 +8,5 @@ vim/.vim/undodir/*
 vim/.vim/.netrwhist
 !vim/.vim/view/.gitkeep
 vim/.vim/view/*
-zsh/.oh-my-zsh/*
-!zsh/.oh-my-zsh/themes/ssmith.zsh-theme
+zsh/.oh-my-zsh
 .netrwhist
