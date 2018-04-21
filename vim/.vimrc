@@ -1,7 +1,8 @@
 " LOAD_VIM_PLUGINS
-"
+
 filetype plugin on
 filetype plugin indent on
+
 " Load plugins
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
