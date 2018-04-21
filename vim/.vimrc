@@ -176,9 +176,14 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 " Color overrides
-set background=dark
+"set background=dark
 syntax enable
-colorscheme gruvbox
+"colorscheme gruvbox
+
+if filereadable(expand("~/.vimrc_background"))
+    let base16colorspace=256
+    source ~/.vimrc_background
+endif
 
 set termguicolors
 
@@ -364,4 +369,7 @@ map <Leader>rsf :call RunCurrentSpecFile()<CR>
 map <Leader>rs :call RunNearestSpec()<CR>
 map <Leader>rsl :call RunLastSpec()<CR>
 map <Leader>rsa :call RunAllSpecs()<CR>
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
+
+set guicursor=a:blinkon0
+
+"let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
