@@ -1,5 +1,5 @@
 favorites=exo-file-manager.desktop,firefox.desktop,terminator.desktop
-recent=terminator.desktop,exo-terminal-emulator.desktop,firefox.desktop,exo-web-browser.desktop,xfce-keyboard-settings.desktop,panel-preferences.desktop,xfce-workspaces-settings.desktop
+recent=gnome-calculator.desktop,terminator.desktop,exo-terminal-emulator.desktop,firefox.desktop,exo-web-browser.desktop,xfce-keyboard-settings.desktop,panel-preferences.desktop,xfce-workspaces-settings.desktop
 button-title=Applications Menu
 button-icon=xubuntu-logo-menu
 button-single-row=false

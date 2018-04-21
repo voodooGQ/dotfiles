@@ -339,37 +339,10 @@ hi ALEError guibg=#fb4934 guifg=#000000
 hi ALEWarning guibg=#fabd2f guifg=#000000
 
 "===============================================================================
-" SESSIONS
-
-"if has('nvim')
-    "fu! SaveSess()
-    "execute 'mksession! ' . getcwd() . '/.session.nvim'
-    "endfunction
-
-    "fu! RestoreSess()
-    "if filereadable(getcwd() . '/.session.nvim')
-        "execute 'so ' . getcwd() . '/.session.nvim'
-        "if bufexists(1)
-        "for l in range(1, bufnr('$'))
-            "if bufwinnr(l) == -1
-            "exec 'sbuffer ' . l
-            "endif
-        "endfor
-        "endif
-    "endif
-    "endfunction
-
-    "autocmd VimLeave * call SaveSess()
-    "autocmd VimEnter * nested call RestoreSess()
-"end
-
-"===============================================================================
 " RSPEC
 map <Leader>rsf :call RunCurrentSpecFile()<CR>
 map <Leader>rs :call RunNearestSpec()<CR>
 map <Leader>rsl :call RunLastSpec()<CR>
 map <Leader>rsa :call RunAllSpecs()<CR>
 
-set guicursor=a:blinkon0
-
-"let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
+set guicursor=
