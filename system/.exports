@@ -1,5 +1,8 @@
 export LANG=en_US.UTF-8
 
+#https://github.com/neovim/neovim/issues/5990
+export VTE_VERSION="100"
+
 export NET=192.168.1
 
 # Mac LS Colors

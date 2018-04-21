@@ -64,7 +64,7 @@ set matchtime=2
 "set formatoptions+=j
 set nojoinspaces
 
-set shell=/usr/local/bin/zsh
+set shell=/usr/bin/zsh
 
 if !has('nvim')
     set nocompatible
@@ -363,3 +363,4 @@ map <Leader>rsf :call RunCurrentSpecFile()<CR>
 map <Leader>rs :call RunNearestSpec()<CR>
 map <Leader>rsl :call RunLastSpec()<CR>
 map <Leader>rsa :call RunAllSpecs()<CR>
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
