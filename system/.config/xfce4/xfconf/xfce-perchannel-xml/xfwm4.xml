@@ -4,8 +4,8 @@
   <property name="general" type="empty">
     <property name="activate_action" type="empty"/>
     <property name="box_move" type="empty"/>
-    <property name="box_resize" type="empty"/>
-    <property name="button_layout" type="empty"/>
+    <property name="box_resize" type="bool" value="true"/>
+    <property name="button_layout" type="string" value="CHM|"/>
     <property name="button_offset" type="empty"/>
     <property name="button_spacing" type="empty"/>
     <property name="click_to_focus" type="empty"/>
@@ -35,11 +35,11 @@
     <property name="show_frame_shadow" type="empty"/>
     <property name="show_popup_shadow" type="empty"/>
     <property name="snap_to_border" type="empty"/>
-    <property name="snap_to_windows" type="empty"/>
-    <property name="snap_width" type="empty"/>
-    <property name="theme" type="empty"/>
+    <property name="snap_to_windows" type="bool" value="false"/>
+    <property name="snap_width" type="int" value="33"/>
+    <property name="theme" type="string" value="Sierra-dark"/>
     <property name="title_alignment" type="empty"/>
-    <property name="title_font" type="empty"/>
+    <property name="title_font" type="string" value="SpaceMono Nerd Font 9"/>
     <property name="title_horizontal_offset" type="empty"/>
     <property name="title_shadow_active" type="empty"/>
     <property name="title_shadow_inactive" type="empty"/>
@@ -47,7 +47,7 @@
     <property name="title_vertical_offset_inactive" type="empty"/>
     <property name="urgent_blink" type="empty"/>
     <property name="use_compositing" type="bool" value="false"/>
-    <property name="workspace_count" type="int" value="4"/>
+    <property name="workspace_count" type="int" value="1"/>
     <property name="workspace_names" type="empty"/>
     <property name="wrap_resistance" type="empty"/>
     <property name="wrap_windows" type="empty"/>
@@ -75,8 +75,8 @@
     <property name="titleless_maximize" type="bool" value="false"/>
     <property name="toggle_workspaces" type="bool" value="false"/>
     <property name="unredirect_overlays" type="bool" value="true"/>
-    <property name="wrap_cycle" type="bool" value="true"/>
-    <property name="wrap_layout" type="bool" value="true"/>
+    <property name="wrap_cycle" type="bool" value="false"/>
+    <property name="wrap_layout" type="bool" value="false"/>
     <property name="zoom_desktop" type="bool" value="true"/>
   </property>
 </channel>

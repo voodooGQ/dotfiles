@@ -3,21 +3,21 @@
 <channel name="xfce4-panel" version="1.0">
   <property name="panels" type="array">
     <value type="int" value="0"/>
-    <value type="int" value="1"/>
     <property name="panel-0" type="empty">
       <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
+        <value type="int" value="5"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
-        <value type="int" value="16"/>
+        <value type="int" value="10"/>
+        <value type="int" value="6"/>
         <value type="int" value="11"/>
         <value type="int" value="4"/>
         <value type="int" value="7"/>
         <value type="int" value="8"/>
-        <value type="int" value="12"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="background-alpha" type="uint" value="80"/>
@@ -30,25 +30,6 @@
       <property name="autohide-behavior" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
       <property name="nrows" type="uint" value="1"/>
-    </property>
-    <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=8;x=96;y=1055"/>
-      <property name="size" type="uint" value="18"/>
-      <property name="nrows" type="uint" value="1"/>
-      <property name="length" type="uint" value="100"/>
-      <property name="position-locked" type="bool" value="true"/>
-      <property name="plugin-ids" type="array">
-        <value type="int" value="9"/>
-        <value type="int" value="5"/>
-      </property>
-      <property name="autohide-behavior" type="uint" value="0"/>
-      <property name="background-alpha" type="uint" value="15"/>
-      <property name="background-style" type="uint" value="0"/>
-      <property name="disable-struts" type="bool" value="false"/>
-      <property name="enter-opacity" type="uint" value="100"/>
-      <property name="leave-opacity" type="uint" value="100"/>
-      <property name="mode" type="uint" value="0"/>
-      <property name="length-adjust" type="bool" value="true"/>
     </property>
     <property name="panel-2" type="empty">
       <property name="autohide-behavior" type="uint" value="0"/>
@@ -109,12 +90,16 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="size-max" type="uint" value="22"/>
       <property name="names-visible" type="array">
-        <value type="string" value="network"/>
         <value type="string" value="networkmanager applet"/>
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="blueman-applet"/>
         <value type="string" value="ibus panel"/>
+        <value type="string" value="network"/>
+        <value type="string" value="synapse"/>
+        <value type="string" value="zeal"/>
+        <value type="string" value="blueman-applet"/>
+        <value type="string" value="synergy"/>
         <value type="string" value="update-notifier"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="albert"/>
       </property>
       <property name="items" type="array">
         <value type="string" value="14418443291.desktop"/>
@@ -130,7 +115,7 @@
       <property name="digital-format" type="string" value="%a, %d %b %H:%M"/>
     </property>
     <property name="plugin-8" type="string" value="clock">
-      <property name="digital-format" type="string" value="%d %b, %H:%M"/>
+      <property name="digital-format" type="string" value=""/>
       <property name="show-frame" type="bool" value="true"/>
       <property name="size-max" type="uint" value="22"/>
       <property name="names-visible" type="array">
@@ -140,22 +125,7 @@
       <property name="expand" type="bool" value="false"/>
       <property name="mode" type="uint" value="2"/>
       <property name="style" type="uint" value="0"/>
-      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
-    </property>
-    <property name="plugin-9" type="string" value="pager">
-      <property name="digital-format" type="string" value="%a %b %d, %I:%M %p"/>
-      <property name="mode" type="uint" value="2"/>
-      <property name="show-frame" type="bool" value="true"/>
-      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
-      <property name="expand" type="bool" value="false"/>
-      <property name="items" type="array">
-        <value type="string" value="14418417141.desktop"/>
-      </property>
-      <property name="style" type="uint" value="1"/>
-      <property name="miniature-view" type="bool" value="true"/>
-      <property name="rows" type="uint" value="1"/>
-      <property name="show-names" type="bool" value="false"/>
-      <property name="workspace-scrolling" type="bool" value="false"/>
+      <property name="tooltip-format" type="string" value=""/>
     </property>
     <property name="plugin-11" type="string" value="power-manager-plugin">
       <property name="flat-buttons" type="bool" value="false"/>
@@ -178,19 +148,6 @@
       <property name="show-frame" type="bool" value="true"/>
       <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
     </property>
-    <property name="plugin-12" type="string" value="separator">
-      <property name="style" type="uint" value="1"/>
-      <property name="expand" type="bool" value="true"/>
-      <property name="items" type="array">
-        <value type="string" value="14417693472.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-16" type="string" value="systemload">
-      <property name="button-title" type="string" value="Start"/>
-      <property name="items" type="array">
-        <value type="string" value="14294989532.desktop"/>
-      </property>
-    </property>
     <property name="plugin-5" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="15244105291.desktop"/>
@@ -212,13 +169,6 @@
         <value type="string" value="com.canonical.indicator.messages"/>
       </property>
     </property>
-    <property name="plugin-10" type="string" value="separator">
-      <property name="items" type="array">
-        <value type="string" value="14418417141.desktop"/>
-      </property>
-      <property name="expand" type="bool" value="false"/>
-      <property name="style" type="uint" value="0"/>
-    </property>
     <property name="plugin-13" type="string" value="showdesktop">
       <property name="miniature-view" type="bool" value="true"/>
       <property name="rows" type="uint" value="1"/>
@@ -239,34 +189,6 @@
       <property name="style" type="uint" value="0"/>
       <property name="switch-workspace-on-unminimize" type="bool" value="true"/>
       <property name="window-scrolling" type="bool" value="true"/>
-    </property>
-    <property name="plugin-6" type="string" value="separator">
-      <property name="items" type="array">
-        <value type="string" value="14418443623.desktop"/>
-      </property>
-      <property name="show-frame" type="bool" value="true"/>
-      <property name="size-max" type="uint" value="22"/>
-      <property name="names-visible" type="array">
-        <value type="string" value="network"/>
-        <value type="string" value="blueman-applet"/>
-      </property>
-      <property name="align-left" type="bool" value="false"/>
-      <property name="blacklist" type="array">
-        <value type="string" value="libappmenu.so"/>
-      </property>
-      <property name="expand" type="bool" value="false"/>
-      <property name="mode-whitelist" type="bool" value="false"/>
-      <property name="single-row" type="bool" value="false"/>
-      <property name="style" type="uint" value="0"/>
-      <property name="known-indicators" type="array">
-        <value type="string" value="libapplication.so"/>
-        <value type="string" value="com.canonical.indicator.sound"/>
-        <value type="string" value="com.canonical.indicator.datetime"/>
-        <value type="string" value="com.canonical.indicator.keyboard"/>
-        <value type="string" value="com.canonical.indicator.bluetooth"/>
-        <value type="string" value="com.canonical.indicator.power"/>
-        <value type="string" value="com.canonical.indicator.messages"/>
-      </property>
     </property>
     <property name="plugin-14" type="string" value="separator">
       <property name="expand" type="bool" value="false"/>
@@ -339,6 +261,10 @@
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
     </property>
+    <property name="plugin-6" type="string" value="separator">
+      <property name="style" type="uint" value="1"/>
+    </property>
+    <property name="plugin-10" type="string" value="i3-workspaces"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>

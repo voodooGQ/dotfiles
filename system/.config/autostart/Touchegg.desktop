@@ -3,6 +3,5 @@ Encoding=UTF-8
 Name=touchegg
 Comment=TouchEgg Gestures
 Exec=touchegg &
-Terminal=true
 Type=Application
 OnlyShowIn=XFCE;

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=xmodmap
+Comment=Update keybindings
+Exec=/bin/bash -c "sleep 20; /usr/bin/xmodmap /home/$USER/.Xmodmap"
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false
+

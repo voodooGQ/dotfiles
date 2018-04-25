@@ -1,3 +1,3 @@
 # !/bin/sh
 
-[ -f ~/.xmodmaprc ] && xmodmap ~/.xmodmaprc
+[ -f ~/.Xmodmap ] && xmodmap ~/.Xmodmap
