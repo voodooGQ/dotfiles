@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Private Internet Access
+Exec=/opt/pia/run.sh --startup
+X-GNOME-Autostart-enabled=true
+Icon=/opt/pia/frontend/img/icon_512x512.png

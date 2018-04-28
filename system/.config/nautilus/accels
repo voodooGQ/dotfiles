@@ -109,6 +109,7 @@
 ; (gtk_accel_path "<Actions>/CanvasViewActions/Reversed Order" "")
 ; (gtk_accel_path "<Actions>/DirViewActions/OpenItemLocation" "<Primary><Alt>o")
 ; (gtk_accel_path "<Actions>/DirViewActions/LocationOpenInNewTab" "")
+; (gtk_accel_path "<Actions>/ExtensionsMenuGroup/TerminalNautilus:OpenFolderLocal" "")
 ; (gtk_accel_path "<Actions>/ShellActions/View Grid" "<Primary>2")
 ; (gtk_accel_path "<Actions>/DirViewActions/Eject Volume" "")
 ; (gtk_accel_path "<Actions>/DirViewActions/Stop Volume" "")

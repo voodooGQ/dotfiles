@@ -30,6 +30,12 @@
       <property name="autohide-behavior" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
       <property name="nrows" type="uint" value="1"/>
+      <property name="background-color" type="array">
+        <value type="uint" value="46607"/>
+        <value type="uint" value="4130"/>
+        <value type="uint" value="4130"/>
+        <value type="uint" value="65535"/>
+      </property>
     </property>
     <property name="panel-2" type="empty">
       <property name="autohide-behavior" type="uint" value="0"/>
@@ -68,7 +74,7 @@
       <property name="show-tooltips" type="bool" value="true"/>
     </property>
     <property name="plugin-2" type="string" value="tasklist">
-      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="flat-buttons" type="bool" value="false"/>
       <property name="show-button-type" type="int" value="1"/>
       <property name="grouping" type="uint" value="0"/>
       <property name="include-all-monitors" type="bool" value="true"/>
@@ -78,7 +84,7 @@
       <property name="show-labels" type="bool" value="true"/>
       <property name="show-only-minimized" type="bool" value="false"/>
       <property name="show-wireframes" type="bool" value="false"/>
-      <property name="sort-order" type="uint" value="1"/>
+      <property name="sort-order" type="uint" value="4"/>
       <property name="switch-workspace-on-unminimize" type="bool" value="true"/>
       <property name="window-scrolling" type="bool" value="true"/>
     </property>
@@ -88,10 +94,11 @@
     </property>
     <property name="plugin-4" type="string" value="systray">
       <property name="show-frame" type="bool" value="false"/>
-      <property name="size-max" type="uint" value="22"/>
+      <property name="size-max" type="uint" value="20"/>
       <property name="names-visible" type="array">
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="ibus panel"/>
+        <value type="string" value="pia_nw"/>
         <value type="string" value="network"/>
         <value type="string" value="synapse"/>
         <value type="string" value="zeal"/>
@@ -125,7 +132,7 @@
       <property name="expand" type="bool" value="false"/>
       <property name="mode" type="uint" value="2"/>
       <property name="style" type="uint" value="0"/>
-      <property name="tooltip-format" type="string" value=""/>
+      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
     </property>
     <property name="plugin-11" type="string" value="power-manager-plugin">
       <property name="flat-buttons" type="bool" value="false"/>
@@ -263,6 +270,7 @@
     </property>
     <property name="plugin-6" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
+      <property name="expand" type="bool" value="false"/>
     </property>
     <property name="plugin-10" type="string" value="i3-workspaces"/>
   </property>

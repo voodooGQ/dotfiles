@@ -106,6 +106,9 @@
 			<Filename>xfpanel-switch.desktop</Filename>
 			<Filename>xfce4-terminal.desktop</Filename>
 			<Filename>debian-xterm.desktop</Filename>
+			<Filename>albert.desktop</Filename>
+			<Filename>nitrogen.desktop</Filename>
+			<Filename>synapse.desktop</Filename>
 			<Merge type="files" />
 		</Layout>
 	</Menu>
@@ -116,6 +119,7 @@
 			<Merge type="menus" />
 			<Filename>python2.7.desktop</Filename>
 			<Filename>python3.5.desktop</Filename>
+			<Filename>zeal.desktop</Filename>
 			<Merge type="files" />
 		</Layout>
 	</Menu>
@@ -217,6 +221,8 @@
 			<Filename>nm-applet.desktop</Filename>
 			<Filename>nautilus-autorun-software.desktop</Filename>
 			<Filename>gcr-viewer.desktop</Filename>
+			<Filename>i3.desktop</Filename>
+			<Filename>pia_manager.desktop</Filename>
 			<Merge type="files" />
 		</Layout>
 	</Menu>
@@ -362,5 +368,8 @@
 		<Filename>xfhelp4.desktop</Filename>
 		<Filename>xfce4-about.desktop</Filename>
 		<Filename>xfce4-session-logout.desktop</Filename>
+		<Filename>exo-file-manager.desktop</Filename>
+		<Filename>xfce4-run.desktop</Filename>
+		<Filename>exo-terminal-emulator.desktop</Filename>
 	</Layout>
 </Menu>

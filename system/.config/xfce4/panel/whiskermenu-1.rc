@@ -1,5 +1,5 @@
 favorites=exo-file-manager.desktop,firefox.desktop,terminator.desktop
-recent=xfce-keyboard-settings.desktop,xfce-session-settings.desktop,firefox.desktop,xfce-wmtweaks-settings.desktop,xfce-wm-settings.desktop,xfce-ui-settings.desktop,lightdm-gtk-greeter-settings.desktop,gtk-theme-config.desktop,xfce-mouse-settings.desktop,panel-preferences.desktop
+recent=nm-connection-editor.desktop,menulibre.desktop,xfce-keyboard-settings.desktop,xfce-backdrop-settings.desktop,lightdm-gtk-greeter-settings.desktop,exo-file-manager.desktop,xfce-wm-settings.desktop,thunar-volman-settings.desktop,xfce-session-settings.desktop
 button-title=Applications Menu
 button-icon=view-services-scripted-amarok
 button-single-row=false
