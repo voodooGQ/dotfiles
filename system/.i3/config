@@ -17,7 +17,7 @@ font pango:monospace 8
 
 gaps inner 5
 gaps outer 5
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 2
 new_window 1pixel
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
