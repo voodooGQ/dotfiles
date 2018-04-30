@@ -57,3 +57,4 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 alias mux='tmuxinator'
+alias mm='mux mission-control'

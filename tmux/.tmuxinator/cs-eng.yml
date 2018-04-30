@@ -1,8 +1,0 @@
-# ~/.tmuxinator/cs-eng.yml
-
-name: cs-eng
-root: ~/Code/linuxacademy/cloudspec/engine/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

@@ -1,8 +1,0 @@
-# ~/.tmuxinator/ssi.yml
-
-name: ssi
-root: ~/Code/linuxacademy/serverspec-integrations/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

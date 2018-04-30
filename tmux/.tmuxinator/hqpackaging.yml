@@ -1,9 +1,0 @@
-# ~/.tmuxinator/hqpackaging.yml
-
-name: hqpackaging
-root: ~/Code/php/_wordpress/hqpackaging
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty
-  - ssh: ssh hqpagcom@hqpackaging.com

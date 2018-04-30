@@ -1,8 +1,0 @@
-# ~/.tmuxinator/cs-int.yml
-
-name: cs-int
-root: ~/Code/linuxacademy/cloudspec/integration/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

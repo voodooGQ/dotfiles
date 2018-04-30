@@ -1,8 +1,0 @@
-# ~/.tmuxinator/github2.yml
-
-name: github2
-root: ~/Code/ruby/_rails/github2/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

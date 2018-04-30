@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Sierra-dark"/>
-    <property name="IconThemeName" type="string" value="MacOSX-dark"/>
+    <property name="ThemeName" type="string" value="Arc-Red-Dark"/>
+    <property name="IconThemeName" type="string" value="Faenza-Ambiance"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
@@ -24,7 +24,7 @@
   <property name="Gtk" type="empty">
     <property name="CanChangeAccels" type="empty"/>
     <property name="ColorPalette" type="empty"/>
-    <property name="FontName" type="string" value="Sawasdee 10"/>
+    <property name="FontName" type="string" value="Garuda 10"/>
     <property name="IconSizes" type="empty"/>
     <property name="KeyThemeName" type="empty"/>
     <property name="ToolbarStyle" type="string" value="icons"/>
@@ -35,6 +35,6 @@
     <property name="CursorThemeName" type="string" value="capitaine-cursors"/>
     <property name="CursorThemeSize" type="int" value="18"/>
     <property name="DecorationLayout" type="string" value="close,minimize,maximize:"/>
-    <property name="ColorScheme" type="string" value="selected_bg_color:#ef2929;selected_fg_color:#fff;"/>
+    <property name="ColorScheme" type="string" value="selected_bg_color:#ad7fa8;selected_fg_color:#eeeeee;"/>
   </property>
 </channel>

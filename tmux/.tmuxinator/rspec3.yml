@@ -1,8 +1,0 @@
-# ~/.tmuxinator/rspec3.yml
-
-name: rspec3
-root: ~/Code/ruby/rspec3/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

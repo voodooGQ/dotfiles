@@ -1,8 +1,0 @@
-# ~/.tmuxinator/ae.yml
-
-name: ae
-root: ~/Code/linuxacademy/assessments-engine/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

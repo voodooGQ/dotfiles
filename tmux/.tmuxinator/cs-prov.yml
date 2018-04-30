@@ -1,8 +1,0 @@
-# ~/.tmuxinator/cs-prov.yml
-
-name: cs-prov
-root: ~/Code/linuxacademy/cloudspec/providers/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: zsh

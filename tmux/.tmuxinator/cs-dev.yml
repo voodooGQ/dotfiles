@@ -1,8 +1,0 @@
-# ~/.tmuxinator/cs-dev.yml
-
-name: cs-dev
-root: ~/Code/linuxacademy/cloudspec/develop/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

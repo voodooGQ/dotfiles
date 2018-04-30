@@ -1,7 +1,7 @@
-favorites=exo-file-manager.desktop,firefox.desktop,terminator.desktop
-recent=nm-connection-editor.desktop,menulibre.desktop,xfce-keyboard-settings.desktop,xfce-backdrop-settings.desktop,lightdm-gtk-greeter-settings.desktop,exo-file-manager.desktop,xfce-wm-settings.desktop,thunar-volman-settings.desktop,xfce-session-settings.desktop
-button-title=Applications Menu
-button-icon=view-services-scripted-amarok
+favorites=exo-file-manager.desktop,firefox.desktop
+recent=software-properties-gtk.desktop,update-manager.desktop,lightdm-gtk-greeter-settings.desktop,exo-file-manager.desktop,xfce-ui-settings.desktop,gtk-theme-config.desktop,nm-connection-editor.desktop,menulibre.desktop,xfce-keyboard-settings.desktop,xfce-backdrop-settings.desktop
+button-title=Xenomorph
+button-icon=xfce-wm-menu
 button-single-row=false
 show-button-title=false
 show-button-icon=true

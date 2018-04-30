@@ -1,8 +1,0 @@
-# ~/.tmuxinator/cs-sup.yml
-
-name: cs-sup
-root: ~/Code/linuxacademy/cloudspec/support/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

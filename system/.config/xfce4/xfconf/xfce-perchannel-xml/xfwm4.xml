@@ -47,7 +47,7 @@
     <property name="title_vertical_offset_inactive" type="empty"/>
     <property name="urgent_blink" type="empty"/>
     <property name="use_compositing" type="bool" value="false"/>
-    <property name="workspace_count" type="int" value="3"/>
+    <property name="workspace_count" type="int" value="2"/>
     <property name="workspace_names" type="empty"/>
     <property name="wrap_resistance" type="empty"/>
     <property name="wrap_windows" type="empty"/>

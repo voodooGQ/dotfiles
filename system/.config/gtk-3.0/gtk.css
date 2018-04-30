@@ -1,15 +1,15 @@
 /* Custom styles */
 
 /* select-on */
-@define-color selected_bg_color #ef2929;
-@define-color selected_fg_color #fff;
+@define-color selected_bg_color #ad7fa8;
+@define-color selected_fg_color #eeeeee;
 @define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
 /* select-on */
 
 /* panel-off
-@define-color panel_bg_color #686868;
-@define-color panel_fg_color #fcfcfc;
+@define-color panel_bg_color #cccccc;
+@define-color panel_fg_color #333333;
 
 PanelWidget,
 PanelApplet,
