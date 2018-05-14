@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sudo pacman -Sy neofetch
+sudo pacman -Sy neofetch htop dunst compton
