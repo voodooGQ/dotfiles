@@ -65,7 +65,7 @@ set matchtime=2
 "set formatoptions+=j
 set nojoinspaces
 
-set shell=/usr/bin/zsh
+set shell=/usr/local/bin/zsh
 
 if !has('nvim')
     set nocompatible

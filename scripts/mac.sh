@@ -4,15 +4,27 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install packages
-brew install nvim python2 python node zsh
+brew install nvim python2 python node zsh stow tmux rbenv
+brew cask install iterm2
+
+# Install a relevant ruby
+rbenv install 2.5.1
+rbenv global 2.5.1
+
+# Install tmuxinator
+gem install tmuxinator
 
 # Upgrade pip3
 pip3 install --upgrade pip setuptools wheel
+
+# Install Pygments
+pip install pygments
 
 # Install NeoVim deps
 pip3 install neovim
 pip install neovim
 npm install -g neovim
+gem install neovim
 
 # Install base16-shell
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell

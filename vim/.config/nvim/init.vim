@@ -1,1 +1,1 @@
-/home/shane/.vimrc
+/Users/shane.smith/.dotfiles/vim/.vimrc
