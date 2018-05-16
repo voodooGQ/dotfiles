@@ -13,6 +13,7 @@ brew cask install iterm2
 # Virtualbox & Vagrant install
 brew cask install virtualbox
 brew cask install vagrant
+vagrant plugin install vagrant-vbguest
 
 # Install a relevant ruby
 rbenv install 2.5.1
@@ -26,6 +27,9 @@ pip3 install --upgrade pip setuptools wheel
 
 # Install Pygments
 pip install pygments
+
+# TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Install NeoVim deps
 pip3 install neovim
