@@ -1,0 +1,8 @@
+# ~/.tmuxinator/vagrant.yml
+
+name: vagrant
+root: ~/Code/vagrantfiles/
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty

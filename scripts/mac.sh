@@ -5,9 +5,14 @@
 
 # Install packages
 brew install nvim python2 python node zsh stow tmux rbenv ctags \
-    reattach-to-user-namespace
+    reattach-to-user-namespace docker
+
 # iTerm
 brew cask install iterm2
+
+# Virtualbox & Vagrant install
+brew cask install virtualbox
+brew cask install vagrant
 
 # Install a relevant ruby
 rbenv install 2.5.1
