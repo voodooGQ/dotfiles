@@ -4,7 +4,9 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install packages
-brew install nvim python2 python node zsh stow tmux rbenv
+brew install nvim python2 python node zsh stow tmux rbenv ctags \
+    reattach-to-user-namespace
+# iTerm
 brew cask install iterm2
 
 # Install a relevant ruby
@@ -28,6 +30,12 @@ gem install neovim
 
 # Install base16-shell
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+
+# Install nerdfonts
+git clone https://github.com/ryanoasis/nerd-fonts.git ~/.nerdfonts
+cd ~/.nerdfonts
+./install.sh
+cd
 
 # Install Oh-My-ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
