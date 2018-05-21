@@ -5,4 +5,7 @@ root: ~/Code/vagrantfiles/
 startup_window: editor
 windows:
   - editor: nvim
-  - terminal: #empty
+  - terminal:
+    - vagrant up
+    - mux fe
+    - mux be

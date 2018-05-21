@@ -1,0 +1,12 @@
+# ~/.tmuxinator/fe.yml
+
+name: fe
+root: ~/Code/vagrantfiles/shared/frontend
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty
+  - server:
+      - vagrant ssh
+      - cd frontend
+      - foreman start

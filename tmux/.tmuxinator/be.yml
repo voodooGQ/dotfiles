@@ -1,0 +1,12 @@
+# ~/.tmuxinator/be.yml
+
+name: be
+root: ~/Code/vagrantfiles/shared/backend
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty
+  - server:
+      - vagrant ssh
+      - cd backend
+      - foreman start
