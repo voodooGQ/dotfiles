@@ -1,0 +1,26 @@
+# ~/.tmuxinator/dev.yml
+
+name: dev
+root: ~/Code/vagrantfiles/
+startup_window: editor
+windows:
+  - vagrant:
+    - nvim
+  - frontend:
+    - cd shared/frontend
+    - nvim
+  - backend:
+    - cd shared/backend
+    - nvim
+  - terminal: #empty
+  - servers:
+      layout: tiled
+      panes:
+        - frontend:
+          - vagrant ssh
+          - cd frontend
+          - foreman start
+        - backend:
+          - vagrant ssh
+          - cd backend
+          - foreman start

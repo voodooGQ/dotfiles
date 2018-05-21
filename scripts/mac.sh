@@ -5,7 +5,7 @@
 
 # Install packages
 brew install nvim python2 python node zsh stow tmux rbenv ctags \
-    reattach-to-user-namespace docker
+    reattach-to-user-namespace docker rg fzf grip
 
 # iTerm
 brew cask install iterm2

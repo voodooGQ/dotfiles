@@ -94,3 +94,5 @@ source ~/.exports
 source ~/.zsh_path
 
 eval "$(rbenv init -)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

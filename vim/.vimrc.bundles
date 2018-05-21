@@ -55,6 +55,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'chriskempson/base16-vim'
+Plugin 'briancollins/vim-jst'
 
 call vundle#end()
 filetype on
