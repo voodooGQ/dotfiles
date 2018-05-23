@@ -218,7 +218,7 @@ endif
 " Softtabs, 4 spaces by defaults
 set tabstop=4 softtabstop=0 shiftwidth=4 expandtab
 " Switch to a 2 space tab on these files
-autocmd FileType sass,scss,ruby,erb,yml,yaml,json setlocal shiftwidth=2 tabstop=2
+autocmd FileType sass,scss,ruby,erb,yml,yaml,json,html setlocal shiftwidth=2 tabstop=2
 set shiftround
 set expandtab
 set smartindent
