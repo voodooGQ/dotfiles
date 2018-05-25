@@ -193,7 +193,7 @@ au BufRead,BufNewFile *.twig set filetype=htmljinja
 hi Folded guibg=#333333 guifg=#333333
 hi CursorLine guibg=#333333
 hi Comment guifg=#555555
-hi Search ctermfg=108 ctermbg=235 guifg=#a89984 guibg=#282828
+hi Search ctermfg=108 ctermbg=235 guifg=#a89984 guibg=#444444
 "===============================================================================
 
 " Lion alignment
