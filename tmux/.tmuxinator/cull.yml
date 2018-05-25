@@ -1,11 +1,11 @@
-# ~/.tmuxinator/vagrant.yml
+# ~/.tmuxinator/cull.yml
 
-name: vagrant
+name: cull
 root: ~/Code/vagrantfiles/
 startup_window: editor
 windows:
   - editor: nvim
   - terminal:
-    - vagrant up
-    - mux fe
+    - cull up
     - mux be
+    - mux fe

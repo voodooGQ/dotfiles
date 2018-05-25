@@ -96,3 +96,9 @@ source ~/.zsh_path
 eval "$(rbenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Start the docker daemon on mac
+if [ "$(uname 2> /dev/null)" != "Linux" ]; then
+    docker-machine start default 2>/dev/null # Hide output if machine is already running
+    eval `docker-machine env default`
+fi
