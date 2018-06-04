@@ -8,5 +8,6 @@ windows:
   - terminal: #empty
   - server:
       - vagrant ssh
+      - ./resque_fix.sh
       - cd backend
       - foreman start

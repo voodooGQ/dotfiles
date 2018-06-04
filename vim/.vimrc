@@ -166,8 +166,10 @@ nnoremap <leader>a ggVG
 nnoremap <silent> <leader>e :noh<CR>
 " <leader>w cds to the current directory in netrw
 nnoremap <silent> <leader>w :cd %<CR>
-
+" Open in Dash
 nnoremap <silent> <leader>d :Dash<CR>
+" Restore previous session
+nnoremap <silent> <leader>r :call RestoreSess()<CR>
 "===============================================================================
 
 " SYNTAX_COLORS
@@ -337,6 +339,31 @@ hi ALEErrorSign ctermbg=237 ctermfg=red guifg=#fb4934 guibg=#3c3836
 hi ALEWarningSign ctermbg=237 ctermfg=yellow guifg=#fabd2f guibg=#3c3836
 hi ALEError guibg=#fb4934 guifg=#000000
 hi ALEWarning guibg=#fabd2f guifg=#000000
+
+"===============================================================================
+" SESSIONS
+
+if has('nvim')
+    fu! SaveSess()
+    execute 'mksession! ' . getcwd() . '/.session.nvim'
+    endfunction
+
+    fu! RestoreSess()
+    if filereadable(getcwd() . '/.session.nvim')
+        execute 'so ' . getcwd() . '/.session.nvim'
+        if bufexists(1)
+        for l in range(1, bufnr('$'))
+            if bufwinnr(l) == -1
+            exec 'sbuffer ' . l
+            endif
+        endfor
+        endif
+    endif
+    endfunction
+
+    autocmd VimLeave * call SaveSess()
+    "autocmd VimEnter * nested call RestoreSess()
+end
 
 "===============================================================================
 " RSPEC
