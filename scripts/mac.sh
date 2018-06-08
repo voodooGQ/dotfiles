@@ -19,8 +19,11 @@ vagrant plugin install vagrant-vbguest
 rbenv install 2.5.1
 rbenv global 2.5.1
 
-# Install tmuxinator
+# Install Gem deps
 gem install tmuxinator
+gem install pry
+gem install awesome_print
+gem install moped
 
 # Upgrade pip3
 pip3 install --upgrade pip setuptools wheel

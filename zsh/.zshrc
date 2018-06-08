@@ -95,7 +95,16 @@ source ~/.zsh_path
 
 eval "$(rbenv init -)"
 
+# Start fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Start SSH agent
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+  eval `ssh-agent`
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -l > /dev/null || ssh-add
 
 # Start the docker daemon on mac
 if [ "$(uname 2> /dev/null)" != "Linux" ]; then
