@@ -191,6 +191,7 @@ set termguicolors
 
 " twig highlighting
 au BufRead,BufNewFile *.twig set filetype=htmljinja
+au BufRead,BufNewFile *.rabl set filetype=ruby
 
 hi Folded guibg=#333333 guifg=#333333
 hi CursorLine guibg=#333333
