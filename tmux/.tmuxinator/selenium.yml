@@ -1,0 +1,8 @@
+# ~/.tmuxinator/selenium.yml
+
+name: selenium
+root: ~/Code/selenium-tests
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty

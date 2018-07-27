@@ -58,3 +58,5 @@ alias mv='mv -i'
 
 alias mux='tmuxinator'
 alias mm='mux mission-control'
+
+alias feserv='ssh logikcull-apps@lcub-staging-fe5000'

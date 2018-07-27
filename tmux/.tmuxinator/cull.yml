@@ -6,6 +6,7 @@ startup_window: editor
 windows:
   - editor: nvim
   - terminal:
+    - git cull
     - vagrant up
     - mux be
     - mux fe

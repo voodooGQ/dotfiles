@@ -105,9 +105,3 @@ if [ ! -S ~/.ssh/ssh_auth_sock ]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
-
-# Start the docker daemon on mac
-if [ "$(uname 2> /dev/null)" != "Linux" ]; then
-    docker-machine start default 2>/dev/null # Hide output if machine is already running
-    eval `docker-machine env default`
-fi

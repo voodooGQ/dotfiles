@@ -1,0 +1,8 @@
+# ~/.tmuxinator/suitescripts.yml
+
+name: suitescripts
+root: ~/Code/netsuite-suitescripts
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty

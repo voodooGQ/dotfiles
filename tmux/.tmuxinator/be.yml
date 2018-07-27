@@ -7,7 +7,7 @@ windows:
   - editor: nvim
   - terminal: #empty
   - server:
+      - git cull
       - vagrant ssh
-      - ./resque_fix.sh
       - cd backend
       - foreman start

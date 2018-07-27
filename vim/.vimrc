@@ -333,7 +333,7 @@ autocmd FileType ruby,eruby
 
 "===============================================================================
 " ALE
-autocmd BufEnter *.erb ALEDisable " Disable on .erb files
+"autocmd BufEnter *.erb ALEDisable " Disable on .erb files
 let g:ale_sign_error = "✖"
 let g:ale_sign_warning = "𐌏"
 hi ALEErrorSign ctermbg=237 ctermfg=red guifg=#fb4934 guibg=#3c3836
