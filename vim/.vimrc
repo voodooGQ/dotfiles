@@ -49,9 +49,9 @@ set splitbelow
 set splitright
 " Wildmenu
 set wildmode=longest:full
-" Go up the tree until we find a tags file
+" Go up the tree until we find a tags file"{{{
 "set tags=./tags;/
-" Sane level for syntax highlight
+" Sane level for syntax highlight"}}}
 set synmaxcol=300 "@n
 " Lazy Redraw
 set lazyredraw "@n
@@ -61,8 +61,8 @@ set modelines=1
 " Flash matching braces for 200ms @n
 set showmatch
 set matchtime=2
-" When joining lines, delete comment characters if appropriate
-"set formatoptions+=j
+" When joining lines, delete comment characters if appropriate"{{{
+"set formatoptions+=j"}}}
 set nojoinspaces
 
 set shell=/usr/local/bin/zsh
@@ -96,8 +96,8 @@ augroup END
 
 "===============================================================================
 
-" REMAPS
-" Scratch file
+" REMAPS"{{{
+" Scratch file"}}}
 nn <F1> :Scratch<CR>
 " Paste
 nn <F2> :set invpaste paste?<CR>
@@ -120,10 +120,13 @@ nn <C-w><Down> :echoe "Use \<C-w\>j"<CR>
 " Go Back from tag jump
 nn <C-\> <C-T>
 
-"These are to cancel the default behavior of d, D, c, C
+map <leader>b :Buffers<CR>
+map f <Plug>Sneak_s
+
+"These are to cancel the default behavior of d, D, c, C"{{{
 "  to put the text they delete in the default register.
 "  Note that this means e.g. "ad won't copy the text into
-"  register a anymore.  You have to explicitly yank it.
+"  register a anymore.  You have to explicitly yank it."}}}
 nnoremap d "_d
 vnoremap d "_d
 nnoremap D "_D
@@ -145,8 +148,8 @@ xnoremap X :normal! @x<CR>
 
 "===============================================================================
 
-" LEADER_MAPS
-" Toggle ALE Linting
+" LEADER_MAPS"{{{
+" Toggle ALE Linting"}}}
 map <Leader>t :ALEToggle<CR>
 
 " Add a frozen_string_literal line (for Ruby)
@@ -170,15 +173,23 @@ nnoremap <silent> <leader>w :cd %<CR>
 nnoremap <silent> <leader>d :Dash<CR>
 " Restore previous session
 nnoremap <silent> <leader>r :call RestoreSess()<CR>
+" Alefix
+nnoremap <silent> <leader>f :ALEFix<CR>
+
+" Remap Esc to Ctrl+l in interactive mode
+imap <C-l> <Esc>
+
+map f <Plug>Sneak_s
+map F <Plug>Sneak_S
 "===============================================================================
 
-" SYNTAX_COLORS
-" Switch syntax highlighting on, when the terminal has colors
+" SYNTAX_COLORS"{{{
+" Switch syntax highlighting on, when the terminal has colors"}}}
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
-" Color overrides
-"set background=dark
+" Color overrides"{{{
+"set background=dark"}}}
 syntax enable
 "colorscheme gruvbox
 
@@ -203,9 +214,9 @@ hi Search ctermfg=108 ctermbg=235 guifg=#a89984 guibg=#444444
 let g:lion_squeeze_spaces = 1
 let b:lion_squeeze_spaces = 1
 
-"===============================================================================
+"==============================================================================="{{{
 " SAVE_PERSISTENT_UNDOS
-" Make sure undos are persistent even after exit
+" Make sure undos are persistent even after exit"}}}
 set nobackup
 set nowritebackup
 set noswapfile
@@ -216,9 +227,9 @@ if !&diff
   set undofile
 endif
 
-"===============================================================================
+"==============================================================================="{{{
 " CODE_INDENTATION
-" Softtabs, 4 spaces by defaults
+" Softtabs, 4 spaces by defaults"}}}
 set tabstop=4 softtabstop=0 shiftwidth=4 expandtab
 " Switch to a 2 space tab on these files
 autocmd FileType sass,scss,ruby,erb,yml,yaml,json,html setlocal shiftwidth=2 tabstop=2
@@ -226,18 +237,18 @@ set shiftround
 set expandtab
 set smartindent
 
-"===============================================================================
+"==============================================================================="{{{
 " AIRLINE
-" Set airline top tab and colors
+" Set airline top tab and colors"}}}
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-"===============================================================================
+"==============================================================================="{{{
 "FZF_AND_RIPGREP (Fuzzy finding)
-" C-P calls FZF on all files
+" C-P calls FZF on all files"}}}
 nnoremap <C-P> :Files<CR>
 
 " bind C-k to grep word under cursor
@@ -245,7 +256,7 @@ nnoremap <C-k> :Find <C-R><C-W><CR>
 " bind Shift-k to find word under cursor while respecting gitignore
 nnoremap K :Findi <C-R><C-W><CR>
 
-" -g '!tags': always ignore the tags file
+" -g '!tags': always ignore the tags file"{{{
 " --column: Show column number
 " --line-number: Show line number
 " --no-heading: Do not show file headings in results
@@ -255,7 +266,7 @@ nnoremap K :Findi <C-R><C-W><CR>
 " --hidden: Search hidden files and folders
 " --follow: Follow symlinks
 " --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
-" --color: Search color options
+" --color: Search color options"}}}
 command! -bang -nargs=* Find call fzf#vim#grep('rg -g "!tags" --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 
 " Same as above, just respect gitignore
@@ -266,8 +277,8 @@ let g:fzf_colors =
   \ 'bg':      ['bg', 'CursorLineNr'] }
 "===============================================================================
 
-" EXPLORER
-" set default list style for Explore
+" EXPLORER"{{{
+" set default list style for Explore"}}}
 let g:netrw_liststyle=4
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 "===============================================================================
@@ -276,33 +287,33 @@ let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 let vim_markdown_preview_github=1 " Use Github Flavored
 let vim_markdown_preview_hotkey='<C-m>' " Hotkey to open preview (also Enter)
 "===============================================================================
-
+"
 " LOCAL_VIM
 let g:localvimrc_ask = 0
 "===============================================================================
 
-" VIM_REST_CONSOLE
-" Allow request body on get requests
+" VIM_REST_CONSOLE"{{{
+" Allow request body on get requests"}}}
 let g:vrc_allow_get_request_body = 1
 let g:vrc_connect_timeout = 600
 
-"===============================================================================
-" VIM SKELETONS
+"==============================================================================="{{{
+" VIM SKELETONS"}}}
 let skeletons#autoRegister = 1
 let skeletons#skeletonsDir = "~/.vim/skeletons"
 
-"===============================================================================
-" DEOPLETE (Autocompletion)
+"==============================================================================="{{{
+" DEOPLETE (Autocompletion)"}}}
 if has('nvim')
   let g:deoplete#enable_at_startup = 1
 endif
 
-"===============================================================================
-" ROOTER
+"==============================================================================="{{{
+" ROOTER"}}}
 let g:rooter_silent_chdir = 1
 
-"===============================================================================
-" LINE_NUMBERS
+"==============================================================================="{{{
+" LINE_NUMBERS"}}}
 set number
 set relativenumber
 set numberwidth=5
@@ -319,8 +330,8 @@ endfunction
  "C-n swap relative number
 nnoremap <silent> <Leader>n :call NumberToggle()<CR>
 nnoremap <silent> <Leader>N :call NumberOffToggle()<CR>
-"===============================================================================
-" CODE_FOLDEING
+"==============================================================================="{{{
+" CODE_FOLDEING"}}}
 nn <silent> <Leader>] za
 
 set foldmethod=syntax
@@ -331,18 +342,24 @@ autocmd FileType ruby,eruby
     \ set foldmethod=expr |
     \ set foldexpr=getline(v:lnum)=~'^\\s*#'
 
-"===============================================================================
+"==============================================================================="{{{
 " ALE
-"autocmd BufEnter *.erb ALEDisable " Disable on .erb files
+"autocmd BufEnter *.erb ALEDisable " Disable on .erb files"}}}
 let g:ale_sign_error = "✖"
 let g:ale_sign_warning = "𐌏"
 hi ALEErrorSign ctermbg=237 ctermfg=red guifg=#fb4934 guibg=#3c3836
 hi ALEWarningSign ctermbg=237 ctermfg=yellow guifg=#fabd2f guibg=#3c3836
 hi ALEError guibg=#fb4934 guifg=#000000
 hi ALEWarning guibg=#fabd2f guifg=#000000
+let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'ejs': ['stylelint', 'eslint']}
+let g:ale_linter_aliases = {'jsx': 'css'}
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['prettier'],
+\}
 
-"===============================================================================
-" SESSIONS
+"==============================================================================="{{{
+" SESSIONS"}}}
 
 if has('nvim')
     fu! SaveSess()
@@ -366,8 +383,8 @@ if has('nvim')
     "autocmd VimEnter * nested call RestoreSess()
 end
 
-"===============================================================================
-" RSPEC
+"==============================================================================="{{{
+" RSPEC"}}}
 map <Leader>rsf :call RunCurrentSpecFile()<CR>
 map <Leader>rs :call RunNearestSpec()<CR>
 map <Leader>rsl :call RunLastSpec()<CR>

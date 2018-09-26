@@ -60,3 +60,4 @@ alias mux='tmuxinator'
 alias mm='mux mission-control'
 
 alias feserv='ssh logikcull-apps@lcub-staging-fe5000'
+alias aux='ps aux | grep'
