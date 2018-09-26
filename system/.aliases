@@ -61,3 +61,4 @@ alias mm='mux mission-control'
 
 alias feserv='ssh logikcull-apps@lcub-staging-fe5000'
 alias aux='ps aux | grep'
+alias ki='kill -9'
