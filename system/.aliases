@@ -61,4 +61,7 @@ alias mm='mux mission-control'
 
 alias feserv='ssh logikcull-apps@lcub-staging-fe5000'
 alias aux='ps aux | grep'
+alias kruby='killall -9 ruby'
 alias ki='kill -9'
+alias kmail="kill $(ps aux | grep -E 'mailcatcher' | grep -v grep | awk '{print $2}')"
+
