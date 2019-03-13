@@ -1,0 +1,10 @@
+# ~/.tmuxinator/deploy.yml
+
+name: deploy
+root: ~/Code/vagrantfiles/shared/deploy
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal:
+      panes:
+        - cli: clear

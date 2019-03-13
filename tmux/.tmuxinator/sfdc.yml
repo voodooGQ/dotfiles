@@ -1,0 +1,8 @@
+# ~/.tmuxinator/sfdc.yml
+
+name: sfdc
+root: ~/Code/sfdc
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: clear

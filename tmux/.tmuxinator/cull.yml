@@ -10,3 +10,4 @@ windows:
     - vagrant up
     - mux be
     - mux fe
+    - mux deploy

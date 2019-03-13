@@ -1,0 +1,8 @@
+# ~/.tmuxinator/serverless.yml
+
+name: serverless
+root: ~/Code/serverless
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: clear

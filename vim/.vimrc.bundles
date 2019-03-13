@@ -57,6 +57,7 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'chriskempson/base16-vim'
 Plugin 'briancollins/vim-jst'
 Plugin 'justinmk/vim-sneak'
+Plugin 'martinda/Jenkinsfile-vim-syntax'
 
 call vundle#end()
 filetype on

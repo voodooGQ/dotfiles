@@ -1,0 +1,8 @@
+# ~/.tmuxinator/khazad-dum.yml
+
+name: khazad-dum
+root: ~/Code/khazad-dum
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: clear

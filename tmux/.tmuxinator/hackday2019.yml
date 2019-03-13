@@ -1,0 +1,8 @@
+# ~/.tmuxinator/hackday.yml
+
+name: hackday
+root: ~/Code/console-dvr
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: clear

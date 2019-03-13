@@ -94,6 +94,9 @@ augroup highlight_follows_focus
     au FocusLost * set nocursorline
 augroup END
 
+" Don't open gutentags with gitcommits or rebases https://github.com/ludovicchabant/vim-gutentags/issues/168
+au FileType gitcommit,gitrebase let g:gutentags_enabled=0
+
 "===============================================================================
 
 " REMAPS"{{{
@@ -147,7 +150,6 @@ nnoremap X @x
 xnoremap X :normal! @x<CR>
 
 "===============================================================================
-
 " LEADER_MAPS"{{{
 " Toggle ALE Linting"}}}
 map <Leader>t :ALEToggle<CR>
@@ -232,7 +234,7 @@ endif
 " Softtabs, 4 spaces by defaults"}}}
 set tabstop=4 softtabstop=0 shiftwidth=4 expandtab
 " Switch to a 2 space tab on these files
-autocmd FileType sass,scss,ruby,erb,yml,yaml,json,html setlocal shiftwidth=2 tabstop=2
+autocmd FileType sass,scss,ruby,erb,yml,yaml,json,js,html setlocal shiftwidth=2 tabstop=2
 set shiftround
 set expandtab
 set smartindent
@@ -351,11 +353,8 @@ hi ALEErrorSign ctermbg=237 ctermfg=red guifg=#fb4934 guibg=#3c3836
 hi ALEWarningSign ctermbg=237 ctermfg=yellow guifg=#fabd2f guibg=#3c3836
 hi ALEError guibg=#fb4934 guifg=#000000
 hi ALEWarning guibg=#fabd2f guifg=#000000
-let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'ejs': ['stylelint', 'eslint']}
-let g:ale_linter_aliases = {'jsx': 'css'}
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['prettier'],
+let g:ale_linters = {
+\   'javascript': ['eslint'],
 \}
 
 "==============================================================================="{{{

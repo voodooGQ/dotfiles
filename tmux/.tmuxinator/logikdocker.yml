@@ -1,0 +1,24 @@
+# ~/.tmuxinator/logikdocker.yml
+
+name: logikdocker
+root: ~/Code/logikdocker
+startup_window: editor
+windows:
+  - fe:
+      root: ~/Code/logikdocker/frontend/
+      panes:
+        - editor: nvim
+  - terminal:
+      panes:
+        - cli: clear
+  - be:
+      root: ~/Code/logikdocker/backend/
+      panes:
+        - editor: nvim
+  - execute:
+      root: ~/Code/logikdocker/docker
+      panes:
+        - commands:
+          - docker-sync start
+          - ./ssh-agent.sh
+          - docker-compose up
