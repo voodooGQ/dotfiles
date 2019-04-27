@@ -4,7 +4,6 @@ export LANG=en_US.UTF-8
 export VTE_VERSION="100"
 
 export NET=192.168.1
-export TMPDIR=/private$TMPDIR
 # Mac LS Colors
 #http://superuser.com/questions/417805/how-to-configure-the-ansi-colors-of-the-command-line-terminal
 export CLICOLOR=1
@@ -28,3 +27,5 @@ export NVM_DIR="$HOME/.nvm"
 # Logikcull
 export FRONTEND_DIR=$HOME/Code/logikdocker/frontend
 export BACKEND_DIR=$HOME/Code/logikdocker/backend
+export NODE_PATH="$NODE_PATH:$HOME/npm/lib/node_modules"
+

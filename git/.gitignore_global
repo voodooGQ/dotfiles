@@ -13,6 +13,8 @@ tags
 !tags/
 tags.lock
 tags.temp
+tags.tmp.temp
+tags.temp.tmp
 coverletters
 
 Gemfile.shane

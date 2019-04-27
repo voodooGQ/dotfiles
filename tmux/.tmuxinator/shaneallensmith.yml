@@ -1,25 +1,8 @@
 # ~/.tmuxinator/shaneallensmith.yml
 
 name: shaneallensmith
-root: ~/Code/php/_wordpress/shaneallensmith
+root: ~/Code/shaneallensmith
 startup_window: editor
 windows:
   - editor: nvim
   - terminal: #empty
-  - frontend:
-      pre: nvm use v7.4.0
-      layout: tiled
-      panes:
-        - gulp:
-          - gulp
-          - gulp watch
-  - vagrant:
-      root: ~/Code/php/_wordpress/shaneallensmith/vagrant
-      layout: tiled
-      panes:
-        - vagrant:
-          - vagrant up
-          - vagrant ssh
-  - ssh:
-      - ssh ssmith@shaneallensmith.com
-

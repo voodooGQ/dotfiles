@@ -20,6 +20,7 @@ alias localip="ipconfig getifaddr en0"
 
 # GIT
 alias gitup="git push --set-upstream origin"
+alias gitpu="git push --set-upstream origin"
 
 # Common aliases
 alias l='ls -lFh'     #size,show type,human readable
@@ -65,3 +66,8 @@ alias kruby='killall -9 ruby'
 alias ki='kill -9'
 alias kmail="kill $(ps aux | grep -E 'mailcatcher' | grep -v grep | awk '{print $2}')"
 
+# Serverless
+alias slsl='SLS_DEBUG=* serverless --verbose --stage=local'
+alias slsd='SLS_DEBUG=* serverless --verbose --stage=dev'
+alias slss='SLS_DEBUG=* serverless --verbose --stage=staging'
+alias slsp='SLS_DEBUG=* serverless --verbose --stage=prod'

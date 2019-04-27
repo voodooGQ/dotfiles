@@ -26,7 +26,7 @@ set colorcolumn=+1
 " Turn off the auto-newline
 set fo-=t
 " GitGutter Config
-set updatetime=750
+set updatetime=300
 " Make it so clipboard copy/paste works with Mac OSX
 set clipboard=unnamed
 " ignorecase when searching
@@ -39,6 +39,7 @@ set infercase " @n
 set scrolloff=999
 " Put filename in statusline
 set statusline+=%{fugitive#statusline()}
+set statusline+=%{LinterStatus()}
 " Paste Toggle
 set pastetoggle=<F2>
 set showmode
@@ -73,7 +74,7 @@ if !has('nvim')
     set incsearch
     set laststatus=2  " always show status line
     set wildmenu
-	set smarttab
+    set smarttab
 end
 
 " Automatically strip whitespace on save.
@@ -155,7 +156,8 @@ xnoremap X :normal! @x<CR>
 map <Leader>t :ALEToggle<CR>
 
 " Add a frozen_string_literal line (for Ruby)
-nmap <Leader>f= i# frozen_string_literal: true<esc>o<esc>x
+nmap <Leader>f= a() =>
+
 
 " Faster tab movement
 nmap <silent> <Leader>h :tabprev<CR>
@@ -202,6 +204,7 @@ endif
 
 set termguicolors
 
+hi Pmenu guibg=#b16286
 " twig highlighting
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 au BufRead,BufNewFile *.rabl set filetype=ruby
@@ -247,16 +250,17 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#ale#enabled = 1
 
 "==============================================================================="{{{
 "FZF_AND_RIPGREP (Fuzzy finding)
 " C-P calls FZF on all files"}}}
 nnoremap <C-P> :Files<CR>
 
-" bind C-k to grep word under cursor
-nnoremap <C-k> :Find <C-R><C-W><CR>
+" bind C-f to grep word under cursor
+nnoremap <C-f> :Findi <C-R><C-W><CR>
 " bind Shift-k to find word under cursor while respecting gitignore
-nnoremap K :Findi <C-R><C-W><CR>
+"nnoremap K :Find <C-R><C-W><CR>
 
 " -g '!tags': always ignore the tags file"{{{
 " --column: Show column number
@@ -306,10 +310,55 @@ let skeletons#skeletonsDir = "~/.vim/skeletons"
 
 "==============================================================================="{{{
 " DEOPLETE (Autocompletion)"}}}
-if has('nvim')
-  let g:deoplete#enable_at_startup = 1
-endif
+"if has('nvim')
+  "let g:deoplete#enable_at_startup = 1
+"endif
 
+"==============================================================================="{{{
+"  COC
+set hidden
+set cmdheight=2
+set shortmess+=c
+set signcolumn=yes
+
+"inoremap <silent><expr> <TAB>
+      "\ pumvisible() ? "\<C-n>" :
+      "\ <SID>check_back_space() ? "\<TAB>" :
+      "\ coc#refresh()
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? coc#rpc#request('doKeymap', ['snippets-expand-jump','']) :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+let g:coc_snippet_next = '<tab>'
+imap <C-l> <Plug>(coc-snippets-expand)
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+let g:coc_snippet_next = '<c-j>'
+let g:coc_snippet_prev = '<c-k>'
+
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if &filetype == 'vim'
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+
+nmap <silent> sn :CocCommand snippets.editSnippets<CR>
 "==============================================================================="{{{
 " ROOTER"}}}
 let g:rooter_silent_chdir = 1
@@ -351,12 +400,16 @@ let g:ale_sign_error = "✖"
 let g:ale_sign_warning = "𐌏"
 hi ALEErrorSign ctermbg=237 ctermfg=red guifg=#fb4934 guibg=#3c3836
 hi ALEWarningSign ctermbg=237 ctermfg=yellow guifg=#fabd2f guibg=#3c3836
-hi ALEError guibg=#fb4934 guifg=#000000
-hi ALEWarning guibg=#fabd2f guifg=#000000
+hi ALEError guibg=red guifg=#3c3836
+hi ALEWarning guibg=#fabd2f guifg=#3c3836
 let g:ale_linters = {
-\   'javascript': ['eslint'],
+\   'javascript': ['eslint', 'jshint'],
 \}
 
+let g:ale_fixers = {
+\   'javascript': ['eslint', 'jshint'],
+\}
+nmap <silent> <C-h> <Plug>(ale_next_wrap)
 "==============================================================================="{{{
 " SESSIONS"}}}
 
