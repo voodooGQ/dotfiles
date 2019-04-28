@@ -28,7 +28,7 @@ set fo-=t
 " GitGutter Config
 set updatetime=300
 " Make it so clipboard copy/paste works with Mac OSX
-set clipboard=unnamed
+set clipboard=unnamedplus
 " ignorecase when searching
 set ignorecase " @n
 " If any capitals are used search by case
