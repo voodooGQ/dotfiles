@@ -1,8 +1,0 @@
-# ~/.tmuxinator/fe-reference.yml
-
-name: fe-reference
-root: ~/Code/fe-reference
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

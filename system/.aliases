@@ -71,3 +71,5 @@ alias slsl='SLS_DEBUG=* serverless --verbose --stage=local'
 alias slsd='SLS_DEBUG=* serverless --verbose --stage=dev'
 alias slss='SLS_DEBUG=* serverless --verbose --stage=staging'
 alias slsp='SLS_DEBUG=* serverless --verbose --stage=prod'
+
+alias md2pdf='node /home/ssmith/Code/node/md2pdf/index.js'

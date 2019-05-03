@@ -1,8 +1,0 @@
-# ~/.tmuxinator/f-data-usage-service.yml
-
-name: fdus
-root: ~/Code/f-data-usage-service
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: clear

@@ -1,8 +1,0 @@
-# ~/.tmuxinator/react.yml
-
-name: react
-root: ~/Code/js/_react/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

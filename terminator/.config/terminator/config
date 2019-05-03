@@ -1,0 +1,11 @@
+# This is a comment
+[global_config]
+focus = system
+
+[profiles]
+[[default]]
+font = Fixed 30
+background_color = "#000000" # A comment
+foreground_color = "#FFFFFF" # Note that hex colour values must be quoted
+scrollback_lines = '500' #More comment. Single quotes are valid too
+cursor_blink = True

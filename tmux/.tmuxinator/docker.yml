@@ -1,8 +1,0 @@
-# ~/.tmuxinator/docker.yml
-
-name: docker
-root: ~/Code/docker/builds
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

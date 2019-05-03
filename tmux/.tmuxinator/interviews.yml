@@ -1,8 +1,0 @@
-# ~/.tmuxinator/interviews.yml
-
-name: interviews
-root: ~/Code/interviews
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: clear

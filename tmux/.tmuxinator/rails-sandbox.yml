@@ -1,8 +1,0 @@
-# ~/.tmuxinator/rails-sandbox.yml
-
-name: rails-sandbox
-root: ~/Code/ruby/_rails/sandbox/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty
