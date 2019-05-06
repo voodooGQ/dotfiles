@@ -1,0 +1,8 @@
+# ~/.tmuxinator/dotheytest.yml
+
+name: dotheytest
+root: ~/Code/dotheytest
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty
