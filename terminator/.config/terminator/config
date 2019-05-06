@@ -4,7 +4,7 @@ focus = system
 
 [profiles]
 [[default]]
-font = Fixed 30
+font = Arimo Nerd Font 12
 background_color = "#000000" # A comment
 foreground_color = "#FFFFFF" # Note that hex colour values must be quoted
 scrollback_lines = '500' #More comment. Single quotes are valid too
