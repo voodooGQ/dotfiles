@@ -1,0 +1,8 @@
+# ~/.tmuxinator/js.yml
+
+name: js
+root: ~/Code/node/playground
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty

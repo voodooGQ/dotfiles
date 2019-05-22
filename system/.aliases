@@ -1,6 +1,7 @@
 alias port="sudo lsof -i"
 alias spot="spotify"
 alias :q="exit"
+alias :e="ls -lFh"
 alias psqlstart="postgres -D /usr/local/var/postgres"
 alias vbox="vboxmanage"
 alias gotonow="ntpdate -s time.nist.gov"
@@ -73,3 +74,5 @@ alias slss='SLS_DEBUG=* serverless --verbose --stage=staging'
 alias slsp='SLS_DEBUG=* serverless --verbose --stage=prod'
 
 alias md2pdf='node /home/ssmith/Code/node/md2pdf/index.js'
+
+alias open="nautilus ."

@@ -19,3 +19,5 @@ coverletters
 
 Gemfile.shane
 Gemfile.shane.lock
+
+node_modules/*

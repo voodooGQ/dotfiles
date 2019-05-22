@@ -1,0 +1,8 @@
+# ~/.tmuxinator/crowdstrike.yml
+
+name: crowdstrike
+root: ~/Code/go/src/crowdstrike
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty

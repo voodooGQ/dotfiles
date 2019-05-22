@@ -57,5 +57,8 @@ Plugin 'briancollins/vim-jst'
 Plugin 'justinmk/vim-sneak'
 Plugin 'martinda/Jenkinsfile-vim-syntax'
 Plugin 'neoclide/coc.nvim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'nsf/gocode'
+Plugin 'mustache/vim-mustache-handlebars'
 call vundle#end()
 filetype on

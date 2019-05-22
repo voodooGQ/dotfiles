@@ -15,7 +15,7 @@ export EDITOR="$VISUAL"
 export FZF_DEFAULT_COMMAND='rg --files --follow --glob "!.git/*"'
 
 export GOPATH=$HOME/Code/go
-export GOROOT=/usr/local/opt/go/libexec
+export GOROOT=/usr/local/go
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"

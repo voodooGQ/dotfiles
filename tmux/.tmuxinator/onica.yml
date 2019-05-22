@@ -1,0 +1,8 @@
+# ~/.tmuxinator/onica.yml
+
+name: onica
+root: ~/Code/onica
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty

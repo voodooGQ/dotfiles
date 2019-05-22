@@ -21,7 +21,7 @@ set linebreak
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 " Make it obvious where 80 characters is
-set textwidth=80
+set textwidth=100
 set colorcolumn=+1
 " Turn off the auto-newline
 set fo-=t
@@ -50,6 +50,9 @@ set splitbelow
 set splitright
 " Wildmenu
 set wildmode=longest:full
+
+set backupcopy=yes
+
 " Go up the tree until we find a tags file"{{{
 "set tags=./tags;/
 " Sane level for syntax highlight"}}}
@@ -155,8 +158,10 @@ xnoremap X :normal! @x<CR>
 " Toggle ALE Linting"}}}
 map <Leader>t :ALEToggle<CR>
 
-" Add a frozen_string_literal line (for Ruby)
+" Add an arrow function
 nmap <Leader>f= a() =>
+
+nmap <Leader>fr i# frozen_string_literal: true<CR><C-BS><C-BS><CR><Esc>
 
 
 " Faster tab movement
@@ -235,9 +240,9 @@ endif
 "==============================================================================="{{{
 " CODE_INDENTATION
 " Softtabs, 4 spaces by defaults"}}}
-set tabstop=4 softtabstop=0 shiftwidth=4 expandtab
+set tabstop=2 softtabstop=0 shiftwidth=2 expandtab
 " Switch to a 2 space tab on these files
-autocmd FileType sass,scss,ruby,erb,yml,yaml,json,js,html setlocal shiftwidth=2 tabstop=2
+"autocmd FileType sass,scss,ruby,erb,yml,yaml,json,js,html setlocal shiftwidth=2 tabstop=2
 set shiftround
 set expandtab
 set smartindent
@@ -404,10 +409,13 @@ hi ALEError guibg=red guifg=#3c3836
 hi ALEWarning guibg=#fabd2f guifg=#3c3836
 let g:ale_linters = {
 \   'javascript': ['eslint', 'jshint'],
+\   'typescript': ['tsserver', 'tslint'],
 \}
 
 let g:ale_fixers = {
+\   'ruby': ['rubocop'],
 \   'javascript': ['eslint', 'jshint'],
+\   'typescript': ['tslint']
 \}
 nmap <silent> <C-h> <Plug>(ale_next_wrap)
 "==============================================================================="{{{

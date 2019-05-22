@@ -1,0 +1,9 @@
+# ~/.tmuxinator/weedmaps.yml
+
+name: weedmaps
+root: ~/Code/weedmaps
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty
+  - servers: #empty
