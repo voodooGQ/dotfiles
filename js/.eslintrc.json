@@ -1,12 +1,18 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "amd": true,
+        "node": true,
+        "require": true
     },
     "extends": "eslint:recommended",
     "globals": {
         "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+        "SharedArrayBuffer": "readonly",
+        "module": false,
+        "document": false,
+        "inject": false
     },
     "parserOptions": {
         "ecmaFeatures": {
