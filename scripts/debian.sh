@@ -13,7 +13,9 @@ sudo apt-get install -y software-properties-common python-dev python-pip \
     libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev \
     libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev xutils-dev \
     libxcb-shape0-dev autoconf xutils-dev autoconf libtool pkg-config \
-    xcb flameshot
+    xcb flameshot arandr ranger nautilus nitrogen pipenv zeal tsserver \
+    docker.io docker-compose watchman autoconf automake build-essential \
+    python-dev exfat-fuse exfat-utils hub
 
 
 # NVM
