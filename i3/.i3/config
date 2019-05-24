@@ -274,13 +274,28 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+# Display mode
+set $displayMode "Set display mode [w]ork [l]aptop"
+bindsym $mod+Shift+x mode $displayMode
+mode $displayMode {
+    bindsym w exec "\
+                ~/.screenlayout/work-displays.sh && \
+                ~/.screenlayout/dpi-96.sh"; \
+                mode "default"
+    bindsym l exec "\
+                ~/.screenlayout/laptop-displays.sh && \
+                ~/.screenlayout/dpi-192.sh"; \
+                mode "default"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
 # Lock screen
 bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
-#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-#exec --no-startup-id manjaro-hello
+#exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 #exec --no-startup-id pamac-tray
@@ -290,7 +305,6 @@ exec --no-startup-id clipit
 #exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
-exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
 # Color palette used for the terminal ( ~/.Xresources file )

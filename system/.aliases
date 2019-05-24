@@ -76,3 +76,6 @@ alias slsp='SLS_DEBUG=* serverless --verbose --stage=prod'
 alias md2pdf='node /home/ssmith/Code/node/md2pdf/index.js'
 
 alias open="nautilus ."
+
+alias publicrepo="hub create"
+alias privaterepo="hub create -p"

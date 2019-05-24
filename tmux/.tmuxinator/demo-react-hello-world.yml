@@ -1,0 +1,8 @@
+# ~/.tmuxinator/demo-react-hello-world.yml
+
+name: demo-react-hello-world
+root: ~/Code/github.com/voodooGQ/demo-react-hello-world/
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty

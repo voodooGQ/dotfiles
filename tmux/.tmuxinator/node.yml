@@ -1,8 +1,0 @@
-# ~/.tmuxinator/node.yml
-
-name: node
-root: ~/Code/node
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

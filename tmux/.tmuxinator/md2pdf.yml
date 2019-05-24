@@ -1,0 +1,8 @@
+# ~/.tmuxinator/md2pdf.yml
+
+name: md2pdf
+root: ~/Code/github.com/voodooGQ/md2pdf/
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty
