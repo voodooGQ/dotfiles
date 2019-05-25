@@ -15,7 +15,8 @@ sudo apt-get install -y software-properties-common python-dev python-pip \
     libxcb-shape0-dev autoconf xutils-dev autoconf libtool pkg-config \
     xcb flameshot arandr ranger nautilus nitrogen pipenv zeal tsserver \
     docker.io docker-compose watchman autoconf automake build-essential \
-    python-dev exfat-fuse exfat-utils hub tig
+    python-dev exfat-fuse exfat-utils hub tig conky jq lsb-core aptitude \
+    nvidia-prime
 
 
 # NVM
