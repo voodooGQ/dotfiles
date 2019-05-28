@@ -80,4 +80,4 @@ alias open="nautilus ."
 alias publicrepo="hub create"
 alias privaterepo="hub create -p"
 alias i3log="DISPLAY=:0 i3-dump-log | bzip2 -c | curl --data-binary @- https://logs.i3wm.org"
-
+alias conk="~/.conky/skeleton_start bluegrey"

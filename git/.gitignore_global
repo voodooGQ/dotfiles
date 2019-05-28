@@ -21,3 +21,5 @@ Gemfile.shane
 Gemfile.shane.lock
 
 node_modules/*
+
+.watchman-cookie-*

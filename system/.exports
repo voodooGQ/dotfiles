@@ -24,9 +24,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # Private export keys
 [ -s "$HOME/.private_exports" ] && source "$HOME/.private_exports"
-
-# Logikcull
-export FRONTEND_DIR=$HOME/Code/logikdocker/frontend
-export BACKEND_DIR=$HOME/Code/logikdocker/backend
-export NODE_PATH="$NODE_PATH:$HOME/npm/lib/node_modules"
-

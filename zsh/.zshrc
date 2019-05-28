@@ -87,6 +87,7 @@ BASE16_SHELL=$HOME/.config/base16-shell/
     [ -s $BASE16_SHELL/profile_helper.sh ] && \
     eval "$($BASE16_SHELL/profile_helper.sh)"
 
+eval `dircolors --sh ~/.gruvbox.dircolors`
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH

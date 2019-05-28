@@ -89,7 +89,7 @@ conky.config = {
 	alignment = 'top_right',				-- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
 											-- middle_left,middle_middle,middle_right,none.
 	gap_x = 20,								-- Pixels between right or left border.
-	gap_y = 50,								-- Pixels between bottom or left border.
+	gap_y = 40,								-- Pixels between bottom or left border.
 
 	-- ( with own_window_transparent = false )
 	--own_window_argb_visual = true,		-- Use ARGB - composite manager required.
@@ -109,7 +109,7 @@ conky.config = {
 
 	draw_shades = false,					-- Draw shades.
 	default_shade_color = 'black',			-- Default color for shades.
-	draw_outline = false,					-- Draw outline.
+	draw_outline = true,					-- Draw outline.
 	default_outline_color = 'black',		-- Default outline colour.
 
 	-- [ Borders Settings ]
@@ -119,7 +119,7 @@ conky.config = {
 	border_inner_margin = 5,				-- Border inner margins.
 	border_outer_margin = 0,				-- Border outer margins.
 	border_width = 0,						-- Border width.
-	draw_graph_borders = false,				-- Graphics borders.
+	draw_graph_borders = true,				-- Graphics borders.
 
 	-- [ Miscellaneous Settings ]
 
@@ -139,7 +139,7 @@ conky.config = {
 											-- "call" a lot of text IE: bash scripts.
 	-- max_user_text 16384					-- Maximum size of user text buffer, i.e. layout below TEXT line in config file
 											-- (default is 16384 bytes).
-	-- temperature_unit Fahrenheit			-- Desired output unit of all objects displaying a temperature. Parameters are
+  --temperature_unit Fahrenheit,			-- Desired output unit of all objects displaying a temperature. Parameters are
 											-- either "fahrenheit" or "celsius". The default unit is degree Celsius.
 
 	-- [ Colours ]
@@ -157,7 +157,7 @@ conky.config = {
 	color9 = '#CD5C5C',
 
     -- [ Graphs Color Variants ]
-    template2="607D8B 607D8B",
+    template2="60FF8B FF7D8B",
 
     -- [ Skeleton Root Path ]
     template3="~/.conky/Conky-Skeleton",
@@ -326,12 +326,12 @@ ${voffset -10}${color1}${hr}${color}
 #
 # [ CONNECTIONS ]
 #
-${alignr}Up: ${color0}${upspeed wlp5s0}${color}
-${alignr}Sent: ${color0}${totalup wlp5s0}${color}
-${voffset -31}${alignr 100}${upspeedgraph wlp5s0 24,220 ${template2}}
-${alignr}Down: ${color0}${downspeed wlp5s0}${color}
-${alignr}Received: ${color0}${totaldown wlp5s0}${color}
-${voffset -33}${alignr 100}${downspeedgraph wlp5s0 24,220 ${template2}}
+${alignr}Up: ${color0}${upspeed wlp2s0}${color}
+${alignr}Sent: ${color0}${totalup wlp2s0}${color}
+${voffset -31}${alignr 100}${upspeedgraph wlp2s0 24,220 ${template2}}
+${alignr}Down: ${color0}${downspeed wlp2s0}${color}
+${alignr}Received: ${color0}${totaldown wlp2s0}${color}
+${voffset -33}${alignr 100}${downspeedgraph wlp2s0 24,220 ${template2}}
 ${alignr}Connections in: ${color0}${tcp_portmon 1 32767 count} ${color1}|${color} Connections out: ${color0}${tcp_portmon 32768 61000 count} ${color1}|${color} Total: ${color0}${tcp_portmon 1 65535 count}${color}
 #
 # [ SEPARATOR ]
@@ -342,13 +342,13 @@ ${voffset -2}${color1}${hr}${color}
 #
 ${if_existing /proc/net/route eno1}\
 ${alignr}Wired LAN device: ${color0}eno1${color}
-${alignr}Local IP: ${color0}${addr wlp5s0} ${color1}|${color} Public IP: ${color0}${execi 60 wget -O - -q icanhazip.com}${color}
+${alignr}Local IP: ${color0}${addr wlp2s0} ${color1}|${color} Public IP: ${color0}${execi 60 wget -O - -q icanhazip.com}${color}
 ${else}\
-${if_existing /proc/net/route wlp5s0}\
-${alignr}WiFi Quality: ${color0}${wireless_link_qual_perc wlp5s0}% ${color1}|${color} Interface: ${color0}${gw_iface} ${color1}|${color} Bitrate: ${color0}${wireless_bitrate wlp5s0}${color}
-${alignr}WiFi Mode: ${color0}${wireless_mode wlp5s0} ${color1}|${color} Essid: ${color0}${wireless_essid wlp5s0}${color}
-${alignr}Local IP: ${color0}${addr wlp5s0} ${color1}|${color} Public IP: ${color0}${execi 60 wget -O - -q icanhazip.com}${color}
-${alignr}Mac addr: ${color0}${wireless_ap wlp5s0}
+${if_existing /proc/net/route wlp2s0}\
+${alignr}WiFi Quality: ${color0}${wireless_link_qual_perc wlp2s0}% ${color1}|${color} Interface: ${color0}${gw_iface} ${color1}|${color} Bitrate: ${color0}${wireless_bitrate wlp2s0}${color}
+${alignr}WiFi Mode: ${color0}${wireless_mode wlp2s0} ${color1}|${color} Essid: ${color0}${wireless_essid wlp2s0}${color}
+${alignr}Local IP: ${color0}${addr wlp2s0} ${color1}|${color} Public IP: ${color0}${execi 60 wget -O - -q icanhazip.com}${color}
+${alignr}Mac addr: ${color0}${wireless_ap wlp2s0}
 ${else}\
 ${alignr}${color0}Network offline!${color}
 ${endif}${endif}\
