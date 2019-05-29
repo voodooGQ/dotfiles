@@ -16,7 +16,7 @@ sudo apt-get install -y software-properties-common python-dev python-pip \
     xcb flameshot arandr ranger nautilus nitrogen pipenv zeal tsserver \
     docker.io docker-compose watchman autoconf automake build-essential \
     python-dev exfat-fuse exfat-utils hub tig conky jq lsb-core aptitude \
-    nvidia-prime net-tools w3m-img cargo
+    nvidia-prime net-tools w3m-img cargo highlight
 
 
 # NVM
@@ -30,10 +30,7 @@ rm -rf ~/.oh-my-zsh
 unlink -s ~/.zshrc
 rm -rf ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-rm -rf ~/.zshrc
 
-cd ~/.dotfiles
-stow autostart clipit dunst git htop i3 mimetypes neofetch plank ruby system tmux user-dirs vim xfce4 xfiles zsh
 
-./~/.dotfiles/scripts/install_vundle.sh
-
+# This will boot you into ZSH, the secondary script located at ./debian-post.sh should be run after
+# this one.
