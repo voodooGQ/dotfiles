@@ -127,7 +127,7 @@ nn <C-w><Down> :echoe "Use \<C-w\>j"<CR>
 nn - :Ranger<CR>
 
 " Go Back from tag jump
-nn <C-\> <C-T>
+"nn <C-\> <C-T>
 
 map <leader>b :Buffers<CR>
 map f <Plug>Sneak_s
@@ -154,6 +154,12 @@ xnoremap L $
 " Shift-X repeats the x macro
 nnoremap X @x
 xnoremap X :normal! @x<CR>
+
+" Ranger
+" On escape go back to last opened buffer
+tnoremap <Esc> <C-\><C-n>:b#<CR>
+" Make sure we can still navigate panes alright
+tnoremap <C-w> <C-\><C-n><C-w>
 
 "===============================================================================
 " LEADER_MAPS"{{{
