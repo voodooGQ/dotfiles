@@ -124,6 +124,8 @@ nn <C-w><Up> :echoe "Use \<C-w\>k"<CR>
 nn <Down> :echoe "Use j"<CR>
 nn <C-w><Down> :echoe "Use \<C-w\>j"<CR>
 
+nn - :Ranger<CR>
+
 " Go Back from tag jump
 nn <C-\> <C-T>
 
@@ -443,6 +445,7 @@ if has('nvim')
     "autocmd VimEnter * nested call RestoreSess()
 end
 
+let g:ranger_replace_netrw = 1
 "==============================================================================="{{{
 " RSPEC"}}}
 map <Leader>rsf :call RunCurrentSpecFile()<CR>
