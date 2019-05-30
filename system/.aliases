@@ -2,17 +2,17 @@ alias port="sudo lsof -i"
 alias spot="spotify"
 alias :q="exit"
 alias :e="ls -lFh"
+alias :so="source ~/.zshrc"
 alias psqlstart="postgres -D /usr/local/var/postgres"
 alias vbox="vboxmanage"
 alias weather="curl wttr.in"
 alias vim=nvim
 alias vi=nvim
 alias cat=bat
+alias ping=prettyping
 alias c="clear"
-
-# Ruby/Rails
-alias brspec="be rspec"
-alias rbp="rails_best_practices"
+alias top="htop"
+alias du="ncdu"
 
 # IP Helpers
 alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -32,8 +32,6 @@ alias ldot='ls -ld .*'
 alias lS='ls -1FSsh'
 alias lart='ls -1Fcart'
 alias lrt='ls -1Fcrt'
-
-alias zshrc='$EDITOR ~/.zshrc' # Quick access to the ~/.zshrc file
 
 alias grep='grep --color'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
