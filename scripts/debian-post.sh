@@ -4,8 +4,8 @@
 rm -rf ~/.zshrc
 
 cd ~/.dotfiles
-stow autostart clipit dunst git htop i3 mimetypes neofetch plank ruby system tmux user-dirs vim \
-     xfce4 xfiles zsh
+stow autostart bin clipit dunst git htop i3 mimetypes neofetch plank ruby system tmux user-dirs \
+     vim xfce4 xfiles zsh
 
 # Install Vundle
 cd scripts

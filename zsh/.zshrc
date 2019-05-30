@@ -121,3 +121,5 @@ ssh-add -l > /dev/null || ssh-add
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /home/ssmith/Code/onica/s3api.sls/node_modules/tabtab/.completions/slss.zsh ]] && . /home/ssmith/Code/onica/s3api.sls/node_modules/tabtab/.completions/slss.zsh
+
+function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
