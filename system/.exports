@@ -12,7 +12,7 @@ export LSCOLORS=ExfxBxDxCxEgEdxbxgxcad
 export VISUAL=$(which nvim)
 export EDITOR="$VISUAL"
 
-export FZF_DEFAULT_COMMAND='rg --files --follow --glob "!.git/*"'
+export FZF_DEFAULT_COMMAND='rg --files --follow --glob "!.git/*" -uu'
 
 export GOPATH=$HOME/Code/go
 export GOROOT=/usr/local/go
