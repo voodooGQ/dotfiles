@@ -1,10 +1,8 @@
 alias port="sudo lsof -i"
-alias spot="spotify"
 alias :q="exit"
 alias :e="ls -lFh"
 alias :so="source ~/.zshrc"
 alias psqlstart="postgres -D /usr/local/var/postgres"
-alias vbox="vboxmanage"
 alias weather="curl wttr.in"
 alias vim=nvim
 alias vi=nvim
@@ -13,6 +11,11 @@ alias ping=prettyping
 alias c="clear"
 alias top="htop"
 alias du="ncdu"
+
+alias song="spotifycli --status"
+alias play="spotifycli --playpause"
+alias next="spotifycli --next"
+alias prev="spotifycli --prev"
 
 # IP Helpers
 alias extip="dig +short myip.opendns.com @resolver1.opendns.com"

@@ -20,6 +20,9 @@ base16_gruvbox-dark-medium
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 cd ~/.config/ranger/plugins/ranger_devicons
 
+# pip
+pip install spotify-cli-linux
+
 # ----- Custom Deb
 
 # BAT: Updated package - https://github.com/sharkdp/bat/releases
