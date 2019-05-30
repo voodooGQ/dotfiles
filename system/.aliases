@@ -4,11 +4,10 @@ alias :q="exit"
 alias :e="ls -lFh"
 alias psqlstart="postgres -D /usr/local/var/postgres"
 alias vbox="vboxmanage"
-alias gotonow="ntpdate -s time.nist.gov"
 alias weather="curl wttr.in"
 alias vim=nvim
 alias vi=nvim
-alias cat="pygmentize -g"
+alias cat=bat
 alias c="clear"
 
 # Ruby/Rails

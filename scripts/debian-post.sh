@@ -19,3 +19,8 @@ base16_gruvbox-dark-medium
 # Ranger Devicons
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 cd ~/.config/ranger/plugins/ranger_devicons
+
+# ----- Custom Deb
+
+# BAT: Updated package - https://github.com/sharkdp/bat/releases
+sudo dpkg -i ~/.deb/bat_0.11.0_amd64.deb
