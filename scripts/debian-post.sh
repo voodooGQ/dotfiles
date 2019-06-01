@@ -4,8 +4,8 @@
 rm -rf ~/.zshrc
 
 cd ~/.dotfiles
-stow autostart bin clipit dunst git htop i3 mimetypes neofetch plank ruby system tmux user-dirs \
-     vim xfce4 xfiles zsh
+stow autostart bin clipit dunst git gtk-2.0 gtk-3.0 htop i3 mimetypes neofetch plank ruby system \
+     tmux user-dirs vim xfce4 xfiles zsh
 
 # Install Vundle
 cd scripts
@@ -17,7 +17,9 @@ source .zshrc
 base16_gruvbox-dark-medium
 
 # Ranger Devicons
-git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+git clone https://github.com/alexanderjeurissen/ranger_devicons \
+          ~/.config/ranger/plugins/ranger_devicons
+
 cd ~/.config/ranger/plugins/ranger_devicons
 
 # pip

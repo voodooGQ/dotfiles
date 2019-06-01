@@ -5,15 +5,15 @@
 set $mod Mod4
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 3
-new_float normal
+default_border pixel 3
+default_floating_border pixel 1
 
 # Hide borders
 hide_edge_borders none
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font xft:AurulentSansMono-Nerd-Font-Regular 13
+font xft:Hack-Nerd-Font-Mono-Regular 11
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -291,7 +291,7 @@ exec --no-startup-id clipit
 exec --no-startup-id  ~/.conky/skeleton_start bluegrey
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
-exec_always --no-startup-id fix_xcursor
+#exec_always --no-startup-id fix_xcursor
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -331,8 +331,8 @@ bar {
   status_command i3status
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
+  tray_output primary
+  tray_output HDMI-0
 
 	bindsym button4 nop
 	bindsym button5 nop
