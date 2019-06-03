@@ -18,10 +18,7 @@ sudo apt-get install -y software-properties-common python-dev python-pip python3
     pkg-config xcb flameshot arandr ranger nautilus nitrogen pipenv zeal tsserver docker.io \
     docker-compose watchman autoconf automake build-essential  python-dev exfat-fuse exfat-utils \
     hub tig conky jq lsb-core aptitude nvidia-prime net-tools w3m-img cargo highlight httpie \
-    fd-find ddgr gtk-2.0 gtk-3.0 lxappearance xautolock gnome-tweak-tools jmtpfs mtp-tools scrot \
-    curl
-
-
+    fd-find ddgr lxappearance xautolock gnome-tweak-tools jmtpfs mtp-tools scrot curl
 
 # NVM
 curl https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
