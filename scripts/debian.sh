@@ -19,7 +19,7 @@ sudo apt-get install -y software-properties-common python-dev python-pip python3
     docker-compose watchman autoconf automake build-essential  python-dev exfat-fuse exfat-utils \
     hub tig conky jq lsb-core aptitude nvidia-prime net-tools w3m-img cargo highlight httpie \
     fd-find ddgr gtk-2.0 gtk-3.0 lxappearance xautolock gnome-tweak-tools jmtpfs mtp-tools scrot \
-    balena-etcher-electron
+    curl
 
 
 
