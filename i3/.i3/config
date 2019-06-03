@@ -27,15 +27,12 @@ bindsym $mod+Shift+q kill
 # start program launcher
 bindsym $mod+d exec --no-startup-id dmenu_recency
 
-# launch categorized menu
-bindsym $mod+z exec --no-startup-id morc_menu
-
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
 exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+bindsym $mod+Ctrl+m exec xfce4-terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
@@ -43,25 +40,18 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 ################################################################################################
 
 # Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+ bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec firefox
-#bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F3 exec ranger
 bindsym $mod+F4 exec flameshot gui
-bindsym $mod+Shift+F3 exec gksu pcmanfm
-bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+z exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
-bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+
 bindsym $mod+x move workspace to output right
 
 
@@ -284,14 +274,14 @@ bindsym $mod+9 exec --no-startup-id blurlock
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
+exec --no-startup-id ~/.i3/lemonbar/bar.sh | \
+                     lemonbar -p -b -f "hack nerd font mono regular:size=10" -B "#FF283339"
 #exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
  exec --no-startup-id blueman-applet
  exec_always --no-startup-id sbxkb
 exec --no-startup-id  ~/.conky/skeleton_start bluegrey
-# exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
-#exec_always --no-startup-id fix_xcursor
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -328,23 +318,14 @@ set_from_resource $term_color15    color15
 bar {
   position top
 	i3bar_command i3bar
-  status_command i3status
-
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-  #tray_output primary
-  #tray_output HDMI-0
-
 	bindsym button4 nop
 	bindsym button5 nop
-#   font xft:URWGothic-Book 11
 	strip_workspace_numbers yes
-
     colors {
         background #283339
         statusline #F9FAF9
         separator  #454947
-
-#                      border  backgr. text
+#                          border  backgr. text
         focused_workspace  #d65d0e #fe8019 #292F34
         active_workspace   #a89984 #353836 #FDF6E3
         inactive_workspace #595B5B #283339 #ebdbb2

@@ -3,6 +3,10 @@
 #  Neovim
 sudo apt-add-repository ppa:neovim-ppa/stable
 
+# Etcher Deb
+echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
+
 sudo apt-get update
 
 sudo apt-get install -y software-properties-common python-dev python-pip python3-dev python3-pip \
@@ -14,7 +18,9 @@ sudo apt-get install -y software-properties-common python-dev python-pip python3
     pkg-config xcb flameshot arandr ranger nautilus nitrogen pipenv zeal tsserver docker.io \
     docker-compose watchman autoconf automake build-essential  python-dev exfat-fuse exfat-utils \
     hub tig conky jq lsb-core aptitude nvidia-prime net-tools w3m-img cargo highlight httpie \
-    fd-find ddgr gtk-2.0 gtk-3.0 lxappearance xautolock gnome-tweak-tools jmtpfs mtp-tools
+    fd-find ddgr gtk-2.0 gtk-3.0 lxappearance xautolock gnome-tweak-tools jmtpfs mtp-tools scrot \
+    balena-etcher-electron
+
 
 
 # NVM
