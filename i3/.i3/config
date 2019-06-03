@@ -331,8 +331,8 @@ bar {
   status_command i3status
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-  tray_output primary
-  tray_output HDMI-0
+  #tray_output primary
+  #tray_output HDMI-0
 
 	bindsym button4 nop
 	bindsym button5 nop

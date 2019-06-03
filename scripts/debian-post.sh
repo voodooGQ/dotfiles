@@ -24,6 +24,7 @@ cd ~/.config/ranger/plugins/ranger_devicons
 
 # pip
 pip install spotify-cli-linux
+pip install youtube-dl
 
 # ----- Custom Deb
 

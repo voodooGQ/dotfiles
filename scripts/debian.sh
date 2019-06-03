@@ -29,6 +29,5 @@ unlink -s ~/.zshrc
 rm -rf ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-
 # This will boot you into ZSH, the secondary script located at ./debian-post.sh should be run after
 # this one.
