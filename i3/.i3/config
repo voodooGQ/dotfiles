@@ -274,8 +274,14 @@ bindsym $mod+9 exec --no-startup-id blurlock
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id ~/.i3/lemonbar/bar.sh | \
-                     lemonbar -p -b -f "hack nerd font mono regular:size=10" -B "#FF283339"
+#exec --no-startup-id ~/.i3/lemonbar/bar.sh | lemonbar \
+  #-p \
+  #-b \
+  #-f "hack nerd font mono regular:size=10" \
+  #-f "Font Awesome" \
+  #-B "#FF222222"
+#exec_alays --no-startup-id ~/.i3/polybar.sh
+
 #exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
  exec --no-startup-id blueman-applet
@@ -316,22 +322,7 @@ set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-  position top
-	i3bar_command i3bar
-	bindsym button4 nop
-	bindsym button5 nop
-	strip_workspace_numbers yes
-    colors {
-        background #283339
-        statusline #F9FAF9
-        separator  #454947
-#                          border  backgr. text
-        focused_workspace  #d65d0e #fe8019 #292F34
-        active_workspace   #a89984 #353836 #FDF6E3
-        inactive_workspace #595B5B #283339 #ebdbb2
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
-    }
+  i3bar_command $HOME/.i3/polybar.sh
 }
 
 # hide/unhide i3status bar
