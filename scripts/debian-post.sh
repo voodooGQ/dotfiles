@@ -29,4 +29,4 @@ pip install youtube-dl
 # ----- Custom Deb
 
 # BAT: Updated package - https://github.com/sharkdp/bat/releases
-sudo dpkg -i ~/.deb/bat_0.11.0_amd64.deb
+sudo dpkg -i ~/.dotfiles/deb/bat_0.11.0_amd64.deb

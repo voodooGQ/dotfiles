@@ -60,7 +60,6 @@ ZSH_THEME="ssmith"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  brew
   bundler
   colored-man-pages
   colorize
@@ -69,7 +68,6 @@ plugins=(
   dotenv
   gem
   git
-  osx
   postgres
   rake
   rbenv
@@ -98,6 +96,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.exports
 source ~/.zsh_path
+source ~/.local/bin/aws_zsh_completer.sh
 
 eval "$(rbenv init -)"
 
@@ -123,3 +122,5 @@ ssh-add -l > /dev/null || ssh-add
 [[ -f /home/ssmith/Code/onica/s3api.sls/node_modules/tabtab/.completions/slss.zsh ]] && . /home/ssmith/Code/onica/s3api.sls/node_modules/tabtab/.completions/slss.zsh
 
 function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
+
+eval "$(onica-sso shell-init bash)"

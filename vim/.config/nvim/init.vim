@@ -1,1 +1,1 @@
-/home/ssmith/.vimrc
+/home/shane/.vimrc
