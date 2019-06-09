@@ -89,3 +89,7 @@ alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'"
 
 alias news="newsbeuter"
 alias pia="~/.local/bin/pia-linux-1.2.1-02688.run"
+alias gcal="gcalcli"
+alias day="gcalcli agenda"
+alias week="gcalcli calw"
+alias month="gcalcli calm"
