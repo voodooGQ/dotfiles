@@ -119,8 +119,8 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 #navigate workspaces next / previous
-bindsym $mod+Ctrl+Right workspace next
-bindsym $mod+Ctrl+Left workspace prev
+bindsym $mod+Ctrl+l workspace next
+bindsym $mod+Ctrl+h workspace prev
 
 # Drawer menu
 bindsym $mod+space exec dmenu_run
@@ -229,15 +229,10 @@ mode "$mode_system" {
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+        bindsym h resize grow width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize shrink width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -272,20 +267,13 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id uncluter -idle 3
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-#exec --no-startup-id ~/.i3/lemonbar/bar.sh | lemonbar \
-  #-p \
-  #-b \
-  #-f "hack nerd font mono regular:size=10" \
-  #-f "Font Awesome" \
-  #-B "#FF222222"
-#exec_alays --no-startup-id ~/.i3/polybar.sh
-
-#exec --no-startup-id pamac-tray
+exec --no-startup-id pia
 exec --no-startup-id clipit
- exec --no-startup-id blueman-applet
- exec_always --no-startup-id sbxkb
+exec --no-startup-id blueman-applet
+exec_always --no-startup-id sbxkb
 exec --no-startup-id  ~/.conky/skeleton_start bluegrey
 exec --no-startup-id xautolock -time 10 -locker blurlock
 

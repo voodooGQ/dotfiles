@@ -1,0 +1,9 @@
+# ~/.tmuxinator/demo-angular.yml
+
+name: demo-angular
+root: ~/Code/github.com/voodooGQ/demo-angular/
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty
+  - server: nvm use && ng serve --open

@@ -88,3 +88,4 @@ alias yt="youtube-dl"
 alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'"
 
 alias news="newsbeuter"
+alias pia="~/.local/bin/pia-linux-1.2.1-02688.run"

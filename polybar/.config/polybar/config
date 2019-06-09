@@ -18,14 +18,14 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #222
-background-alt = #444
+background = #282828
+background-alt = #504945
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+foreground = #ebdbb2
+foreground-alt = #d5c4a1
+primary = #fe8019
+secondary = #d3869b
+alert = #cc241d
 
 [bar/top]
 width = 100%
@@ -35,7 +35,7 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 line-size = 3
-line-color = #f00
+line-color = #d65d0e
 border-size = 4
 border-color = #00000000
 padding-left = 0
@@ -100,7 +100,7 @@ font-2 = siji:pixelsize=10;1
 
 ;modules-center = bspwm i3
 modules-left = battery
-modules-right = filesystem xbacklight xkeyboard memory cpu temperature date powermenu
+modules-right = filesystem backlight-acpi memory cpu temperature date
 
 ;tray-background = #0063ff
 
@@ -374,8 +374,13 @@ battery = BAT0
 adapter = AC
 full-at = 98
 
-format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+label-charging = Charging %percentage%
+
+format-full = <ramp-capacity> <label-full>
+
+label-full = Full
+format-charging = <animation-charging> <ramp-capacity>
+format-charging-underline = #d79921
 
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}

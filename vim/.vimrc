@@ -160,7 +160,6 @@ xnoremap X :normal! @x<CR>
 tnoremap <Esc> <C-\><C-n>:b#<CR>
 " Make sure we can still navigate panes alright
 tnoremap <C-w> <C-\><C-n><C-w>
-tnoremap - <Left>
 
 "===============================================================================
 " LEADER_MAPS"{{{
