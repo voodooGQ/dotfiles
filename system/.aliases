@@ -61,11 +61,7 @@ alias mv='mv -i'
 alias mux='tmuxinator'
 alias mm='mux mission-control'
 
-alias feserv='ssh logikcull-apps@lcub-staging-fe5000'
-alias aux='ps aux | grep'
-alias kruby='killall -9 ruby'
-alias ki='kill -9'
-alias kmail="kill $(ps aux | grep -E 'mailcatcher' | grep -v grep | awk '{print $2}')"
+alias aux='ps aux | rg'
 
 # Serverless
 alias slsl='SLS_DEBUG=* serverless --verbose --stage=local'
@@ -79,8 +75,8 @@ alias open="nautilus ."
 
 alias publicrepo="hub create"
 alias privaterepo="hub create -p"
+
 alias i3log="DISPLAY=:0 i3-dump-log | bzip2 -c | curl --data-binary @- https://logs.i3wm.org"
-alias conk="~/.conky/skeleton_start bluegrey"
 alias dot="cd ~/.dotfiles"
 alias phonemnt="jmtpfs ~/mnt/pixel"
 alias yt="youtube-dl"
@@ -93,3 +89,8 @@ alias gcal="gcalcli"
 alias day="gcalcli agenda"
 alias week="gcalcli calw"
 alias month="gcalcli calm"
+
+alias pe="pipenv"
+alias per="pe run"
+
+alias apt="sudo apt"

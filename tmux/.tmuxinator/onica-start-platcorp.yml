@@ -1,0 +1,10 @@
+# ~/.tmuxinator/onica-start-platcorp.yml
+
+---
+name: onica-start-platcorp
+root: ~/Code/bitbucket.org/corpinfo/onica-start-platcorp
+startup_window: editor
+windows:
+  - vi: nvim
+  - cli:
+  - fs: ranger .

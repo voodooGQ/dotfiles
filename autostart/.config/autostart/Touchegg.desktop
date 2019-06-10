@@ -4,4 +4,3 @@ Name=touchegg
 Comment=TouchEgg Gestures
 Exec=touchegg &
 Type=Application
-OnlyShowIn=XFCE;

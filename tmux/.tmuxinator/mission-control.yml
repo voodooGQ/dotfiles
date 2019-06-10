@@ -1,8 +1,8 @@
 # ~/.tmuxinator/mission-control.yml
-
+---
 name: mission-control
 root: ~/
-startup_window: editor
+startup_window: vi
 windows:
-  - editor: nvim
-  - terminal: #empty
+  - vi: nvim
+  - cli:

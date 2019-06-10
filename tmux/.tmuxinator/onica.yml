@@ -1,8 +1,9 @@
 # ~/.tmuxinator/onica.yml
-
+---
 name: onica
-root: ~/Code/onica
+root: ~/Code/github.com/voodooGQ/onica
 startup_window: editor
 windows:
   - editor: nvim
-  - terminal: #empty
+  - terminal:
+  - ranger: ranger .
