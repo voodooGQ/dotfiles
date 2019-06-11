@@ -14,6 +14,7 @@ alias du="ncdu"
 
 alias song="spotifycli --status"
 alias play="spotifycli --playpause"
+alias pause="spotifycli --playpause"
 alias next="spotifycli --next"
 alias prev="spotifycli --prev"
 

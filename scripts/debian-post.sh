@@ -22,6 +22,15 @@ git clone https://github.com/alexanderjeurissen/ranger_devicons \
 
 cd ~/.config/ranger/plugins/ranger_devicons
 
+# RBENV + Ruby-Build
+mkdir -p ~/Code/github.com/rbenv/
+git clone git@github.com:rbenv/rbenv.git ~/Code/github.com/rbenv/rbenv
+git clone git@github.com:rbenv/ruby-build.git ~/Code/github.com/rbenv/ruby-build
+ln -s ~/Code/github.com/rbenv/rbenv ~/.rbenv
+mkdir -p ~/.rbenv/plugins/
+ln -s ~/Code/github.com/rbenv/ruby-build ~/.rbenv/plugins/ruby-build
+cd ~/.rbenv && src/configure && make -C src
+
 # pip
 pip install spotify-cli-linux
 pip install youtube-dl

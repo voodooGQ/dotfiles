@@ -98,6 +98,10 @@ source ~/.exports
 source ~/.zsh_path
 source ~/.local/bin/aws_zsh_completer.sh
 
+if [[ -a ~/.secrets ]]; then
+  source ~/.secrets
+fi
+
 eval "$(rbenv init -)"
 
 # Start fzf
@@ -123,4 +127,6 @@ ssh-add -l > /dev/null || ssh-add
 
 function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 
+autoload bashcompinit
+bashcompinit
 eval "$(onica-sso shell-init bash)"

@@ -1,0 +1,9 @@
+# ~/.tmuxinator/onica-sso.yml
+---
+name: onica-sso
+root: ~/Code/bitbucket.org/corpinfo/onica-sso
+startup_window: editor
+windows:
+  - vi: nvim
+  - cli:
+  - fs: ranger .
