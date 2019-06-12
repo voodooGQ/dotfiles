@@ -5,10 +5,22 @@ killall -q polybar
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
 if type "xrandr"; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar --reload bottom &
-    MONITOR=$m polybar --reload top &
+  monitors=$(xrandr --query | grep " connected" | cut -d" " -f1)
+
+  for m in $monitors; do
+    if [ ${#monitors[@]} > 1 ]; then
+      if [ "$m" = "HDMI2" ]; then
+         MONITOR=$m polybar --reload top &
+         MONITOR=$m polybar --reload bottom &
+      else
+         MONITOR=$m polybar --reload topbig &
+      fi
+    else
+       MONITOR=$m polybar --reload top &
+       MONITOR=$m polybar --reload bottom &
+    fi
   done
+
 else
   polybar --reload bottom &
   polybar --reload top &
