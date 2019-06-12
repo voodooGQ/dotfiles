@@ -107,6 +107,10 @@ eval "$(rbenv init -)"
 # Start fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -"")"
+fi
+
 # Start SSH agent
 if [ ! -S ~/.ssh/ssh_auth_sock ]; then
   eval `ssh-agent`

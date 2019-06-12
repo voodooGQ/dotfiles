@@ -31,6 +31,14 @@ mkdir -p ~/.rbenv/plugins/
 ln -s ~/Code/github.com/rbenv/ruby-build ~/.rbenv/plugins/ruby-build
 cd ~/.rbenv && src/configure && make -C src
 
+# Ruby install
+rbenv install 2.6.3
+rbenv global 2.6.3
+rbenv rehash
+
+# Trello client
+gem install 3llo
+
 # pip
 pip install spotify-cli-linux
 pip install youtube-dl

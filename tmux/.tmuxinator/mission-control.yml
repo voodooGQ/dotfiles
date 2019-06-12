@@ -6,3 +6,5 @@ startup_window: vi
 windows:
   - vi: nvim
   - cli:
+  - ranger: ranger .
+  - trello: 3llo

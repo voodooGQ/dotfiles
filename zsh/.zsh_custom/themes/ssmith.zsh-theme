@@ -1,16 +1,3 @@
-# user, host, full path, and time/date
-# on two lines for easier vgrepping
-# entry in a nice long thread on the Arch Linux forums: http://bbs.archlinux.org/viewtopic.php?pid=521888#p521888
-#
-
-function hg_prompt_info {
-    hg prompt --angle-brackets "\
-<hg:%{$fg[magenta]%}<branch>%{$reset_color%}><:%{$fg[magenta]%}<bookmark>%{$reset_color%}>\
-</%{$fg[yellow]%}<tags|%{$reset_color%}, %{$fg[yellow]%}>%{$reset_color%}>\
-%{$fg[red]%}<status|modified|unknown><update>%{$reset_color%}<
-patches: <patches|join( → )|pre_applied(%{$fg[yellow]%})|post_applied(%{$reset_color%})|pre_unapplied(%{$fg_bold[black]%})|post_unapplied(%{$reset_color%})>>" 2>/dev/null
-}
-
 ZSH_THEME_GIT_PROMPT_ADDED=" %{$fg[cyan]%}+"
 ZSH_THEME_GIT_PROMPT_MODIFIED=" %{$fg[yellow]%}✱"
 ZSH_THEME_GIT_PROMPT_DELETED=" %{$fg[red]%}✗"
@@ -20,6 +7,14 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED=" %{$fg[blue]%}✈"
 ZSH_THEME_GIT_PROMPT_SHA_BEFORE=" %{$fg[blue]%}"
 ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$reset_color%}"
 
+function hg_prompt_info {
+    hg prompt --angle-brackets "\
+<hg:%{$fg[magenta]%}<branch>%{$reset_color%}><:%{$fg[magenta]%}<bookmark>%{$reset_color%}>\
+</%{$fg[yellow]%}<tags|%{$reset_color%}, %{$fg[yellow]%}>%{$reset_color%}>\
+%{$fg[red]%}<status|modified|unknown><update>%{$reset_color%}<
+patches: <patches|join( → )|pre_applied(%{$fg[yellow]%})|post_applied(%{$reset_color%})|pre_unapplied(%{$fg_bold[black]%})|post_unapplied(%{$reset_color%})>>" 2>/dev/null
+}
+
 function mygit() {
   if [[ "$(git config --get oh-my-zsh.hide-status)" != "1" ]]; then
     ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
@@ -28,21 +23,21 @@ function mygit() {
   fi
 }
 
-function retcode() {}
-
 function ruby_version() {
-    echo "$(rbenv_prompt_info)%{$reset_color%}"
+  echo "%{$fg_bold[magenta]%} $(rbenv_prompt_info)"
 }
 
-# alternate prompt with git & hg
-#PROMPT=$'
-#%{$fg_bold[blue]%}┌─[%{$fg_bold[green]%}%n%b%{$fg[black]%}@%{$fg[cyan]%}%m%{$fg_bold[blue]%}]%{$reset_color%} - %{$fg_bold[blue]%}[%{$fg_bold[white]%}%~%{$fg_bold[blue]%}]%{$reset_color%} - %{$fg_bold[blue]%}[%b%{$fg[yellow]%}'%D{"%Y-%m-%d %I:%M:%S"}%b$'%{$fg_bold[blue]%}]
-#%{$fg_bold[blue]%}└─[%{$fg_bold[magenta]%}%?$(retcode)%{$fg_bold[blue]%}] <$(mygit)$(hg_prompt_info)>%{$reset_color%} '
-#PS2=$' \e[0;34m%}%B>%{\e[0m%}%b
-#'
+function py_version() {
+  echo "%{$fg_bold[magenta]%} $(python --version)"
+}
+
+function js_version() {
+  echo "%{$fg_bold[magenta]%} $(nvm_prompt_info)"
+}
+
 PROMPT=$'
 %{$fg_bold[blue]%}┌─%{$fg_bold[blue]%}[%{$fg_bold[green]%}%~%{$fg_bold[blue]%}]%{$reset_color%} - %{$fg_bold[blue]%}[%b%{$fg[yellow]%}'%D{"%Y-%m-%d %I:%M:%S"}%b$'%{$fg_bold[blue]%}]
-%{$fg_bold[blue]%}└─[%{$fg_bold[magenta]%}ruby: $(rbenv_prompt_info)%{$fg_bold[blue]%}] <$(mygit)$(hg_prompt_info)>%{$reset_color%} '
+%{$fg_bold[blue]%}└─[$(ruby_version)%{$fg_bold[blue]%}][$(js_version)%{$fg_bold[blue]%}][$(py_version)%{$fg_bold[blue]%}] <$(mygit)$(hg_prompt_info)>%{$reset_color%} '
 PS2=$' \e[0;34m%}%B>%{\e[0m%}%b
 '
 
