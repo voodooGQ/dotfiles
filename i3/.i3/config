@@ -175,6 +175,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
+for_window [class="Xfce4-terminal"] border pixel 1
+for_window [class="Firefox"] border pixel 1
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="Galculator"] floating enable border pixel 1
@@ -260,6 +262,8 @@ mode $displayMode {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+bindsym $mod+Shift+Ctrl+x exec ~/.i3/polybar.sh
+bindsym $mod+p exec spotifycli --playpause
 
 # Lock screen
 bindsym $mod+9 exec --no-startup-id blurlock

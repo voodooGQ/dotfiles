@@ -95,3 +95,10 @@ alias pe="pipenv"
 alias per="pe run"
 
 alias apt="sudo apt"
+
+alias dot="cd ~/dotfiles"
+alias code="cd ~/Code"
+alias ghub="cd ~/Code/github.com"
+alias glab="cd ~/Code/gitlab.com"
+alias bb="cd ~/Code/bitbucket.org"
+alias onicastart="bb && cd corpinfo/onica-start"
