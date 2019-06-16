@@ -4,8 +4,8 @@
 rm -rf ~/.zshrc
 
 cd ~/Code/github.com/voodooGQ/dotfiles
-stow autostart bin clipit dunst git gtk-2.0 gtk-3.0 htop i3 mimetypes neofetch plank ruby system \
-     tmux user-dirs vim xfce4 xfiles zsh
+stow autostart bin clipit compton dunst git gtk-2.0 gtk-3.0 htop i3 mimetypes neofetch plank ruby \
+  system tmux user-dirs vim xfce4 xfiles zsh
 
 # Install Vundle
 cd scripts

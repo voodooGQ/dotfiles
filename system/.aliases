@@ -102,3 +102,5 @@ alias ghub="cd ~/Code/github.com"
 alias glab="cd ~/Code/gitlab.com"
 alias bb="cd ~/Code/bitbucket.org"
 alias onicastart="bb && cd corpinfo/onica-start"
+
+alias llogin="onica-sso login ssmith-lab > .env && source .env"
