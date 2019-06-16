@@ -24,14 +24,4 @@ sudo apt-get install -y software-properties-common python-dev python-pip python3
 # NVM
 curl https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
-# Make ZSH Default
-chsh -s $(which zsh)
-
-# Oh My ZSH
-rm -rf ~/.oh-my-zsh
-unlink -s ~/.zshrc
-rm -rf ~/.zshrc
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# This will boot you into ZSH, the secondary script located at ./debian-post.sh should be run after
-# this one.
+../vendor/zsh/oh-my-zsh.sh

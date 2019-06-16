@@ -8,8 +8,7 @@ stow autostart bin clipit compton dunst git gtk-2.0 gtk-3.0 htop i3 mimetypes ne
   system tmux user-dirs vim xfce4 xfiles zsh
 
 # Install Vundle
-cd scripts
-./install_vundle.sh
+./install/install_vundle.sh
 
 # Base16
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
@@ -47,3 +46,6 @@ pip install youtube-dl
 
 # BAT: Updated package - https://github.com/sharkdp/bat/releases
 sudo dpkg -i ~/.dotfiles/deb/bat_0.11.0_amd64.deb
+
+# Make sure user can run docker
+sudo usermod -a -G docker $USER
