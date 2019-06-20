@@ -1,0 +1,99 @@
+{
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.283333333333333,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Tetrarch - Freak",
+            "percent": 0.75,
+            "swallows": [
+               {
+                   "class": "^Spotify$",
+                   "instance": "^spotify$",
+                   "title": "Spotify"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 410,
+               "width": 654,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Mixer",
+            "percent": 0.25,
+            "swallows": [
+               {
+                   "class": "^Xfce4\\-terminal$",
+                   "instance": "^xfce4\\-terminal$",
+                   "title": "Mixer",
+                   "window_role": "^xfce4\\-terminal\\-1560871440\\-2016233325$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 410,
+       "width": 654,
+       "x": 0,
+       "y": 0
+    },
+    "name": "HTOP",
+    "percent": 0.358333333333333,
+    "swallows": [
+       {
+           "class": "^Xfce4\\-terminal$",
+           "instance": "^xfce4\\-terminal$",
+           "title": "HTOP",
+           "window_role": "^xfce4\\-terminal\\-1560872496\\-\\-496876132$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 410,
+       "width": 654,
+       "x": 0,
+       "y": 0
+    },
+    "name": "GTOP",
+    "percent": 0.358333333333333,
+    "swallows": [
+       {
+           "class": "^Xfce4\\-terminal$",
+           "instance": "^xfce4\\-terminal$",
+           "title": "GTOP",
+           "window_role": "^xfce4\\-terminal\\-1560872504\\-\\-2140374525$"
+       }
+    ],
+    "type": "con"
+}
+
