@@ -23,3 +23,6 @@ Gemfile.shane.lock
 node_modules/*
 
 .watchman-cookie-*
+
+.root
+.notags

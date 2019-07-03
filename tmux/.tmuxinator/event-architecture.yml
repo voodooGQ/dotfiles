@@ -1,0 +1,9 @@
+# ~/.tmuxinator/event-architecture.yml
+---
+name: event-architecture
+root: ~/Code/github.com/voodooGQ/event-architecture
+startup_window: editor
+windows:
+  - vi: nvim
+  - cli:
+  - fs: ranger .

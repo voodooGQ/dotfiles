@@ -101,6 +101,7 @@ augroup END
 " Don't open gutentags with gitcommits or rebases https://github.com/ludovicchabant/vim-gutentags/issues/168
 au FileType gitcommit,gitrebase let g:gutentags_enabled=0
 
+let g:gutentags_project_root = ['.root']
 "===============================================================================
 
 " REMAPS"{{{
@@ -124,7 +125,7 @@ nn <C-w><Up> :echoe "Use \<C-w\>k"<CR>
 nn <Down> :echoe "Use j"<CR>
 nn <C-w><Down> :echoe "Use \<C-w\>j"<CR>
 
-nn - :Ranger<CR>
+"nn - :Ranger<CR>
 
 " Go Back from tag jump
 "nn <C-\> <C-T>
@@ -157,9 +158,9 @@ xnoremap X :normal! @x<CR>
 
 " Ranger
 " On escape go back to last opened buffer
-tnoremap <Esc> <C-\><C-n>:b#<CR>
+"tnoremap <Esc> <C-\><C-n>:b#<CR>
 " Make sure we can still navigate panes alright
-tnoremap <C-w> <C-\><C-n><C-w>
+"tnoremap <C-w> <C-\><C-n><C-w>
 
 "===============================================================================
 " LEADER_MAPS"{{{
@@ -375,6 +376,7 @@ nmap <silent> sn :CocCommand snippets.editSnippets<CR>
 "==============================================================================="{{{
 " ROOTER"}}}
 let g:rooter_silent_chdir = 1
+let g:rooter_patterns = ['.root', '.git/']
 
 "==============================================================================="{{{
 " LINE_NUMBERS"}}}
@@ -451,7 +453,7 @@ if has('nvim')
     "autocmd VimEnter * nested call RestoreSess()
 end
 
-let g:ranger_replace_netrw = 1
+"let g:ranger_replace_netrw = 1
 "==============================================================================="{{{
 " RSPEC"}}}
 map <Leader>rsf :call RunCurrentSpecFile()<CR>

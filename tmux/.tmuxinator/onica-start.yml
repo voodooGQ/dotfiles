@@ -2,8 +2,28 @@
 ---
 name: onica-start
 root: ~/Code/bitbucket.org/corpinfo/onica-start
-startup_window: editor
 windows:
-  - vi: nvim
-  - cli:
-  - fs: ranger .
+  - Core.sls:
+      layout: main-horizontal
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/core.sls/
+      panes:
+        - nvim .
+        -  # cli
+  - Auth.sls:
+      layout: main-horizontal
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/auth.sls/
+      panes:
+        - nvim .
+        -  # cli
+  - Frontend:
+      layout: main-horizontal
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/frontend/
+      panes:
+        - nvim .
+        -  # cli
+  - _TEMPLATE_:
+      layout: main-horizontal
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/module_template.sls/
+      panes:
+        - nvim .
+        -  # cli

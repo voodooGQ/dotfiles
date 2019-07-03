@@ -31,6 +31,7 @@ bindsym $mod+d exec --no-startup-id dmenu_recency
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
+exec --no-startup-id pulseaudio --start
 exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec xfce4-terminal -e 'alsamixer'
 bindsym $mod+Shift+m exec pavucontrol
@@ -127,9 +128,9 @@ bindsym $mod+space exec dmenu_run
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1
-set $ws2 2
-set $ws3 3
+set $ws1 "1:slack"
+set $ws2 "2:ide"
+set $ws3 "3:monitor"
 set $ws4 4
 set $ws5 5
 set $ws6 6
@@ -251,18 +252,20 @@ bindsym $mod+Shift+x mode $displayMode
 mode $displayMode {
     bindsym w exec "\
                 ~/.screenlayout/work-displays.sh && \
-                ~/.screenlayout/dpi-96.sh"; \
+                ~/.config/polybar/init.sh"; \
                 mode "default"
     bindsym l exec "\
                 ~/.screenlayout/laptop-displays.sh && \
-                ~/.screenlayout/dpi-192.sh"; \
+                ~/.config/polybar/init.sh"; \
                 mode "default"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Shift+Ctrl+x exec ~/.i3/polybar.sh
+bindsym $mod+Shift+Ctrl+x exec ~/.config/polybar/init.sh
 bindsym $mod+p exec spotifycli --playpause
+bindsym $mod+i exec spotifycli --prev
+bindsym $mod+o exec spotifycli --next
 
 # Lock screen
 bindsym $mod+9 exec --no-startup-id blurlock

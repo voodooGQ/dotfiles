@@ -19,6 +19,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-vinegar'
 Plugin 'airblade/vim-rooter'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'pangloss/vim-javascript'
@@ -60,6 +61,7 @@ Plugin 'francoiscabrol/ranger.vim'
 Plugin 'machakann/vim-sandwich'
 Plugin 'rhysd/git-messenger.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'KabbAmine/zeavim.vim'
 
 call vundle#end()
 filetype on

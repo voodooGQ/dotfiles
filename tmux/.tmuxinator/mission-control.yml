@@ -2,9 +2,15 @@
 ---
 name: mission-control
 root: ~/
-startup_window: vi
+startup_window: "📈 monitor"
 windows:
-  - vi: nvim
-  - cli:
-  - ranger: ranger .
-  - trello: 3llo
+  - "⏿ [ monitor ]":
+      layout: main-horizontal
+      panes:
+        - htop
+        - gtop
+  - "🔊 [ volume ]":
+      panes:
+        - alsamixer
+  - "$ [ zsh ]":
+
