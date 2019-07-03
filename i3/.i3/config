@@ -87,14 +87,13 @@ bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_
 
 # split orientation
 bindsym $mod+backslash split h;exec notify-send 'tile horizontally'
-bindsym $mod+underscore split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+#bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -108,7 +107,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+Shift+s sticky toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -266,6 +265,9 @@ bindsym $mod+Shift+Ctrl+x exec ~/.config/polybar/init.sh
 bindsym $mod+p exec spotifycli --playpause
 bindsym $mod+i exec spotifycli --prev
 bindsym $mod+o exec spotifycli --next
+
+bindsym $mod+a exec pactl set-sink-volume 0 -5%
+bindsym $mod+s exec pactl set-sink-volume 0 +5%
 
 # Lock screen
 bindsym $mod+9 exec --no-startup-id blurlock
