@@ -91,16 +91,23 @@ alias day="gcalcli agenda"
 alias week="gcalcli calw"
 alias month="gcalcli calm"
 
+# Python
 alias pe="pipenv"
 alias per="pe run"
+alias pipup="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
 
 alias apt="sudo apt"
 
 alias dot="cd ~/dotfiles"
-alias code="cd ~/Code"
 alias ghub="cd ~/Code/github.com"
 alias glab="cd ~/Code/gitlab.com"
 alias bb="cd ~/Code/bitbucket.org"
 alias onicastart="bb && cd corpinfo/onica-start"
 
+# Onica-SSO
+alias payer="sso-login platcorp-payer"
 alias lab="sso-login ssmith-lab"
+
+# HTTPie
+alias get="http get"
+alias post="http post"

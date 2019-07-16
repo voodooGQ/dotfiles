@@ -1,0 +1,8 @@
+# ~/.tmuxinator/brady-luke-band.yml
+---
+name: brady-luke-band
+root: ~/Code/github.com/voodooGQ/brady-luke-band
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal:

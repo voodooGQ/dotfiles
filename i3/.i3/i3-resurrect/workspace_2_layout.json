@@ -1,0 +1,41 @@
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1024,
+       "width": 1267,
+       "x": 0,
+       "y": 0
+    },
+    "name": "JonnyHaystack/i3-resurrect: Simple solution to saving and restoring i3 workspaces - Mozilla Firefox",
+    "percent": 0.5,
+    "swallows": [
+       {
+          "class": "^Firefox$",
+          "instance": "^Navigator$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 410,
+       "width": 654,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Terminal - tmuxinator dotfiles",
+    "percent": 0.5,
+    "swallows": [
+       {
+          "class": "^Xfce4\\-terminal$",
+          "instance": "^xfce4\\-terminal$"
+       }
+    ],
+    "type": "con"
+}

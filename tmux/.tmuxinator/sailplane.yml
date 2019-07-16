@@ -1,0 +1,8 @@
+# ~/.tmuxinator/sailplane.yml
+---
+name: sailplane
+root: ~/Code/github.com/onicagroup/sailplane
+startup_window: editor
+windows:
+  - vi: nvim
+  - cli:

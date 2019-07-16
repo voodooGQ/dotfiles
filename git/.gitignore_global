@@ -26,3 +26,5 @@ node_modules/*
 
 .root
 .notags
+
+.orig

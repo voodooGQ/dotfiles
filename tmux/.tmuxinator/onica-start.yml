@@ -27,3 +27,7 @@ windows:
       panes:
         - nvim .
         -  # cli
+  - CLUSTER:
+      layout: main-horizontal
+      panes:
+        -  # cli
