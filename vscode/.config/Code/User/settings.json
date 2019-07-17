@@ -58,7 +58,7 @@
     ],
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": -1,
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -80,4 +80,5 @@
     "workbench.settings.enableNaturalLanguageSearch": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false
+    "aws.profile": "platcorp-payer"
 }

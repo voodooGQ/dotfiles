@@ -61,7 +61,7 @@
     "command": "workbench.action.focusSideBar"
   },
   {
-    "key": "-",
+    "key": "ctrl+a -",
     "command": "workbench.action.focusSideBar"
   },
   {
@@ -73,7 +73,7 @@
     "command": "workbench.action.focusPanel"
   },
   {
-    "key": "ctrl+a e",
+    "key": "ctrl+a -",
     "command": "workbench.view.explorer"
   },
   {
@@ -168,5 +168,33 @@
   {
     "key": "ctrl+a t",
     "command": "test-explorer.run-this-test"
+  },
+  {
+    "key": "ctrl+a backspace",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+a [",
+    "command": "editor.fold",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+[",
+    "command": "-editor.fold",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+a ctrl+[",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+0",
+    "command": "-editor.foldAll",
+    "when": "editorTextFocus"
   }
 ]
