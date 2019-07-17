@@ -28,3 +28,7 @@ node_modules/*
 .notags
 
 .orig
+
+.vscode
+.nyc_output
+.webpack
