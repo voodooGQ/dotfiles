@@ -5,10 +5,8 @@
 set $mod Mod4
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 0
+default_border pixel 2
 default_floating_border pixel 1
-
-# Hide borders
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -18,7 +16,7 @@ font xft:Hack-Nerd-Font-Mono-Regular 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec tilix
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -32,17 +30,18 @@ bindsym $mod+d exec --no-startup-id dmenu_recency
 
 exec --no-startup-id pulseaudio --start
 exec --no-startup-id pa-applet
-bindsym $mod+Ctrl+m exec xfce4-terminal -e 'alsamixer'
+
+bindsym $mod+Ctrl+m exec tilix -e 'alsamixer'
 bindsym $mod+Shift+m exec pavucontrol
 
 ################################################################################################
 
 # Screen brightness controls
- bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
- bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+F4 exec flameshot gui
+bindsym $mod+Ctrl+p exec flameshot gui
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -51,7 +50,7 @@ bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 
 bindsym $mod+x move workspace to output right
-
+bindsym $mod+Shift+x move workspace to output left
 
 # focus_follows_mouse no
 
@@ -86,15 +85,8 @@ bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_
 
 # split orientation
 bindsym $mod+backslash split h;exec notify-send 'tile horizontally'
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
 bindsym $mod+underscore split v;exec notify-send 'tile vertically'
->>>>>>> 6a1e2c7... vscode
-bindsym $mod+q split toggle
-=======
 bindsym $mod+Tab split toggle
->>>>>>> Stashed changes
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -200,9 +192,6 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (r)eboot, (Shift+s)hutdown
@@ -240,7 +229,7 @@ mode "resize" {
 
 # Display mode
 set $displayMode "Set display mode [w]ork [l]aptop"
-bindsym $mod+Shift+x mode $displayMode
+bindsym $mod+Shift+p mode $displayMode
 mode $displayMode {
     bindsym w exec "\
                 ~/.screenlayout/3-screen.sh && \
@@ -274,8 +263,7 @@ exec --no-startup-id pia
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec_always --no-startup-id sbxkb
-exec --no-startup-id  ~/.conky/skeleton_start bluegrey
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 1 -locker i3lock
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -327,11 +315,11 @@ bindsym $mod+m bar mode toggle
 #  client.background       #2b2c2b
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #ffffff #98971a #fbf1c7 #2e9ef4   #d3869b
-client.focused_inactive #ffffff #d3869b #ffffff #484e50   #5f676a
-client.unfocused        #ffffff #83a598 #fbf1c7 #292d2e   #3c3836
-client.urgent           #ffffff #fb4934 #ffffff #900000   #900000
-client.placeholder      #ffffff #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          #3c3836 #fe8019 #3c3836 #8f3f71   #d79921
+client.focused_inactive #3c3836 #d3869b #ffffff #484e50   #5f676a
+client.unfocused        #3c3836 #d3869b #1d2021 #292d2e   #3c3836
+client.urgent           #3c3836 #fb4934 #ffffff #900000   #900000
+client.placeholder      #3c3836 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #2b2c2b
 
@@ -340,8 +328,8 @@ client.background       #2b2c2b
 #############################
 
 # Set inner/outer gaps
-gaps inner 8
-gaps outer 4
+gaps inner 30
+gaps outer 8
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>

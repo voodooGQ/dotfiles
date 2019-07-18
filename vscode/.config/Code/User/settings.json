@@ -58,7 +58,7 @@
     ],
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -73,12 +73,11 @@
         "name": "Onica Start",
         "key": "OS"
     },
-    "aws.profile": "platcorp-payer",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.iconTheme": "file-icons",
     "workbench.settings.enableNaturalLanguageSearch": false,
     "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
     "aws.profile": "platcorp-payer"
 }
