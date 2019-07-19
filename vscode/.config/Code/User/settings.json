@@ -79,5 +79,15 @@
     "workbench.settings.enableNaturalLanguageSearch": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "aws.profile": "platcorp-payer"
+    "aws.profile": "platcorp-payer",
+    "files.trimTrailingWhitespace": true,
+    "javascript.preferences.quoteStyle": "single",
+    "dash.languageIdToDocsetMap" : {
+        "typescript": [
+            "typescript",
+            "javascript",
+            "lodash",
+            "awsjs"
+        ]
+    }
 }
