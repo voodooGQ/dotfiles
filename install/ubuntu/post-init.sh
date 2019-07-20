@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Clear out autogenned zshrc file from oh-my-zsh
-rm -rf ~/.zshrc
-
 cd ~/Code/github.com/voodooGQ/dotfiles
 stow autostart \
      bin \
