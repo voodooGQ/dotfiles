@@ -90,5 +90,9 @@
             "awsjs"
         ]
     },
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        ".vimrc.bundles": "viml",
+        "config": "shellscript"
+    }
 }

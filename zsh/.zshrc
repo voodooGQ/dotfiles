@@ -2,8 +2,6 @@ source ~/.exports
 
 plugins=(
   autopep8
-  #aws Causing error
-  catimg
   colored-man-pages
   colorize
   docker
@@ -13,7 +11,6 @@ plugins=(
   gem
   git
   httpie
-  jira
   jsontools
   kubectl
   ng
@@ -37,15 +34,13 @@ plugins=(
   zsh_reload
 )
 
-[ -n "$PS1" ] && \
-    [ -s $BASE16_SHELL/profile_helper.sh ] && \
-    eval "$($BASE16_SHELL/profile_helper.sh)"
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 eval `dircolors --sh ~/.gruvbox.dircolors`
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
-source ~/.exports
+source ~/.functions
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
