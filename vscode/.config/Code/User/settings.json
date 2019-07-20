@@ -89,5 +89,6 @@
             "lodash",
             "awsjs"
         ]
-    }
+    },
+    "explorer.confirmDelete": false
 }

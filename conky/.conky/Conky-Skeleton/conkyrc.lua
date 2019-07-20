@@ -1,1 +1,0 @@
-/home/ssmith/.conky/Conky-Skeleton/skeleton-bluegrey.lua
