@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "-------------------------------------------";
+echo "Installing System Applications";
+echo "-------------------------------------------";
+
 sudo apt-get install -y \
   aptitude \
   arandr \
@@ -11,7 +15,8 @@ sudo apt-get install -y \
   ddgr \
   dunst \
   exfat-fuse \
-  exfat-utils
+  exfat-utils \
+  flameshot \
   fzf \
   gnome-tweak-tool \
   highlight \
@@ -21,6 +26,7 @@ sudo apt-get install -y \
   i3 \
   jmtpfs \
   jq \
+  lxappearance \
   mtp-tools \
   nautilus \
   neofetch \
@@ -32,10 +38,17 @@ sudo apt-get install -y \
   scrot \
   stow \
   tig \
+  tilix \
   tmux \
   tmuxinator \
   unclutter \
   w3m-img \
   xautolock \
+  xcb \
   zeal \
   zsh \
+  ;
+
+echo "-------------------------------------------";
+echo "System Applicaitons Complete";
+echo "-------------------------------------------";
