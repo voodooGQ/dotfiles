@@ -5,31 +5,31 @@ echo "Installing Library and Compilation Packages";
 echo "-------------------------------------------";
 
 sudo apt-get install -y \
-  software-properties-common \
+  autoconf \
+  automake \
   build-essential \
-  libssl-dev \
-  libxcb-keysyms1-dev \
-  libpango1.0-dev \
-  libxcb-util0-dev \
-  libxcb-icccm4-dev \
-  libyajl-dev \
-  libstartup-notification0-dev \
-  libxcb-randr0-dev
   libev-dev \
+  libpango1.0-dev \
+  libpulse-dev \
+  libpulse0
+  libssl-dev \
+  libstartup-notification0-dev \
+  libtool \
   libxcb-cursor-dev
+  libxcb-icccm4-dev \
+  libxcb-keysyms1-dev \
+  libxcb-randr0-dev
+  libxcb-shape0-dev \
+  libxcb-util0-dev \
   libxcb-xinerama0-dev
   libxcb-xkb-dev
   libxkbcommon-dev
   libxkbcommon-x11-dev \
-  xutils-dev \
-  libxcb-shape0-dev \
-  automake \
+  libyajl-dev \
   lsb-core \
-  autoconf \
-  libtool \
   pkg-config \
-  libpulse0
-  libpulse-dev \
+  software-properties-common \
+  xutils-dev \
   ;
 
 echo "-------------------------------------------";
