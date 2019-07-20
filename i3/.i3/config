@@ -21,9 +21,6 @@ bindsym $mod+Return exec tilix
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency
-
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
@@ -43,18 +40,13 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness 
 
 # Start Applications
 bindsym $mod+Ctrl+p exec flameshot gui
-bindsym $mod+t exec --no-startup-id pkill compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b
-bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
+bindsym $mod+Ctrl+t exec --no-startup-id pkill compton && compton -b
 bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 
 bindsym $mod+x move workspace to output right
 bindsym $mod+Shift+x move workspace to output left
 
 # @TODO: See if this fixes the mouse seletion issue.
-
 focus_follows_mouse no
 
 # change focus
@@ -113,7 +105,7 @@ bindsym $mod+Ctrl+l workspace next
 bindsym $mod+Ctrl+h workspace prev
 
 # Drawer menu
-bindsym $mod+space exec dmenu_run
+bindsym $mod+space exec rofi -show
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
