@@ -2,7 +2,7 @@
 
 echo "-------------------------------------------";
 echo "Python Installation";
-echo "-------------------------------------------\n\n";
+echo "-------------------------------------------";
 
 # APT Dept
 sudo apt-get install -y \
@@ -16,10 +16,11 @@ sudo apt-get install -y \
 
 # Pip Packages
 pip install \
+  lyricwikia \
   spotify-cli-linux \
   youtube-dl \
   ;
 
 echo "-------------------------------------------";
 echo "Python Installation Complete";
-echo "-------------------------------------------\n\n";
+echo "-------------------------------------------";
