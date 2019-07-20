@@ -22,4 +22,4 @@ sudo apt-get update
 # JavaScript
 ./js.sh
 # ZSH
-./oh-my-zsh.sh
+./zsh.sh

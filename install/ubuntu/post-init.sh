@@ -14,13 +14,11 @@ stow autostart \
      mimetypes \
      neofetch \
      plank \
-     ruby \
      system \
      tmux \
      user-dirs \
      vim \
-     xfiles \
-     zsh
+     xfiles
 
 # Install Vundle
 ./install/install_vundle.sh
