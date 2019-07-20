@@ -42,10 +42,5 @@ gem install 3llo
 pip install spotify-cli-linux
 pip install youtube-dl
 
-# ----- Custom Deb
-
-# BAT: Updated package - https://github.com/sharkdp/bat/releases
-sudo dpkg -i ~/.dotfiles/deb/bat_0.11.0_amd64.deb
-
 # Make sure user can run docker
 sudo usermod -a -G docker $USER
