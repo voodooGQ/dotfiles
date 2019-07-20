@@ -1,0 +1,2 @@
+# Utilize the Gitignore API to generate ignores based on common items
+function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}

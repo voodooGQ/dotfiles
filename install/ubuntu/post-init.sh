@@ -4,8 +4,26 @@
 rm -rf ~/.zshrc
 
 cd ~/Code/github.com/voodooGQ/dotfiles
-stow autostart bin clipit compton dunst git gtk-2.0 gtk-3.0 htop i3 mimetypes neofetch plank ruby \
-  system tmux user-dirs vim xfiles zsh
+stow autostart \
+     bin \
+     clipit \
+     compton \
+     dunst \
+     git \
+     gtk-2.0 \
+     gtk-3.0 \
+     htop \
+     i3 \
+     mimetypes \
+     neofetch \
+     plank \
+     ruby \
+     system \
+     tmux \
+     user-dirs \
+     vim \
+     xfiles \
+     zsh
 
 # Install Vundle
 ./install/install_vundle.sh

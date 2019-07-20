@@ -1,8 +1,4 @@
-export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="ssmith"
-COMPLETION_WAITING_DOTS="true"
-ZSH_CUSTOM=$HOME/.zsh_custom
-export FZF_BASE="$HOME/Code/github.com/junegunn/fzf"
+source ~/.exports
 
 plugins=(
   autopep8
@@ -41,35 +37,26 @@ plugins=(
   zsh_reload
 )
 
-BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && \
     [ -s $BASE16_SHELL/profile_helper.sh ] && \
     eval "$($BASE16_SHELL/profile_helper.sh)"
 
 eval `dircolors --sh ~/.gruvbox.dircolors`
 
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
-
 source $ZSH/oh-my-zsh.sh
-
 source ~/.aliases
 source ~/.exports
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-# Private export keys
-[ -s "$HOME/.private_exports" ] && source "$HOME/.private_exports"
 
 source ~/.zsh_path
 source ~/.local/bin/aws_zsh_completer.sh
 
+# Secrets
 if [[ -a ~/.secrets ]]; then
   source ~/.secrets
 fi
-
-eval "$(rbenv init -)"
 
 # Start fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -82,7 +69,6 @@ if [ ! -S ~/.ssh/ssh_auth_sock ]; then
   eval `ssh-agent`
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
-export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
 
 # tabtab source for serverless package
