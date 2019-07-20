@@ -56,6 +56,12 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.aliases
 source ~/.exports
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+# Private export keys
+[ -s "$HOME/.private_exports" ] && source "$HOME/.private_exports"
+
 source ~/.zsh_path
 source ~/.local/bin/aws_zsh_completer.sh
 

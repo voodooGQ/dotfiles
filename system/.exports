@@ -1,32 +1,12 @@
-export LANG=en_US.UTF-8
-
-#https://github.com/neovim/neovim/issues/5990
-export VTE_VERSION="100"
-
-export NET=192.168.1
-# Mac LS Colors
-#http://superuser.com/questions/417805/how-to-configure-the-ansi-colors-of-the-command-line-terminal
-export CLICOLOR=1
-export LSCOLORS=ExfxBxDxCxEgEdxbxgxcad
-
-export VISUAL=$(which nvim)
+export AWS_REGION=us-east-1
+export DEV_BIN="$HOME/.local/devbin"
 export EDITOR="$VISUAL"
-
 export FZF_DEFAULT_COMMAND='rg --files --follow --glob "!.git/*" -uu'
-
 export GOPATH=$HOME/Code/go
 export GOROOT=/usr/local/go
-
-export PYENV_ROOT="$HOME/.pyenv"
-
-export DEV_BIN="$HOME/.local/devbin"
-
-export AWS_REGION=us-east-1
-
+export LANG=en_US.UTF-8
+export NET=192.168.1
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-
-# Private export keys
-[ -s "$HOME/.private_exports" ] && source "$HOME/.private_exports"
+export PYENV_ROOT="$HOME/.pyenv"
+export VISUAL=$(which nvim)
+export VTE_VERSION="100" # https://github.com/neovim/neovim/issues/5990
