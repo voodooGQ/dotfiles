@@ -2,7 +2,7 @@
 
 echo "-------------------------------------------";
 echo "Installing Library and Compilation Packages";
-echo "-------------------------------------------\n\n";
+echo "-------------------------------------------";
 
 sudo apt-get install -y \
   software-properties-common \
@@ -30,7 +30,8 @@ sudo apt-get install -y \
   pkg-config \
   libpulse0
   libpulse-dev \
+  ;
 
 echo "-------------------------------------------";
 echo "Library Installation Complete";
-echo "-------------------------------------------\n\n";
+echo "-------------------------------------------";
