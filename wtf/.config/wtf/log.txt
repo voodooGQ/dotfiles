@@ -1,5 +1,0 @@
-2019/06/17 17:25:55 log.go:25: [~/.config/wtf/config.yml]
-2019/06/17 17:28:16 log.go:25: [~/.config/wtf/config.yml]
-2019/06/18 10:41:48 log.go:25: [~/.config/wtf/config.yml]
-2019/06/18 21:23:35 log.go:25: [~/.config/wtf/config.yml]
-2019/06/18 21:23:40 log.go:25: [~/.config/wtf/config.yml]
