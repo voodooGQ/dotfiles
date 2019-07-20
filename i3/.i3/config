@@ -6,7 +6,7 @@ set $mod Mod4
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 2
-default_floating_border pixel 1
+default_floating_border pixel 2
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -33,6 +33,7 @@ exec --no-startup-id pa-applet
 
 bindsym $mod+Ctrl+m exec tilix -e 'alsamixer'
 bindsym $mod+Shift+m exec pavucontrol
+bindsym $mod+backslash exec firefox
 
 ################################################################################################
 
@@ -70,8 +71,6 @@ bindsym $mod+Shift+l move right
 
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
-bindsym $mod+b workspace back_and_forth
-bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
 bindsym $mod+Tab split toggle
@@ -98,9 +97,6 @@ bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+Shift+f focus mode_toggle
-
-# toggle sticky
-#bindsym $mod+Shift+s sticky toggle
 
 # focus the parent container
 bindsym $mod+Shift+u focus parent
@@ -169,16 +165,9 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable border pixel 1
+for_window [title="alsamixer"] floating enable border pixel 1 $ws3
 for_window [class="Xfce4-terminal"] border pixel 2
 for_window [class="Firefox"] border pixel 2
-for_window [class="Galculator"] floating enable border pixel 1
-for_window [class="Nitrogen"] floating enable sticky enable border normal
-for_window [class="Skype"] floating enable border normal
-for_window [class="Thus"] floating enable border normal
-for_window [class="Timeset-gui"] floating enable border normal
-for_window [class="(?i)virtualbox"] floating enable border normal
-for_window [class="Xfburn"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
