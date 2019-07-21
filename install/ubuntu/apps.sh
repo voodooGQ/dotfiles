@@ -30,7 +30,6 @@ sudo apt-get install -y \
   mtp-tools \
   nautilus \
   neofetch \
-  neovim \
   net-tools \
   nvidia-prime \
   pavucontrol \
@@ -46,7 +45,6 @@ sudo apt-get install -y \
   xautolock \
   xcb \
   zeal \
-  zsh \
   ;
 
 stow clipit \

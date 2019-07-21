@@ -15,11 +15,12 @@ sudo apt-get install -y \
   ;
 
 # Pip Packages
-pip install \
-  lyricwikia \
-  spotify-cli-linux \
-  youtube-dl \
-  ;
+pip3 install lyricwikia
+pip3 install spotify-cli-linux
+pip3 install youtube-dl
+pip install lyricwikia
+pip install spotify-cli-linux
+pip install youtube-dl
 
 echo "-------------------------------------------";
 echo "Python Installation Complete";

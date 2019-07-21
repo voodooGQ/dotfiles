@@ -6,7 +6,15 @@ echo "-------------------------------------------";
 
 cd $HOME/.dotfiles
 
-stow vim
+sudo apt-add-repository ppa:neovim-ppa/stable
+
+sudo apt-get update
+
+sudo apt-get install \
+  neovim \
+  ;
+
+stow vim;
 
 # Install Vundle
 ./install/install_vundle.sh
