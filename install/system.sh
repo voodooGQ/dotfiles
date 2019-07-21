@@ -26,5 +26,5 @@ git clone https://github.com/alexanderjeurissen/ranger_devicons \
 cd $HOME/.config/ranger/plugins/ranger_devicons
 
 echo "-------------------------------------------";
-echo "Installing System Files";
+echo "Installing System Files Complete";
 echo "-------------------------------------------";
