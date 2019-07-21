@@ -3,25 +3,11 @@
 cd ~/Code/github.com/voodooGQ/dotfiles
 stow autostart \
      bin \
-     clipit \
-     compton \
-     dunst \
-     git \
-     gtk-2.0 \
-     gtk-3.0 \
-     htop \
-     i3 \
      mimetypes \
-     neofetch \
-     plank \
      system \
-     tmux \
      user-dirs \
-     vim \
-     xfiles
-
-# Install Vundle
-./install/install_vundle.sh
+     xfiles \
+     ;
 
 # Base16
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell

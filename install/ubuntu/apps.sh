@@ -49,6 +49,17 @@ sudo apt-get install -y \
   zsh \
   ;
 
+stow clipit \
+     compton \
+     dunst \
+     git \
+     gtk-2.0 \
+     gtk-3.0 \
+     htop \
+     i3 \
+     neofetch \
+     tmux;
+
 echo "-------------------------------------------";
-echo "System Applicaitons Complete";
+echo "System Applications Complete";
 echo "-------------------------------------------";

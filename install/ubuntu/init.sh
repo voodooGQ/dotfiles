@@ -23,3 +23,5 @@ sudo apt-get update
 ./js.sh
 # ZSH
 ./zsh.sh
+# System
+./system.sh
