@@ -16,8 +16,8 @@ sudo apt-get install \
 
 stow vim;
 
-# Install Vundle
-./install/install_vundle.sh
+mkdir -p ~/.vim/bundle > /dev/null 2>&1;
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim > /dev/null 2>&1;
 
 echo "-------------------------------------------";
 echo "Installing Vim Complete";
