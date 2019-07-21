@@ -234,11 +234,7 @@ bindsym $mod+o exec spotifycli --next
 bindsym $mod+a exec pactl set-sink-volume 0 -5%
 bindsym $mod+s exec pactl set-sink-volume 0 +5%
 
-# Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
-
 # Autostart applications
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id uncluter -idle 3
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
