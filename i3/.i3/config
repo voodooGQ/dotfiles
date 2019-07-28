@@ -32,6 +32,9 @@ bindsym $mod+Ctrl+m exec tilix -e 'alsamixer'
 bindsym $mod+Shift+m exec pavucontrol
 bindsym $mod+backslash exec firefox
 
+exec --no-startup-id ~/.config/polybar/init.sh
+exec --no-startup-id sh ~/.fehbg
+
 ################################################################################################
 
 # Screen brightness controls
@@ -70,20 +73,6 @@ bindsym $mod+Tab split toggle
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# Layout change
-set $layout "(s)tacking (t)abbed split(v) split(h)"
-bindsym $mod+w mode $layout
-mode $layout {
-  bindsym s layout stacking
-  bindsym t layout tabbed
-  bindsym v layout splitv
-  bindsym h layout splith
-
-  # exit resize mode: Enter or Escape
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-}
-
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
@@ -111,14 +100,14 @@ bindsym $mod+space exec rofi -show
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 "1:slack"
-set $ws2 "2:ide"
-set $ws3 "3:monitor"
-set $ws4 4
-set $ws5 5
-set $ws6 6
-set $ws7 7
-set $ws8 8
+set $ws1 ""
+set $ws2 ""
+set $ws3 ""
+set $ws4 ""
+set $ws5 ""
+set $ws6 ""
+set $ws7 ""
+set $ws8 ""
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -151,24 +140,36 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
-# assign [class="Pale moon"] $ws2
-# assign [class="Pcmanfm"] $ws3
-# assign [class="Skype"] $ws5
+assign [class="slack"] $ws1
+assign [class="Spotify"] $ws5
+assign [class="Zeal"] $ws6
+assign [class="zeal"] $ws6
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable border pixel 1 $ws3
-for_window [class="Xfce4-terminal"] border pixel 2
+for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="Firefox"] border pixel 2
+for_window [class="slack"] border pixel
+for_window [title="feh"] floating enable board pixel 1
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
-
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
+# Layout change
+set $layout "(s)tacking (t)abbed split(v) split(h)"
+bindsym $mod+w mode $layout
+mode $layout {
+  bindsym s layout stacking
+  bindsym t layout tabbed
+  bindsym v layout splitv
+  bindsym h layout splith
+
+  # exit resize mode: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
@@ -210,7 +211,7 @@ mode "resize" {
 }
 
 # Display mode
-set $displayMode "Set display mode [w]ork [l]aptop"
+set $displayMode "Set display mode (w)ork (l)aptop"
 bindsym $mod+Shift+p mode $displayMode
 mode $displayMode {
     bindsym w exec "\
@@ -227,6 +228,7 @@ mode $displayMode {
 }
 
 bindsym $mod+Shift+Ctrl+x exec ~/.config/polybar/init.sh
+
 bindsym $mod+p exec spotifycli --playpause
 bindsym $mod+i exec spotifycli --prev
 bindsym $mod+o exec spotifycli --next
@@ -235,7 +237,6 @@ bindsym $mod+a exec pactl set-sink-volume 0 -5%
 bindsym $mod+s exec pactl set-sink-volume 0 +5%
 
 # Autostart applications
-exec --no-startup-id uncluter -idle 3
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pia

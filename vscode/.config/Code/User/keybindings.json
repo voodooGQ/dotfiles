@@ -17,7 +17,7 @@
     "command": "-workbench.action.focusFirstEditorGroup"
   },
   {
-    "key": "ctrl+shift+t",
+    "key": "ctrl+a t",
     "command": "workbench.view.extension.test"
   },
   {
@@ -158,7 +158,7 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+a t",
+    "key": "ctrl+t",
     "command": "test-explorer.run-this-test"
   },
   {
@@ -232,5 +232,83 @@
   {
     "key": "ctrl+a n",
     "command": "workbench.action.evenEditorWidths"
+  },
+  {
+    "key": "ctrl+a \\",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+a f",
+    "command": "workbench.view.search",
+    "when": "!searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "-workbench.view.search",
+    "when": "!searchViewletVisible"
+  },
+  {
+    "key": "ctrl+a shift+;",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+a ;",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+a alt+b",
+    "command": "editor.action.marker.nextInFiles",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "f8",
+    "command": "-editor.action.marker.nextInFiles",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+a shift+alt+b",
+    "command": "editor.action.marker.prevInFiles",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+f8",
+    "command": "-editor.action.marker.prevInFiles",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+a shift+b",
+    "command": "editor.action.marker.prev",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f8",
+    "command": "-editor.action.marker.prev",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+a b",
+    "command": "editor.action.marker.next",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+f8",
+    "command": "-editor.action.marker.next",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+a shift+'",
+    "command": "editor.action.fixAll"
   }
 ]

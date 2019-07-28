@@ -33,11 +33,13 @@ sudo apt-get install -y \
   net-tools \
   nvidia-prime \
   pavucontrol \
+  powertop \
   ranger \
   scrot \
   stow \
   tig \
   tilix \
+  tlp \
   tmux \
   tmuxinator \
   unclutter \

@@ -87,3 +87,5 @@ alias post="http post"
 # Onica-SSO
 alias payer="sso-login platcorp-payer"
 alias lab="sso-login ssmith-lab"
+
+alias pi="ssh pi@192.168.1.35"
