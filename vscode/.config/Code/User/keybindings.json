@@ -310,5 +310,13 @@
   {
     "key": "ctrl+a shift+'",
     "command": "editor.action.fixAll"
+  },
+  {
+    "key": "ctrl+a shift+z",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+k z",
+    "command": "-workbench.action.toggleZenMode"
   }
 ]
