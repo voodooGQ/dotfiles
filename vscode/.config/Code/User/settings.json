@@ -125,5 +125,6 @@
     },
     "explorer.confirmDragAndDrop": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "auto-close-tag.SublimeText3Mode": true
+    "auto-close-tag.SublimeText3Mode": true,
+    "markdown.preview.breaks": true
 }

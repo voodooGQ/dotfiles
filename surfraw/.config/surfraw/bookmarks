@@ -1,0 +1,12 @@
+github-onica           https://www.github.com/onicagroup/                                                                                               ;; Github landing for Onica-Group
+github-voodoo          https://www.github.com/voodoogq/                                                                                                 ;; My Github Landing
+sailplane              https://github.com/onicagroup/sailplane                                                                                          ;; Onica - Sailplane
+runway                 https://github.com/onicagroup/runway                                                                                             ;; Onica - Runway
+overapi                http://overapi.com                                                                                                               ;; Development Cheatsheets
+mail-voodoo            https://mail.google.com/mail/u/?authuser=voodoogq@gmail.com                                                                      ;; My Email
+mail-onica             https://mail.google.com/mail/u/?authuser=ssmith@onica.com                                                                        ;; Onica Email
+jira-platform          https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=351&view=planning.nodetail                                    ;; Platform Team Projects
+jira-os                https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=333&projectKey=OS&view=planning&selectedIssue=OS-12           ;; Onica Start Jira
+jira-sso               https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=291&projectKey=NC&view=planning.nodetail&selectedIssue=NC-4   ;; Onica SSO Jira
+bitbucket-sso          https://bitbucket.org/corpinfo/onica-sso/src/ENV-dev/                                                                            ;; Onica SSO Repo
+bitbucket-os           https://bitbucket.org/corpinfo/onica-start/src/develop://bitbucket.org/corpinfo/onica-start/src/develop/                         ;; Onica Start Repo

@@ -94,7 +94,7 @@ bindsym $mod+Ctrl+l workspace next
 bindsym $mod+Ctrl+h workspace prev
 
 # Drawer menu
-bindsym $mod+space exec rofi -show
+bindsym $mod+space exec ~/.rofi/scripts/bangs.sh
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use

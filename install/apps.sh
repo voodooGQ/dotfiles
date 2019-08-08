@@ -12,7 +12,6 @@ sudo apt-get install -y \
   compton \
   curl \
   curl \
-  ddgr \
   dunst \
   exfat-fuse \
   exfat-utils \
@@ -36,13 +35,16 @@ sudo apt-get install -y \
   powertop \
   ranger \
   scrot \
+  screen \
   stow \
+  surfraw \
   tig \
   tilix \
   tlp \
   tmux \
   tmuxinator \
   unclutter \
+  w3m \
   w3m-img \
   xautolock \
   xcb \
