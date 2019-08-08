@@ -5,9 +5,11 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	askpass = git-gui--askpass
+	pager = nvimpager
 
 [color]
 	ui = auto
+	pager = no
 
 [alias]
   co = checkout

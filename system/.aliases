@@ -1,93 +1,62 @@
-alias apt="sudo apt"
-alias port="sudo lsof -i"
-alias :q="exit"
 alias :e="ls -lFh"
+alias :q="exit"
 alias :so="source ~/.zshrc"
-alias weather="curl wttr.in"
-alias vim=nvim
-alias vi=nvim
-alias cat=bat
-alias ping=prettyping
-alias top="htop"
+alias apt="sudo apt"
+alias bb="cd ~/Code/bitbucket.org"
+alias cat="PAGER=none bat"
+alias cp='cp -i'
+alias day="gcalcli agenda"
+alias dot="cd ~/dotfiles"
 alias du="ncdu"
-
-# Spotify
-alias song="spotifycli --status"
-alias play="spotifycli --playpause"
-alias pause="spotifycli --playpause"
-alias next="spotifycli --next"
-alias prev="spotifycli --prev"
-
-# IP Helpers
 alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
-
-# GIT
-alias gitup="git push --set-upstream origin"
-alias gitpu="git push --set-upstream origin"
-
-# Common aliases
-alias ll="ls -la"
-alias la="ls -A"
-alias ldot='ls -ld .*'
-
-# Info
-alias grep='grep --color'
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
-alias hrg="fc -El 0 | rg"
-alias hfzf="fc -El 0 | fzf"
-alias help='man'
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-
-alias mux='tmuxinator'
-alias mm='mux mission-control'
-
-# Serverless
-alias slsd='SLS_DEBUG=* serverless --verbose --stage=dev'
-
-alias md2pdf='node /home/ssmith/Code/node/md2pdf/index.js'
-alias open="nautilus"
-
-alias i3log="DISPLAY=:0 i3-dump-log | bzip2 -c | curl --data-binary @- https://logs.i3wm.org"
-
-alias phonemnt="jmtpfs ~/mnt/pixel"
-alias yt="youtube-dl"
-alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'"
-
-# VPN
-alias pia="~/.local/bin/pia-linux-1.2.1-02688.run"
-
-# Calendar
 alias gcal="gcalcli"
-alias day="gcalcli agenda"
-alias week="gcalcli calw"
+alias get="http get"
+alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'"
+alias ghub="cd ~/Code/github.com"
+alias gitpu="git push --set-upstream origin"
+alias gitup="git push --set-upstream origin"
+alias glab="cd ~/Code/gitlab.com"
+alias grep='grep --color'
+alias help='man'
+alias hfzf="fc -El 0 | fzf"
+alias hrg="fc -El 0 | rg"
+alias i3log="DISPLAY=:0 i3-dump-log | bzip2 -c | curl --data-binary @- https://logs.i3wm.org"
+alias la="ls -A"
+alias lab="sso-login ssmith-lab"
+alias ldot='ls -ld .*'
+alias ll="ls -la"
+alias md2pdf='node /home/ssmith/Code/node/md2pdf/index.js'
+alias mm='mux mission-control'
 alias month="gcalcli calm"
-
-# Python
+alias mux='tmuxinator'
+alias mv='mv -i'
+alias news="newsbeuter"
+alias next="spotifycli --next"
+alias onicastart="bb && cd corpinfo/onica-start"
+alias open="nautilus"
+alias pause="spotifycli --playpause"
+alias payer="sso-login platcorp-payer"
 alias pe="pipenv"
 alias per="pe run"
-alias pipup="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
-
-alias apt="sudo apt"
-
-# Directory Jump
-alias dot="cd ~/dotfiles"
-alias ghub="cd ~/Code/github.com"
-alias glab="cd ~/Code/gitlab.com"
-alias bb="cd ~/Code/bitbucket.org"
-alias onicastart="bb && cd corpinfo/onica-start"
-
-# HTTPie
-alias get="http get"
-alias post="http post"
-
-# Onica-SSO
-alias payer="sso-login platcorp-payer"
-alias lab="sso-login ssmith-lab"
-
+alias phonemnt="jmtpfs ~/mnt/pixel"
 alias pi="ssh pi@192.168.1.35"
-
-alias srg="sr google"
+alias pia="~/.local/bin/pia-linux-1.2.1-02688.run"
+alias ping=prettyping
+alias pipup="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
+alias play="spotifycli --playpause"
+alias port="sudo lsof -i"
+alias post="http post"
+alias prev="spotifycli --prev"
+alias rm='rm -i'
+alias slsd='SLS_DEBUG=* serverless --verbose --stage=dev'
+alias song="spotifycli --status"
 alias sra="sr amazon"
+alias srg="sr google"
+alias top="htop"
+alias vi=nvim
+alias vim=nvim
+alias weather="curl wttr.in"
+alias week="gcalcli calw"
+alias yt="youtube-dl"
