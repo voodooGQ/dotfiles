@@ -1,12 +1,23 @@
-bitbucket-os: https://bitbucket.org/corpinfo/onica-start/src/develop ;; Onica Start Repo
-bitbucket-sso: https://bitbucket.org/corpinfo/onica-sso/src/ENV-dev/ ;; Onica SSO Repo
-github-onica: https://www.github.com/onicagroup/ ;; Github landing for Onica-Group
-github-voodoo: https://www.github.com/voodoogq/ ;; My Github Landing
-jira-os: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=333&projectKey=OS&view=planning&selectedIssue=OS-12 ;; Onica Start Jira
-jira-platform: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=351&view=planning.nodetail ;; Platform Team Projects
-jira-sso: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=291&projectKey=NC&view=planning.nodetail&selectedIssue=NC-4 ;; Onica SSO Jira
-mail-onica: https://mail.google.com/mail/u/?authuser=ssmith@onica.com ;; Onica Email
-mail-voodoo: https://mail.google.com/mail/u/?authuser=voodoogq@gmail.com ;; My Email
+mychart: https://uwhealthmychart.org/mychart/
+
+onica-github: https://www.github.com/onicagroup/ ;; Github landing for Onica-Group
+onica-mail: https://mail.google.com/mail/u/?authuser=ssmith@onica.com ;; Onica Email
+
+os-bitbucket: https://bitbucket.org/corpinfo/onica-start/src/develop ;; Onica Start Repo
+os-jira: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=333&projectKey=OS&view=planning&selectedIssue=OS-12 ;; Onica Start Jira
+
 overapi http://overapi.com ;; Development Cheatsheets
+
+platform-jira: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=351&view=planning.nodetail ;; Platform Team Projects
+
+redrocket-github: https://www.github.com/voodooGQ/redrocket/
+
 runway: https://github.com/onicagroup/runway ;; Onica - Runway
+
 sailplane: https://github.com/onicagroup/sailplane ;; Onica - Sailplane
+
+sso-bitbucket: https://bitbucket.org/corpinfo/onica-sso/src/ENV-dev/ ;; Onica SSO Repo
+sso-jira: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=291&projectKey=NC&view=planning.nodetail&selectedIssue=NC-4 ;; Onica SSO Jira
+
+voodoo-ghub: https://www.github.com/voodoogq/ ;; My Github Landing
+voodoo-gmail: https://mail.google.com/mail/u/?authuser=voodoogq@gmail.com ;; My Email

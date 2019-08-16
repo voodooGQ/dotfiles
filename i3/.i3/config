@@ -17,6 +17,8 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec tilix
+# start vscode
+bindsym $mod+Shift+Return exec code
 
 # kill focused window
 bindsym $mod+Shift+q kill

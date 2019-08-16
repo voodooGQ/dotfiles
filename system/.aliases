@@ -3,7 +3,7 @@ alias :q="exit"
 alias :so="source ~/.zshrc"
 alias apt="sudo apt"
 alias bb="cd ~/Code/bitbucket.org"
-alias cat="PAGER=none bat"
+alias cat="PAGER=none bat" # Make sure we're not using nvimpager
 alias cp='cp -i'
 alias day="gcalcli agenda"
 alias dot="cd ~/dotfiles"
@@ -49,6 +49,7 @@ alias play="spotifycli --playpause"
 alias port="sudo lsof -i"
 alias post="http post"
 alias prev="spotifycli --prev"
+alias pulse="killall pulseaudio; sleep 1; pulseaudio -D -v"
 alias rm='rm -i'
 alias slsd='SLS_DEBUG=* serverless --verbose --stage=dev'
 alias song="spotifycli --status"

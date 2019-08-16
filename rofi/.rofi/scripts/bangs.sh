@@ -30,6 +30,25 @@ LABELS["locate"]=""
 COMMANDS["web"]="~/.rofi/scripts/websearch.sh"
 LABELS["web"]=""
 
+# open vscode
+COMMANDS['#code']="~/.rofi/scripts/vscode.sh"
+LABELS["#code"]="VSCode"
+
+# open browser
+COMMANDS['#firefox']="~/.rofi/scripts/firefox.sh"
+LABELS["#firefox"]="Firefox"
+
+# open terminal
+COMMANDS['#terminal']="~/.rofi/scripts/terminal.sh"
+LABELS["#terminal"]="$> Terminal"
+
+# open slack
+COMMANDS['#slack']="~/.rofi/scripts/slack.sh"
+LABELS["#slack"]="Slack"
+
+COMMANDS['#screenshot']="~/.rofi/scripts/slack.sh"
+LABELS["#screenshot"]="screenshot"
+
 # show clipboard history
 # source: https://bitbucket.org/pandozer/rofi-clipboard-manager/overview
 # COMMANDS["clipboard"]='rofi -modi "clipboard:~/.bin/rofi-clipboard-manager/mclip.py menu" -show clipboard && ~/.bin/rofi-clipboard-manager/mclip.py paste'
@@ -44,9 +63,6 @@ LABELS["web"]=""
 
 # COMMANDS[".bin"]="spacefm -r '/home/dka/bin'"
 # LABELS[".bin"]=".bin"
-
-# COMMANDS["#screenshot"]='/home/dka/bin/screenshot-scripts/myscreenshot.sh'
-# LABELS["#screenshot"]="screenshot"
 
 ################################################################################
 # do not edit below
