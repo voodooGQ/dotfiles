@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/bin/flameshot gui
+/usr/bin/slack

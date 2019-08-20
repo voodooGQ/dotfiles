@@ -26,6 +26,14 @@ LABELS["bookmarks"]=""
 COMMANDS["locate"]="~/.rofi/scripts/locate.sh"
 LABELS["locate"]=""
 
+# open calendar
+COMMANDS['#calendar']="~/.rofi/scripts/calendar.sh"
+LABELS["#calendar"]="Calendar"
+
+# open calculator
+COMMANDS['#calculator']="~/.rofi/scripts/calculator.sh"
+LABELS["#calculator"]="Calculator"
+
 # open custom web searches
 COMMANDS["web"]="~/.rofi/scripts/websearch.sh"
 LABELS["web"]=""
@@ -46,8 +54,18 @@ LABELS["#terminal"]="$> Terminal"
 COMMANDS['#slack']="~/.rofi/scripts/slack.sh"
 LABELS["#slack"]="Slack"
 
+# open slack
+COMMANDS['#spotify']="~/.rofi/scripts/spotify.sh"
+LABELS["#spotify"]="Spotify"
+
 COMMANDS['#screenshot']="~/.rofi/scripts/slack.sh"
 LABELS["#screenshot"]="screenshot"
+
+COMMANDS['#wyze']="~/.rofi/scripts/wyze.sh"
+LABELS["#wyze"]="Wyze"
+
+COMMANDS['#i3info']="~/.rofi/scripts/i3info.sh"
+LABELS["#i3info"]="i3Info"
 
 # show clipboard history
 # source: https://bitbucket.org/pandozer/rofi-clipboard-manager/overview

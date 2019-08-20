@@ -33,7 +33,7 @@
         }
     ],
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },

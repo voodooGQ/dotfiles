@@ -25,7 +25,7 @@
     "command": "test-explorer.run-all"
   },
   {
-    "key": "ctrl+a l",
+    "key": "ctrl+w l",
     "command": "workbench.action.focusRightGroup"
   },
   {
@@ -33,7 +33,7 @@
     "command": "-workbench.action.focusRightGroup"
   },
   {
-    "key": "ctrl+a h",
+    "key": "ctrl+w h",
     "command": "workbench.action.focusLeftGroup"
   },
   {
@@ -41,7 +41,7 @@
     "command": "-workbench.action.focusLeftGroup"
   },
   {
-    "key": "ctrl+a k",
+    "key": "ctrl+w k",
     "command": "workbench.action.focusAboveGroup"
   },
   {
@@ -49,7 +49,7 @@
     "command": "-workbench.action.focusAboveGroup"
   },
   {
-    "key": "ctrl+a j",
+    "key": "ctrl+w j",
     "command": "workbench.action.focusBelowGroup"
   },
   {
@@ -120,10 +120,6 @@
     "key": "ctrl+k f12",
     "command": "-editor.action.revealDefinitionAside",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-  },
-  {
-    "key": "ctrl+a shift+q",
-    "command": "workbench.action.closeWindow"
   },
   {
     "key": "ctrl+shift+w",
@@ -343,5 +339,41 @@
     "key": "ctrl+d",
     "command": "-editor.action.addSelectionToNextFindMatch",
     "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-extension.vim_ctrl+w",
+    "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+k w",
+    "command": "-workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeGroup",
+    "when": "activeEditorGroupEmpty && multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.closeEditorInAllGroups"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-extension.vim_winCtrlQ",
+    "when": "editorTextFocus && vim.active && vim.use<C-q> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
   }
 ]

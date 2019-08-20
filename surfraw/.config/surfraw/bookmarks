@@ -1,9 +1,10 @@
 mychart: https://uwhealthmychart.org/mychart/
 
-onica-github: https://www.github.com/onicagroup/ ;; Github landing for Onica-Group
+onica-repo: https://www.github.com/onicagroup/ ;; Github landing for Onica-Group
 onica-mail: https://mail.google.com/mail/u/?authuser=ssmith@onica.com ;; Onica Email
+onica-calendar: https://calendar.google.com/calendar/r/?authuser=ssmith@onica.com ;; Onica Calendar
 
-os-bitbucket: https://bitbucket.org/corpinfo/onica-start/src/develop ;; Onica Start Repo
+os-repo: https://bitbucket.org/corpinfo/onica-start/src/develop ;; Onica Start Repo
 os-jira: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=333&projectKey=OS&view=planning&selectedIssue=OS-12 ;; Onica Start Jira
 
 overapi http://overapi.com ;; Development Cheatsheets
@@ -16,8 +17,11 @@ runway: https://github.com/onicagroup/runway ;; Onica - Runway
 
 sailplane: https://github.com/onicagroup/sailplane ;; Onica - Sailplane
 
-sso-bitbucket: https://bitbucket.org/corpinfo/onica-sso/src/ENV-dev/ ;; Onica SSO Repo
+sso-repo: https://bitbucket.org/corpinfo/onica-sso/src/ENV-dev/ ;; Onica SSO Repo
 sso-jira: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=291&projectKey=NC&view=planning.nodetail&selectedIssue=NC-4 ;; Onica SSO Jira
 
 voodoo-ghub: https://www.github.com/voodoogq/ ;; My Github Landing
-voodoo-gmail: https://mail.google.com/mail/u/?authuser=voodoogq@gmail.com ;; My Email
+voodoo-mail: https://mail.google.com/mail/u/?authuser=voodoogq@gmail.com ;; My Email
+voodoo-calendar: https://calendar.google.com/calendar/r/?authuser=voodoogq@onica.com ;; Onica Calendar
+
+jira-dashboard: https://corpinfollc.atlassian.net/secure/Dashboard.jspa

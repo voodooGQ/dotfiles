@@ -46,7 +46,6 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness 
 # Start Applications
 bindsym $mod+Ctrl+p exec flameshot gui
 bindsym $mod+Ctrl+t exec --no-startup-id pkill compton && compton -b
-bindsym Print exec --no-startup-id i3-scrot
 
 bindsym $mod+x move workspace to output right
 bindsym $mod+Shift+x move workspace to output left
@@ -149,6 +148,9 @@ assign [class="zeal"] $ws6
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
+for_window [title="^HELDTERMINAL"] floating enable border pixel 1
+for_window [class="qalculate"] floating enable border pixel 1
+for_window [class="Qalculate"] floating enable border pixel 1
 for_window [class="Firefox"] border pixel 2
 for_window [class="slack"] border pixel
 for_window [title="feh"] floating enable board pixel 1

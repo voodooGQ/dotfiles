@@ -1,3 +1,3 @@
 #!/bin/bash
 pulse
-/usr/bin/tilix
+/usr/bin/spotify
