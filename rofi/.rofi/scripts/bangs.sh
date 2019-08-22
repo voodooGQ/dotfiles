@@ -64,6 +64,9 @@ LABELS["#screenshot"]="screenshot"
 COMMANDS['#wyze']="~/.rofi/scripts/wyze.sh"
 LABELS["#wyze"]="Wyze"
 
+COMMANDS['#rtfm']="~/.rofi/scripts/zeal.sh"
+LABELS["#rtfm"]="rtfm"
+
 COMMANDS['#i3info']="~/.rofi/scripts/i3info.sh"
 LABELS["#i3info"]="i3Info"
 
