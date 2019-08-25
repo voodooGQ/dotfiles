@@ -92,5 +92,6 @@
     "terminal.external.linuxExec": "tilix",
     "extensions.showRecommendationsOnlyOnDemand": true,
     "peacock.surpriseMeFromFavoritesOnly": true,
-    "editor.suggestSelection": "first"
+    "editor.suggestSelection": "first",
+    "python.jediEnabled": false
 }

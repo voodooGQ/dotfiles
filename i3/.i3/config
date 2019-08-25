@@ -35,7 +35,7 @@ bindsym $mod+Shift+m exec pavucontrol
 bindsym $mod+backslash exec firefox
 
 exec --no-startup-id ~/.config/polybar/init.sh
-exec --no-startup-id sh ~/.fehbg
+exec --no-startup-id ~/.config/feh/randomwallpaper.sh
 
 ################################################################################################
 
