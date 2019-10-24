@@ -375,5 +375,54 @@
   {
     "key": "ctrl+q",
     "command": "-workbench.action.quit"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "-markdown.extension.onOutdentLines",
+    "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "-extension.vim_ctrl+[",
+    "when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "-editor.action.outdentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.quickInputBack",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+alt+-",
+    "command": "-workbench.action.quickInputBack",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+alt+-",
+    "command": "-workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-actions.find"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "-workbench.action.replaceInFiles"
   }
 ]

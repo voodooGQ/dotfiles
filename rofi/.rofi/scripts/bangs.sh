@@ -46,6 +46,9 @@ LABELS["#code"]="VSCode"
 COMMANDS['#firefox']="~/.rofi/scripts/firefox.sh"
 LABELS["#firefox"]="Firefox"
 
+COMMANDS['#files']='~/.rofi/scripts/files.sh'
+LABELS["#files"]="Files"
+
 # open terminal
 COMMANDS['#terminal']="~/.rofi/scripts/terminal.sh"
 LABELS["#terminal"]="$> Terminal"
@@ -67,8 +70,15 @@ LABELS["#wyze"]="Wyze"
 COMMANDS['#rtfm']="~/.rofi/scripts/zeal.sh"
 LABELS["#rtfm"]="rtfm"
 
+COMMANDS['#display']="~/.rofi/scripts/display.sh"
+LABELS["#display"]="display"
+
 COMMANDS['#i3info']="~/.rofi/scripts/i3info.sh"
 LABELS["#i3info"]="i3Info"
+
+COMMANDS['#github']="~/.rofi/scripts/github.sh"
+LABELS["#github"]="github"
+
 
 # show clipboard history
 # source: https://bitbucket.org/pandozer/rofi-clipboard-manager/overview

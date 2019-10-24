@@ -27,6 +27,7 @@ alias la="ls -A"
 alias lab="sso-login ssmith-lab"
 alias ldot='ls -ld .*'
 alias ll="ls -la"
+alias lum="lumigo-cli"
 alias md2pdf='node /home/ssmith/Code/node/md2pdf/index.js'
 alias mm='mux mission-control'
 alias month="gcalcli calm"
@@ -51,7 +52,8 @@ alias post="http post"
 alias prev="spotifycli --prev"
 alias pulse="killall pulseaudio; sleep 1; pulseaudio -D -v"
 alias rm='rm -i'
-alias slsd='SLS_DEBUG=* serverless --verbose --stage=dev'
+alias slsdev='SLS_DEBUG=* serverless --verbose --stage=dev'
+alias slsd="SLS_DEBUG=* serverless --verbose --stage=mockdev"
 alias song="spotifycli --status"
 alias sra="sr amazon"
 alias srg="sr google"

@@ -33,7 +33,7 @@
         }
     ],
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -41,7 +41,7 @@
         "baseUrlSuffix": "atlassian.net"
     },
     "yaml.schemas": {
-        "file:///home/shane/.vscode/extensions/atlassian.atlascode-1.4.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.1.4/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "atlascode.jira.workingProject": {
         "id": "10321",
@@ -49,7 +49,7 @@
         "key": "OS"
     },
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.iconTheme": "file-icons",
+    "workbench.iconTheme": "vscode-great-icons",
     "workbench.settings.enableNaturalLanguageSearch": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -93,5 +93,90 @@
     "extensions.showRecommendationsOnlyOnDemand": true,
     "peacock.surpriseMeFromFavoritesOnly": true,
     "editor.suggestSelection": "first",
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "testExplorer.addToEditorContextMenu": true,
+    "testExplorer.onStart": "retire",
+    "testExplorer.showOnRun": true,
+    "mochaExplorer.files": "test/**/*.test.ts",
+    "mochaExplorer.require": "ts-node/register",
+    "mochaExplorer.nodePath": "/home/shane/.nvm/versions/node/v10.10.0/bin/node",
+    "jestTestExplorer.debugOutput": "externalTerminal",
+    "jestTestExplorer.logpanel": true,
+    "jestTestExplorer.pathToJestConfig": "/home/shane/Code/bitbucket.org/corpinfo/onica-start/accounts.sls/jest.config.js",
+    "atlascode.jira.jqlList": [
+        {
+            "id": "410c3031-4f3d-42cd-8e27-f195b238ec70",
+            "enabled": true,
+            "name": "My corpinfollc Issues",
+            "query": "assignee = currentUser() ORDER BY lastViewed DESC ",
+            "siteId": "835cff21-3c05-4184-a2ea-bde1593e58a4",
+            "monitor": true
+        }
+    ],
+    "aws.profile": "platcorp-payer",
+    "cSpell.userWords": [
+        "Bibimbap",
+        "Cognito",
+        "Gochujang",
+        "Interop",
+        "Nerdery",
+        "Onica",
+        "Rollbar",
+        "Rubocop",
+        "amazonaws",
+        "awscli",
+        "bootcamp",
+        "buildspec",
+        "butterrobot",
+        "cloudformation",
+        "codebuild",
+        "codepipeline",
+        "cors",
+        "devtool",
+        "dynamodb",
+        "middlewares",
+        "mockdev",
+        "npmrc",
+        "pipenv",
+        "platcorp",
+        "popd",
+        "precommit",
+        "pushd",
+        "quotemark",
+        "readonly",
+        "rearchitecting",
+        "serializer",
+        "slsw",
+        "ssmith",
+        "thisisfine",
+        "tslib",
+        "unmarshall",
+        "verifiedpermissions"
+    ],
+    "explorer.openEditors.visible": 5,
+    "search.location": "panel",
+    "explorer.autoReveal": false,
+    // Custom tags for the parser to use
+    "yaml.customTags": [
+        "!And",
+        "!If",
+        "!Not",
+        "!Equals",
+        "!Or",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Join sequence"
+    ],
+    // Enable/disable default YAML formatter (requires restart)
+    "yaml.format.enable": true,
 }

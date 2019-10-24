@@ -22,19 +22,20 @@ bindsym $mod+Shift+Return exec code
 
 # kill focused window
 bindsym $mod+Shift+q kill
+# Due to a bug with Xmodmap utilizing this to swap super/alt
+exec --no-startup-id setxkbmap -option altwin:swap_alt_win
+exec --no-startup-id setxkbmap -option ctrl:nocaps
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
-
-exec --no-startup-id pulseaudio --start
 exec --no-startup-id pa-applet
 
 bindsym $mod+Ctrl+m exec tilix -e 'alsamixer'
 bindsym $mod+Shift+m exec pavucontrol
 bindsym $mod+backslash exec firefox
 
-exec --no-startup-id ~/.config/polybar/init.sh
+exec --no-startup-id ~/.config/polybar/initxfce.sh
 exec --no-startup-id ~/.config/feh/randomwallpaper.sh
 
 ################################################################################################
@@ -162,7 +163,7 @@ for_window [urgent=latest] focus
 bindsym $mod+Shift+r restart
 
 # Layout change
-set $layout "(s)tacking (t)abbed split(v) split(h)"
+set $layout "window-layout: (s)tacking (t)abbed split(v) split(h)"
 bindsym $mod+w mode $layout
 mode $layout {
   bindsym s layout stacking
@@ -171,6 +172,15 @@ mode $layout {
   bindsym h layout splith
 
   # exit resize mode: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+set $polybar "polybar-style: (x)fce (i)3"
+bindsym $mod+ctrl+b mode $polybar
+mode $polybar {
+  bindsym i exec --no-startup-id ~/.config/polybar/init.sh
+  bindsym x exec --no-startup-id ~/.config/polybar/initxfce.sh
   bindsym Return mode "default"
   bindsym Escape mode "default"
 }
@@ -215,16 +225,20 @@ mode "resize" {
 }
 
 # Display mode
-set $displayMode "Set display mode (w)ork (l)aptop"
+set $displayMode "Set display mode (w)ork work-(h)orizontal (l)aptop"
 bindsym $mod+Shift+p mode $displayMode
 mode $displayMode {
     bindsym w exec "\
                 ~/.screenlayout/3-screen.sh && \
-                ~/.config/polybar/init.sh"; \
+                ~/.config/polybar/initxfce.sh"; \
+                mode "default"
+    bindsym h exec "\
+                ~/.screenlayout/3-screen-horizontal.sh && \
+                ~/.config/polybar/initxfce.sh"; \
                 mode "default"
     bindsym l exec "\
                 ~/.screenlayout/laptop-displays.sh && \
-                ~/.config/polybar/init.sh"; \
+                ~/.config/polybar/initxfce.sh"; \
                 mode "default"
 
     bindsym Return mode "default"
@@ -244,7 +258,6 @@ bindsym $mod+s exec pactl set-sink-volume 0 +5%
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pia
-exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec_always --no-startup-id sbxkb
 exec --no-startup-id xautolock -time 10 -locker "i3lock -ntei $HOME/Pictures/lock.png"

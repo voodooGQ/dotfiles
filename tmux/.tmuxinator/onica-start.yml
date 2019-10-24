@@ -3,31 +3,41 @@
 name: onica-start
 root: ~/Code/bitbucket.org/corpinfo/onica-start
 windows:
-  - Core.sls:
+  - root:
       layout: main-horizontal
-      root: ~/Code/bitbucket.org/corpinfo/onica-start/core.sls/
-      panes:
-        - nvim .
-        -  # cli
-  - Auth.sls:
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/
+  - accounts:
       layout: main-horizontal
-      root: ~/Code/bitbucket.org/corpinfo/onica-start/auth.sls/
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/accounts.sls/
       panes:
-        - nvim .
         -  # cli
-  - Frontend:
+  - authentication:
+      layout: main-horizontal
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/authentication.sls/
+      panes:
+        -  # cli
+  - authorization:
+      layout: main-horizontal
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/authorization.sls/
+      panes:
+        -  # cli
+  - command-runner:
+      layout: main-horizontal
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/command-runner.sls/
+      panes:
+        -  # cli
+  - groups:
+      layout: main-horizontal
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/groups.sls/
+      panes:
+        -  # cli
+  - users:
+      layout: main-horizontal
+      root: ~/Code/bitbucket.org/corpinfo/onica-start/users.sls/
+      panes:
+        -  # cli
+  - frontend:
       layout: main-horizontal
       root: ~/Code/bitbucket.org/corpinfo/onica-start/frontend/
-      panes:
-        - nvim .
-        -  # cli
-  - _TEMPLATE_:
-      layout: main-horizontal
-      root: ~/Code/bitbucket.org/corpinfo/onica-start/module_template.sls/
-      panes:
-        - nvim .
-        -  # cli
-  - CLUSTER:
-      layout: main-horizontal
       panes:
         -  # cli

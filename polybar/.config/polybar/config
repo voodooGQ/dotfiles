@@ -51,10 +51,16 @@ font-0 = FontAwesome:pixelsize=12,0
 font-1 = fixed:pixelsize=10;1
 font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-3 = siji:pixelsize=10;1
-modules-center = bspwm i3
+modules-center = i3
 wm-restack = i3
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[bar/bottomxfce]
+inherit = bar/bottom
+modules-center = i3
+modules-right = spotify
+modules-left = filesystem
 
 [bar/bottom]
 bottom = true
@@ -390,7 +396,6 @@ menu-2-1-exec = menu-open-0
 [settings]
 screenchange-reload = true
 compositing-background = compton
-;compositing-background = screen
 compositing-foreground = compton
 compositing-border = over
 pseudo-transparency = true

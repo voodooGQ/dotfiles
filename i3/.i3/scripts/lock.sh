@@ -1,3 +1,3 @@
 #!/bin/bash
 
-i3lock -ntei $HOME/Pictures/lock.png
+i3lock -ntec 000000

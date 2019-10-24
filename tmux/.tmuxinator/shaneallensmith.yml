@@ -1,8 +1,7 @@
 # ~/.tmuxinator/shaneallensmith.yml
 
 name: shaneallensmith
-root: ~/Code/shaneallensmith
-startup_window: editor
+root: ~/Code/github.com/voodoogq/shaneallensmith
+startup_window: terminal
 windows:
-  - editor: nvim
   - terminal: #empty
