@@ -80,6 +80,8 @@ ssh-add -l > /dev/null || ssh-add
 
 function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 
+. ~/Code/github.com/rupa/z/z.sh
+
 autoload bashcompinit
 bashcompinit
 eval "$(onica-sso shell-init bash)"

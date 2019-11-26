@@ -1,7 +1,7 @@
 # ~/.tmuxinator/dotheytest.yml
 
 name: dotheytest
-root: ~/Code/dotheytest
+root: ~/Code/github.com/voodooGQ/dotheytest
 startup_window: editor
 windows:
   - editor: nvim

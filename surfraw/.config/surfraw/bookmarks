@@ -15,11 +15,14 @@ platform-jira: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidVie
 redrocket-github: https://www.github.com/voodooGQ/redrocket/
 
 runway: https://github.com/onicagroup/runway ;; Onica - Runway
+runway-docs: https://docs.onica.com/projects/runway/en/latest/index.html ;; Onica - Runway Documentation
 
 sailplane: https://github.com/onicagroup/sailplane ;; Onica - Sailplane
+sailplane-docs: https://docs.onica.com/projects/sailplane/en/latest/index.html ;; Onica - Sailplane Documentation
 
 sso-repo: https://bitbucket.org/corpinfo/onica-sso/src/ENV-dev/ ;; Onica SSO Repo
 sso-jira: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=291&projectKey=NC&view=planning.nodetail&selectedIssue=NC-4 ;; Onica SSO Jira
+sso-docs: https://docs.onica.com/projects/sso/en/latest/index.html ;; Onica - Onica-SSO documentation
 
 voodoo-ghub: https://www.github.com/voodoogq/ ;; My Github Landing
 voodoo-mail: https://mail.google.com/mail/u/?authuser=voodoogq@gmail.com ;; My Email

@@ -1,0 +1,8 @@
+# ~/.tmuxinator/demo-runway-argocd.yml
+
+name: demo-runway-argocd
+root: ~/Code/bitbucket.org/corpinfo/shanesmith
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal: #empty

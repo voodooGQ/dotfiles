@@ -41,7 +41,7 @@
         "baseUrlSuffix": "atlassian.net"
     },
     "yaml.schemas": {
-        "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.1.4/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.1.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "atlascode.jira.workingProject": {
         "id": "10321",
@@ -120,6 +120,7 @@
         "Cognito",
         "Gochujang",
         "Interop",
+        "Mutex",
         "Nerdery",
         "Onica",
         "Rollbar",
@@ -129,13 +130,18 @@
         "bootcamp",
         "buildspec",
         "butterrobot",
+        "ciphertext",
         "cloudformation",
+        "cloudwatch",
         "codebuild",
         "codepipeline",
         "cors",
+        "creds",
         "devtool",
         "dynamodb",
+        "memoized",
         "middlewares",
+        "mktemp",
         "mockdev",
         "npmrc",
         "pipenv",
@@ -146,10 +152,13 @@
         "quotemark",
         "readonly",
         "rearchitecting",
+        "recurse",
         "serializer",
         "slsw",
         "ssmith",
+        "stepfunctions",
         "thisisfine",
+        "titlecase",
         "tslib",
         "unmarshall",
         "verifiedpermissions"
@@ -179,4 +188,11 @@
     ],
     // Enable/disable default YAML formatter (requires restart)
     "yaml.format.enable": true,
+    "diffEditor.renderSideBySide": false,
+    "vs-kubernetes": {
+        "vs-kubernetes.kubectl-path": "/home/shane/.vs-kubernetes/tools/kubectl/kubectl",
+        "vs-kubernetes.minikube-path": "/home/shane/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vs-kubernetes.helm-path": "/home/shane/.vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vs-kubernetes.draft-path": "/home/shane/.vs-kubernetes/tools/draft/linux-amd64/draft"
+    },
 }

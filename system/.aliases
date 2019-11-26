@@ -23,6 +23,7 @@ alias help='man'
 alias hfzf="fc -El 0 | fzf"
 alias hrg="fc -El 0 | rg"
 alias i3log="DISPLAY=:0 i3-dump-log | bzip2 -c | curl --data-binary @- https://logs.i3wm.org"
+alias ls="exa --long --header --git"
 alias la="ls -A"
 alias lab="sso-login ssmith-lab"
 alias ldot='ls -ld .*'

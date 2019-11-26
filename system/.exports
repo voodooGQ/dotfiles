@@ -20,4 +20,4 @@ export VISUAL=$(which nvim)
 export VTE_VERSION="100" # https://github.com/neovim/neovim/issues/5990
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM=$HOME/.zsh_custom
-export ZSH_THEME="agnoster"
+export ZSH_THEME="intheloop.custom"
