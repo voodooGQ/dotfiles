@@ -424,5 +424,15 @@
   {
     "key": "ctrl+shift+h",
     "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+a space",
+    "command": "editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
   }
 ]

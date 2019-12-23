@@ -33,7 +33,7 @@
         }
     ],
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -41,7 +41,7 @@
         "baseUrlSuffix": "atlassian.net"
     },
     "yaml.schemas": {
-        "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.1.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.2.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "atlascode.jira.workingProject": {
         "id": "10321",
@@ -114,22 +114,26 @@
             "monitor": true
         }
     ],
-    "aws.profile": "platcorp-payer",
     "cSpell.userWords": [
+        "Arns",
         "Bibimbap",
         "Cognito",
         "Gochujang",
         "Interop",
+        "Kubernetes",
         "Mutex",
         "Nerdery",
         "Onica",
         "Rollbar",
         "Rubocop",
+        "Terraform's",
+        "acmcert",
         "amazonaws",
         "awscli",
         "bootcamp",
         "buildspec",
         "butterrobot",
+        "cfront",
         "ciphertext",
         "cloudformation",
         "cloudwatch",
@@ -138,22 +142,32 @@
         "cors",
         "creds",
         "devtool",
+        "distro",
         "dynamodb",
+        "envvars",
+        "gmail",
+        "lsremote",
         "memoized",
         "middlewares",
+        "mkdtemp",
         "mktemp",
         "mockdev",
+        "noqa",
         "npmrc",
+        "onicagroup",
+        "pexpect",
         "pipenv",
         "platcorp",
         "popd",
         "precommit",
         "pushd",
+        "pylint",
         "quotemark",
         "readonly",
         "rearchitecting",
         "recurse",
         "serializer",
+        "shaneallensmith",
         "slsw",
         "ssmith",
         "stepfunctions",
@@ -161,7 +175,10 @@
         "titlecase",
         "tslib",
         "unmarshall",
-        "verifiedpermissions"
+        "verifiedpermissions",
+        "voodoogq",
+        "whichenv",
+        "yamllint"
     ],
     "explorer.openEditors.visible": 5,
     "search.location": "panel",
@@ -195,4 +212,7 @@
         "vs-kubernetes.helm-path": "/home/shane/.vs-kubernetes/tools/helm/linux-amd64/helm",
         "vs-kubernetes.draft-path": "/home/shane/.vs-kubernetes/tools/draft/linux-amd64/draft"
     },
+    "aws.samcli.location": "/home/shane/.local/bin/sam",
+    "python.linting.pylintUseMinimalCheckers": false,
+    "smartsemicolon.autoLineChange": false,
 }

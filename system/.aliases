@@ -2,7 +2,7 @@ alias :e="ls -lFh"
 alias :q="exit"
 alias :so="source ~/.zshrc"
 alias apt="sudo apt"
-alias bb="cd ~/Code/bitbucket.org"
+alias bb="kubectl run busybox --image=busybox:1.28 --rm -it --restart=Never --command --"
 alias cat="PAGER=none bat" # Make sure we're not using nvimpager
 alias cp='cp -i'
 alias day="gcalcli agenda"
@@ -37,7 +37,7 @@ alias mv='mv -i'
 alias news="newsbeuter"
 alias next="spotifycli --next"
 alias onicastart="bb && cd corpinfo/onica-start"
-alias open="nautilus"
+alias open="code"
 alias pause="spotifycli --playpause"
 alias payer="sso-login platcorp-payer"
 alias pe="pipenv"

@@ -41,3 +41,7 @@ platcorp-staging: https://onicastart.platcorp.onica-dev.com/
 
 aws-iam-policy-simulator: https://policysim.aws.amazon.com
 aws-personal-console: https://212015066383.signin.aws.amazon.com/console
+
+jq: https://jqplay.org ;; jq playground
+
+python-2-type-hint-cheat-sheet: https://mypy.readthedocs.io/en/latest/cheat_sheet.html
