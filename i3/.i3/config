@@ -50,6 +50,8 @@ bindsym $mod+Ctrl+t exec --no-startup-id pkill compton && compton -b
 
 bindsym $mod+x move workspace to output right
 bindsym $mod+Shift+x move workspace to output left
+bindsym $mod+z move workspace to output up
+bindsym $mod+Shift+z move workspace to output down
 
 # @TODO: See if this fixes the mouse seletion issue.
 focus_follows_mouse no
@@ -225,9 +227,13 @@ mode "resize" {
 }
 
 # Display mode
-set $displayMode "Set display mode (w)ork work-(h)orizontal (l)aptop"
+set $displayMode "Set display mode (b)oone's (w)ork work-(h)orizontal (l)aptop"
 bindsym $mod+Shift+p mode $displayMode
 mode $displayMode {
+    bindsym b exec "\
+                ~/.screenlayout/3-screen-boone.sh && \
+                ~/.config/polybar/initxfce.sh"; \
+                mode "default"
     bindsym w exec "\
                 ~/.screenlayout/3-screen.sh && \
                 ~/.config/polybar/initxfce.sh"; \
@@ -260,7 +266,7 @@ exec --no-startup-id xfce4-power-manager
 # exec --no-startup-id pia
 exec --no-startup-id blueman-applet
 exec_always --no-startup-id sbxkb
-exec --no-startup-id xautolock -time 10 -locker "i3lock -ntei $HOME/Pictures/lock.png"
+# exec --no-startup-id xautolock -time 10 -locker "i3lock -ntei $HOME/Pictures/lock.png"
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:

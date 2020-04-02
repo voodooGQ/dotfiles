@@ -1,0 +1,8 @@
+# ~/.tmuxinator/msp-sample-client-repo.yml
+---
+name: msp-sample-client-repo
+root: ~/Code/bitbucket.org/corpinfo/msp-sample-client-repo
+startup_window: editor
+windows:
+  - editor: nvim
+  - terminal:

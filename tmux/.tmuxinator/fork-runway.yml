@@ -1,9 +1,0 @@
-# ~/.tmuxinator/fork-runway.yml
----
-name: fork-runway
-root: ~/Code/github.com/voodooGQ/runway
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal:
-  - ranger: ranger .

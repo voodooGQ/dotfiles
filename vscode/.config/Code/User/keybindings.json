@@ -25,7 +25,7 @@
     "command": "test-explorer.run-all"
   },
   {
-    "key": "ctrl+w l",
+    "key": "ctrl+a l",
     "command": "workbench.action.focusRightGroup"
   },
   {
@@ -33,7 +33,7 @@
     "command": "-workbench.action.focusRightGroup"
   },
   {
-    "key": "ctrl+w h",
+    "key": "ctrl+a h",
     "command": "workbench.action.focusLeftGroup"
   },
   {
@@ -41,7 +41,7 @@
     "command": "-workbench.action.focusLeftGroup"
   },
   {
-    "key": "ctrl+w k",
+    "key": "ctrl+a k",
     "command": "workbench.action.focusAboveGroup"
   },
   {
@@ -49,7 +49,7 @@
     "command": "-workbench.action.focusAboveGroup"
   },
   {
-    "key": "ctrl+w j",
+    "key": "ctrl+a j",
     "command": "workbench.action.focusBelowGroup"
   },
   {
@@ -59,10 +59,6 @@
   {
     "key": "ctrl+0",
     "command": "-workbench.action.focusSideBar"
-  },
-  {
-    "key": "ctrl+a h",
-    "command": "workbench.action.focusPanel"
   },
   {
     "key": "ctrl+a e",
@@ -434,5 +430,27 @@
     "key": "ctrl+k ctrl+i",
     "command": "-editor.debug.action.showDebugHover",
     "when": "editorTextFocus && inDebugMode"
+  },
+  {
+    "key": "ctrl+a ,",
+    "command": "workbench.action.openSettings"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor"
   }
 ]

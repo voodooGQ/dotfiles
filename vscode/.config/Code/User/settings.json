@@ -1,6 +1,4 @@
 {
-    "workbench.colorTheme": "Gruvbox Dark (Medium)",
-    "editor.tabSize": 2,
     "editor.cursorStyle": "block",
     "peacock.favoriteColors": [
         {
@@ -32,6 +30,10 @@
             "value": "#d65d0e"
         }
     ],
+    "editor.rulers": [
+        { "column": 80, "color": "#573140"}
+        { "column": 100, "color": "#452505"}
+    ]
     "workbench.startupEditor": "newUntitledFile",
     "window.zoomLevel": 1,
     "[typescript]": {
@@ -41,7 +43,11 @@
         "baseUrlSuffix": "atlassian.net"
     },
     "yaml.schemas": {
-        "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.2.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///home/shane/.vscode/extensions/itprokyle.vscode-runway-0.1.0/schemas/runway.schema.json": [
+            "**/runway.yaml",
+            "**/runway.yml"
+        ],
+        "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.4.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "atlascode.jira.workingProject": {
         "id": "10321",
@@ -73,12 +79,14 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "auto-close-tag.SublimeText3Mode": true,
     "markdown.preview.breaks": true,
-    "editor.fontFamily": "'Hack Nerd Font Mono Regular', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "Fira Code",
+    // "editor.fontFamily":"'Hack Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "400",
     "editor.renderWhitespace": "boundary",
     "editor.wordWrap": "on",
     "files.insertFinalNewline": true,
     "workbench.list.horizontalScrolling": true,
-    "workbench.panel.defaultLocation": "right",
     "workbench.tree.indent": 16,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.tabCloseButton": "left",
@@ -129,11 +137,13 @@
         "Terraform's",
         "acmcert",
         "amazonaws",
+        "amazoncognito",
         "awscli",
         "bootcamp",
         "buildspec",
         "butterrobot",
         "cfront",
+        "chipotle",
         "ciphertext",
         "cloudformation",
         "cloudwatch",
@@ -141,20 +151,29 @@
         "codepipeline",
         "cors",
         "creds",
+        "crhelper",
+        "decodable",
         "devtool",
+        "distributionid",
         "distro",
         "dynamodb",
         "envvars",
         "gmail",
+        "kustomization",
+        "kustomize",
         "lsremote",
         "memoized",
         "middlewares",
         "mkdtemp",
         "mktemp",
         "mockdev",
+        "mystaticsite",
         "noqa",
         "npmrc",
+        "oauth",
+        "olduri",
         "onicagroup",
+        "openid",
         "pexpect",
         "pipenv",
         "platcorp",
@@ -168,8 +187,10 @@
         "recurse",
         "serializer",
         "shaneallensmith",
+        "signin",
         "slsw",
         "ssmith",
+        "staticsite",
         "stepfunctions",
         "thisisfine",
         "titlecase",
@@ -181,7 +202,6 @@
         "yamllint"
     ],
     "explorer.openEditors.visible": 5,
-    "search.location": "panel",
     "explorer.autoReveal": false,
     // Custom tags for the parser to use
     "yaml.customTags": [
@@ -201,7 +221,17 @@
         "!Select",
         "!Select sequence",
         "!Split",
-        "!Join sequence"
+        "!Join sequence",
+        "!And sequence",
+        "!If sequence",
+        "!Not sequence",
+        "!Equals sequence",
+        "!Or sequence",
+        "!FindInMap",
+        "!Join",
+        "!Sub sequence",
+        "!ImportValue sequence",
+        "!Split sequence"
     ],
     // Enable/disable default YAML formatter (requires restart)
     "yaml.format.enable": true,
@@ -215,4 +245,12 @@
     "aws.samcli.location": "/home/shane/.local/bin/sam",
     "python.linting.pylintUseMinimalCheckers": false,
     "smartsemicolon.autoLineChange": false,
+    "debug.node.autoAttach": "on",
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "siteId": "835cff21-3c05-4184-a2ea-bde1593e58a4",
+        "projectKey": "AAAA"
+    },
+    "todo-tree.highlights.enabled": true,
+    "todo-tree.tree.showScanModeButton": false,
+    "workbench.colorTheme": "XhiTheme Color",
 }

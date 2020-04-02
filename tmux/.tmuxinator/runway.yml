@@ -1,8 +1,9 @@
 # ~/.tmuxinator/runway.yml
-
+---
 name: runway
-root: ~/Code/github.com/onicagroup/runway
-startup_window: editor
+root: ~/Code/github.com/voodooGQ/runway
+startup_window: terminal
 windows:
-  - editor: nvim
-  - terminal: #empty
+  - editor: y nvim
+  - terminal: y
+  - playground: y cd ~/Code/github.com/voodooGQ/demo-runway
