@@ -31,9 +31,9 @@
         }
     ],
     "editor.rulers": [
-        { "column": 80, "color": "#573140"}
+        { "column": 80, "color": "#573140"},
         { "column": 100, "color": "#452505"}
-    ]
+    ],
     "workbench.startupEditor": "newUntitledFile",
     "window.zoomLevel": 1,
     "[typescript]": {
@@ -47,7 +47,11 @@
             "**/runway.yaml",
             "**/runway.yml"
         ],
-        "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.4.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.4.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+        "file:///home/ssmith/.vscode/extensions/itprokyle.vscode-runway-0.1.0/schemas/runway.schema.json": [
+            "**/runway.yaml",
+            "**/runway.yml"
+        ]
     },
     "atlascode.jira.workingProject": {
         "id": "10321",
@@ -252,5 +256,8 @@
     },
     "todo-tree.highlights.enabled": true,
     "todo-tree.tree.showScanModeButton": false,
-    "workbench.colorTheme": "XhiTheme Color",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "remote.SSH.defaultExtensions": [
+        "Python"
+    ],
 }
