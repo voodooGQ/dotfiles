@@ -1,0 +1,8 @@
+# ~/.tmuxinator/budget.yml
+---
+name: budget
+root: ~/Code/github.com/voodoogq/budget
+startup_window: terminal
+windows:
+  - editor: code . && nvim
+  - shell: 
