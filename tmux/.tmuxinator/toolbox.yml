@@ -1,0 +1,7 @@
+# ~/.tmuxinator/toolbox.yml
+---
+name: toolbox
+root: ~/Code/github.com/voodoogq/toolbox
+windows:
+  - editor: code .
+  - shell:

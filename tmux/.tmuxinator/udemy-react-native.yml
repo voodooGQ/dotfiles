@@ -1,0 +1,7 @@
+# ~/.tmuxinator/udemy-react-native.yml
+---
+name: udemy-react-native
+root: ~/Code/github.com/voodoogq/udemy-react-native
+windows:
+  - editor: code .
+  - shell: 

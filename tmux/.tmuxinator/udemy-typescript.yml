@@ -1,0 +1,7 @@
+# ~/.tmuxinator/udemy-typescript.yml
+---
+name: udemy-typescript
+root: ~/Code/github.com/voodoogq/udemy-typescript
+windows:
+  - editor: code .
+  - shell: 

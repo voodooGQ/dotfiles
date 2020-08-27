@@ -1,6 +1,10 @@
 # Path for zsh config
 path+=("$GOPATH/bin")
 path+=("$GOROOT/bin")
+path+=("$ANDROID_HOME/emulator")
+path+=("$ANDROID_HOME/tools")
+path+=("$ANDROID_HOME/tools/bin")
+path+=("$ANDROID_HOME/platform-tools")
 path+=("$HOME/.i3/scripts")
 path+=("$HOME/.local")
 path+=("$HOME/.local/bin")

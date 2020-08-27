@@ -1,263 +1,280 @@
 {
-    "editor.cursorStyle": "block",
-    "peacock.favoriteColors": [
-        {
-            "name": "Gruvbox Dark - Red",
-            "value": "#cc241d"
-        },
-        {
-            "name": "Gruvbox Dark - Green",
-            "value": "#98971a"
-        },
-        {
-            "name": "Gruvbox Dark - Yellow",
-            "value": "#d79921"
-        },
-        {
-            "name": "Gruvbox Dark - Blue",
-            "value": "#458588"
-        },
-        {
-            "name": "Gruvbox Dark - Purple",
-            "value": "#b16286"
-        },
-        {
-            "name": "Gruvbox Dark - Aqua",
-            "value": "#689d6a"
-        },
-        {
-            "name": "Gruvbox Dark - Orange",
-            "value": "#d65d0e"
-        }
+  "editor.cursorStyle": "block",
+  "peacock.favoriteColors": [
+    {
+      "name": "Gruvbox Dark - Red",
+      "value": "#cc241d"
+    },
+    {
+      "name": "Gruvbox Dark - Green",
+      "value": "#98971a"
+    },
+    {
+      "name": "Gruvbox Dark - Yellow",
+      "value": "#d79921"
+    },
+    {
+      "name": "Gruvbox Dark - Blue",
+      "value": "#458588"
+    },
+    {
+      "name": "Gruvbox Dark - Purple",
+      "value": "#b16286"
+    },
+    {
+      "name": "Gruvbox Dark - Aqua",
+      "value": "#689d6a"
+    },
+    {
+      "name": "Gruvbox Dark - Orange",
+      "value": "#d65d0e"
+    }
+  ],
+  "editor.rulers": [
+    {
+      "column": 80,
+      "color": "#573140"
+    },
+    {
+      "column": 100,
+      "color": "#452505"
+    }
+  ],
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "atlascode.jira.workingSite": {
+    "baseUrlSuffix": "atlassian.net"
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For TSLint
+    "source.fixAll.tslint": true,
+    // For Stylelint
+    "source.fixAll.stylelint": true,
+    // For Prettier
+    "source.fixAll.prettier": true
+  },
+  "yaml.schemas": {
+    "file:///home/shane/.vscode/extensions/itprokyle.vscode-runway-0.1.0/schemas/runway.schema.json": [
+      "**/runway.yaml",
+      "**/runway.yml"
     ],
-    "editor.rulers": [
-        { "column": 80, "color": "#573140"},
-        { "column": 100, "color": "#452505"}
-    ],
-    "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 1,
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "atlascode.jira.workingSite": {
-        "baseUrlSuffix": "atlassian.net"
-    },
-    "yaml.schemas": {
-        "file:///home/shane/.vscode/extensions/itprokyle.vscode-runway-0.1.0/schemas/runway.schema.json": [
-            "**/runway.yaml",
-            "**/runway.yml"
-        ],
-        "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.4.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
-        "file:///home/ssmith/.vscode/extensions/itprokyle.vscode-runway-0.1.0/schemas/runway.schema.json": [
-            "**/runway.yaml",
-            "**/runway.yml"
-        ]
-    },
-    "atlascode.jira.workingProject": {
-        "id": "10321",
-        "name": "Onica Start",
-        "key": "OS"
-    },
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.iconTheme": "vscode-great-icons",
-    "workbench.settings.enableNaturalLanguageSearch": false,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "files.trimTrailingWhitespace": true,
-    "javascript.preferences.quoteStyle": "single",
-    "dash.languageIdToDocsetMap": {
-        "typescript": [
-            "angular",
-            "typescript",
-            "javascript",
-            "lodash",
-            "awsjs"
-        ]
-    },
-    "explorer.confirmDelete": false,
-    "files.associations": {
-        ".vimrc.bundles": "viml",
-        "config": "shellscript"
-    },
-    "explorer.confirmDragAndDrop": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "auto-close-tag.SublimeText3Mode": true,
-    "markdown.preview.breaks": true,
-    "editor.fontFamily": "Fira Code",
-    // "editor.fontFamily":"'Hack Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true,
-    "editor.fontWeight": "400",
-    "editor.renderWhitespace": "boundary",
-    "editor.wordWrap": "on",
-    "files.insertFinalNewline": true,
-    "workbench.list.horizontalScrolling": true,
-    "workbench.tree.indent": 16,
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.editor.tabCloseButton": "left",
-    "workbench.editor.tabSizing": "shrink",
-    "zenMode.hideLineNumbers": false,
-    "window.menuBarVisibility": "toggle",
-    "debug.inlineValues": true,
-    "debug.toolBarLocation": "docked",
-    "extensions.closeExtensionDetailsOnViewChange": true,
-    "terminal.explorerKind": "external",
-    "terminal.external.linuxExec": "tilix",
-    "extensions.showRecommendationsOnlyOnDemand": true,
-    "peacock.surpriseMeFromFavoritesOnly": true,
-    "editor.suggestSelection": "first",
-    "python.jediEnabled": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "testExplorer.addToEditorContextMenu": true,
-    "testExplorer.onStart": "retire",
-    "testExplorer.showOnRun": true,
-    "mochaExplorer.files": "test/**/*.test.ts",
-    "mochaExplorer.require": "ts-node/register",
-    "mochaExplorer.nodePath": "/home/shane/.nvm/versions/node/v10.10.0/bin/node",
-    "jestTestExplorer.debugOutput": "externalTerminal",
-    "jestTestExplorer.logpanel": true,
-    "jestTestExplorer.pathToJestConfig": "/home/shane/Code/bitbucket.org/corpinfo/onica-start/accounts.sls/jest.config.js",
-    "atlascode.jira.jqlList": [
-        {
-            "id": "410c3031-4f3d-42cd-8e27-f195b238ec70",
-            "enabled": true,
-            "name": "My corpinfollc Issues",
-            "query": "assignee = currentUser() ORDER BY lastViewed DESC ",
-            "siteId": "835cff21-3c05-4184-a2ea-bde1593e58a4",
-            "monitor": true
-        }
-    ],
-    "cSpell.userWords": [
-        "Arns",
-        "Bibimbap",
-        "Cognito",
-        "Gochujang",
-        "Interop",
-        "Kubernetes",
-        "Mutex",
-        "Nerdery",
-        "Onica",
-        "Rollbar",
-        "Rubocop",
-        "Terraform's",
-        "acmcert",
-        "amazonaws",
-        "amazoncognito",
-        "awscli",
-        "bootcamp",
-        "buildspec",
-        "butterrobot",
-        "cfront",
-        "chipotle",
-        "ciphertext",
-        "cloudformation",
-        "cloudwatch",
-        "codebuild",
-        "codepipeline",
-        "cors",
-        "creds",
-        "crhelper",
-        "decodable",
-        "devtool",
-        "distributionid",
-        "distro",
-        "dynamodb",
-        "envvars",
-        "gmail",
-        "kustomization",
-        "kustomize",
-        "lsremote",
-        "memoized",
-        "middlewares",
-        "mkdtemp",
-        "mktemp",
-        "mockdev",
-        "mystaticsite",
-        "noqa",
-        "npmrc",
-        "oauth",
-        "olduri",
-        "onicagroup",
-        "openid",
-        "pexpect",
-        "pipenv",
-        "platcorp",
-        "popd",
-        "precommit",
-        "pushd",
-        "pylint",
-        "quotemark",
-        "readonly",
-        "rearchitecting",
-        "recurse",
-        "serializer",
-        "shaneallensmith",
-        "signin",
-        "slsw",
-        "ssmith",
-        "staticsite",
-        "stepfunctions",
-        "thisisfine",
-        "titlecase",
-        "tslib",
-        "unmarshall",
-        "verifiedpermissions",
-        "voodoogq",
-        "whichenv",
-        "yamllint"
-    ],
-    "explorer.openEditors.visible": 5,
-    "explorer.autoReveal": false,
-    // Custom tags for the parser to use
-    "yaml.customTags": [
-        "!And",
-        "!If",
-        "!Not",
-        "!Equals",
-        "!Or",
-        "!FindInMap sequence",
-        "!Base64",
-        "!Cidr",
-        "!Ref",
-        "!Sub",
-        "!GetAtt",
-        "!GetAZs",
-        "!ImportValue",
-        "!Select",
-        "!Select sequence",
-        "!Split",
-        "!Join sequence",
-        "!And sequence",
-        "!If sequence",
-        "!Not sequence",
-        "!Equals sequence",
-        "!Or sequence",
-        "!FindInMap",
-        "!Join",
-        "!Sub sequence",
-        "!ImportValue sequence",
-        "!Split sequence"
-    ],
-    // Enable/disable default YAML formatter (requires restart)
-    "yaml.format.enable": true,
-    "diffEditor.renderSideBySide": false,
-    "vs-kubernetes": {
-        "vs-kubernetes.kubectl-path": "/home/shane/.vs-kubernetes/tools/kubectl/kubectl",
-        "vs-kubernetes.minikube-path": "/home/shane/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
-        "vs-kubernetes.helm-path": "/home/shane/.vs-kubernetes/tools/helm/linux-amd64/helm",
-        "vs-kubernetes.draft-path": "/home/shane/.vs-kubernetes/tools/draft/linux-amd64/draft"
-    },
-    "aws.samcli.location": "/home/shane/.local/bin/sam",
-    "python.linting.pylintUseMinimalCheckers": false,
-    "smartsemicolon.autoLineChange": false,
-    "debug.node.autoAttach": "on",
-    "atlascode.jira.lastCreateSiteAndProject": {
-        "siteId": "835cff21-3c05-4184-a2ea-bde1593e58a4",
-        "projectKey": "AAAA"
-    },
-    "todo-tree.highlights.enabled": true,
-    "todo-tree.tree.showScanModeButton": false,
-    "workbench.colorTheme": "Gruvbox Dark Medium",
-    "remote.SSH.defaultExtensions": [
-        "Python"
-    ],
+    "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.4.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+    "file:///home/ssmith/.vscode/extensions/itprokyle.vscode-runway-0.1.0/schemas/runway.schema.json": [
+      "**/runway.yaml",
+      "**/runway.yml"
+    ]
+  },
+  "atlascode.jira.workingProject": {
+    "id": "10321",
+    "name": "Onica Start",
+    "key": "OS"
+  },
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "files.trimTrailingWhitespace": true,
+  "javascript.preferences.quoteStyle": "single",
+  "dash.languageIdToDocsetMap": {
+    "typescript": ["angular", "typescript", "javascript", "lodash", "awsjs"]
+  },
+  "explorer.confirmDelete": false,
+  "files.associations": {
+    ".vimrc.bundles": "viml",
+    "config": "shellscript"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "auto-close-tag.SublimeText3Mode": true,
+  "markdown.preview.breaks": true,
+  "editor.fontFamily": "Fira Code",
+  // "editor.fontFamily":"'Hack Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "on",
+  "files.insertFinalNewline": true,
+  "workbench.list.horizontalScrolling": true,
+  "workbench.tree.indent": 16,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.tabSizing": "shrink",
+  "zenMode.hideLineNumbers": false,
+  "window.menuBarVisibility": "toggle",
+  "debug.inlineValues": true,
+  "debug.toolBarLocation": "docked",
+  "extensions.closeExtensionDetailsOnViewChange": true,
+  "terminal.explorerKind": "external",
+  "terminal.external.linuxExec": "tilix",
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "peacock.surpriseMeFromFavoritesOnly": true,
+  "editor.suggestSelection": "first",
+  "python.jediEnabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "testExplorer.addToEditorContextMenu": true,
+  "testExplorer.onStart": "retire",
+  "testExplorer.showOnRun": true,
+  "mochaExplorer.files": "test/**/*.test.ts",
+  "mochaExplorer.require": "ts-node/register",
+  "mochaExplorer.nodePath": "/home/shane/.nvm/versions/node/v10.10.0/bin/node",
+  "atlascode.jira.jqlList": [
+    {
+      "id": "410c3031-4f3d-42cd-8e27-f195b238ec70",
+      "enabled": true,
+      "name": "My corpinfollc Issues",
+      "query": "assignee = currentUser() ORDER BY lastViewed DESC ",
+      "siteId": "835cff21-3c05-4184-a2ea-bde1593e58a4",
+      "monitor": true
+    }
+  ],
+  "cSpell.userWords": [
+    "Arns",
+    "Bibimbap",
+    "Cognito",
+    "Gochujang",
+    "Interop",
+    "Kubernetes",
+    "Mutex",
+    "Nerdery",
+    "Onica",
+    "Rollbar",
+    "Rubocop",
+    "Terraform's",
+    "acmcert",
+    "amazonaws",
+    "amazoncognito",
+    "awscli",
+    "bootcamp",
+    "buildspec",
+    "butterrobot",
+    "cfront",
+    "chipotle",
+    "ciphertext",
+    "cloudformation",
+    "cloudwatch",
+    "codebuild",
+    "codepipeline",
+    "cors",
+    "creds",
+    "crhelper",
+    "decodable",
+    "devtool",
+    "distributionid",
+    "distro",
+    "dynamodb",
+    "envvars",
+    "gmail",
+    "kustomization",
+    "kustomize",
+    "lsremote",
+    "memoized",
+    "middlewares",
+    "mkdtemp",
+    "mktemp",
+    "mockdev",
+    "mystaticsite",
+    "noqa",
+    "npmrc",
+    "oauth",
+    "olduri",
+    "onicagroup",
+    "openid",
+    "pexpect",
+    "pipenv",
+    "platcorp",
+    "popd",
+    "precommit",
+    "pushd",
+    "pylint",
+    "quotemark",
+    "readonly",
+    "rearchitecting",
+    "recurse",
+    "serializer",
+    "shaneallensmith",
+    "signin",
+    "slsw",
+    "ssmith",
+    "staticsite",
+    "stepfunctions",
+    "thisisfine",
+    "titlecase",
+    "tslib",
+    "unmarshall",
+    "verifiedpermissions",
+    "voodoogq",
+    "whichenv",
+    "yamllint"
+  ],
+  "explorer.openEditors.visible": 5,
+  "explorer.autoReveal": false,
+  // Custom tags for the parser to use
+  "yaml.customTags": [
+    "!And",
+    "!If",
+    "!Not",
+    "!Equals",
+    "!Or",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Join sequence",
+    "!And sequence",
+    "!If sequence",
+    "!Not sequence",
+    "!Equals sequence",
+    "!Or sequence",
+    "!FindInMap",
+    "!Join",
+    "!Sub sequence",
+    "!ImportValue sequence",
+    "!Split sequence"
+  ],
+  // Enable/disable default YAML formatter (requires restart)
+  "yaml.format.enable": true,
+  "diffEditor.renderSideBySide": false,
+  "vs-kubernetes": {
+    "vs-kubernetes.kubectl-path": "/home/shane/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.minikube-path": "/home/shane/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.helm-path": "/home/shane/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.draft-path": "/home/shane/.vs-kubernetes/tools/draft/linux-amd64/draft",
+    "vs-kubernetes.kubectl-path.linux": "/home/ssmith/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.minikube-path.linux": "/home/ssmith/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.helm-path.linux": "/home/ssmith/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.draft-path.linux": "/home/ssmith/.vs-kubernetes/tools/draft/linux-amd64/draft"
+  },
+  "aws.samcli.location": "/home/shane/.local/bin/sam",
+  "python.linting.pylintUseMinimalCheckers": false,
+  "smartsemicolon.autoLineChange": false,
+  "debug.node.autoAttach": "on",
+  "atlascode.jira.lastCreateSiteAndProject": {
+    "siteId": "835cff21-3c05-4184-a2ea-bde1593e58a4",
+    "projectKey": "AAAA"
+  },
+  "todo-tree.highlights.enabled": true,
+  "todo-tree.tree.showScanModeButton": false,
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "remote.SSH.defaultExtensions": ["Python"],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "editor.autoClosingOvertype": "always",
+  "python.languageServer": "Microsoft",
+  "material-icon-theme.showWelcomeMessage": false
 }

@@ -1,0 +1,7 @@
+# ~/.tmuxinator/jobhunt.yml
+---
+name: jobhunt
+root: ~/Code/github.com/voodoogq/jobhunt
+windows:
+  - editor: code .
+  - shell: 

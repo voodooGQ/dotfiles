@@ -27,26 +27,4 @@
 		],
 		"description": "Describe Function Block"
 	},
-	"Test Handler": {
-		"prefix": "testhandler",
-		"body":  [
-			"const handle = (body: object): any => {",
-		  "  const mockContext = {} as Context;",
-			" ",
-			"  const event: any = {",
-			"    httpMethod: '$1',",
-			"    body: JSON.stringify(body),",
-			"    headers: { 'Content-Type': 'application/json' },",
-			" };",
-			" ",
-			"  return new Promise((resolve, reject) => {",
-			"    handler(event, mockContext, (error: any, response: any) => {",
-			"      if (error) { reject(error); }",
-			"      resolve(response);",
-			"    });",
-			"  });",
-			"};"
-		],
-		"description": "Common handler function for testing serverless handlers"
-	}
 }

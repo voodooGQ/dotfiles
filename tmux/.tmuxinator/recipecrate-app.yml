@@ -1,0 +1,7 @@
+# ~/.tmuxinator/recipecrate-app.yml
+
+name: recipecrate-app
+root: ~/Code/github.com/voodoogq/recipecrate-app
+startup_window: terminal
+windows:
+  - terminal: #empty
