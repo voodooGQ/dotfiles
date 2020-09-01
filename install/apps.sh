@@ -11,7 +11,6 @@ sudo apt-get install -y \
   clipit \
   compton \
   curl \
-  curl \
   dunst \
   exfat-fuse \
   exfat-utils \
