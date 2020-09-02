@@ -1,8 +1,0 @@
-# ~/.tmuxinator/demo-react-tic-tac-toe.yml
-
-name: demo-react-tic-tac-toe
-root: ~/Code/github.com/voodooGQ/demo-react-tic-tac-toe/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

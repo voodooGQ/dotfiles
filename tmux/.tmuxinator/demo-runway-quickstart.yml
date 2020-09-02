@@ -1,8 +1,0 @@
-# ~/.tmuxinator/demo-runway-quickstart.yml
-
-name: demo-runway-quickstart
-root: ~/Code/github.com/voodooGQ/demo-runway-quickstart/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

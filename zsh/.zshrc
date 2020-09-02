@@ -84,4 +84,3 @@ function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 
 autoload bashcompinit
 bashcompinit
-eval "$(onica-sso shell-init bash)"

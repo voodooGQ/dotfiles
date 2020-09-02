@@ -1,7 +1,0 @@
-# ~/.tmuxinator/cloudfront-aae.yml
----
-name: cloudfront-aae
-root: ~/Code/github.com/voodooGQ/cloudfront-authorization-at-edge
-startup_window: editor
-windows:
-  - terminal:

@@ -1,8 +1,0 @@
-# ~/.tmuxinator/runway-e2e.yml
----
-name: runway-e2e
-root: ~/Code/github.com/voodoogq/runway-e2e
-startup_window: terminal
-windows:
-  - editor: code . && nvim
-  - shell: 

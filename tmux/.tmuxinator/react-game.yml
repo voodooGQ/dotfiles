@@ -1,7 +1,0 @@
-# ~/.tmuxinator/react-game.yml
----
-name: react-game
-root: ~/Code/github.com/voodoogq/react-game
-windows:
-  - editor: code .
-  - shell: 

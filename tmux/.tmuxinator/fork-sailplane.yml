@@ -1,8 +1,0 @@
-# ~/.tmuxinator/fork-sailplane.yml
----
-name: fork-sailplane
-root: ~/Code/github.com/voodooGQ/sailplane
-startup_window: vi
-windows:
-  - vi: nvim
-  - cli:

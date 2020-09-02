@@ -1,8 +1,0 @@
-# ~/.tmuxinator/flightplan.yml
-
-name: flightplan
-root: ~/Code/bitbucket.org/corpinfo/flightplan
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

@@ -1,8 +1,0 @@
-# ~/.tmuxinator/aae-python.yml
----
-name: aae-python
-root: ~/Code/github.com/voodooGQ/aae-python
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal:

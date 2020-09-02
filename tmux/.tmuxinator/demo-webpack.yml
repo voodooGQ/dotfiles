@@ -1,8 +1,0 @@
-# ~/.tmuxinator/demo-webpack.yml
-
-name: demo-webpack
-root: ~/Code/github.com/voodooGQ/demo-webpack/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

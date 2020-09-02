@@ -1,8 +1,0 @@
-# ~/.tmuxinator/auth-at-edge.yml
----
-name: auth-at-edge
-root: ~/Code/github.com/voodooGQ/auth-at-edge
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal:

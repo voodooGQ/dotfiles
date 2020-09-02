@@ -1,8 +1,0 @@
-# ~/.tmuxinator/demo-sam.yml
-
-name: demo-sam
-root: ~/Code/github.com/voodooGQ/demo-sam
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

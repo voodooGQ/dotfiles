@@ -1,8 +1,0 @@
-# ~/.tmuxinator/runway-sample-module-cfn-openvpn-ansible.yml
----
-name: runway-sample-module-cfn-openvpn-ansible
-root: ~/Code/bitbucket.org/corpinfo/runway-sample-module-cfn-openvpn-ansible
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal:

@@ -1,8 +1,0 @@
-# ~/.tmuxinator/react-resume-site.yml
-
-name: react-resume-site
-root: ~/Code/github.com/voodooGQ/react-resume-site
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty
