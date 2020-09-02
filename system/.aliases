@@ -2,6 +2,7 @@ alias :e="ls -lFh"
 alias :q="exit"
 alias :so="source ~/.zshrc"
 alias apt="sudo apt"
+alias be="bundle exec"
 alias bb="kubectl run busybox --image=busybox:1.28 --rm -it --restart=Never --command --"
 alias cat="PAGER=none bat" # Make sure we're not using nvimpager
 alias cp='cp -i'
