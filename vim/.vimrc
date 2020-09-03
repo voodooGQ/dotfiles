@@ -165,7 +165,6 @@ xnoremap X :normal! @x<CR>
 "===============================================================================
 " LEADER_MAPS"{{{
 " Toggle ALE Linting"}}}
-map <Leader>t :ALEToggle<CR>
 
 " Add an arrow function
 nmap <Leader>f= a() =>
@@ -187,18 +186,12 @@ nnoremap <leader>a ggVG
 nnoremap <silent> <leader>e :noh<CR>
 " <leader>w cds to the current directory in netrw
 nnoremap <silent> <leader>w :cd %<CR>
-" Open in Dash
-nnoremap <silent> <leader>d :Dash<CR>
 " Restore previous session
 nnoremap <silent> <leader>r :call RestoreSess()<CR>
-" Alefix
-nnoremap <silent> <leader>f :ALEFix<CR>
 
 " Remap Esc to Ctrl+l in interactive mode
 imap <C-l> <Esc>
 
-map f <Plug>Sneak_s
-map F <Plug>Sneak_S
 "===============================================================================
 
 " SYNTAX_COLORS"{{{
@@ -296,22 +289,11 @@ let g:fzf_colors =
 \ { 'fg':      ['fg', 'GruvboxOrange'],
   \ 'bg':      ['bg', 'CursorLineNr'] }
 "===============================================================================
-
 " EXPLORER"{{{
 " set default list style for Explore"}}}
 let g:netrw_liststyle=4
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 "===============================================================================
-
-" VIM_MARKDOWN_PREVIEW
-let vim_markdown_preview_github=1 " Use Github Flavored
-let vim_markdown_preview_hotkey='<C-m>' " Hotkey to open preview (also Enter)
-"===============================================================================
-"
-" LOCAL_VIM
-let g:localvimrc_ask = 0
-"===============================================================================
-
 " VIM_REST_CONSOLE"{{{
 " Allow request body on get requests"}}}
 let g:vrc_allow_get_request_body = 1
