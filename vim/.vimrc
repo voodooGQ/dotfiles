@@ -323,57 +323,6 @@ let skeletons#autoRegister = 1
 let skeletons#skeletonsDir = "~/.vim/skeletons"
 
 "==============================================================================="{{{
-" DEOPLETE (Autocompletion)"}}}
-"if has('nvim')
-  "let g:deoplete#enable_at_startup = 1
-"endif
-
-"==============================================================================="{{{
-"  COC
-set hidden
-set cmdheight=2
-set shortmess+=c
-set signcolumn=yes
-
-"inoremap <silent><expr> <TAB>
-      "\ pumvisible() ? "\<C-n>" :
-      "\ <SID>check_back_space() ? "\<TAB>" :
-      "\ coc#refresh()
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? coc#rpc#request('doKeymap', ['snippets-expand-jump','']) :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-let g:coc_snippet_next = '<tab>'
-imap <C-l> <Plug>(coc-snippets-expand)
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
-let g:coc_snippet_next = '<c-j>'
-let g:coc_snippet_prev = '<c-k>'
-
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-function! s:show_documentation()
-  if &filetype == 'vim'
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
-
-
-nmap <silent> sn :CocCommand snippets.editSnippets<CR>
-"==============================================================================="{{{
 " ROOTER"}}}
 let g:rooter_silent_chdir = 1
 let g:rooter_patterns = ['.root', '.git/']

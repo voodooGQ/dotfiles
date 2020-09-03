@@ -1,6 +1,0 @@
-{
-  "typescript.validate.enable": false,
-  "javascript.validate.enable": false,
-  "html.filetypes": ["html", "handelbars", "hbs", "razor"],
-  "html.format.enable": true
-}
