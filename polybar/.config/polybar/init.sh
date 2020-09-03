@@ -18,7 +18,7 @@ if type "xrandr"; then
       fi
     else
        MONITOR=$m polybar --reload top &
-       MONITOR=$m polybar --reload bottom &
+       MONITOR=$m polybar --reload xfcebottom &
     fi
   done
 

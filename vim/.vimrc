@@ -20,8 +20,8 @@ let mapleader = " "
 set linebreak
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
-" Make it obvious where 80 characters is
-set textwidth=100
+" Make it obvious where 120 characters is
+set textwidth=120
 set colorcolumn=+1
 " Turn off the auto-newline
 set fo-=t
@@ -115,20 +115,6 @@ nn <F4><silent> :let @+=expand("%:p")<CR>
 nn <F7> :setlocal spell! spell?<CR>
 " Tagbar
 nn <F8> :TagbarToggle<CR>
-" Hard mode
-nn <Left> :echoe "Use h"<CR>
-nn <C-w><Left> :echoe "Use \<C-w\>h"<CR>
-nn <Right> :echoe "Use l"<CR>
-nn <C-w><Right> :echoe "Use \<C-w\>l"<CR>
-nn <Up> :echoe "Use k"<CR>
-nn <C-w><Up> :echoe "Use \<C-w\>k"<CR>
-nn <Down> :echoe "Use j"<CR>
-nn <C-w><Down> :echoe "Use \<C-w\>j"<CR>
-
-"nn - :Ranger<CR>
-
-" Go Back from tag jump
-"nn <C-\> <C-T>
 
 map <leader>b :Buffers<CR>
 map f <Plug>Sneak_s
@@ -164,13 +150,6 @@ xnoremap X :normal! @x<CR>
 
 "===============================================================================
 " LEADER_MAPS"{{{
-" Toggle ALE Linting"}}}
-
-" Add an arrow function
-nmap <Leader>f= a() =>
-
-nmap <Leader>fr i# frozen_string_literal: true<CR><C-BS><C-BS><CR><Esc>
-
 
 " Faster tab movement
 nmap <silent> <Leader>h :tabprev<CR>
@@ -339,26 +318,6 @@ autocmd FileType ruby,eruby
     \ set foldmethod=expr |
     \ set foldexpr=getline(v:lnum)=~'^\\s*#'
 
-"==============================================================================="{{{
-" ALE
-"autocmd BufEnter *.erb ALEDisable " Disable on .erb files"}}}
-let g:ale_sign_error = "✖"
-let g:ale_sign_warning = "𐌏"
-hi ALEErrorSign ctermbg=237 ctermfg=red guifg=#fb4934 guibg=#3c3836
-hi ALEWarningSign ctermbg=237 ctermfg=yellow guifg=#fabd2f guibg=#3c3836
-hi ALEError guibg=red guifg=#3c3836
-hi ALEWarning guibg=#fabd2f guifg=#3c3836
-let g:ale_linters = {
-\   'javascript': ['eslint', 'jshint'],
-\   'typescript': ['tsserver', 'tslint'],
-\}
-
-let g:ale_fixers = {
-\   'ruby': ['rubocop'],
-\   'javascript': ['eslint', 'jshint'],
-\   'typescript': ['tslint']
-\}
-nmap <silent> <C-h> <Plug>(ale_next_wrap)
 "==============================================================================="{{{
 " SESSIONS"}}}
 
