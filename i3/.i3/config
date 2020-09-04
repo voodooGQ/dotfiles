@@ -228,18 +228,14 @@ mode "resize" {
 }
 
 # Display mode
-set $displayMode "Set display mode (b)oone's (w)ork work-(h)orizontal (l)aptop"
+set $displayMode "Set display mode (s)it s(t)and (l)aptop"
 bindsym $mod+Shift+p mode $displayMode
 mode $displayMode {
-    bindsym b exec "\
-                ~/.screenlayout/3-screen-boone.sh && \
+    bindsym s exec "\
+                ~/.screenlayout/3-screen-sit.sh && \
                 ~/.config/polybar/initxfce.sh"; \
                 mode "default"
-    bindsym w exec "\
-                ~/.screenlayout/3-screen.sh && \
-                ~/.config/polybar/initxfce.sh"; \
-                mode "default"
-    bindsym h exec "\
+    bindsym t exec "\
                 ~/.screenlayout/3-screen-horizontal.sh && \
                 ~/.config/polybar/initxfce.sh"; \
                 mode "default"
