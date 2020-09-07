@@ -1,0 +1,7 @@
+# ~/.tmuxinator/udemy-learn-datadog.yml
+---
+name: udemy-learn-datadog
+root: ~/Code/github.com/voodoogq/udemy-learn-datadog
+windows:
+  - editor: code .
+  - shell:

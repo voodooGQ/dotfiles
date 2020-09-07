@@ -228,9 +228,13 @@ mode "resize" {
 }
 
 # Display mode
-set $displayMode "Set display mode (s)it s(t)and (l)aptop"
+set $displayMode "Set display mode (k)ajabi-sit, (s)it s(t)and (l)aptop"
 bindsym $mod+Shift+p mode $displayMode
 mode $displayMode {
+    bindsym k exec "\
+                ~/.screenlayout/3-screen-sit.sh && \
+                ~/.config/polybar/initxfce.sh"; \
+                mode "default"
     bindsym s exec "\
                 ~/.screenlayout/3-screen-kajabi-sit.sh && \
                 ~/.config/polybar/initxfce.sh"; \
