@@ -232,7 +232,7 @@ set $displayMode "Set display mode (s)it s(t)and (l)aptop"
 bindsym $mod+Shift+p mode $displayMode
 mode $displayMode {
     bindsym s exec "\
-                ~/.screenlayout/3-screen-sit.sh && \
+                ~/.screenlayout/3-screen-kajabi-sit.sh && \
                 ~/.config/polybar/initxfce.sh"; \
                 mode "default"
     bindsym t exec "\
