@@ -6,7 +6,7 @@ if [ -n "$SSH_CLIENT" ]; then
 fi
 
 PROMPT='
-%{$fg_bold[blue]%}%10c%{$reset_color%} $(git_prompt_info) $(git_remote_status)
+%{$fg[magenta]%}[%D{%y/%m/%f} %D{%L:%M:%S}] %{$fg_bold[blue]%}%10c%{$reset_color%} $(git_prompt_info) $(git_remote_status)
 %{$fg_bold[cyan]%}❯%{$reset_color%} '
 
 

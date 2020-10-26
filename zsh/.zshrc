@@ -68,19 +68,14 @@ if [ ! -S ~/.ssh/ssh_auth_sock ]; then
 fi
 ssh-add -l > /dev/null || ssh-add
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /home/ssmith/Code/onica/s3api.sls/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/ssmith/Code/onica/s3api.sls/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /home/ssmith/Code/onica/s3api.sls/node_modules/tabtab/.completions/sls.zsh ]] && . /home/ssmith/Code/onica/s3api.sls/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /home/ssmith/Code/onica/s3api.sls/node_modules/tabtab/.completions/slss.zsh ]] && . /home/ssmith/Code/onica/s3api.sls/node_modules/tabtab/.completions/slss.zsh
-
 function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 
 . ~/Code/github.com/rupa/z/z.sh
 
 autoload bashcompinit
 bashcompinit
+export PATH="/usr/local/bin:$PATH"
+
+#AWSume alias to source the AWSume script
+alias awsume=". awsume"
+fpath=(/usr/local/share/zsh/site-functions $fpath)

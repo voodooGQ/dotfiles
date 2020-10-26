@@ -1,28 +1,6 @@
 mychart: https://uwhealthmychart.org/mychart/
 
-onica-repo: https://www.github.com/onicagroup/ ;; Github landing for Onica-Group
-onica-mail: https://mail.google.com/mail/u/?authuser=ssmith@onica.com ;; Onica Email
-onica-calendar: https://calendar.google.com/calendar/r/?authuser=ssmith@onica.com ;; Onica Calendar
-
-os-repo: https://bitbucket.org/corpinfo/onica-start/src/develop ;; Onica Start Repo
-os-jira: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=333&projectKey=OS&view=planning&selectedIssue=OS-12 ;; Onica Start Jira
-
 overapi http://overapi.com ;; Development Cheatsheets
-signma https://interactive.linuxacademy.com/diagrams/TheSigmaScripts.html
-
-platform-jira: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=351&view=planning.nodetail ;; Platform Team Projects
-
-redrocket-github: https://www.github.com/voodooGQ/redrocket/
-
-runway: https://github.com/onicagroup/runway ;; Onica - Runway
-runway-docs: https://docs.onica.com/projects/runway/en/latest/index.html ;; Onica - Runway Documentation
-
-sailplane: https://github.com/onicagroup/sailplane ;; Onica - Sailplane
-sailplane-docs: https://docs.onica.com/projects/sailplane/en/latest/index.html ;; Onica - Sailplane Documentation
-
-sso-repo: https://bitbucket.org/corpinfo/onica-sso/src/ENV-dev/ ;; Onica SSO Repo
-sso-jira: https://corpinfollc.atlassian.net/secure/RapidBoard.jspa?rapidView=291&projectKey=NC&view=planning.nodetail&selectedIssue=NC-4 ;; Onica SSO Jira
-sso-docs: https://docs.onica.com/projects/sso/en/latest/index.html ;; Onica - Onica-SSO documentation
 
 voodoo-ghub: https://www.github.com/voodoogq/ ;; My Github Landing
 voodoo-mail: https://mail.google.com/mail/u/?authuser=voodoogq@gmail.com ;; My Email
@@ -30,18 +8,9 @@ voodoo-calendar: https://calendar.google.com/calendar/r/?authuser=voodoogq@onica
 
 jira-dashboard: https://corpinfollc.atlassian.net/secure/Dashboard.jspa
 
-travel: https://www.egencia.com
-
 ducky: www.duckychannel.net/download/user_manual/MINI_User_Manual.pdf
-
-platcorp-repo: https://bitbucket.org/corpinfo/onica-start-platcorp/src/ENV-dev/
-platcorp-deploy-pipeline: https://bitbucket.org/corpinfo/onica-start-platcorp/src/ENV-dev/deployment_pipeline/
-platcorp-flow-chart: https://mermaidjs.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFI7XG4gICAgc3ViZ3JhcGggQml0QnVja2V0O1xuICAgIG9zcmVwb1tvbmljYS1zdGFydCByZXBvXTtcbiAgICBvc3BsYXRjb3JwcmVwb1tvbmljYS1zdGFydC1wbGF0Y29ycCByZXBvXTtcbiAgICBlbmQ7XG4gICAgc3ViZ3JhcGggcGxhdGNvcnAtbGFiLUFjY291bnQ7XG4gICAgb3NyZXBvLS0gemlwLW9uLWNvbW1pdCAtLT5Db2RlUGlwZWxpbmU7XG4gICAgb3NwbGF0Y29ycHJlcG8tLSB6aXAtb24tY29tbWl0IC0tPkNvZGVQaXBlbGluZTtcbiAgICBDb2RlUGlwZWxpbmUtLT5sYWJyZXNvdXJjZXNbQURGUyBkZXBsb3ltZW50XTtcbiAgICByb3V0ZTUzYWNtW1JvdXRlNTMgQUNNIHZhbGlkYXRpb25dXG4gICAgcm91dGU1M3dlYltSb3V0ZTUzIG9uaWNhLXN0YXJ0IENOQU1FXVxuICAgIGVuZDtcbiAgICBzdWJncmFwaCBwbGF0Y29ycC1wYXllci1BY2NvdW50O1xuICAgIENvZGVQaXBlbGluZS0tIGFzc3VtZS1yb2xlIC0tPnBheWVycmVzb3VyY2VzW1RGL1NMUy93ZWIgZGVwbG95bWVudHNdO1xuICAgIHBheWVycmVzb3VyY2VzLS0gYXNzdW1lLXJvbGUgLS0-cm91dGU1M2FjbTtcbiAgICBwYXllcnJlc291cmNlcy0tIGFzc3VtZS1yb2xlIC0tPnJvdXRlNTN3ZWI7XG4gICAgZW5kOyIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19
-platcorp-staging: https://onicastart.platcorp.onica-dev.com/
 
 aws-iam-policy-simulator: https://policysim.aws.amazon.com
 aws-personal-console: https://212015066383.signin.aws.amazon.com/console
 
 jq: https://jqplay.org ;; jq playground
-
-python-2-type-hint-cheat-sheet: https://mypy.readthedocs.io/en/latest/cheat_sheet.html

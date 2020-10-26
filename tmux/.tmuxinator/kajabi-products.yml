@@ -1,0 +1,8 @@
+# ~/.tmuxinator/kajabi-products.yml
+---
+name: kajabi-products
+root: ~/Code/github.com/Kajabi/kajabi-products
+windows:
+  - editor: code .
+  - docker:
+  - logs: tail -f log/development.log

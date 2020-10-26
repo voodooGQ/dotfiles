@@ -4,7 +4,7 @@
 
 [core]
 	excludesfile = ~/.gitignore_global
-	pager = nvimpager
+	pager = nvim -R
 
 [color]
 	ui = auto

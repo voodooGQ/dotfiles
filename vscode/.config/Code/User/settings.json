@@ -48,14 +48,14 @@
   "atlascode.jira.workingSite": {
     "baseUrlSuffix": "atlassian.net"
   },
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     // For ESLint
     "source.fixAll.eslint": true,
     // For TSLint
     "source.fixAll.tslint": true,
     // For Stylelint
-    "source.fixAll.stylelint": true,
+    // "source.fixAll.stylelint": true,
     // For Prettier
     "source.fixAll.prettier": true
   },
@@ -76,7 +76,6 @@
     "key": "OS"
   },
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
@@ -260,10 +259,10 @@
     "vs-kubernetes.minikube-path": "/home/shane/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
     "vs-kubernetes.helm-path": "/home/shane/.vs-kubernetes/tools/helm/linux-amd64/helm",
     "vs-kubernetes.draft-path": "/home/shane/.vs-kubernetes/tools/draft/linux-amd64/draft",
-    "vs-kubernetes.kubectl-path.linux": "/home/ssmith/.vs-kubernetes/tools/kubectl/kubectl",
-    "vs-kubernetes.minikube-path.linux": "/home/ssmith/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
-    "vs-kubernetes.helm-path.linux": "/home/ssmith/.vs-kubernetes/tools/helm/linux-amd64/helm",
-    "vs-kubernetes.draft-path.linux": "/home/ssmith/.vs-kubernetes/tools/draft/linux-amd64/draft"
+    "vs-kubernetes.kubectl-path.linux": "/home/shane/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.minikube-path.linux": "/home/shane/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.helm-path.linux": "/home/shane/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.draft-path.linux": "/home/shane/.vs-kubernetes/tools/draft/linux-amd64/draft"
   },
   "aws.samcli.location": "/home/shane/.local/bin/sam",
   "python.linting.pylintUseMinimalCheckers": false,
@@ -275,7 +274,7 @@
   },
   "todo-tree.highlights.enabled": true,
   "todo-tree.tree.showScanModeButton": false,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Shades of Purple",
   "remote.SSH.defaultExtensions": [
     "Python"
   ],
@@ -283,15 +282,16 @@
   "editor.autoClosingOvertype": "always",
   "python.languageServer": "Microsoft",
   "material-icon-theme.showWelcomeMessage": false,
-  "ruby.useBundler": false, //run non-lint commands with bundle exec
+  "ruby.useBundler": true, //run non-lint commands with bundle exec
   "ruby.useLanguageServer": true, // use the internal language server (see below)
   "ruby.lint": {
     "rubocop": {
-      "useBundler": false // enable rubocop via bundler
+      "useBundler": true // enable rubocop via bundler
     },
     "reek": {
-      "useBundler": false // enable reek via bundler
+      "useBundler": true // enable reek via bundler
     }
   },
-  "ruby.format": "rubocop", // use rubocop for formatting
+  "ruby.format": "rubocop",
+  "python.showStartPage": false, // use rubocop for formatting
 }
