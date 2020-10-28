@@ -3,6 +3,7 @@ export AWS_REGION=us-east-1
 export BASE16_SHELL=$HOME/.config/base16-shell/
 export BROWSER=firefox
 export COMPLETION_WAITING_DOTS="true"
+export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 export DEV_BIN="$HOME/.local/devbin"
 export EDITOR="$VISUAL"
 export FZF_BASE="$HOME/Code/github.com/junegunn/fzf"
