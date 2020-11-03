@@ -6,11 +6,11 @@ echo "-------------------------------------------";
 
 cd $HOME/.dotfiles
 
-sudo apt-add-repository ppa:neovim-ppa/stable
+sudo apt-add-repository -y ppa:neovim-ppa/stable
 
 sudo apt-get update
 
-sudo apt-get install \
+sudo apt-get install -y \
   neovim \
   ;
 
