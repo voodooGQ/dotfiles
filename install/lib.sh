@@ -11,19 +11,19 @@ sudo apt-get install -y \
   libev-dev \
   libpango1.0-dev \
   libpulse-dev \
-  libpulse0
+  libpulse0 \
   libssl-dev \
   libstartup-notification0-dev \
   libtool \
-  libxcb-cursor-dev
+  libxcb-cursor-dev \
   libxcb-icccm4-dev \
   libxcb-keysyms1-dev \
-  libxcb-randr0-dev
+  libxcb-randr0-dev \
   libxcb-shape0-dev \
   libxcb-util0-dev \
-  libxcb-xinerama0-dev
-  libxcb-xkb-dev
-  libxkbcommon-dev
+  libxcb-xinerama0-dev \
+  libxcb-xkb-dev \
+  libxkbcommon-dev \
   libxkbcommon-x11-dev \
   libyajl-dev \
   lsb-core \
