@@ -14,8 +14,8 @@ ln -s $HOME/Code/github.com/rbenv/ruby-build $HOME/.rbenv/plugins/ruby-build
 cd $HOME/.rbenv && src/configure && make -C src
 
 # Ruby install
-rbenv install 2.7.1
-rbenv global 2.7.1
+rbenv install 2.7.2
+rbenv global 2.7.2
 rbenv rehash
 
 cd $HOME/.dotfiles

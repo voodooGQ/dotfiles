@@ -8,7 +8,6 @@ sudo apt-get install -y \
   aptitude \
   arandr \
   cargo \
-  clipit \
   compton \
   curl \
   dunst \
@@ -16,7 +15,6 @@ sudo apt-get install -y \
   exfat-utils \
   flameshot \
   fzf \
-  gnome-tweak-tool \
   highlight \
   htop \
   httpie \
@@ -45,6 +43,7 @@ sudo apt-get install -y \
   unclutter \
   w3m \
   w3m-img \
+  wget \
   xautolock \
   xcb \
   zeal \
