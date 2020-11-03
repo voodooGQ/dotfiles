@@ -33,6 +33,7 @@ sudo apt-get install -y \
   ranger \
   scrot \
   screen \
+  slack \
   stow \
   surfraw \
   tig \
