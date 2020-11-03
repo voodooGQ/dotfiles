@@ -30,7 +30,7 @@ sudo apt-get install -y \
   nvidia-prime \
   pavucontrol \
   powertop \
-  ranger \
+  rofi \
   scrot \
   screen \
   slack \
