@@ -10,88 +10,70 @@
 ;
 ;
 ;   To learn more about how to configure Polybar
-;   go to https://github.com/jaagr/polybar
+;   go to https://github.com/polybar/polybar
 ;
-;   The README contains alot of information
+;   The README contains a lot of information
 ;
 ;==========================================================
 
 [colors]
-background = #282828
-background-alt = #504945
-background-kajabi = #005cc2
-foreground = #ebdbb2
-foreground-alt = #d5c4a1
-foreground-kajabi = #003f87
-primary = #fe8019
-secondary = #d3869b
-alert = #cc241d
+;background = ${xrdb:color0:#222}
+background = #222
+background-alt = #444
+;foreground = ${xrdb:color7:#222}
+foreground = #dfdfdf
+foreground-alt = #555
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
 
-[bar/topbig]
-inherit = bar/top
-height = 34
-font-0 = FontAwesome:pixelsize=14,0
-font-1 = fixed:pixelsize=12;1
-
-[bar/top]
+[bar/example]
+;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-monitor = ${env:MONITOR:}
 height = 27
+;offset-x = 1%
+;offset-y = 1%
 radius = 6.0
 fixed-center = false
+
 background = ${colors.background}
 foreground = ${colors.foreground}
+
 line-size = 3
-line-color = #d65d0e
+line-color = #f00
+
 border-size = 4
-border-color = #000000
+border-color = #00000000
+
 padding-left = 0
 padding-right = 2
+
 module-margin-left = 1
 module-margin-right = 2
-font-0 = FontAwesome:pixelsize=12,0
-font-1 = fixed:pixelsize=10;1
-font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-3 = siji:pixelsize=10;1
-modules-center = i3
-wm-restack = i3
-cursor-click = pointer
-cursor-scroll = ns-resize
 
-[bar/bottomkajabi]
-inherit = bar/bottom
-background = ${colors.background-kajabi}
-modules-center = i3
-modules-left = memory cpu filesystem
-
-[bar/bottomxfce]
-inherit = bar/bottom
-modules-center = i3
-modules-left = memory cpu filesystem
-
-[bar/bottom]
-bottom = true
-monitor = ${env:MONITOR:}
-width = 100%
-height = 27
-radius = 0
-fixed-center = true
-background = ${colors.background}
-foreground = ${colors.foreground}
-tray-position = center
-tray-padding = 0
-line-size = 1
-line-color = #f00
-border-size = 0
-border-color = #fff
-padding-left = 2
-padding-right = 2
-module-margin-left = 3
-module-margin-right = 3
-font-0 = FontAwesome:pixelsize=12,0
+font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-modules-left = battery
+
+modules-left = bspwm i3
+modules-center = mpd
+modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+
+tray-position = right
+tray-padding = 2
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
 cursor-click = pointer
 cursor-scroll = ns-resize
 
@@ -152,38 +134,73 @@ type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
-label-active-font = 2
 
 ; Only show workspaces on the same output as the bar
-pin-workspaces = true
+;pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %icon% %name%
-label-focused-background = ${module/bspwm.label-focused-background}
-label-focused-underline = ${module/bspwm.label-focused-underline}
-label-focused-padding = ${module/bspwm.label-focused-padding}
+label-focused = %index%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %icon% %name%
-label-unfocused-padding = ${module/bspwm.label-occupied-padding}
+label-unfocused = %index%
+label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %icon% %name%
+label-visible = %index%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %icon% %name%
-label-urgent-background = ${module/bspwm.label-urgent-background}
-label-urgent-padding = ${module/bspwm.label-urgent-padding}
+label-urgent = %index%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
 
 ; Separator in between workspaces
 ; label-separator = |
+
+
+[module/mpd]
+type = internal/mpd
+format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label> <bar>
+label = BL
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #fff
+bar-indicator-font = 2
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${colors.foreground-alt}
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
 
 [module/cpu]
 type = internal/cpu
@@ -203,7 +220,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface =
+interface = wlp0s20f3
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -225,7 +242,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface =
+interface = enp0s31f6
 interval = 3.0
 
 format-connected-underline = #55aa55
@@ -241,16 +258,17 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 1
+interval = 5
 
-date = " %Y-%m-%d"
+date =
 date-alt = " %Y-%m-%d"
 
-time = %H:%M:%S
+time = %H:%M
+time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #689d6a
+format-underline = #0a6cf5
 
 label = %date% %time%
 
@@ -311,45 +329,36 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
-full-at = 98
-; $ ls -1 /sys/class/power_supply/
 battery = BAT0
 adapter = AC
-poll-interval = 5
-time-format = %H:%M:%S
+full-at = 98
+
 format-charging = <animation-charging> <label-charging>
-format-discharging = <ramp-capacity> <label-discharging>
-label-charging = Charging %percentage%%
-label-discharging = Discharging %percentage%%
-label-full = Fully charged
+format-charging-underline = #ffb52a
 
-; Only applies if <ramp-capacity> is used
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+format-discharging = <animation-discharging> <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
 
-; Only applies if <bar-capacity> is used
-bar-capacity-width = 10
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-underline = ${self.format-charging-underline}
 
-; Only applies if <animation-charging> is used
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
-; Framerate in milliseconds
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-; Only applies if <animation-discharging> is used
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-3 = 
-animation-discharging-4 = 
-; Framerate in milliseconds
-animation-discharging-framerate = 500
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-foreground = ${colors.foreground-alt}
+animation-discharging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
@@ -377,7 +386,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = open 
+label-open = 
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
@@ -401,19 +410,14 @@ menu-2-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
-compositing-background = compton
-compositing-foreground = compton
-compositing-border = over
-pseudo-transparency = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
 
 [global/wm]
 margin-top = 5
 margin-bottom = 5
 
 ; vim:ft=dosini
-
-[module/spotify]
-type = custom/script
-interval = 1
-format = <label>
-exec = python ~/.config/polybar/modules/spotify_status.py -f '{play_pause} [ {artist}: {song} ]'
