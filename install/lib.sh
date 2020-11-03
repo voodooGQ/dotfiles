@@ -9,6 +9,7 @@ sudo apt-get install -y \
   automake \
   build-essential \
   cmake \
+  fonts-font-awesome \
   libev-dev \
   libmpdclient-dev \
   libpango1.0-dev \
