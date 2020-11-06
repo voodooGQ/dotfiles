@@ -11,20 +11,21 @@ sudo apt-get install -y \
   cmake \
   fonts-firacode \
   fonts-font-awesome \
+  libasound2-dev \
+  libcurl4-openssl-dev \
   libev-dev \
+  libiw-dev \
   libmpdclient-dev \
   libpango1.0-dev \
   libpulse-dev \
   libpulse0 \
+  libreadline-dev \
   libssl-dev \
   libstartup-notification0-dev \
   libtool \
-  libcurl4-openssl-dev \
   libxcb-composite0-dev \
-  libasound2-dev \
-  libiw-dev \
-  libxcb-ewmh-dev \
   libxcb-cursor-dev \
+  libxcb-ewmh-dev \
   libxcb-icccm4-dev \
   libxcb-keysyms1-dev \
   libxcb-randr0-dev \

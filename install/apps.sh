@@ -7,6 +7,7 @@ echo "-------------------------------------------";
 sudo apt-get install -y \
   aptitude \
   arandr \
+  caffeine \
   cargo \
   compton \
   curl \
