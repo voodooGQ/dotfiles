@@ -4,6 +4,8 @@
 /.idea
 *.iml
 /_local
+/_local_
+/.local
 railways.cache
 *.rdb
 .lvimrc

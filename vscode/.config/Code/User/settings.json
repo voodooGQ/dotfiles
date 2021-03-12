@@ -249,7 +249,8 @@
     "!Join",
     "!Sub sequence",
     "!ImportValue sequence",
-    "!Split sequence"
+    "!Split sequence",
+    "!vault"
   ],
   // Enable/disable default YAML formatter (requires restart)
   "yaml.format.enable": true,
@@ -293,5 +294,11 @@
     }
   },
   "ruby.format": "rubocop",
-  "python.showStartPage": false, // use rubocop for formatting
+  "python.showStartPage": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveshare.authenticationProvider": "GitHub",
+  "ansible.validate.executablePath": "ansible-lint", // use rubocop for formatting
 }

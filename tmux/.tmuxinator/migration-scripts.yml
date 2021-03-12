@@ -1,0 +1,7 @@
+# ~/.tmuxinator/migration-scripts.yml
+---
+name: migration-scripts
+root: ~/Code/github.com/Kajabi/migration_scripts
+windows:
+  - editor: code .
+  - terminal:

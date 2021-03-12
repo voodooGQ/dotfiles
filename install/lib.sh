@@ -19,7 +19,9 @@ sudo apt-get install -y \
   libpango1.0-dev \
   libpulse-dev \
   libpulse0 \
+  libpq-dev \
   libreadline-dev \
+  libsasl2-dev \
   libssl-dev \
   libstartup-notification0-dev \
   libtool \

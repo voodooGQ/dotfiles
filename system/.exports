@@ -19,6 +19,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export SAM_CLI_TELEMETRY=0
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 export TERMINAL=tilix
+export TFENV_ROOT="$HOME/.tfenv"
 export VISUAL=$(which nvim)
 export VTE_VERSION="100" # https://github.com/neovim/neovim/issues/5990
 export ZSH=$HOME/.oh-my-zsh

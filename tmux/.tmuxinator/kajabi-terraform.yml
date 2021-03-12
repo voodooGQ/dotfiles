@@ -1,0 +1,7 @@
+# ~/.tmuxinator/kajabi-terraform.yml
+---
+name: kajabi-terraform
+root: ~/Code/github.com/Kajabi/terraform
+windows:
+  - editor: code .
+  - terminal:

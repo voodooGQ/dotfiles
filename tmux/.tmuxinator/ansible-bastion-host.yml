@@ -1,0 +1,7 @@
+# ~/.tmuxinator/ansible-bastion-host.yml
+---
+name: ansible-bastion-host
+root: ~/Code/github.com/Kajabi/ansible-bastion-host
+windows:
+  - editor: code .
+  - terminal:

@@ -31,6 +31,7 @@ sudo apt-get install -y \
   nvidia-prime \
   pavucontrol \
   powertop \
+  qalculate \
   rofi \
   scrot \
   screen \
