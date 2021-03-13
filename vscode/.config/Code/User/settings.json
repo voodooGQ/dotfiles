@@ -274,7 +274,7 @@
   },
   "todo-tree.highlights.enabled": true,
   "todo-tree.tree.showScanModeButton": false,
-  "workbench.colorTheme": "Shades of Purple",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "remote.SSH.defaultExtensions": [
     "Python"
   ],
@@ -293,5 +293,6 @@
     }
   },
   "ruby.format": "rubocop",
-  "python.showStartPage": false, // use rubocop for formatting
+  "python.showStartPage": false,
+  "tabnine.experimentalAutoImports": true, // use rubocop for formatting
 }

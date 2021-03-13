@@ -1,0 +1,7 @@
+# ~/.tmuxinator/swole.yml
+---
+name: swole
+root: ~/Code/github.com/voodooGQ/swole
+windows:
+  - editor: code .
+  - shell:
