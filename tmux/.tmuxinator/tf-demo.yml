@@ -1,0 +1,7 @@
+# ~/.tmuxinator/tf-demo.yml
+---
+name: tf-demo
+root: ~/Code/github.com/voodoogq/tf-demo
+windows:
+  - editor: code .
+  - shell:

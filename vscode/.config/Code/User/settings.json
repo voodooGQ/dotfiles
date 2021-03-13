@@ -249,7 +249,8 @@
     "!Join",
     "!Sub sequence",
     "!ImportValue sequence",
-    "!Split sequence"
+    "!Split sequence",
+    "!vault"
   ],
   // Enable/disable default YAML formatter (requires restart)
   "yaml.format.enable": true,
@@ -295,4 +296,10 @@
   "ruby.format": "rubocop",
   "python.showStartPage": false,
   "tabnine.experimentalAutoImports": true, // use rubocop for formatting
+  "workbench.iconTheme": "material-icon-theme",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveshare.authenticationProvider": "GitHub",
+  "ansible.validate.executablePath": "ansible-lint", // use rubocop for formatting
 }

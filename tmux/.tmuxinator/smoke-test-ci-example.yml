@@ -1,0 +1,7 @@
+# ~/.tmuxinator/smoke-test-ci-example.yml
+---
+name: smoke-test-ci-example
+root: ~/Code/github.com/Kajabi/smoke-test-ci-example
+windows:
+  - editor: code .
+  - terminal:
