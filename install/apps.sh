@@ -29,6 +29,7 @@ sudo apt-get install -y \
   neofetch \
   net-tools \
   nvidia-prime \
+  orage \
   pavucontrol \
   powertop \
   qalculate \
