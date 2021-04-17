@@ -1,9 +1,0 @@
-# ~/.tmuxinator/runway.yml
----
-name: runway
-root: ~/Code/github.com/voodoogq/runway
-startup_window: terminal
-windows:
-  - editor: code . && nvim
-  - shell: 
-  - playground: cd ~/Code/github.com/voodoogq/demo-runway

@@ -1,8 +1,0 @@
-# ~/.tmuxinator/sandbox.yml
-
-name: sandbox
-root: ~/Code/github.com/voodoogq/sandbox
-startup_window: editor
-windows:
-  - editor: code .
-  - terminal: #empty

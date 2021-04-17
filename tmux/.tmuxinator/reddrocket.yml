@@ -1,7 +1,0 @@
-# ~/.tmuxinator/reddrocket.yml
----
-name: reddrocket
-root: ~/Code/github.com/voodoogq/reddrocket
-windows:
-  - editor: code .
-  - shell: 

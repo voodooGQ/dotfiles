@@ -1,8 +1,0 @@
-# ~/.tmuxinator/vend-r.yml
----
-name: vend-r 
-root: ~/Code/bitbucket.org/corpinfo/vend-r
-startup_window: terminal
-windows:
-  - shell: code .
-  - frontend: cd frontend && npm run start

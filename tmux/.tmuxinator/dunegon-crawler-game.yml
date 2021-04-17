@@ -1,7 +1,0 @@
-# ~/.tmuxinator/dungeon-crawler-game.yml
-
-name: dungeon-crawler-game
-root: ~/Code/github.com/voodooGQ/dungeon-crawler-game/
-startup_window: editor
-windows:
-  - terminal: #empty

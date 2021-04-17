@@ -1,7 +1,0 @@
-# ~/.tmuxinator/udemy-jest-enzyme.yml
----
-name: udemy-jest-enzyme
-root: ~/Code/github.com/voodoogq/udemy-jest-enzyme
-windows:
-  - editor: code .
-  - shell: 
