@@ -26,6 +26,7 @@ sudo apt-get install -y \
   lxappearance \
   mtp-tools \
   nautilus \
+  ncdu \
   neofetch \
   net-tools \
   nvidia-prime \

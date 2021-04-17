@@ -1,13 +1,10 @@
-mychart: https://uwhealthmychart.org/mychart/ ;; My Chart
-
 overapi http://overapi.com ;; Development Cheatsheets
 
-voodoo-ghub: https://www.github.com/voodoogq/ ;; My Github Landing
-voodoo-mail: https://mail.google.com/mail/u/?authuser=voodoogq@gmail.com ;; My Email
+ghub: https://www.github.com/voodoogq/ ;; My Github Landing
+mail: https://mail.google.com/mail/u/?authuser=voodoogq@gmail.com ;; My Email
 
 ducky: www.duckychannel.net/download/user_manual/MINI_User_Manual.pdf
 
-aws-iam-policy-simulator: https://policysim.aws.amazon.com
 aws-personal-console: https://212015066383.signin.aws.amazon.com/console
 
 jq: https://jqplay.org ;; jq playground
