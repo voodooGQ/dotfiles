@@ -2,3 +2,4 @@ rofi.combi-modi:    window,drun,ssh
 rofi.theme:         gruvbox-dark
 rofi.font:          hack 10
 rofi.modi:          combi,window,run,ssh,drun
+rofi.theme: /usr/share/rofi/themes/sidebar.rasi
