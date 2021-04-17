@@ -1,7 +1,6 @@
 source ~/.exports
 
 plugins=(
-  autopep8
   colored-man-pages
   colorize
   docker
@@ -13,10 +12,8 @@ plugins=(
   httpie
   jsontools
   kubectl
-  ng
   node
   npm
-  pep8
   pip
   pyenv
   pylint
@@ -26,7 +23,6 @@ plugins=(
   rbenv
   ruby
   sudo
-  taskwarrior
   tmux
   tmuxinator
   vi-mode
