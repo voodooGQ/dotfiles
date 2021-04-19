@@ -9,4 +9,4 @@ surfraw -browser=$BROWSER \
            sed '/^#/d' | \
            sed '/^\//d' | \
            sort -n | \
-           rofi -dmenu -mesg ">>> Edit to add new bookmarks at ~/.config/surfraw/bookmarks" -i -p "bookmarks")"
+           rofi -dmenu -mesg ">>> ~/.config/surfraw/bookmarks" -i -p "bookmarks")"

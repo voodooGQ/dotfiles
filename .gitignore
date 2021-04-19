@@ -1,6 +1,5 @@
 bash/.private_exports
 tmux/.tmux/plugins/*
-!tmux/.tmux/plugins/tpm
 vim/.vim/bundle/*
 !vim/.vim/bundle/.gitkeep
 vim/.vim/undodir/*

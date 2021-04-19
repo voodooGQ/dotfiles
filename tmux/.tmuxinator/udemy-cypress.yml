@@ -1,7 +1,0 @@
-# ~/.tmuxinator/udemy-cypress.yml
----
-name: udemy-cypress
-root: ~/Code/github.com/voodoogq/udemy-cypress
-windows:
-  - editor: code .
-  - shell: 

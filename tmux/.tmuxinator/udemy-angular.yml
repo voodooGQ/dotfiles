@@ -1,7 +1,0 @@
-# ~/.tmuxinator/udemy-angular.yml
----
-name: udemy-angular
-root: ~/Code/github.com/voodoogq/udemy-angular
-windows:
-  - editor: code .
-  - shell: 

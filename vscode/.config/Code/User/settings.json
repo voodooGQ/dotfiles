@@ -129,16 +129,6 @@
   "mochaExplorer.files": "test/**/*.test.ts",
   "mochaExplorer.require": "ts-node/register",
   "mochaExplorer.nodePath": "/home/shane/.nvm/versions/node/v10.10.0/bin/node",
-  "atlascode.jira.jqlList": [
-    {
-      "id": "410c3031-4f3d-42cd-8e27-f195b238ec70",
-      "enabled": true,
-      "name": "My corpinfollc Issues",
-      "query": "assignee = currentUser() ORDER BY lastViewed DESC ",
-      "siteId": "835cff21-3c05-4184-a2ea-bde1593e58a4",
-      "monitor": true
-    }
-  ],
   "cSpell.userWords": [
     "Arns",
     "Bibimbap",
@@ -268,10 +258,6 @@
   "python.linting.pylintUseMinimalCheckers": false,
   "smartsemicolon.autoLineChange": false,
   "debug.node.autoAttach": "on",
-  "atlascode.jira.lastCreateSiteAndProject": {
-    "siteId": "835cff21-3c05-4184-a2ea-bde1593e58a4",
-    "projectKey": "AAAA"
-  },
   "todo-tree.highlights.enabled": true,
   "todo-tree.tree.showScanModeButton": false,
   "workbench.colorTheme": "Palenight Italic",
@@ -294,6 +280,7 @@
   },
   "ruby.format": "rubocop",
   "python.showStartPage": false,
+  "tabnine.experimentalAutoImports": true, // use rubocop for formatting
   "workbench.iconTheme": "material-icon-theme",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

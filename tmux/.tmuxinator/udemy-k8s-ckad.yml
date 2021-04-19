@@ -1,7 +1,0 @@
-# ~/.tmuxinator/udemy-k8s-ckad.yml
----
-name: udemy-k8s-ckad
-root: ~/Code/github.com/voodoogq/udemy-k8s-ckad
-windows:
-  - editor: code .
-  - shell:

@@ -1,7 +1,0 @@
-# ~/.tmuxinator/udemy-react-redux.yml
----
-name: udemy-react-redux
-root: ~/Code/github.com/voodoogq/udemy-react-redux
-windows:
-  - editor: code .
-  - shell: 

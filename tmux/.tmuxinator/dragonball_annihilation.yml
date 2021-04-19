@@ -1,0 +1,7 @@
+# ~/.tmuxinator/dragonball_annihilation.yml
+---
+name: dragonball_annihilation
+root: ~/Code/github.com/voodooGQ/dragonball_annihilation
+windows:
+  - editor: code .
+  - shell:

@@ -1,7 +1,0 @@
-# ~/.tmuxinator/udemy-docker.yml
----
-name: udemy-docker
-root: ~/Code/github.com/voodoogq/udemy-docker-kubernetes
-windows:
-  - editor: code .
-  - shell: 

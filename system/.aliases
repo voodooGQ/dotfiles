@@ -1,7 +1,5 @@
-alias :e="ls -lFh"
 alias :q="exit"
 alias :so="source ~/.zshrc"
-alias apt="sudo apt"
 alias be="bundle exec"
 alias bb="kubectl run busybox --image=busybox:1.28 --rm -it --restart=Never --command --"
 alias cat="PAGER=none batcat" # Make sure we're not using nvimpager
@@ -13,12 +11,10 @@ alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
 alias gcal="gcalcli"
-alias get="http get"
 alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'"
 alias ghub="cd ~/Code/github.com"
 alias gitpu="git push --set-upstream origin"
 alias gitup="git push --set-upstream origin"
-alias glab="cd ~/Code/gitlab.com"
 alias grep='grep --color'
 alias help='man'
 alias hfzf="fc -El 0 | fzf"
@@ -27,46 +23,21 @@ alias kc="kubectl"
 alias i3log="DISPLAY=:0 i3-dump-log | bzip2 -c | curl --data-binary @- https://logs.i3wm.org"
 alias ls="exa --long --header --git"
 alias la="ls -A"
-alias lab="sso-login ssmith-lab"
 alias ldot='ls -ld .*'
 alias ll="ls -la"
-alias lum="lumigo-cli"
-alias md2pdf='node /home/ssmith/Code/node/md2pdf/index.js'
-alias mm='mux mission-control'
-alias month="gcalcli calm"
 alias mux='tmuxinator'
 alias mv='mv -i'
-alias news="newsbeuter"
-alias next="spotifycli --next"
-alias onicastart="bb && cd corpinfo/onica-start"
 alias open="code"
-alias pause="spotifycli --playpause"
 alias pbcopy="xclip -selection c"
-alias payer="sso-login platcorp-payer"
-alias pe="pipenv"
-alias per="pe run"
-alias phonemnt="jmtpfs ~/mnt/pixel"
 alias pi="ssh pi@192.168.1.35"
-alias pia="~/.local/bin/pia-linux-1.2.1-02688.run"
 alias ping=prettyping
 alias pipup="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
-alias play="spotifycli --playpause"
 alias port="sudo lsof -i"
-alias post="http post"
 alias prettyjson="python -m json.tool"
-alias prev="spotifycli --prev"
-alias pulse="killall pulseaudio; sleep 1; pulseaudio -D -v"
 alias rm='rm -i'
-alias slsdev='SLS_DEBUG=* serverless --verbose --stage=dev'
-alias slsd="SLS_DEBUG=* serverless --verbose --stage=mockdev"
-alias song="spotifycli --status"
-alias sra="sr amazon"
-alias srg="sr google"
 alias tf="terraform"
 alias tg="terragrunt"
 alias top="htop"
 alias weather="curl wttr.in"
-alias week="gcalcli calw"
-alias yt="youtube-dl"
 alias vi=nvim
 alias vim=nvim

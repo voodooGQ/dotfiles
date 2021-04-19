@@ -1,8 +1,0 @@
-# ~/.tmuxinator/go.yml
-
-name: go
-root: ~/Code/go/
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

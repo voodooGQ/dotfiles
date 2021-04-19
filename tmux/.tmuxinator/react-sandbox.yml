@@ -1,7 +1,0 @@
-# ~/.tmuxinator/react-sandbox.yml
----
-name: react-sandbox
-root: ~/Code/github.com/voodoogq/react-sandbox
-windows:
-  - editor: code .
-  - shell: 

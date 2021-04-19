@@ -1,7 +1,0 @@
-# ~/.tmuxinator/udemy-rxjs.yml
----
-name: udemy-rxjs
-root: ~/Code/github.com/voodoogq/udemy-rxjs
-windows:
-  - editor: code .
-  - shell: 

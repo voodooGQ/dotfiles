@@ -1,7 +1,0 @@
-# ~/.tmuxinator/udemy-rails.yml
----
-name: udemy-rails
-root: ~/Code/github.com/voodoogq/udemy-rails
-windows:
-  - editor: code .
-  - shell: 

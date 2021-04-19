@@ -179,15 +179,6 @@ mode $layout {
   bindsym Escape mode "default"
 }
 
-set $polybar "polybar-style: (x)fce (i)3"
-bindsym $mod+ctrl+b mode $polybar
-mode $polybar {
-  bindsym i exec --no-startup-id ~/.config/polybar/init.sh
-  bindsym x exec --no-startup-id ~/.config/polybar/initxfce.sh
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-}
-
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (r)eboot, (Shift+s)hutdown
@@ -233,26 +224,24 @@ bindsym $mod+Shift+p mode $displayMode
 mode $displayMode {
     bindsym s exec "\
                 ~/.screenlayout/3-screen-sit.sh && \
-                ~/.config/polybar/initxfce.sh"; \
+                ~/.config/polybar/init.sh"; \
                 mode "default"
     bindsym t exec "\
                 ~/.screenlayout/3-screen-horizontal.sh && \
-                ~/.config/polybar/initxfce.sh"; \
+                ~/.config/polybar/init.sh"; \
                 mode "default"
     bindsym m exec "\
                 ~/.screenlayout/2-screen.sh && \
-                ~/.config/polybar/initxfce.sh"; \
+                ~/.config/polybar/init.sh"; \
                 mode "default"
     bindsym l exec "\
                 ~/.screenlayout/laptop-displays.sh && \
-                ~/.config/polybar/initxfce.sh"; \
+                ~/.config/polybar/init.sh"; \
                 mode "default"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-
-bindsym $mod+Shift+Ctrl+x exec ~/.config/polybar/init.sh
 
 bindsym $mod+p exec spotifycli --playpause
 bindsym $mod+i exec spotifycli --prev

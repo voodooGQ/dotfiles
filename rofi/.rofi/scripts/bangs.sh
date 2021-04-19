@@ -27,73 +27,47 @@ COMMANDS["locate"]="~/.rofi/scripts/locate.sh"
 LABELS["locate"]=""
 
 # open calendar
-COMMANDS['#calendar']="~/.rofi/scripts/calendar.sh"
-LABELS["#calendar"]="Calendar"
+COMMANDS['calendar']="~/.rofi/scripts/calendar.sh"
+LABELS["calendar"]="Calendar"
 
 # open calculator
-COMMANDS['#calculator']="~/.rofi/scripts/calculator.sh"
-LABELS["#calculator"]="Calculator"
+COMMANDS['calculator']="~/.rofi/scripts/calculator.sh"
+LABELS["calculator"]="Calculator"
 
 # open custom web searches
 COMMANDS["web"]="~/.rofi/scripts/websearch.sh"
 LABELS["web"]=""
 
 # open vscode
-COMMANDS['#code']="~/.rofi/scripts/vscode.sh"
-LABELS["#code"]="VSCode"
+COMMANDS['code']="~/.rofi/scripts/vscode.sh"
+LABELS["code"]="VSCode"
 
 # open browser
-COMMANDS['#firefox']="~/.rofi/scripts/firefox.sh"
-LABELS["#firefox"]="Firefox"
+COMMANDS['firefox']="~/.rofi/scripts/firefox.sh"
+LABELS["firefox"]="Firefox"
 
-COMMANDS['#files']='~/.rofi/scripts/files.sh'
-LABELS["#files"]="Files"
+COMMANDS['files']='~/.rofi/scripts/files.sh'
+LABELS["files"]="Files"
 
 # open terminal
-COMMANDS['#terminal']="~/.rofi/scripts/terminal.sh"
-LABELS["#terminal"]="$> Terminal"
+COMMANDS['terminal']="~/.rofi/scripts/terminal.sh"
+LABELS["terminal"]="$> Terminal"
 
 # open slack
-COMMANDS['#slack']="~/.rofi/scripts/slack.sh"
-LABELS["#slack"]="Slack"
+COMMANDS['slack']="~/.rofi/scripts/slack.sh"
+LABELS["slack"]="Slack"
 
 # open slack
-COMMANDS['#spotify']="~/.rofi/scripts/spotify.sh"
-LABELS["#spotify"]="Spotify"
+COMMANDS['spotify']="~/.rofi/scripts/spotify.sh"
+LABELS["spotify"]="Spotify"
 
-COMMANDS['#screenshot']="~/.rofi/scripts/slack.sh"
-LABELS["#screenshot"]="screenshot"
-
-COMMANDS['#wyze']="~/.rofi/scripts/wyze.sh"
-LABELS["#wyze"]="Wyze"
-
-COMMANDS['#rtfm']="~/.rofi/scripts/zeal.sh"
-LABELS["#rtfm"]="rtfm"
-
-COMMANDS['#display']="~/.rofi/scripts/display.sh"
-LABELS["#display"]="display"
-
-COMMANDS['#i3info']="~/.rofi/scripts/i3info.sh"
-LABELS["#i3info"]="i3Info"
-
-COMMANDS['#github']="~/.rofi/scripts/github.sh"
-LABELS["#github"]="github"
-
+COMMANDS['display']="~/.rofi/scripts/display.sh"
+LABELS["display"]="display"
 
 # show clipboard history
 # source: https://bitbucket.org/pandozer/rofi-clipboard-manager/overview
 # COMMANDS["clipboard"]='rofi -modi "clipboard:~/.bin/rofi-clipboard-manager/mclip.py menu" -show clipboard && ~/.bin/rofi-clipboard-manager/mclip.py paste'
 # LABELS["clipboard"]=""
-
-# references --------------------------
-# COMMANDS[";sr2"]="chromium 'wikipedia.org/search-redirect.php?search=\" \${input}\""
-# LABELS[";sr2"]=""
-
-# COMMANDS[";piratebay"]="chromium --disk-cache-dir=/tmp/cache http://thepiratebay.org/search/\" \${input}\""
-# LABELS[";piratebay"]=""
-
-# COMMANDS[".bin"]="spacefm -r '/home/dka/bin'"
-# LABELS[".bin"]=".bin"
 
 ################################################################################
 # do not edit below
