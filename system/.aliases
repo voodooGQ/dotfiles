@@ -23,6 +23,7 @@ alias grep='grep --color'
 alias help='man'
 alias hfzf="fc -El 0 | fzf"
 alias hrg="fc -El 0 | rg"
+alias kc="kubectl"
 alias i3log="DISPLAY=:0 i3-dump-log | bzip2 -c | curl --data-binary @- https://logs.i3wm.org"
 alias ls="exa --long --header --git"
 alias la="ls -A"
@@ -52,6 +53,7 @@ alias pipup="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 
 alias play="spotifycli --playpause"
 alias port="sudo lsof -i"
 alias post="http post"
+alias prettyjson="python -m json.tool"
 alias prev="spotifycli --prev"
 alias pulse="killall pulseaudio; sleep 1; pulseaudio -D -v"
 alias rm='rm -i'
