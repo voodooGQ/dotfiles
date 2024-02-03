@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 # List of files to symlink
 declare -a files=(
@@ -21,6 +22,7 @@ declare -a files=(
   ".pryrc",
   ".tmux-osx.conf",
   ".tmux.conf",
+  ".tool-versions",
   ".vimrc",
   ".vimrc_background",
   ".vimrc.bundles",
@@ -71,10 +73,12 @@ brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-brew bundle --file ./Brewfile
+# brew bundle --force --file ./Brewfile || true
 
-# Set default MySQL root password and auth type
-mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
+for i in "${files[@]}"
+do
+  link $i 
+done
 
 # Create a projects directories
 mkdir -p $HOME/Code/github.com/voodoogq
@@ -85,7 +89,3 @@ chmod a+x ./clone
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
-
-for i in "${files[@]}"
-do; link $i; done
-

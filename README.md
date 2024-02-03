@@ -1,14 +1,12 @@
 .dotfiles
 ===
 
+Mac OS configuration files
+
 ```shell
-git clone https://github.com/voodooGQ/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles/install
-./init.sh
+git clone git@github.com/voodooGQ/dotfiles.git ~/Code/github.com/voodoogq/dotfiles
+cd ~/Code/github.com/voodoogq
+./init
+# After Oh My ZSH install
+./install
 ```
-
-When the ZSH prompt comes up:
-
-`exit`
-
-# PROFIT!
