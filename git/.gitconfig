@@ -4,11 +4,16 @@
 
 [core]
 	excludesfile = ~/.gitignore_global
-	pager = nvim -R
+	pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true
 
 [color]
 	ui = auto
-	pager = no
 
 [alias]
   co = checkout
@@ -29,19 +34,24 @@
   branches = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
 	d = difftool
 
-;[credential]
-  ;helper = osxkeychain
+[credential]
+  helper = osxkeychain
 
 [push]
   default = simple
+
 [diff]
-	tool = vimdiff
+  colorMoved = default
+
 [difftool]
 	prompt = false
+
 [difftool "vimdiff"]
 	cmd = vimdiff \"$LOCAL\" \"$REMOTE\"
+
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
+
 [mergetool]
 	prompt = false
