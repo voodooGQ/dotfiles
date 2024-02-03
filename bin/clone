@@ -2,7 +2,12 @@
 
 echo "Cloning repositories..."
 
-CODE=$HOME/Code
+ROOT=$HOME
+CODE=$ROOT/Code
 PERSONAL=$CODE/github.com/voodooGQ
 
-# git clone git@github.com:voodooGQ/dotfiles.git $PERSONAL/dotfiles
+# System
+git clone git@github.com:tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Personal
+git clone git@github.com:voodooGQ/dotfiles.git $PERSONAL/dotfiles

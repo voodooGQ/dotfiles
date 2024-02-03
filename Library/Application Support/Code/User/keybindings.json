@@ -452,5 +452,15 @@
   {
     "key": "ctrl+w",
     "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "shift+cmd+/",
+    "command": "toggleExplainMode",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "cmd+/",
+    "command": "-toggleExplainMode",
+    "when": "suggestWidgetVisible"
   }
 ]

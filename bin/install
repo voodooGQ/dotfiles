@@ -43,6 +43,8 @@ $SCRIPT_DIR/link
 source ~/.aliases
 vscode-ext
 
+# Create system directories
+mkdir -p $HOME/.tmux/plugins # Tmux Plugin Manager
 # Create a projects directories
 mkdir -p $HOME/Code/github.com/voodooGQ # Personal
 

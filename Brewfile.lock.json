@@ -1235,6 +1235,70 @@
             }
           }
         }
+      },
+      "reattach-to-user-namespace": {
+        "version": "2.9",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:1c946e781c18777b2156251b59a44f1db80cd39d59c18dce460011a0176566b7",
+              "sha256": "1c946e781c18777b2156251b59a44f1db80cd39d59c18dce460011a0176566b7"
+            },
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:ff12e77b3cfc11ea931010a16a2c1a1ffb4bd893b6644f29966507fcdbe02b8c",
+              "sha256": "ff12e77b3cfc11ea931010a16a2c1a1ffb4bd893b6644f29966507fcdbe02b8c"
+            },
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:ea86d8655e6e86620d1502bdf84edfb6950e4f36b2f6919541fcfe45817a4233",
+              "sha256": "ea86d8655e6e86620d1502bdf84edfb6950e4f36b2f6919541fcfe45817a4233"
+            },
+            "arm64_big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:ebbf92257744971b555e6f1abb0205b5ee09986b47168d94f235b302974536b9",
+              "sha256": "ebbf92257744971b555e6f1abb0205b5ee09986b47168d94f235b302974536b9"
+            },
+            "sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:3cb86ce647f290fcc0752a0bc7d26776768a2fff11a9ec95c0bac3f82a137492",
+              "sha256": "3cb86ce647f290fcc0752a0bc7d26776768a2fff11a9ec95c0bac3f82a137492"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:c84b1082f8e2b8b6b5d43b1fff674f6c32add385b7267a01b80fc74f154ed9bc",
+              "sha256": "c84b1082f8e2b8b6b5d43b1fff674f6c32add385b7267a01b80fc74f154ed9bc"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:5ef00eb2cd133afffbb67caef646fe99e8a8fb53ede9b8ddb6de1f20206760c6",
+              "sha256": "5ef00eb2cd133afffbb67caef646fe99e8a8fb53ede9b8ddb6de1f20206760c6"
+            },
+            "big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:8b715171e1c8ce8f86cddc241340a7a6f4f263e770d912894cf580790f8d8aa4",
+              "sha256": "8b715171e1c8ce8f86cddc241340a7a6f4f263e770d912894cf580790f8d8aa4"
+            },
+            "catalina": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:8ab11a5fa7512f5d7ef8fe62a5275325f3721e13fde2b0831d1f615e8820c341",
+              "sha256": "8ab11a5fa7512f5d7ef8fe62a5275325f3721e13fde2b0831d1f615e8820c341"
+            },
+            "mojave": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:b277145d5bfbc6997bc7d8ebe203e9d93adf8d1aa2f0f1c76152212ee6a23403",
+              "sha256": "b277145d5bfbc6997bc7d8ebe203e9d93adf8d1aa2f0f1c76152212ee6a23403"
+            },
+            "high_sierra": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/reattach-to-user-namespace/blobs/sha256:68e1f00743690086fb23ce013767e0a669ef46807ee9f618fe9ea4a25c50d5c0",
+              "sha256": "68e1f00743690086fb23ce013767e0a669ef46807ee9f618fe9ea4a25c50d5c0"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -1254,6 +1318,306 @@
         "version": "6.2",
         "options": {
           "full_name": "font-fira-code"
+        }
+      },
+      "font-3270-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-3270-nerd-font"
+        }
+      },
+      "font-fira-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-fira-mono-nerd-font"
+        }
+      },
+      "font-inconsolata-go-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-inconsolata-go-nerd-font"
+        }
+      },
+      "font-inconsolata-lgc-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-inconsolata-lgc-nerd-font"
+        }
+      },
+      "font-inconsolata-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-inconsolata-nerd-font"
+        }
+      },
+      "font-monofur-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-monofur-nerd-font"
+        }
+      },
+      "font-overpass-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-overpass-nerd-font"
+        }
+      },
+      "font-ubuntu-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-ubuntu-mono-nerd-font"
+        }
+      },
+      "font-agave-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-agave-nerd-font"
+        }
+      },
+      "font-arimo-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-arimo-nerd-font"
+        }
+      },
+      "font-anonymice-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-anonymice-nerd-font"
+        }
+      },
+      "font-aurulent-sans-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-aurulent-sans-mono-nerd-font"
+        }
+      },
+      "font-bigblue-terminal-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-bigblue-terminal-nerd-font"
+        }
+      },
+      "font-bitstream-vera-sans-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-bitstream-vera-sans-mono-nerd-font"
+        }
+      },
+      "font-blex-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-blex-mono-nerd-font"
+        }
+      },
+      "font-caskaydia-cove-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-caskaydia-cove-nerd-font"
+        }
+      },
+      "font-code-new-roman-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-code-new-roman-nerd-font"
+        }
+      },
+      "font-cousine-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-cousine-nerd-font"
+        }
+      },
+      "font-daddy-time-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-daddy-time-mono-nerd-font"
+        }
+      },
+      "font-dejavu-sans-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-dejavu-sans-mono-nerd-font"
+        }
+      },
+      "font-droid-sans-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-droid-sans-mono-nerd-font"
+        }
+      },
+      "font-fantasque-sans-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-fantasque-sans-mono-nerd-font"
+        }
+      },
+      "font-fira-code-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-fira-code-nerd-font"
+        }
+      },
+      "font-go-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-go-mono-nerd-font"
+        }
+      },
+      "font-gohufont-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-gohufont-nerd-font"
+        }
+      },
+      "font-hack-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-hack-nerd-font"
+        }
+      },
+      "font-hasklug-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-hasklug-nerd-font"
+        }
+      },
+      "font-heavy-data-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-heavy-data-nerd-font"
+        }
+      },
+      "font-hurmit-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-hurmit-nerd-font"
+        }
+      },
+      "font-im-writing-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-im-writing-nerd-font"
+        }
+      },
+      "font-iosevka-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-iosevka-nerd-font"
+        }
+      },
+      "font-jetbrains-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-jetbrains-mono-nerd-font"
+        }
+      },
+      "font-lekton-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-lekton-nerd-font"
+        }
+      },
+      "font-liberation-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-liberation-nerd-font"
+        }
+      },
+      "font-meslo-lg-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-meslo-lg-nerd-font"
+        }
+      },
+      "font-monoid-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-monoid-nerd-font"
+        }
+      },
+      "font-mononoki-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-mononoki-nerd-font"
+        }
+      },
+      "font-mplus-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-mplus-nerd-font"
+        }
+      },
+      "font-noto-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-noto-nerd-font"
+        }
+      },
+      "font-open-dyslexic-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-open-dyslexic-nerd-font"
+        }
+      },
+      "font-profont-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-profont-nerd-font"
+        }
+      },
+      "font-proggy-clean-tt-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-proggy-clean-tt-nerd-font"
+        }
+      },
+      "font-roboto-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-roboto-mono-nerd-font"
+        }
+      },
+      "font-sauce-code-pro-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-sauce-code-pro-nerd-font"
+        }
+      },
+      "font-shure-tech-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-shure-tech-mono-nerd-font"
+        }
+      },
+      "font-space-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-space-mono-nerd-font"
+        }
+      },
+      "font-terminess-ttf-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-terminess-ttf-nerd-font"
+        }
+      },
+      "font-tinos-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-tinos-nerd-font"
+        }
+      },
+      "font-ubuntu-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-ubuntu-nerd-font"
+        }
+      },
+      "font-victor-mono-nerd-font": {
+        "version": "3.1.1",
+        "options": {
+          "full_name": "font-victor-mono-nerd-font"
         }
       }
     },
