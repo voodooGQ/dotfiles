@@ -49,14 +49,9 @@
   },
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    // For ESLint
-    "source.fixAll.eslint": true,
-    // For TSLint
-    "source.fixAll.tslint": true,
-    // For Stylelint
-    // "source.fixAll.stylelint": true,
-    // For Prettier
-    "source.fixAll.prettier": true
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.fixAll.prettier": "explicit"
   },
   "yaml.schemas": {
     "file:///home/shane/.vscode/extensions/itprokyle.vscode-runway-0.1.0/schemas/runway.schema.json": [
@@ -312,5 +307,6 @@
         }
       }
     ]
-  }
+  },
+  "workbench.editor.tabActionLocation": "left"
 }

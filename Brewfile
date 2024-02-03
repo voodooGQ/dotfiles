@@ -25,7 +25,6 @@ brew 'git-delta' # Better diff for git
 brew 'coreutils' # macOS are outdated
 brew 'jq' # JSON processor
 brew 'zsh' # Zsh
-brew 'mysql' # MySQL
 brew 'yamllint' # YAML linter
 brew 'mcfly' # Better history
 brew 'vault' # Vault
@@ -38,12 +37,12 @@ brew 'postgresql@12', restart_service: true # PG 12
 brew 'redis', restart_service: true # Redis
 
 # Apps
-cask 'aws-vpn-client'
+cask 'aws-vpn-client' # AWS VPN
 cask 'flameshot' # Screenshot
 cask 'spotify' # Spotify
 cask 'iterm2' # iTerm2
 cask 'font-awesome-terminal-fonts' # Font Awesome for terminal
-cask 'homebrew/cask-fonts/font-fontawesome'
+cask 'homebrew/cask-fonts/font-fontawesome' # Font Awesome
 cask 'font-fira-code' # Fira Code font
 cask 'adobe-creative-cloud' # Adobe Creative Cloud
 cask 'dash' # Dash
@@ -55,12 +54,17 @@ cask 'brave-browser' # Brave Browser
 cask 'github' # Github Desktop
 cask 'imageoptim' # Optimize images
 cask 'insomnia' # Rest client
-cask 'slack'
-cask 'the-unarchiver'
-cask 'visual-studio-code'
-cask 'zoom'
+cask 'slack' # Slack
+cask 'the-unarchiver' # Unarchiver
+cask 'visual-studio-code' # VSCode
+cask 'zoom' # Zoom
+cask 'numi' # Calculator
 
 # Mac Apple Store
 mas 'Alfred', id: 405843582 # Alfred
 mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
 mas 'Magnet', id: 441258766 # Window manager
+mas 'MindNode - Mind Map & Outline', id: 1289197285 # Brain Map
+mas 'iBar-Menubar icon control tool', id: -2146090692 # Menubar icon control
+mas 'Boop', id: 1518425043 # Various developer tools 
+mas 'ColorSlurp', id: 1287239339 # Color picker

@@ -9,7 +9,7 @@ alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'"
 alias gitup="git push --set-upstream origin"
 alias grep='grep --color'
 alias help='man'
-alias ls="exa --long --header --git"
+alias ls="eza --long --header --git"
 alias la="ls -A"
 alias ldot='ls -ld .*'
 alias ll="ls -la"

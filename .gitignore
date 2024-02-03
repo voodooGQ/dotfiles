@@ -9,3 +9,4 @@ vim/.vim/.netrwhist
 vim/.vim/view/*
 zsh/.oh-my-zsh
 .netrwhist
+!.vscode

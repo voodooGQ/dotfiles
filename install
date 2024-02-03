@@ -3,38 +3,40 @@ set -e
 
 # List of files to symlink
 declare -a files=(
-  ".local",
-  ".tmuxinator",
-  ".vim",
-  ".vscode",
-  ".zsh_custom",
-  ".aliases",
-  ".eslintrc.json",
-  ".exports",
-  ".functions",
-  ".gitconfig",
-  ".gitignore_global",
-  ".gruvbox.dircolors",
-  ".htoprc",
-  ".inputrc",
-  ".irbrc",
-  ".macos",
-  ".pryrc",
-  ".tmux-osx.conf",
-  ".tmux.conf",
-  ".tool-versions",
-  ".vimrc",
-  ".vimrc_background",
-  ".vimrc.bundles",
-  ".yamllint",
-  ".zsh_path",
-  ".zshrc",
-  "Brewfile",
+  ".local"
+  ".tmuxinator"
+  ".vim"
+  ".vscode"
+  ".zsh_custom"
+  ".aliases"
+  ".eslintrc.json"
+  ".exports"
+  ".functions"
+  ".gitconfig"
+  ".gitignore_global"
+  ".gruvbox.dircolors"
+  ".htoprc"
+  ".inputrc"
+  ".irbrc"
+  ".macos"
+  ".pryrc"
+  ".tmux-osx.conf"
+  ".tmux.conf"
+  ".tool-versions"
+  ".vimrc"
+  ".vimrc_background"
+  ".vimrc.bundles"
+  ".yamllint"
+  ".zsh_path"
+  ".zshrc"
+  "Brewfile"
+  "Library/Preferences/.GlobalPreferences.plist"
+  "Library/Preferences/com.apple.symbolichotkeys.plist"
+  "Library/Preferences/pbs.plist"
 )
 
 echo "Installing..."
 
-#!/bin/zsh
 echo "Checking Command Line Tools for Xcode"
 # Only run if the tools are not installed yet
 # To check that try to print the SDK path
@@ -73,11 +75,12 @@ brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-# brew bundle --force --file ./Brewfile || true
+brew bundle --force --file ./Brewfile
 
+# Link all the files
 for i in "${files[@]}"
 do
-  link $i 
+  link $i
 done
 
 # Create a projects directories

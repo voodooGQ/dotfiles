@@ -1,0 +1,4 @@
+globalStorage/
+workspaceStorage/
+extensions/*
+!extensions/extensions.json
