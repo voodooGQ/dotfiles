@@ -1,43 +1,24 @@
 alias :q="exit"
-alias :so="source ~/.zshrc"
 alias be="bundle exec"
-alias bb="kubectl run busybox --image=busybox:1.28 --rm -it --restart=Never --command --"
-alias cat="PAGER=none batcat" # Make sure we're not using nvimpager
+alias cat="PAGER=none bat" # No pager, run bat
 alias cp='cp -i'
-alias day="gcalcli agenda"
-alias dot="cd ~/dotfiles"
-alias du="ncdu"
 alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
-alias gcal="gcalcli"
 alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'"
-alias ghub="cd ~/Code/github.com"
-alias gitpu="git push --set-upstream origin"
 alias gitup="git push --set-upstream origin"
 alias grep='grep --color'
 alias help='man'
-alias hfzf="fc -El 0 | fzf"
-alias hrg="fc -El 0 | rg"
-alias kc="kubectl"
-alias i3log="DISPLAY=:0 i3-dump-log | bzip2 -c | curl --data-binary @- https://logs.i3wm.org"
 alias ls="exa --long --header --git"
 alias la="ls -A"
 alias ldot='ls -ld .*'
 alias ll="ls -la"
+alias mkdir='mkdir -p'
 alias mux='tmuxinator'
 alias mv='mv -i'
-alias open="code"
-alias pbcopy="xclip -selection c"
 alias pi="ssh pi@192.168.1.35"
-alias ping=prettyping
-alias pipup="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
 alias port="sudo lsof -i"
-alias prettyjson="python -m json.tool"
 alias rm='rm -i'
 alias tf="terraform"
 alias tg="terragrunt"
 alias top="htop"
-alias weather="curl wttr.in"
-alias vi=nvim
-alias vim=nvim

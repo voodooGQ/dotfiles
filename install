@@ -33,7 +33,8 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 mkdir -p $HOME/Code/github.com/voodoogq
 
 # Clone Github repositories
-./clone.sh
+chmod a+x ./clone
+./clone
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos

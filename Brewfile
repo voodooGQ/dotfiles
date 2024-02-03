@@ -8,6 +8,7 @@ tap 'stripe/stripe-cli'
 # Core
 brew 'asdf' # Version manager
 brew 'awscli' # AWS CLI
+brew 'exa' # Ls with colors
 brew 'curl' # Curl
 brew 'git' # Git
 brew 'bat' # Cat with wings
@@ -21,6 +22,7 @@ brew 'spotify' # Spotify
 brew 'flameshot' # Screenshot
 brew 'zsh' # Zsh
 brew 'mysql' # MySQL
+brew 'yamllint' # YAML linter
 
 # Apps
 cask 'iterm2' # iTerm2
