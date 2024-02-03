@@ -37,6 +37,7 @@ brew 'postgresql@12', restart_service: true # PG 12
 brew 'redis', restart_service: true # Redis
 brew 'tmux' # Tmux
 brew 'tmuxinator' # Tmux profiles
+brew 'reattach-to-user-namespace' # Tmux copy paste
 
 # Fonts
 cask 'font-awesome-terminal-fonts'  # Font Awesome for terminal

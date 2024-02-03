@@ -56,3 +56,6 @@ bashcompinit
 export PATH="/usr/local/bin:$PATH"
 
 fpath=(/usr/local/share/zsh/site-functions $fpath)
+if [[ $TMUX == '' ]]; then
+  tmux new-session -A -s main
+fi
