@@ -35,7 +35,7 @@ bindsym $mod+Ctrl+m exec tilix -e 'alsamixer'
 bindsym $mod+Shift+m exec pavucontrol
 bindsym $mod+backslash exec firefox
 
-exec --no-startup-id ~/.config/polybar/initxfce.sh
+exec --no-startup-id ~/.config/polybar/init.sh
 exec --no-startup-id ~/.config/feh/randomwallpaper.sh
 
 ################################################################################################
@@ -290,9 +290,9 @@ set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-  i3bar_command $HOME/.i3/polybar.sh
-}
+# bar {
+#   i3bar_command $HOME/.i3/polybar.sh
+# }
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
@@ -416,3 +416,5 @@ mode "restore" {
 }
 
 bindsym $mod+Shift+n mode "restore"
+
+exec --no-startup-id nitrogen --restore
