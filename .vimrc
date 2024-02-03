@@ -69,7 +69,7 @@ set matchtime=2
 "set formatoptions+=j"}}}
 set nojoinspaces
 
-set shell=/usr/bin/zsh
+set shell=/usr/local/bin/zsh
 
 if !has('nvim')
     set nocompatible
@@ -185,7 +185,9 @@ syntax enable
 
 if filereadable(expand("~/.vimrc_background"))
     let base16colorspace=256
-    source ~/.vimrc_background
+    "if !exists('g:colors_name') || g:colors_name != 'base16-gruvbox-dark-hard'
+    "  colorscheme base16-gruvbox-dark-hard
+    "endif
 endif
 
 set termguicolors
