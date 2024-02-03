@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "vscodevim.vim",
+    "golang.go",
+    "deerawan.vscode-dash",
+    "github.copilot",
+    "github.copilot-chat",
+    "britesnow.vscode-toggle-quotes",
+    "yoavbls.pretty-ts-errors",
+    "johnpapa.vscode-peacock"
+  ]
+}

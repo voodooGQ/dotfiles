@@ -1,39 +1,8 @@
 #!/bin/sh
 set -e
 
-# List of files to symlink
-declare -a files=(
-  ".local"
-  ".tmuxinator"
-  ".vim"
-  ".vscode"
-  ".zsh_custom"
-  ".aliases"
-  ".eslintrc.json"
-  ".exports"
-  ".functions"
-  ".gitconfig"
-  ".gitignore_global"
-  ".gruvbox.dircolors"
-  ".htoprc"
-  ".inputrc"
-  ".irbrc"
-  ".macos"
-  ".pryrc"
-  ".tmux-osx.conf"
-  ".tmux.conf"
-  ".tool-versions"
-  ".vimrc"
-  ".vimrc_background"
-  ".vimrc.bundles"
-  ".yamllint"
-  ".zsh_path"
-  ".zshrc"
-  "Brewfile"
-  "Library/Preferences/.GlobalPreferences.plist"
-  "Library/Preferences/com.apple.symbolichotkeys.plist"
-  "Library/Preferences/pbs.plist"
-)
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ROOT_DIR=$SCRIPT_DIR/..
 
 echo "Installing..."
 
@@ -59,36 +28,27 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# Link files
-link() {
-  echo "Linking $1"
-  rm -rf $HOME/$1
-  ln -s $PWD/$1 $HOME/$1
-}
-
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-rm -rf $HOME/.zshrc
-ln -s .zshrc $HOME/.zshrc
-
 # Update Homebrew recipes
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
-brew bundle --force --file ./Brewfile
+# brew tap homebrew/bundle
+# brew bundle --force --file $ROOT_DIR/Brewfile
 
-# Link all the files
-for i in "${files[@]}"
-do
-  link $i
-done
+# Link configs
+chmod a+x $SCRIPT_DIR/link
+$SCRIPT_DIR/link
+
+# Install VSCode Extensions
+source ~/.aliases
+vscode-ext
 
 # Create a projects directories
 mkdir -p $HOME/Code/github.com/voodoogq
 
 # Clone Github repositories
-chmod a+x ./clone
-./clone
+chmod a+x $SCRIPT_DIR/clone
+$SCRIPT_DIR/clone
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos

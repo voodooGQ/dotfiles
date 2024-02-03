@@ -6,7 +6,6 @@ plugins=(
   docker
   docker-compose
   dotenv
-  fzf
   gem
   git
   httpie
@@ -27,18 +26,17 @@ plugins=(
   tmuxinator
   vi-mode
   vundle
-  zsh_reload
 )
 
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
-eval `dircolors --sh ~/.gruvbox.dircolors`
+eval `gdircolors --sh ~/.gruvbox.dircolors`
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.functions
 source ~/.zsh_path
-source ~/.local/bin/aws_zsh_completer.sh
+source ~/.local/bin/aws_zsh_completer
 
 # Secrets
 if [[ -a ~/.secrets ]]; then

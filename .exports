@@ -18,3 +18,4 @@ export YAMLLINT_CONFIG_FILE=$HOME/.yamllint
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM=$HOME/.zsh_custom
 export ZSH_THEME="intheloop.custom"
+export VSCODE_EXTENSIONS="$HOME/Library/Application\ Support/Code/User/extensions.json"

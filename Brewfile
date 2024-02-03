@@ -35,6 +35,8 @@ brew 'ripgrep-all' # Ripgrep all
 brew 'tfenv' # Terraform version manager
 brew 'postgresql@12', restart_service: true # PG 12
 brew 'redis', restart_service: true # Redis
+brew 'tmux' # Tmux
+brew 'tmuxinator' # Tmux profiles
 
 # Apps
 cask 'aws-vpn-client' # AWS VPN

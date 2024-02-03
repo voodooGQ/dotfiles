@@ -1,0 +1,59 @@
+#!/bin/bash
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ROOT_DIR=$SCRIPT_DIR/..
+
+IFS=""
+
+# List of files to symlink
+FILES=(
+  ".local"
+  ".tmuxinator"
+  ".vim"
+  ".vscode"
+  ".zsh_custom"
+  ".aliases"
+  ".eslintrc.json"
+  ".exports"
+  ".functions"
+  ".gitconfig"
+  ".gitignore_global"
+  ".gruvbox.dircolors"
+  ".htoprc"
+  ".inputrc"
+  ".irbrc"
+  ".macos"
+  ".pryrc"
+  ".tmux-osx.conf"
+  ".tmux.conf"
+  ".tool-versions"
+  ".vimrc"
+  ".vimrc_background"
+  ".vimrc.bundles"
+  ".yamllint"
+  ".zsh_path"
+  ".zshrc"
+  "Brewfile"
+  # Mac Shortcuts and System Files
+  "Library/Preferences/.GlobalPreferences.plist"
+  "Library/Preferences/com.apple.symbolichotkeys.plist"
+  "Library/Preferences/pbs.plist"
+  # VSCode
+  "Library/Application Support/Code/User/snippets"
+  "Library/Application Support/Code/User/argv.json"
+  "Library/Application Support/Code/User/keybindings.json"
+  "Library/Application Support/Code/User/settings.json"
+)
+
+# Link files
+link() {
+  echo "Linking $1"
+  rm -rf $HOME/$1
+  ln -s $ROOT_DIR/$1 $HOME/$1
+}
+
+# Link all the files
+for i in "${FILES[@]}"
+do
+  link "$i"
+done
