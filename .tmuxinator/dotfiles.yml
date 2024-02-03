@@ -1,0 +1,4 @@
+name: dotfiles
+root: ~/Code/github.com/voodooGQ/dotfiles
+windows:
+  - editor: code .

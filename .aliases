@@ -3,7 +3,7 @@ alias be="bundle exec"
 alias cat="PAGER=none bat" # No pager, run bat
 alias cp='cp -i'
 alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias dot="cd $HOME/Code/github.com/voodoogq/dotfiles"
+alias dot="cd $HOME/Code/github.com/voodooGQ/dotfiles"
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
 alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'"

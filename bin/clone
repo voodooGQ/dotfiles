@@ -3,6 +3,6 @@
 echo "Cloning repositories..."
 
 CODE=$HOME/Code
-PERSONAL=$CODE/github.com/voodoogq
+PERSONAL=$CODE/github.com/voodooGQ
 
-# git clone git@github.com:voodoogq/dotfiles.git $PERSONAL/dotfiles
+# git clone git@github.com:voodooGQ/dotfiles.git $PERSONAL/dotfiles

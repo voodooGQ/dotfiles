@@ -1,5 +1,5 @@
 " Vim color file (ghoul.vim)
-" Maintainer: Shane Smith <voodoogq@gmail.com>
+" Maintainer: Shane Smith <voodooGQ@gmail.com>
 " Last Change: 2017/03/02
 
 " First remove all existing highlighting.
