@@ -1,7 +1,0 @@
-# ~/.tmuxinator/kajabi-products-selenium-tests.yml
----
-name: kajabi-products-selenium-tests
-root: ~/Code/github.com/Kajabi/kajabi-products-selenium-tests
-windows:
-  - dir:
-  - editor: code .

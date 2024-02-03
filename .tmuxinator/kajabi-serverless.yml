@@ -1,7 +1,0 @@
-# ~/.tmuxinator/kajabi-serverless.yml
----
-name: kajabi-serverless
-root: ~/Code/github.com/Kajabi/kajabi-serverless
-windows:
-  - editor: code .
-  - terminal:

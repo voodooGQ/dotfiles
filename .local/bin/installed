@@ -1,0 +1,6 @@
+#!/bin/bash
+# Check if an application is installed
+
+if mdfind "kMDItemKind == 'Application'" | grep "$1" > /dev/null 2>&1; then
+    echo "Found $1 in Applications"
+fi

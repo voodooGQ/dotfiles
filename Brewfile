@@ -38,36 +38,38 @@ brew 'redis', restart_service: true # Redis
 brew 'tmux' # Tmux
 brew 'tmuxinator' # Tmux profiles
 
-# Apps
-cask 'aws-vpn-client' # AWS VPN
-cask 'flameshot' # Screenshot
-cask 'spotify' # Spotify
-cask 'iterm2' # iTerm2
-cask 'font-awesome-terminal-fonts' # Font Awesome for terminal
+# Fonts
+cask 'font-awesome-terminal-fonts'  # Font Awesome for terminal
 cask 'homebrew/cask-fonts/font-fontawesome' # Font Awesome
 cask 'font-fira-code' # Fira Code font
-cask 'adobe-creative-cloud' # Adobe Creative Cloud
-cask 'dash' # Dash
-cask '1password' # 1Password
-cask 'caffeine' # Caffeine
-cask 'dbngin' # Database manager
-cask 'docker' # Docker
-cask 'brave-browser' # Brave Browser
-cask 'github' # Github Desktop
-cask 'imageoptim' # Optimize images
-cask 'insomnia' # Rest client
-cask 'slack' # Slack
-cask 'the-unarchiver' # Unarchiver
-cask 'visual-studio-code' # VSCode
-cask 'zoom' # Zoom
-cask 'numi' # Calculator
+
+# Apps
+cask 'aws-vpn-client' unless system ".local/bin/installed 'AWS VPN Client.app'" # AWS VPN
+cask 'flameshot' unless system ".local/bin/installed flameshot.app" # Screenshot
+cask 'spotify' unless system ".local/bin/installed Spotify.app" # Spotify
+cask 'iterm2' unless system ".local/bin/installed iTerm2.app" # iTerm2
+cask 'adobe-creative-cloud' unless system ".local/bin/installed 'Creative Cloud.app'" # Adobe Creative Cloud
+cask 'dash' unless system ".local/bin/installed Dash.app" # Dash
+cask '1password' unless system ".local/bin/installed '1Password Installer.app'" # 1Password
+cask 'caffeine' unless system ".local/bin/installed Caffeine.app" # Caffeine
+cask 'dbngin' unless system ".local/bin/installed DBngin.app"  # Database manager
+cask 'docker' unless system ".local/bin/installed Docker.app" # Docker
+cask 'brave-browser' unless system ".local/bin/installed 'Brave Browser.app'" # Brave Browser
+cask 'github' unless system ".local/bin/installed 'GitHub Desktop.app'" # Github Desktop
+cask 'imageoptim' unless system ".local/bin/installed ImageOptim.app" # Optimize images # Rest client
+cask 'slack' unless system ".local/bin/installed Slack.app" # Slack
+cask 'the-unarchiver' unless system ".local/bin/installed 'The Unarchiver.app'" # Unarchiver
+cask 'visual-studio-code' unless system ".local/bin/installed 'Visual Studio Code.app'" # VSCode
+cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom
+cask 'numi' unless system ".local/bin/installed 'Numi.app'" # Calculator
 
 # Mac Apple Store
 mas 'Alfred', id: 405843582 # Alfred
 mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
 mas 'Magnet', id: 441258766 # Window manager
 mas 'MindNode - Mind Map & Outline', id: 1289197285 # Brain Map
-mas 'iBar-Menubar icon control tool', id: 2146090692 # Menubar icon control
+# https://github.com/mas-cli/mas/issues/498
+# mas 'iBar-Menubar icon control tool', id: '-2146090692' # Menubar icon control
 mas 'Boop', id: 1518425043 # Various developer tools
 mas 'ColorSlurp', id: 1287239339 # Color picker
 mas 'Trello', id: 1278508951 # Trello

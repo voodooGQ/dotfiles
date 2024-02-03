@@ -1,7 +1,0 @@
-# ~/.tmuxinator/sage-lib.yml
----
-name: sage-lib
-root: ~/Code/github.com/Kajabi/sage-lib
-windows:
-  - dir:
-  - editor: code .

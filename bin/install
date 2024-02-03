@@ -44,7 +44,7 @@ source ~/.aliases
 vscode-ext
 
 # Create a projects directories
-mkdir -p $HOME/Code/github.com/voodoogq
+mkdir -p $HOME/Code/github.com/voodoogq # Personal
 
 # Clone Github repositories
 chmod a+x $SCRIPT_DIR/clone

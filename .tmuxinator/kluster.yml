@@ -1,7 +1,0 @@
-# ~/.tmuxinator/kluster.yml
----
-name: kluster
-root: ~/Code/github.com/Kajabi/kluster
-windows:
-  - dir:
-  - editor: code .

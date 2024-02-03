@@ -1,8 +1,0 @@
-# ~/.tmuxinator/kubernetes.yml
-
-name: kubernetes
-root: ~/Code/github.com/voodooGQ/demo-kubernetes
-startup_window: editor
-windows:
-  - editor: nvim
-  - terminal: #empty

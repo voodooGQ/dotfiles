@@ -1,7 +1,0 @@
-# ~/.tmuxinator/gotcha.yml
----
-name: gotcha
-root: ~/Code/github.com/voodooGQ/gotcha
-windows:
-  - editor: code .
-  - shell:
