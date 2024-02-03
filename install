@@ -1,5 +1,35 @@
 #!/bin/sh
 
+# List of files to symlink
+declare -a files=(
+  ".local",
+  ".tmuxinator",
+  ".vim",
+  ".vscode",
+  ".zsh_custom",
+  ".aliases",
+  ".eslintrc.json",
+  ".exports",
+  ".functions",
+  ".gitconfig",
+  ".gitignore_global",
+  ".gruvbox.dircolors",
+  ".htoprc",
+  ".inputrc",
+  ".irbrc",
+  ".macos",
+  ".pryrc",
+  ".tmux-osx.conf",
+  ".tmux.conf",
+  ".vimrc",
+  ".vimrc_background",
+  ".vimrc.bundles",
+  ".yamllint",
+  ".zsh_path",
+  ".zshrc",
+  "Brewfile",
+)
+
 echo "Installing..."
 
 # Check for Oh My Zsh and install if we don't have it
@@ -14,6 +44,13 @@ if test ! $(which brew); then
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
+# Link files
+link() {
+  echo "Linking $1"
+  rm -rf $HOME/$1
+  ln -s $PWD/$1 $HOME/$1
+}
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
@@ -38,3 +75,7 @@ chmod a+x ./clone
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
+
+for i in "${files[@]}"
+do; link $i; done
+
