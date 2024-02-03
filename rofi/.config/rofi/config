@@ -1,4 +1,0 @@
-rofi.combi-modi:    window,drun,ssh
-rofi.font:          hack 10
-rofi.modi:          combi,window,run,ssh,drun
-rofi.theme:         /usr/share/rofi/themes/sidebar.rasi

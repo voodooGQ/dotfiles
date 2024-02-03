@@ -9,6 +9,3 @@ vim/.vim/.netrwhist
 vim/.vim/view/*
 zsh/.oh-my-zsh
 .netrwhist
-
-ranger/.config/ranger/colorschemes/__pycache__/
-ranger/.config/ranger/plugins/__pycache__/
