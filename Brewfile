@@ -20,6 +20,7 @@ brew 'jq' # JSON processor
 brew 'spotify' # Spotify
 brew 'flameshot' # Screenshot
 brew 'zsh' # Zsh
+brew 'mysql' # MySQL
 
 # Apps
 cask 'iterm2' # iTerm2
@@ -42,5 +43,6 @@ cask 'visual-studio-code'
 cask 'zoom'
 
 # Mac Apple Store
+mas 'Alfred', id: 405843582 # Alfred
 mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
 mas 'Magnet', id: 441258766 # Window manager
