@@ -65,6 +65,7 @@ mas 'Alfred', id: 405843582 # Alfred
 mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
 mas 'Magnet', id: 441258766 # Window manager
 mas 'MindNode - Mind Map & Outline', id: 1289197285 # Brain Map
-mas 'iBar-Menubar icon control tool', id: -2146090692 # Menubar icon control
-mas 'Boop', id: 1518425043 # Various developer tools 
+mas 'iBar-Menubar icon control tool', id: 2146090692 # Menubar icon control
+mas 'Boop', id: 1518425043 # Various developer tools
 mas 'ColorSlurp', id: 1287239339 # Color picker
+mas 'Trello', id: 1278508951 # Trello
