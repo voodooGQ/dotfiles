@@ -8,7 +8,7 @@ tap 'stripe/stripe-cli'
 # Core
 brew 'asdf' # Version manager
 brew 'awscli' # AWS CLI
-brew 'exa' # Ls with colors
+brew 'eza' # Ls with colors
 brew 'curl' # Curl
 brew 'git' # Git
 brew 'bat' # Cat with wings
