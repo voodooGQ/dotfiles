@@ -34,7 +34,6 @@ eval `gdircolors --sh ~/.gruvbox.dircolors`
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
-source ~/.functions
 source ~/.zsh_path
 source ~/.local/bin/aws_zsh_completer
 
