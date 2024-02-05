@@ -1,0 +1,21 @@
+#!/bin/bash
+# Sync the repo with the global preferences
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ROOT_DIR=$SCRIPT_DIR/..
+
+FILES=(
+  'Library/Preferences/.GlobalPreferences.plist'
+  'Library/Preferences/com.apple.symbolichotkeys.plist'
+  'Library/Preferences/pbs.plist'
+)
+
+sync() {
+  echo "Syncing $1"
+  cp -rf $HOME/$1 $ROOT_DIR/$1
+}
+
+for i in "${FILES[@]}"
+do
+  sync "$i"
+done

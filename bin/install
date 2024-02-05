@@ -57,5 +57,5 @@ mkdir -p $HOME/Code/github.com/voodooGQ # Personal
 chmod a+x $SCRIPT_DIR/clone
 $SCRIPT_DIR/clone
 
-# Set macOS preferences - we will run this last because this will reload the shell
-source ./.macos
+# Set macOS preferences
+source $SCRIPT_DIR/bin/global-pref-replace
