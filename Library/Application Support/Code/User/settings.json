@@ -310,5 +310,9 @@
   },
   "workbench.editor.tabActionLocation": "left",
   "javascript.suggest.completeJSDocs": false,
-  "typescript.suggest.completeJSDocs": false
+  "typescript.suggest.completeJSDocs": false,
+  "git.openRepositoryInParentFolders": "never",
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.vimrc.enable": true
 }

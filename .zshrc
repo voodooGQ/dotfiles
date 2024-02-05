@@ -61,7 +61,3 @@ if [[ $TMUX == '' ]]; then
 fi
 
 . /usr/local/opt/asdf/libexec/asdf.sh
-
-# Key repeat
-# defaults write -g ApplePressAndHoldEnabled -bool true
-# defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
