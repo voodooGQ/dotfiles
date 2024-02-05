@@ -39,6 +39,11 @@ brew update
 chmod a+x $SCRIPT_DIR/link
 $SCRIPT_DIR/link
 
+# Get cURL certs in the right place
+mkdir -p $HOME/.certs
+wget -O $HOME/.certs https://curl.se/ca/cacert.pem
+
+
 # Install VSCode Extensions
 source ~/.aliases
 vscode-ext

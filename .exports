@@ -1,10 +1,9 @@
-# TODO: Change this system to system
-export SYSTEM_NAME="Smitty's Computer"
+export SYSTEM_NAME="smitty.kajabi"
 export AWS_REGION=us-east-1
 export BASE16_SHELL=$HOME/.config/base16-shell/
 export BROWSER=brave
 export COMPLETION_WAITING_DOTS="true"
-export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+export CURL_CA_BUNDLE=$HOME/.certs/cacert.pem
 export EDITOR="$VISUAL"
 export GOPATH=$HOME/Code/go
 export GOROOT=/usr/local/go
@@ -17,5 +16,5 @@ export VISUAL=$(which vim)
 export YAMLLINT_CONFIG_FILE=$HOME/.yamllint
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM=$HOME/.zsh_custom
-export ZSH_THEME="intheloop.custom"
+export ZSH_THEME="ssmith.custom"
 export VSCODE_EXTENSIONS="$HOME/Library/Application\ Support/Code/User/extensions.json"

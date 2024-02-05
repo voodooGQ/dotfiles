@@ -28,7 +28,7 @@ function ruby_version() {
 }
 
 function py_version() {
-  echo "%{$fg_bold[magenta]%} $(python --version)"
+  echo "%{$fg_bold[magenta]%} $(python3 --version)"
 }
 
 function js_version() {

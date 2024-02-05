@@ -37,6 +37,7 @@ brew 'tmux' # Tmux
 brew 'tmuxinator' # Tmux profiles
 brew 'vault' # Vault
 brew 'yamllint' # YAML linter
+brew 'wget' # Wget
 brew 'zsh' # Zsh
 
 # Fonts
