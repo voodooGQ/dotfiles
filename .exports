@@ -1,4 +1,4 @@
-export SYSTEM_NAME="smitty.kajabi"
+export SYSTEM_NAME="smitty"
 export AWS_REGION=us-east-1
 export BASE16_SHELL=$HOME/.config/base16-shell/
 export BROWSER=brave
