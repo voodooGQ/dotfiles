@@ -23,21 +23,9 @@ function mygit() {
   fi
 }
 
-function ruby_version() {
-  echo "%{$fg_bold[magenta]%} $(rbenv_prompt_info)"
-}
-
-function py_version() {
-  echo "%{$fg_bold[magenta]%} $(python3 --version)"
-}
-
-function js_version() {
-  echo "%{$fg_bold[magenta]%} $(node --version)"
-}
-
 PROMPT=$'
 %{$fg_bold[blue]%}┌─%{$fg_bold[blue]%}[%{$fg_bold[green]%}%~%{$fg_bold[blue]%}]%{$reset_color%} - %{$fg_bold[blue]%}[%b%{$fg[yellow]%}'%D{"%Y-%m-%d %I:%M:%S"}%b$'%{$fg_bold[blue]%}]
-%{$fg_bold[blue]%}└─[$(ruby_version)%{$fg_bold[blue]%}][$(js_version)%{$fg_bold[blue]%}][$(py_version)%{$fg_bold[blue]%}] <$(mygit)$(hg_prompt_info)>%{$reset_color%} '
+%{$fg_bold[blue]%}└─%{$fg_bold[red]%}$(asdf_prompt_info)%{$fg_bold[blue]%} <$(mygit)$(hg_prompt_info)>%{$reset_color%} '
 PS2=$' \e[0;34m%}%B>%{\e[0m%}%b
 '
 

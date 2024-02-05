@@ -8,6 +8,7 @@ FILES=(
   'Library/Preferences/.GlobalPreferences.plist'
   'Library/Preferences/com.apple.symbolichotkeys.plist'
   'Library/Preferences/pbs.plist'
+  'Library/Preferences/com.microsoft.VSCode.plist'
 )
 
 replace() {

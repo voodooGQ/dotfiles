@@ -149,3 +149,4 @@ vscode 'christian-kohler.npm-intellisense' # NPM Intellisense
 vscode 'ms-kubernetes-tools.vscode-kubernetes-tools' # Kubernetes
 vscode 'esbenp.prettier-vscode' # Prettier
 vscode 'nguyenngoclong.asdf' # ASDF
+vscode "vortizhe.simple-ruby-erb" # Ruby ERB

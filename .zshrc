@@ -26,6 +26,7 @@ plugins=(
   tmuxinator
   vi-mode
   vundle
+  zsh-asdf-prompt
 )
 
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
@@ -62,5 +63,5 @@ fi
 . /usr/local/opt/asdf/libexec/asdf.sh
 
 # Key repeat
-defaults write -g ApplePressAndHoldEnabled -bool true
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
+# defaults write -g ApplePressAndHoldEnabled -bool true
+# defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true

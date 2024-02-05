@@ -21,6 +21,12 @@
       },
       "argoproj/tap": {
         "revision": "0d9aa32ff2053891983455afcb2b29fd77933a7c"
+      },
+      "kajabi/kjctl": {
+        "revision": "683573feda0affa9f67fd75c2cd85b517d94f68c",
+        "options": {
+          "clone_target": "git@github.com:Kajabi/kjctl.git"
+        }
       }
     },
     "brew": {
@@ -1353,6 +1359,10 @@
             }
           }
         }
+      },
+      "kjctl": {
+        "version": "1.38.1",
+        "bottle": false
       }
     },
     "cask": {
@@ -1717,7 +1727,8 @@
       "christian-kohler.npm-intellisense": null,
       "ms-kubernetes-tools.vscode-kubernetes-tools": null,
       "esbenp.prettier-vscode": null,
-      "nguyenngoclong.asdf": null
+      "nguyenngoclong.asdf": null,
+      "vortizhe.simple-ruby-erb": null
     }
   },
   "system": {
