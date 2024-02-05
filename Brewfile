@@ -6,6 +6,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'nicoverbruggen/homebrew-cask'
 tap 'stripe/stripe-cli'
+tap 'kajabi/kjctl', 'git@github.com:Kajabi/kjctl.git'
 
 # Core
 brew 'argocd' # ArgoCD
@@ -39,6 +40,7 @@ brew 'vault' # Vault
 brew 'yamllint' # YAML linter
 brew 'wget' # Wget
 brew 'zsh' # Zsh
+brew 'kjctl' # KJCTL
 
 # Fonts
 cask 'font-3270-nerd-font'

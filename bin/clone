@@ -5,11 +5,31 @@ echo "Cloning repositories..."
 ROOT=$HOME
 CODE=$ROOT/Code
 PERSONAL=$CODE/github.com/voodooGQ
+KAJABI=$CODE/github.com/Kajabi
+
+function clone() {
+  echo "Cloning $1 into $2..."
+  if [ -d $2 ]; then
+    echo "Directory $2 already exists. Skipping..."
+    return
+  fi
+  git clone git@github.com:$1 $2
+}
 
 # System
-git clone git@github.com:tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+clone tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 
 # Personal
-git clone git@github.com:voodooGQ/dotfiles.git $PERSONAL/dotfiles
+clone voodooGQ/dotfiles $PERSONAL/dotfiles
 
 # Kajabi
+clone Kajabi/kajabi-products $KAJABI/kajabi-products
+clone Kajabi/radiator $KAJABI/radiator
+clone Kajabi/radiator-manifests $KAJABI/radiator-manifests
+clone Kajabi/standard-model-serverelss $KAJABI/standard-model-serverelss
+clone Kajabi/js-mono-automation-project $KAJABI/js-mono-automation-project
+clone Kajabi/sage-lib $KAJABI/sage-lib
+clone Kajabi/pine $KAJABI/pine
+clone Kajabi/kubernetes $KAJABI/kubernetes
+clone Kajabi/terraform $KAJABI/terraform
+clone Kajabi/kjctl $KAJABI/kjctl

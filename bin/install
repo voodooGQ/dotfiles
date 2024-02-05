@@ -43,11 +43,6 @@ $SCRIPT_DIR/link
 mkdir -p $HOME/.certs
 wget -O $HOME/.certs https://curl.se/ca/cacert.pem
 
-
-# Install VSCode Extensions
-source ~/.aliases
-vscode-ext
-
 # Create system directories
 mkdir -p $HOME/.tmux/plugins # Tmux Plugin Manager
 # Create a projects directories
