@@ -115,6 +115,7 @@ cask 'spotify' unless system ".local/bin/installed Spotify.app" # Spotify
 cask 'the-unarchiver' unless system ".local/bin/installed 'The Unarchiver.app'" # Unarchiver
 cask 'visual-studio-code' unless system ".local/bin/installed 'Visual Studio Code.app'" # VSCode
 cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom
+cask 'wireshark' unless system ".local/bin/installed Wireshark.app" # Wireshark
 
 # Mac Apple Store
 # https://github.com/mas-cli/mas/issues/498
@@ -126,6 +127,7 @@ mas 'ColorSlurp', id: 1287239339 # Color picker
 mas 'Magnet', id: 441258766 # Window manager
 mas 'MindNode - Mind Map & Outline', id: 1289197285 # Brain Map
 mas 'Trello', id: 1278508951 # Trello
+mas  "Noizio - Calm, Meditate, Sleep", id: 928871589 # White Noise
 
 # VSCode extensions
 vscode 'deerawan.vscode-dash' # Dash
