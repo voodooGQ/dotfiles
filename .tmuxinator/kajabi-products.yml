@@ -1,0 +1,4 @@
+name: kajabi-products
+root: ~/Code/github.com/Kajabi/kajabi-products
+windows:
+  - editor: code .

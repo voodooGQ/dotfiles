@@ -1,0 +1,4 @@
+name: sage
+root: ~/Code/github.com/Kajabi/sage-lib
+windows:
+  - editor: code .

@@ -1,0 +1,4 @@
+name: qe-js
+root: ~/Code/github.com/Kajabi/js-mono-automation-project
+windows:
+  - editor: code .
