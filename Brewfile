@@ -126,3 +126,22 @@ mas 'ColorSlurp', id: 1287239339 # Color picker
 mas 'Magnet', id: 441258766 # Window manager
 mas 'MindNode - Mind Map & Outline', id: 1289197285 # Brain Map
 mas 'Trello', id: 1278508951 # Trello
+
+# VSCode extensions
+vscode 'deerawan.vscode-dash' # Dash
+vscode 'github.copilot' # Copilot
+vscode 'github.copilot-chat' # Copilot chat
+vscode 'golang.go' # Go
+vscode 'johnpapa.vscode-peacock' # Peacock
+vscode 'yoavbls.pretty-ts-errors' # Pretty TS errors
+vscode 'ivhernandez.vscode-plist' # PList Editor
+vscode 'britesnow.vscode-toggle-quotes' # Toggle quotes
+vscode 'vscodevim.vim' # Vim
+vscode 'sharashchandradesai.simple-scratch' # Scratch Pads
+vscode 'ms-azuretools.vscode-docker' # Docker
+vscode 'ms-vscode-remote.remote-containers' # Remote containers
+vscode 'dbaeumer.vscode-eslint' # ESLint
+vscode 'christian-kohler.npm-intellisense' # NPM Intellisense
+vscode 'ms-kubernetes-tools.vscode-kubernetes-tools' # Kubernetes
+vscode 'esbenp.prettier-vscode' # Prettier
+vscode 'nguyenngoclong.asdf' # ASDF

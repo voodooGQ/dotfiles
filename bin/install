@@ -32,8 +32,8 @@ fi
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-# brew tap homebrew/bundle
-# brew bundle --force --file $ROOT_DIR/Brewfile
+brew tap homebrew/bundle
+brew bundle --force --file $ROOT_DIR/Brewfile
 
 # Link configs
 chmod a+x $SCRIPT_DIR/link

@@ -308,5 +308,7 @@
       }
     ]
   },
-  "workbench.editor.tabActionLocation": "left"
+  "workbench.editor.tabActionLocation": "left",
+  "javascript.suggest.completeJSDocs": false,
+  "typescript.suggest.completeJSDocs": false
 }
