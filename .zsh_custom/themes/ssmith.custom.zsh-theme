@@ -32,7 +32,7 @@ function py_version() {
 }
 
 function js_version() {
-  echo "%{$fg_bold[magenta]%} $(nvm_prompt_info)"
+  echo "%{$fg_bold[magenta]%} $(node --version)"
 }
 
 PROMPT=$'

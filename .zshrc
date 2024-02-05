@@ -58,3 +58,5 @@ fpath=(/usr/local/share/zsh/site-functions $fpath)
 if [[ $TMUX == '' ]]; then
   tmux new-session -A -s main
 fi
+
+. /usr/local/opt/asdf/libexec/asdf.sh
