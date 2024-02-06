@@ -54,3 +54,4 @@ $SCRIPT_DIR/clone
 
 # Set macOS preferences
 source $SCRIPT_DIR/bin/global-pref-replace
+source ~/.macos
