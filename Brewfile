@@ -129,7 +129,8 @@ mas 'ColorSlurp', id: 1287239339 # Color picker
 mas 'Magnet', id: 441258766 # Window manager
 mas 'MindNode - Mind Map & Outline', id: 1289197285 # Brain Map
 mas 'Trello', id: 1278508951 # Trello
-mas  "Noizio - Calm, Meditate, Sleep", id: 928871589 # White Noise
+mas 'Noizio - Calm, Meditate, Sleep', id: 928871589 # White Noise
+mas 'Save to Raindrop.io', id: 1549370672 # Bookmarks
 
 # VSCode extensions
 vscode 'deerawan.vscode-dash' # Dash
