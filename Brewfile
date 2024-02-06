@@ -117,9 +117,9 @@ cask 'spotify' unless system ".local/bin/installed Spotify.app" # Spotify
 cask 'the-unarchiver' unless system ".local/bin/installed 'The Unarchiver.app'" # Unarchiver
 cask 'visual-studio-code' unless system ".local/bin/installed 'Visual Studio Code.app'" # VSCode
 cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom
-cask 'obsidian' unless system ".local/bin/installed Obsidian.app" # Obsidian
-cask 'wireshark' unless system ".local/bin/installed Wireshark.app" # Wireshark
 cask 'alfred' unless system ".local/bin/installed Alfred.app" # Alfred
+cask 'obsidian' # Obsidian
+cask 'wireshark'# Wireshark
 
 # Mac Apple Store
 # https://github.com/mas-cli/mas/issues/498
