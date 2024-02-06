@@ -117,12 +117,13 @@ cask 'spotify' unless system ".local/bin/installed Spotify.app" # Spotify
 cask 'the-unarchiver' unless system ".local/bin/installed 'The Unarchiver.app'" # Unarchiver
 cask 'visual-studio-code' unless system ".local/bin/installed 'Visual Studio Code.app'" # VSCode
 cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom
+cask 'obsidian' unless system ".local/bin/installed Obsidian.app" # Obsidian
 cask 'wireshark' unless system ".local/bin/installed Wireshark.app" # Wireshark
+cask 'alfred' unless system ".local/bin/installed Alfred.app" # Alfred
 
 # Mac Apple Store
 # https://github.com/mas-cli/mas/issues/498
 # mas 'iBar-Menubar icon control tool', id: '-2146090692' # Menubar icon control
-mas 'Alfred', id: 405843582 # Alfred
 mas 'Boop', id: 1518425043 # Various developer tools
 mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
 mas 'ColorSlurp', id: 1287239339 # Color picker

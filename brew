@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+ROOT_DIR=.
+
+echo "Running Brew Bundle..."
+
+# Install all our dependencies with bundle (See Brewfile)
+brew tap homebrew/bundle
+brew bundle --force --file $ROOT_DIR/Brewfile
