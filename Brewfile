@@ -1,7 +1,6 @@
 # Taps
 tap 'argoproj/tap'
 tap 'homebrew/bundle'
-tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'nicoverbruggen/homebrew-cask'
@@ -20,6 +19,7 @@ brew 'direnv' # Environment switcher
 brew 'eza' # Ls with colors
 brew 'git' # Git
 brew 'git-delta' # Better diff for git
+brew 'glow' # Markdown reader
 brew 'golang' # Go
 brew 'htop' # Better top
 brew 'jq' # JSON processor
@@ -98,28 +98,29 @@ cask 'font-victor-mono-nerd-font'
 cask 'homebrew/cask-fonts/font-fontawesome' # Font Awesome
 
 # Apps
-cask '1password' unless system ".local/bin/installed '1Password Installer.app'" # 1Password
-cask 'adobe-creative-cloud' unless system ".local/bin/installed 'Creative Cloud.app'" # Adobe Creative Cloud
-cask 'aws-vpn-client' unless system ".local/bin/installed 'AWS VPN Client.app'" # AWS VPN
-cask 'brave-browser' unless system ".local/bin/installed 'Brave Browser.app'" # Brave Browser
-cask 'caffeine' unless system ".local/bin/installed Caffeine.app" # Caffeine
-cask 'dash' unless system ".local/bin/installed Dash.app" # Dash
-cask 'dbngin' unless system ".local/bin/installed DBngin.app"  # Database manager
-cask 'docker' unless system ".local/bin/installed Docker.app" # Docker
-cask 'flameshot' unless system ".local/bin/installed flameshot.app" # Screenshot
-cask 'github' unless system ".local/bin/installed 'GitHub Desktop.app'" # Github Desktop
-cask 'imageoptim' unless system ".local/bin/installed ImageOptim.app" # Optimize images # Rest client
-cask 'iterm2' unless system ".local/bin/installed iTerm2.app" # iTerm2
-cask 'numi' unless system ".local/bin/installed 'Numi.app'" # Calculator
-cask 'plex' unless system ".local/bin/installed Plex.app" # Plex
+cask '1password' # 1Password
+cask 'adobe-creative-cloud' # Adobe Creative Cloud
+cask 'aws-vpn-client' # AWS VPN
+cask 'brave-browser' # Brave Browser
+cask 'caffeine' # Caffeine
+cask 'dash' # Dash
+cask 'dbngin' # Database manager
+cask 'docker' # Docker
+# cask 'flameshot' # Screenshot
+cask 'github' # Github Desktop
+cask 'imageoptim' # Optimize images # Rest client
+cask 'iterm2' # iTerm2
+cask 'numi' # Calculator
+cask 'plex' # Plex
 cask 'slack' unless system ".local/bin/installed Slack.app" # Slack
-cask 'spotify' unless system ".local/bin/installed Spotify.app" # Spotify
-cask 'the-unarchiver' unless system ".local/bin/installed 'The Unarchiver.app'" # Unarchiver
-cask 'visual-studio-code' unless system ".local/bin/installed 'Visual Studio Code.app'" # VSCode
+cask 'spotify' # Spotify
+cask 'the-unarchiver' # Unarchiver
+cask 'visual-studio-code' # VSCode
 cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom
-cask 'alfred' unless system ".local/bin/installed Alfred.app" # Alfred
+cask 'alfred' # Alfred
 cask 'obsidian' # Obsidian
 cask 'wireshark'# Wireshark
+cask 'shottr' # Screenshot
 
 # Mac Apple Store
 # https://github.com/mas-cli/mas/issues/498

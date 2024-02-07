@@ -35,6 +35,10 @@ brew update
 chmod a+x $ROOT_DIR/brew
 source $ROOT_DIR/brew
 
+# ASDF Dir Env
+asdf plugin-add direnv
+asdf direnv setup --shell zsh --version latest
+
 # Link configs
 chmod a+x $SCRIPT_DIR/link
 $SCRIPT_DIR/link

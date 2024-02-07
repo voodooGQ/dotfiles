@@ -19,7 +19,11 @@ function clone() {
 
 # System
 clone tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+# ZSH
 clone CurryEleison/zsh-asdf-prompt $ZSH_CUSTOM/plugins/zsh-asdf-prompt
+clone chrissicool/zsh-256color $ZSH_CUSTOM/plugins/zsh-256color
+clone Licheam/zsh-ask $ZSH_CUSTOM/plugins/zsh-ask
+clone redxtech/zsh-asdf-direnv $ZSH_CUSTOM/plugins/zsh-asdf-direnv
 
 # Personal
 clone voodooGQ/dotfiles $PERSONAL/dotfiles

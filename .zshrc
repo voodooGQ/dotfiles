@@ -5,6 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+ZSH_DISABLE_COMPFIX=true
+
 source ~/.exports
 
 plugins=(
@@ -34,6 +36,11 @@ plugins=(
   vi-mode
   vundle
   zsh-asdf-prompt
+  # Recent
+  1password
+  zsh-256color
+  zsh-asdf-direnv
+  zsh-ask
 )
 
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
@@ -60,19 +67,20 @@ ssh-add -l > /dev/null || ssh-add
 autoload bashcompinit
 bashcompinit
 
-export PATH="/usr/local/bin:$PATH"
-
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 
 if [[ $TMUX == '' ]]; then
-  tmux new-session -ACC -s main
+  tmux new-session -A -s main
   # tmux -CC
 fi
 
+# ASDF
 . /usr/local/opt/asdf/libexec/asdf.sh
+fpath=(${ASDF_DIR}/completions $fpath)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Powerlevel10k instant prompt. Should stay close to the bottom of ~/.zshrc.
 source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
