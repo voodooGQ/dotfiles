@@ -75,8 +75,11 @@ if [[ $TMUX == '' ]]; then
 fi
 
 # ASDF
-. /usr/local/opt/asdf/libexec/asdf.sh
+source /usr/local/opt/asdf/libexec/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
+
+# McFly
+eval "$(mcfly init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -84,3 +87,5 @@ fpath=(${ASDF_DIR}/completions $fpath)
 # Powerlevel10k instant prompt. Should stay close to the bottom of ~/.zshrc.
 source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
+source /usr/local/opt/asdf/asdf.sh

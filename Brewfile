@@ -5,6 +5,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'nicoverbruggen/homebrew-cask'
 tap 'stripe/stripe-cli'
+tap 'puma/puma'
 tap 'kajabi/kjctl', 'git@github.com:Kajabi/kjctl.git'
 
 # Core
@@ -21,12 +22,17 @@ brew 'git' # Git
 brew 'git-delta' # Better diff for git
 brew 'glow' # Markdown reader
 brew 'golang' # Go
+brew 'gpg' # GPG
 brew 'htop' # Better top
+brew 'hub' # Github CLI
+brew 'imagemagick' # ImageMagick
 brew 'jq' # JSON processor
 brew 'kustomize' # Kustomize
 brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
 brew 'minikube' # Minikube
+brew 'mkcert' # Local SSL
+brew 'nss' # NSS
 brew 'postgresql@12', restart_service: true # PG 12
 brew 'python' # Python
 brew 'reattach-to-user-namespace' # Tmux copy paste
@@ -151,4 +157,5 @@ vscode 'christian-kohler.npm-intellisense' # NPM Intellisense
 vscode 'ms-kubernetes-tools.vscode-kubernetes-tools' # Kubernetes
 vscode 'esbenp.prettier-vscode' # Prettier
 vscode 'nguyenngoclong.asdf' # ASDF
-vscode "vortizhe.simple-ruby-erb" # Ruby ERB
+vscode 'vortizhe.simple-ruby-erb' # Ruby ERB
+vscode 'irongeek.vscode-env' # .env
