@@ -59,3 +59,6 @@ $SCRIPT_DIR/clone
 # Set macOS preferences
 source $SCRIPT_DIR/bin/global-pref-replace
 source ~/.macos
+
+# Setup Cron
+crontab -l | { cat; echo "0 */1 * * * /Users/$USER/.local/bin/notes_sync"; } | crontab -

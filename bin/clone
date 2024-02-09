@@ -27,6 +27,7 @@ clone redxtech/zsh-asdf-direnv $ZSH_CUSTOM/plugins/zsh-asdf-direnv
 
 # Personal
 clone voodooGQ/dotfiles $PERSONAL/dotfiles
+clone voodooGQ/notes $HOME/Documents/Notes
 
 # Kajabi
 clone Kajabi/kajabi-products $KAJABI/kajabi-products

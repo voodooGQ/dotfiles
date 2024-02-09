@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd $HOME/Documents/Notes
+git stash
+git checkout main
+git pull
+git add -A .
+git commit -m "[cron] Syncing notes for $(date)"
+git push
+
