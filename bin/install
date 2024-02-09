@@ -45,7 +45,7 @@ $SCRIPT_DIR/link
 
 # Get cURL certs in the right place
 mkdir -p $HOME/.certs
-wget -O $HOME/.certs https://curl.se/ca/cacert.pem
+wget -O $HOME/.certs/cacert.pem https://curl.se/ca/cacert.pem
 
 # Create system directories
 mkdir -p $HOME/.tmux/plugins # Tmux Plugin Manager
@@ -57,7 +57,7 @@ chmod a+x $SCRIPT_DIR/clone
 $SCRIPT_DIR/clone
 
 # Set macOS preferences
-source $SCRIPT_DIR/bin/global-pref-replace
+source $SCRIPT_DIR/global-pref-replace
 source ~/.macos
 
 # Setup Cron
