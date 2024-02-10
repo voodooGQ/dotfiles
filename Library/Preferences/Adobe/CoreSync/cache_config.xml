@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Cache>
+	<MaxSize>21474836480</MaxSize>
+	<ThresholdPercent>85</ThresholdPercent>
+	<PurgeByPercent>50</PurgeByPercent>
+	<AssetTtlSeconds>5184000</AssetTtlSeconds>
+	<PurgeIntervalSeconds>300</PurgeIntervalSeconds>
+</Cache>

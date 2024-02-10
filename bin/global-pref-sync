@@ -4,19 +4,5 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 ROOT_DIR=$SCRIPT_DIR/..
 
-FILES=(
-  'Library/Preferences/.GlobalPreferences.plist'
-  'Library/Preferences/com.apple.symbolichotkeys.plist'
-  'Library/Preferences/pbs.plist'
-  'Library/Preferences/com.microsoft.VSCode.plist'
-)
-
-sync() {
-  echo "Syncing $1"
-  cp -rf $HOME/$1 $ROOT_DIR/$1
-}
-
-for i in "${FILES[@]}"
-do
-  sync "$i"
-done
+echo "Syncing Library Preferences"
+cp -rf $HOME/Library/Preferences $ROOT_DIR/Library

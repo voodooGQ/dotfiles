@@ -1,0 +1,22 @@
+{
+    "presets": [
+        {
+            "name": "Default Photoshop Size",
+            "identifier": "",
+            "group": "default",
+            "width": 7.0,
+            "height": 5.0,
+            "units": "inchesUnit",
+            "profile": "default",
+            "resolution": 300.0,
+            "resolutionUnits": "inchesUnit",
+            "depth": 8,
+            "scale": 1.0,
+            "mode": "RGB",
+            "fill": "white",
+            "guides": [],
+            "artboards": [],
+            "lastUsedTime": 1706796488238
+        }
+    ]
+}

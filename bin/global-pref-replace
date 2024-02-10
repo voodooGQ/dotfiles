@@ -4,20 +4,6 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 ROOT_DIR=$SCRIPT_DIR/..
 
-FILES=(
-  'Library/Preferences/.GlobalPreferences.plist'
-  'Library/Preferences/com.apple.symbolichotkeys.plist'
-  'Library/Preferences/pbs.plist'
-  'Library/Preferences/com.microsoft.VSCode.plist'
-)
-
-replace() {
-  echo "Replacing $1"
-  cp -rf $HOME/$1 $HOME/$1.bak
-  cp $ROOT_DIR/$1 $HOME/$1
-}
-
-for i in "${FILES[@]}"
-do
-  replace "$i"
-done
+echo "Replacing $1"
+cp -rf $HOME/Library/Preferences $HOME/Library/Preferences-backup
+cp -rf $ROOT_DIR/Library/Preferences $HOME/Library
