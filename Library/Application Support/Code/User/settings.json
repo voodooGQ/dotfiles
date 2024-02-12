@@ -314,5 +314,6 @@
   "git.openRepositoryInParentFolders": "never",
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
-  "vim.vimrc.enable": true
+  "vim.vimrc.enable": true,
+  "redhat.telemetry.enabled": false
 }

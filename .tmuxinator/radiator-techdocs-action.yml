@@ -1,0 +1,4 @@
+name: radiator-techdocs-action
+root: ~/Code/github.com/Kajabi/radiator-techdocs-action
+windows:
+  - editor: code .

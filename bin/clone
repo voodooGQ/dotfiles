@@ -33,6 +33,7 @@ clone voodooGQ/notes $HOME/Documents/Notes
 clone Kajabi/kajabi-products $KAJABI/kajabi-products
 clone Kajabi/radiator $KAJABI/radiator
 clone Kajabi/radiator-manifests $KAJABI/radiator-manifests
+clone Kajabi/radiator-techdocs-action $KAJABI/radiator-techdocs-action
 clone Kajabi/standard-model-serverless $KAJABI/standard-model-serverless
 clone Kajabi/js-mono-automation-project $KAJABI/js-mono-automation-project
 clone Kajabi/sage-lib $KAJABI/sage-lib
