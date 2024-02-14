@@ -75,7 +75,6 @@ if [[ $TMUX == '' ]]; then
 fi
 
 # ASDF
-source /usr/local/opt/asdf/libexec/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
 
 # McFly
@@ -88,4 +87,4 @@ eval "$(mcfly init zsh)"
 source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
-source /usr/local/opt/asdf/asdf.sh
+source /usr/local/opt/asdf/libexec/asdf.sh
