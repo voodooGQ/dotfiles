@@ -33,6 +33,7 @@ brew 'mcfly' # Better history
 brew 'minikube' # Minikube
 brew 'mkcert' # Local SSL
 brew 'nss' # NSS
+brew 'overmind' # Procfile manager
 brew 'postgresql@12', restart_service: true # PG 12
 brew 'python' # Python
 brew 'reattach-to-user-namespace' # Tmux copy paste
