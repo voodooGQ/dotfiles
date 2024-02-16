@@ -1,21 +1,21 @@
-Number of Launches: 1
+Number of Launches: 0
 stdout:
 [0 ms]
   Launch GPUSnifferThread
 
-[1 ms]
+[0 ms]
   Start RunAllAPIs
 
-[1 ms]
-  "/Applications/Adobe Photoshop 2024/Adobe Photoshop 2024.app/Contents/MacOS/sniffer" -baseTimeMS=8258215 -comment=Photoshop Version: Adobe Photoshop 25.4.0 20240118.r.319 67d7f0b x64
-
-[1 ms]
+[0 ms]
   Start GetSnifferResult
 
-[4243 ms]
-  Start sniffer 2024-02-01 13:06:34
+[0 ms]
+  "/Applications/Adobe Photoshop 2024/Adobe Photoshop 2024.app/Contents/MacOS/sniffer" -baseTimeMS=75972312 -comment=Photoshop Version: Adobe Photoshop 25.4.0 20240118.r.319 67d7f0b x64
+
+[3718 ms]
+  Start sniffer 2024-02-01 08:07:29
   # Photoshop Version: Adobe Photoshop 25.4.0 20240118.r.319 67d7f0b x64
-  sniffer -baseTimeMS=8258215 -comment=Photoshop Version: Adobe Photoshop 25.4.0 20240118.r.319 67d7f0b x64
+  sniffer -baseTimeMS=75972312 -comment=Photoshop Version: Adobe Photoshop 25.4.0 20240118.r.319 67d7f0b x64
   
   {212 ms}
   Start platform native
@@ -71,9 +71,9 @@ stdout:
       Driver age:                   UNKNOWN
       Driver version:               UNKNOWN
   End platform native
-  {416 ms}
+  {434 ms}
   
-  {416 ms}
+  {434 ms}
   Start platform OpenGL
     # displays:                   1
     Display 0
@@ -112,9 +112,9 @@ stdout:
       CGL ID:                       16915971
       Display mask:                 1984
   End platform OpenGL
-  {2298 ms}
+  {2330 ms}
   
-  {2298 ms}
+  {2330 ms}
   Start platform OpenCL
     # displays:                   0
     
@@ -136,7 +136,7 @@ stdout:
       Driver age:                   UNKNOWN
       Driver version:               UNKNOWN
       Bandwidth:                    17 GB / s
-      Compute score:                68.0571
+      Compute score:                66.8321
       Device name string:           Intel(R) UHD Graphics 630
       Device vendor string:         Intel Inc.  
       Platform name string:         Apple       
@@ -159,19 +159,19 @@ stdout:
       Driver age:                   UNKNOWN
       Driver version:               UNKNOWN
       Bandwidth:                    14 GB / s
-      Compute score:                1,406.09
+      Compute score:                1,405.22
       Device name string:           AMD Radeon Pro 5300M Compute Engine
       Device vendor string:         AMD         
       Platform name string:         Apple       
       Platform vendor string:       Apple       
   End platform OpenCL
-  {4235 ms}
+  {3712 ms}
   
   Exit code kExitNormal
-  End sniffer 2024-02-01 13:06:38
+  End sniffer 2024-02-01 08:07:33
 [kStatusNormal, kExitNormal]
 
-[4243 ms]
+[3719 ms]
   Finish RunAllAPIs
 
 stderr:
