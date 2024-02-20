@@ -1,9 +1,0 @@
-#!/bin/bash
-# Replace the global preferences with the ones in this repo
-
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-ROOT_DIR=$SCRIPT_DIR/..
-
-echo "Replacing $1"
-cp -rf $HOME/Library/Preferences $HOME/Library/Preferences-backup
-cp -rf $ROOT_DIR/Library/Preferences $HOME/Library

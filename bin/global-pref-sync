@@ -1,8 +1,0 @@
-#!/bin/bash
-# Sync the repo with the global preferences
-
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-ROOT_DIR=$SCRIPT_DIR/..
-
-echo "Syncing Library Preferences"
-cp -rf $HOME/Library/Preferences $ROOT_DIR/Library/

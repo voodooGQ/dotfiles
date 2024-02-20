@@ -57,7 +57,6 @@ chmod a+x $SCRIPT_DIR/clone
 $SCRIPT_DIR/clone
 
 # Set macOS preferences
-source $SCRIPT_DIR/global-pref-replace
 source ~/.macos
 
 # Setup Cron

@@ -88,4 +88,3 @@ source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
 source /usr/local/opt/asdf/libexec/asdf.sh
-source /usr/local/opt/asdf/asdf.sh

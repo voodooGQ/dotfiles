@@ -34,10 +34,6 @@ FILES=(
   ".zsh_path"
   ".zshrc"
   "Brewfile"
-  # Mac Shortcuts and System Files
-  "Library/Preferences/.GlobalPreferences.plist"
-  "Library/Preferences/com.apple.symbolichotkeys.plist"
-  "Library/Preferences/pbs.plist"
   # VSCode
   "Library/Application Support/Code/User/snippets"
   "Library/Application Support/Code/User/argv.json"
