@@ -9,9 +9,7 @@ tap 'puma/puma'
 tap 'kajabi/kjctl', 'git@github.com:Kajabi/kjctl.git'
 
 # Core
-brew 'argocd' # ArgoCD
 brew 'asdf' # Version manager
-brew 'awscli' # AWS CLI
 brew 'bat' # Cat with wings
 brew 'coreutils' # macOS are outdated
 brew 'curl' # Curl
@@ -27,17 +25,11 @@ brew 'htop' # Better top
 brew 'hub' # Github CLI
 brew 'imagemagick' # ImageMagick
 brew 'jq' # JSON processor
-brew 'kustomize' # Kustomize
 brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
-brew 'minikube' # Minikube
 brew 'mkcert' # Local SSL
-brew 'nss' # NSS
-brew 'overmind' # Procfile manager
-brew 'postgresql@12', restart_service: true # PG 12
 brew 'python' # Python
 brew 'reattach-to-user-namespace' # Tmux copy paste
-brew 'redis', restart_service: true # Redis
 brew 'ripgrep' # Ripgrep
 brew 'ripgrep-all' # Ripgrep all
 brew 'tfenv' # Terraform version manager
@@ -47,7 +39,6 @@ brew 'vault' # Vault
 brew 'yamllint' # YAML linter
 brew 'wget' # Wget
 brew 'zsh' # Zsh
-brew 'kjctl' # KJCTL
 
 # Fonts
 cask 'font-3270-nerd-font'
@@ -107,24 +98,20 @@ cask 'homebrew/cask-fonts/font-fontawesome' # Font Awesome
 # Apps
 cask '1password' # 1Password
 cask 'adobe-creative-cloud' # Adobe Creative Cloud
-cask 'aws-vpn-client' # AWS VPN
 cask 'brave-browser' # Brave Browser
 cask 'caffeine' # Caffeine
 cask 'dash' # Dash
-cask 'dbngin' # Database manager
 cask 'docker' # Docker
-# cask 'flameshot' # Screenshot
 cask 'github' # Github Desktop
 cask 'imageoptim' # Optimize images # Rest client
 cask 'iterm2' # iTerm2
 cask 'numi' # Calculator
 cask 'plex' # Plex
-cask 'slack' unless system ".local/bin/installed Slack.app" # Slack
 cask 'spotify' # Spotify
 cask 'the-unarchiver' # Unarchiver
 cask 'visual-studio-code' # VSCode
-cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom
-cask 'alfred' # Alfred
+
+
 cask 'obsidian' # Obsidian
 cask 'wireshark'# Wireshark
 cask 'shottr' # Screenshot
