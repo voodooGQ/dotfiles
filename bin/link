@@ -39,18 +39,34 @@ FILES=(
   "Library/Application Support/Code/User/argv.json"
   "Library/Application Support/Code/User/keybindings.json"
   "Library/Application Support/Code/User/settings.json"
+)
+
+DIRS=(
   "Documents/Alfred/workflows"
 )
 
 # Link files
-link() {
-  echo "Linking $1"
+linkFile() {
+  echo "Linking File: $1"
   rm -rf $HOME/$1
   ln -s $ROOT_DIR/$1 $HOME/$1
 }
 
+# Link dirs
+linkDir() {
+  echo "Linking Dir: $1"
+  rm -rf $HOME/$1
+  ln -s $ROOT_DIR/$1 $HOME/$1
+}
+
+
 # Link all the files
 for i in "${FILES[@]}"
 do
-  link "$i"
+  linkFile "$i"
+done
+
+for i in "${DIRS[@]}"
+do
+  linkDir "$i"
 done

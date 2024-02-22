@@ -4,9 +4,6 @@ tap 'homebrew/bundle'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'nicoverbruggen/homebrew-cask'
-tap 'stripe/stripe-cli'
-tap 'puma/puma'
-tap 'kajabi/kjctl', 'git@github.com:Kajabi/kjctl.git'
 
 # Core
 brew 'asdf' # Version manager
