@@ -19,6 +19,7 @@ function clone() {
 
 # System
 clone tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+clone gmarik/Vundle.vim $HOME/.vim/plugin/Vundle.vim
 # ZSH
 clone CurryEleison/zsh-asdf-prompt $ZSH_CUSTOM/plugins/zsh-asdf-prompt
 clone chrissicool/zsh-256color $ZSH_CUSTOM/plugins/zsh-256color
@@ -28,16 +29,4 @@ clone redxtech/zsh-asdf-direnv $ZSH_CUSTOM/plugins/zsh-asdf-direnv
 # Personal
 clone voodooGQ/dotfiles $PERSONAL/dotfiles
 clone voodooGQ/notes $HOME/Documents/Notes
-
-# Kajabi
-clone Kajabi/kajabi-products $KAJABI/kajabi-products
-clone Kajabi/radiator $KAJABI/radiator
-clone Kajabi/radiator-manifests $KAJABI/radiator-manifests
-clone Kajabi/radiator-techdocs-action $KAJABI/radiator-techdocs-action
-clone Kajabi/standard-model-serverless $KAJABI/standard-model-serverless
-clone Kajabi/js-mono-automation-project $KAJABI/js-mono-automation-project
-clone Kajabi/sage-lib $KAJABI/sage-lib
-clone Kajabi/pine $KAJABI/pine
-clone Kajabi/kubernetes $KAJABI/kubernetes
-clone Kajabi/terraform $KAJABI/terraform
-clone Kajabi/kjctl $KAJABI/kjctl
+clone voodooGQ/sas2023 $PERSONAL/sas2023
