@@ -110,8 +110,6 @@ cask 'plex' # Plex
 cask 'spotify' # Spotify
 cask 'the-unarchiver' # Unarchiver
 cask 'visual-studio-code' # VSCode
-
-
 cask 'obsidian' # Obsidian
 cask 'wireshark'# Wireshark
 cask 'shottr' # Screenshot

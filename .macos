@@ -23,3 +23,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false
 defaults write md.obsidian ApplePressAndHoldEnabled -bool false
+
+# Hotkey for Iterm
+defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001

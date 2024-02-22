@@ -113,7 +113,6 @@
   "extensions.closeExtensionDetailsOnViewChange": true,
   "terminal.explorerKind": "external",
   "terminal.external.linuxExec": "tilix",
-  "extensions.showRecommendationsOnlyOnDemand": true,
   "peacock.surpriseMeFromFavoritesOnly": true,
   "editor.suggestSelection": "first",
   "python.jediEnabled": false,
@@ -310,10 +309,11 @@
   },
   "workbench.editor.tabActionLocation": "left",
   "javascript.suggest.completeJSDocs": false,
-  "typescript.suggest.completeJSDocs": false,
   "git.openRepositoryInParentFolders": "never",
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.vimrc.enable": true,
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "typescript.suggest.completeJSDocs": false,
+  "security.workspace.trust.untrustedFiles": "open"
 }
