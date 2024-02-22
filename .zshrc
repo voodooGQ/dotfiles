@@ -60,3 +60,5 @@ if [[ $TMUX == '' ]]; then
 fi
 
 . /usr/local/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh

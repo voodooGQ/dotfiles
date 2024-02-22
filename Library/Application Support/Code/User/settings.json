@@ -310,5 +310,6 @@
   },
   "workbench.editor.tabActionLocation": "left",
   "javascript.suggest.completeJSDocs": false,
-  "typescript.suggest.completeJSDocs": false
+  "typescript.suggest.completeJSDocs": false,
+  "security.workspace.trust.untrustedFiles": "open"
 }

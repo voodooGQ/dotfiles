@@ -25,7 +25,6 @@ brew 'kustomize' # Kustomize
 brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
 brew 'minikube' # Minikube
-brew 'postgresql@12', restart_service: true # PG 12
 brew 'python' # Python
 brew 'reattach-to-user-namespace' # Tmux copy paste
 brew 'redis', restart_service: true # Redis
@@ -95,26 +94,24 @@ cask 'font-victor-mono-nerd-font'
 cask 'homebrew/cask-fonts/font-fontawesome' # Font Awesome
 
 # Apps
-cask '1password' unless system ".local/bin/installed '1Password Installer.app'" # 1Password
-cask 'adobe-creative-cloud' unless system ".local/bin/installed 'Creative Cloud.app'" # Adobe Creative Cloud
-cask 'aws-vpn-client' unless system ".local/bin/installed 'AWS VPN Client.app'" # AWS VPN
-cask 'brave-browser' unless system ".local/bin/installed 'Brave Browser.app'" # Brave Browser
-cask 'caffeine' unless system ".local/bin/installed Caffeine.app" # Caffeine
-cask 'dash' unless system ".local/bin/installed Dash.app" # Dash
-cask 'dbngin' unless system ".local/bin/installed DBngin.app"  # Database manager
-cask 'docker' unless system ".local/bin/installed Docker.app" # Docker
-cask 'flameshot' unless system ".local/bin/installed flameshot.app" # Screenshot
-cask 'github' unless system ".local/bin/installed 'GitHub Desktop.app'" # Github Desktop
-cask 'imageoptim' unless system ".local/bin/installed ImageOptim.app" # Optimize images # Rest client
-cask 'iterm2' unless system ".local/bin/installed iTerm2.app" # iTerm2
-cask 'numi' unless system ".local/bin/installed 'Numi.app'" # Calculator
-cask 'plex' unless system ".local/bin/installed Plex.app" # Plex
-cask 'slack' unless system ".local/bin/installed Slack.app" # Slack
-cask 'spotify' unless system ".local/bin/installed Spotify.app" # Spotify
-cask 'the-unarchiver' unless system ".local/bin/installed 'The Unarchiver.app'" # Unarchiver
-cask 'visual-studio-code' unless system ".local/bin/installed 'Visual Studio Code.app'" # VSCode
-cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom
-cask 'wireshark' unless system ".local/bin/installed Wireshark.app" # Wireshark
+cask '1password'
+cask 'adobe-creative-cloud'
+cask 'aws-vpn-client'
+cask 'brave-browser'
+cask 'caffeine'
+cask 'dash'
+cask 'dbngin'
+cask 'docker'
+cask 'flameshot'
+cask 'github'
+cask 'imageoptim'
+cask 'iterm2'
+cask 'numi'
+cask 'plex'
+cask 'slack'
+cask 'spotify'
+cask 'the-unarchiver'
+cask 'visual-studio-code'
 
 # Mac Apple Store
 # https://github.com/mas-cli/mas/issues/498
