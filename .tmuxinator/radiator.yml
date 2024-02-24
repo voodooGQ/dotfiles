@@ -1,4 +1,0 @@
-name: radiator
-root: ~/Code/github.com/Kajabi/radiator
-windows:
-  - editor: code .

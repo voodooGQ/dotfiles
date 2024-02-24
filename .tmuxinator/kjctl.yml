@@ -1,4 +1,0 @@
-name: kjctl
-root: ~/Code/github.com/Kajabi/kjctl
-windows:
-  - editor: code .

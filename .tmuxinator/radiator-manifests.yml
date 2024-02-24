@@ -1,4 +1,0 @@
-name: radiator-manifests
-root: ~/Code/github.com/Kajabi/radiator-manifests
-windows:
-  - editor: code .

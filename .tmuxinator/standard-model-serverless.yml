@@ -1,4 +1,0 @@
-name: standard-model-serverless
-root: ~/Code/github.com/Kajabi/standard-model-serverless
-windows:
-  - editor: code .

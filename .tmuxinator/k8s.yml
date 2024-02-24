@@ -1,4 +1,0 @@
-name: k8s
-root: ~/Code/github.com/Kajabi/kubernetes
-windows:
-  - editor: code .
