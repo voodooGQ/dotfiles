@@ -254,7 +254,6 @@
   "debug.node.autoAttach": "on",
   "todo-tree.highlights.enabled": true,
   "todo-tree.tree.showScanModeButton": false,
-  "workbench.colorTheme": "Palenight Italic",
   "remote.SSH.defaultExtensions": [
     "Python"
   ],
@@ -315,5 +314,6 @@
   "vim.vimrc.enable": true,
   "redhat.telemetry.enabled": false,
   "typescript.suggest.completeJSDocs": false,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.colorTheme": "Dark Orange Flat"
 }

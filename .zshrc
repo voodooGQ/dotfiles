@@ -39,7 +39,6 @@ plugins=(
   # Recent
   1password
   zsh-256color
-  zsh-asdf-direnv
   zsh-ask
 )
 
@@ -84,7 +83,5 @@ eval "$(mcfly init zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Powerlevel10k instant prompt. Should stay close to the bottom of ~/.zshrc.
-source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
-source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
-export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
-source /usr/local/opt/asdf/libexec/asdf.sh
+source $ASDF_DATA_DIR/asdf.sh
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme

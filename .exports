@@ -1,5 +1,6 @@
 export SYSTEM_NAME="smitty"
-export ASDF_DIR=/usr/local/opt/asdf/libexec
+export ASDF_DIR=~/.asdf
+export ASDF_DATA_DIR=`brew --prefix asdf`/libexec
 export AWS_REGION=us-east-1
 export BASE16_SHELL=$HOME/.config/base16-shell/
 export BROWSER='/usr/bin/open -a "/Applications/Brave Browser.app"'

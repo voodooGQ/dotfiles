@@ -54,3 +54,5 @@
 	prompt = false
 [init]
 	defaultBranch = main
+[protocol]
+	version = 2

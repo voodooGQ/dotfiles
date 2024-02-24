@@ -26,3 +26,6 @@ defaults write md.obsidian ApplePressAndHoldEnabled -bool false
 
 # Hotkey for Iterm
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001
+
+# Show hidden files
+defaults write com.apple.finder AppleShowAllFiles YES
