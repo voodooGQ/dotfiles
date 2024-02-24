@@ -5,7 +5,6 @@ echo "Cloning repositories..."
 ROOT=$HOME
 CODE=$ROOT/Code
 PERSONAL=$CODE/github.com/voodooGQ
-KAJABI=$CODE/github.com/Kajabi
 
 function clone() {
   echo "Cloning $1 into $2..."
@@ -20,6 +19,7 @@ function clone() {
 # System
 clone tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 clone gmarik/Vundle.vim $HOME/.vim/plugin/Vundle.vim
+
 # ZSH
 clone CurryEleison/zsh-asdf-prompt $ZSH_CUSTOM/plugins/zsh-asdf-prompt
 clone chrissicool/zsh-256color $ZSH_CUSTOM/plugins/zsh-256color
