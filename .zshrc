@@ -85,3 +85,4 @@ eval "$(mcfly init zsh)"
 # Powerlevel10k instant prompt. Should stay close to the bottom of ~/.zshrc.
 source $ASDF_DATA_DIR/asdf.sh
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
