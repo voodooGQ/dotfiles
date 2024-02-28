@@ -4,6 +4,7 @@ cd $HOME/Documents/Notes
 git stash
 git checkout main
 git pull
+git stash pop
 git add -A .
 git commit -m "[cron] Syncing notes for $(date)"
 git push

@@ -160,3 +160,4 @@ vscode 'esbenp.prettier-vscode' # Prettier
 vscode 'nguyenngoclong.asdf' # ASDF
 vscode 'vortizhe.simple-ruby-erb' # Ruby ERB
 vscode 'irongeek.vscode-env' # .env
+vscode 'solomonkinard.git-blame' # Git Blame

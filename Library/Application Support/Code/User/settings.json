@@ -247,7 +247,10 @@
     "vs-kubernetes.kubectl-path.linux": "/home/shane/.vs-kubernetes/tools/kubectl/kubectl",
     "vs-kubernetes.minikube-path.linux": "/home/shane/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
     "vs-kubernetes.helm-path.linux": "/home/shane/.vs-kubernetes/tools/helm/linux-amd64/helm",
-    "vs-kubernetes.draft-path.linux": "/home/shane/.vs-kubernetes/tools/draft/linux-amd64/draft"
+    "vs-kubernetes.draft-path.linux": "/home/shane/.vs-kubernetes/tools/draft/linux-amd64/draft",
+    "vscode-kubernetes.kubectl-path-mac": "/Users/shanesmith/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.helm-path-mac": "/Users/shanesmith/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vscode-kubernetes.minikube-path-mac": "/Users/shanesmith/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
   },
   "aws.samcli.location": "/home/shane/.local/bin/sam",
   "python.linting.pylintUseMinimalCheckers": false,
@@ -278,7 +281,7 @@
   "tabnine.experimentalAutoImports": true, // use rubocop for formatting
   "workbench.iconTheme": "material-icon-theme",
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "liveshare.authenticationProvider": "GitHub",
   "ansible.validate.executablePath": "ansible-lint", // use rubocop for formatting
@@ -315,5 +318,6 @@
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.vimrc.enable": true,
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "application.shellEnvironmentResolutionTimeout": 25
 }
