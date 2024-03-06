@@ -1,4 +1,0 @@
-name: sas2023
-root: ~/Code/github.com/voodooGQ/sas2023
-windows:
-  - editor: code .

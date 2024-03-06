@@ -1,0 +1,4 @@
+name: saswoodworking
+root: ~/Code/github.com/voodooGQ/saswoodworking.com
+windows:
+  - editor: code .
