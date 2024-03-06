@@ -1,0 +1,4 @@
+name: serverless-templates
+root: ~/Code/github.com/voodooGQ/serverless-templates
+windows:
+  - editor: code .
