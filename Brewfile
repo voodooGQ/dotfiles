@@ -6,6 +6,7 @@ tap 'homebrew/cask-versions'
 tap 'nicoverbruggen/homebrew-cask'
 
 # Core
+brew 'awscli' # AWS CLI
 brew 'asdf' # Version manager
 brew 'bat' # Cat with wings
 brew 'coreutils' # macOS are outdated
@@ -19,7 +20,7 @@ brew 'glow' # Markdown reader
 brew 'golang' # Go
 brew 'gpg' # GPG
 brew 'htop' # Better top
-brew 'hub' # Github CLI
+brew 'gh' # Github CLI
 brew 'imagemagick' # ImageMagick
 brew 'jq' # JSON processor
 brew 'mas' # Mac App Store CLI

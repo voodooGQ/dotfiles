@@ -8,10 +8,11 @@ alias dot="cd $HOME/Code/github.com/voodooGQ/dotfiles"
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
 alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'"
-alias git='hub'
+alias git="/opt/homebrew/bin/git"
 alias gitup="git push --set-upstream origin"
 alias grep='grep --color'
 alias help='man'
+alias hub='gh'
 alias ls="eza --long --header --git"
 alias la="ls -A"
 alias ldot='ls -ld .*'
