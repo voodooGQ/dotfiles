@@ -21,12 +21,14 @@ brew 'golang' # Go
 brew 'gpg' # GPG
 brew 'htop' # Better top
 brew 'gh' # Github CLI
+brew 'imgcat' # Image cat
 brew 'imagemagick' # ImageMagick
 brew 'jq' # JSON processor
 brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
 brew 'mkcert' # Local SSL
 brew 'python' # Python
+brew 'ranger' # File manager
 brew 'reattach-to-user-namespace' # Tmux copy paste
 brew 'ripgrep' # Ripgrep
 brew 'ripgrep-all' # Ripgrep all
