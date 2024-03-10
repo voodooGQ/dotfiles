@@ -33,6 +33,7 @@ FILES=(
   ".yamllint"
   ".zsh_path"
   ".zshrc"
+  ".config/ranger"
   "Brewfile"
   # VSCode
   "Library/Application Support/Code/User/snippets"

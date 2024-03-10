@@ -6,27 +6,35 @@ tap 'homebrew/cask-versions'
 tap 'nicoverbruggen/homebrew-cask'
 
 # Core
-brew 'awscli' # AWS CLI
+brew 'atool' # Archive tool
 brew 'asdf' # Version manager
+brew 'awscli' # AWS CLI
 brew 'bat' # Cat with wings
 brew 'coreutils' # macOS are outdated
 brew 'curl' # Curl
 brew 'diff-so-fancy' # Better diff
 brew 'direnv' # Environment switcher
+brew 'elinks' # Text browser
+brew 'exiftool' # Exiftool
 brew 'eza' # Ls with colors
+brew 'gh' # Github CLI
 brew 'git' # Git
 brew 'git-delta' # Better diff for git
 brew 'glow' # Markdown reader
 brew 'golang' # Go
 brew 'gpg' # GPG
+brew 'highlight' # Highlight
 brew 'htop' # Better top
-brew 'gh' # Github CLI
 brew 'imgcat' # Image cat
 brew 'imagemagick' # ImageMagick
 brew 'jq' # JSON processor
+brew 'libcaca' # Image to ASCII
+brew 'lynx' # Text browser
 brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
+brew 'mediainfo' # Media info
 brew 'mkcert' # Local SSL
+brew 'poppler' # PDF reader
 brew 'python' # Python
 brew 'ranger' # File manager
 brew 'reattach-to-user-namespace' # Tmux copy paste
@@ -35,8 +43,10 @@ brew 'ripgrep-all' # Ripgrep all
 brew 'tfenv' # Terraform version manager
 brew 'tmux' # Tmux
 brew 'tmuxinator' # Tmux profiles
+brew 'transmission' # Transmission
 brew 'vault' # Vault
 brew 'yamllint' # YAML linter
+brew 'w3m' # Text browser
 brew 'wget' # Wget
 brew 'zsh' # Zsh
 
