@@ -44,6 +44,7 @@ brew 'tfenv' # Terraform version manager
 brew 'tmux' # Tmux
 brew 'tmuxinator' # Tmux profiles
 brew 'transmission' # Transmission
+brew 'unar' # Unar Unarchiver
 brew 'vault' # Vault
 brew 'yamllint' # YAML linter
 brew 'w3m' # Text browser
