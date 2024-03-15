@@ -113,6 +113,7 @@ cask 'brave-browser' # Brave Browser
 cask 'caffeine' # Caffeine
 cask 'dash' # Dash
 cask 'docker' # Docker
+cask 'forklift' # Forklift
 cask 'github' # Github Desktop
 cask 'imageoptim' # Optimize images # Rest client
 cask 'iterm2' # iTerm2
@@ -131,6 +132,7 @@ cask 'shottr' # Screenshot
 mas 'Boop', id: 1518425043 # Various developer tools
 mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
 mas 'ColorSlurp', id: 1287239339 # Color picker
+mas 'Dropover - Easier Drag & Drop', id: 1355679052 # Easier Drag & Drop
 mas 'Magnet', id: 441258766 # Window manager
 mas 'MindNode - Mind Map & Outline', id: 1289197285 # Brain Map
 mas 'Trello', id: 1278508951 # Trello
