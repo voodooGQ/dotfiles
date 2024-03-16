@@ -14,7 +14,7 @@ brew 'coreutils' # macOS are outdated
 brew 'curl' # Curl
 brew 'diff-so-fancy' # Better diff
 brew 'direnv' # Environment switcher
-brew 'elinks' # Text browser
+brew 'felinks' # Text browser
 brew 'exiftool' # Exiftool
 brew 'eza' # Ls with colors
 brew 'gh' # Github CLI
@@ -25,7 +25,6 @@ brew 'golang' # Go
 brew 'gpg' # GPG
 brew 'highlight' # Highlight
 brew 'htop' # Better top
-brew 'imgcat' # Image cat
 brew 'imagemagick' # ImageMagick
 brew 'jq' # JSON processor
 brew 'libcaca' # Image to ASCII
@@ -110,6 +109,7 @@ cask 'homebrew/cask-fonts/font-fontawesome' # Font Awesome
 cask '1password' # 1Password
 cask 'adobe-creative-cloud' # Adobe Creative Cloud
 cask 'brave-browser' # Brave Browser
+cask 'commander-one' # Commander One
 cask 'caffeine' # Caffeine
 cask 'dash' # Dash
 cask 'docker' # Docker
@@ -119,6 +119,7 @@ cask 'imageoptim' # Optimize images # Rest client
 cask 'iterm2' # iTerm2
 cask 'numi' # Calculator
 cask 'plex' # Plex
+cask 'remote-buddy' # Remote Buddy
 cask 'spotify' # Spotify
 cask 'the-unarchiver' # Unarchiver
 cask 'visual-studio-code' # VSCode

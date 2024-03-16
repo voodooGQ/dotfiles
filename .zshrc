@@ -74,7 +74,7 @@ if [[ $TMUX == '' ]]; then
 fi
 
 # ASDF
-fpath=(${ASDF_DIR}/completions $fpath)
+fpath=(${ASDF_DATA_DIR}/completions $fpath)
 
 # McFly
 eval "$(mcfly init zsh)"
@@ -86,3 +86,4 @@ eval "$(mcfly init zsh)"
 source $ASDF_DATA_DIR/asdf.sh
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
