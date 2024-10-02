@@ -1,4 +1,5 @@
 ruby 3.3.0
 nodejs 21.6.1
-python 3.12.1
+python 3.12.3
 direnv 2.33.0
+yarn 1.22.19

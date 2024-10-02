@@ -67,8 +67,6 @@ set showmatch
 set matchtime=2
 " When joining lines, delete spaces
 set nojoinspaces
-" Shell
-set shell=/usr/local/bin/zsh
 " Automatically strip whitespace on save.
 autocmd BufWritePre * StripWhitespace
 " Resize splits when vim itself is resized
@@ -156,12 +154,12 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 syntax enable
 " Get Background color
-if filereadable(expand("~/.vimrc_background"))
-    let base16colorspace=256
-    if !exists('g:colors_name') || g:colors_name != 'base16-gruvbox-dark-hard'
-     colorscheme base16-gruvbox-dark-hard
-    endif
-endif
+"if filereadable(expand("~/.vimrc_background"))
+"    let base16colorspace=256
+"    if !exists('g:colors_name') || g:colors_name != 'base16-gruvbox-dark-hard'
+"     colorscheme base16-gruvbox-dark-hard
+"    endif
+"endif
 " Terminal GUI Colors
 set termguicolors
 " Set the background color

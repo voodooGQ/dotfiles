@@ -1,5 +1,6 @@
 export SYSTEM_NAME="smitty" # Name of the System
-export ASDF_DIR=/usr/local/opt/asdf/libexec # Path to asdf
+# export ASDF_DIR=`brew --prefix asdf`/libexec
+# export ASDF_DATA_DIR=$ASDF_DIR # Path to asdf
 export AWS_REGION=us-east-1 # Default AWS Region
 export BASE16_SHELL=$HOME/.config/base16-shell/ # Base16 Shell
 export BROWSER='/usr/bin/open -a "/Applications/Brave Browser.app"' # Default Browser
@@ -8,7 +9,7 @@ export CURL_CA_BUNDLE=$HOME/.certs/cacert.pem # Path to CA Certs
 export EDITOR="$VISUAL" # Default Editor
 export GOROOT=/usr/local/Cellar/go/1.22.0/libexec/ # Path to Go
 export GOPATH=$HOME/Code/go # Path to Go Projects
-export HOMEBREW_RUBY_VERSION_MANAGER=asdf # Use asdf to manage Ruby versions
+# export HOMEBREW_RUBY_VERSION_MANAGER=asdf # Use asdf to manage Ruby versions
 export HOMEBREW_NO_ENV_HINTS=1 # Turn off environment hints with Homebrew commands
 export LANG=en_US.UTF-8 # Default Language
 export MANPAGER=$PAGER # Man Pager

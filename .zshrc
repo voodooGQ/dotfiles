@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 LOCAL_BIN=$HOME/.local/bin
 
 source $LOCAL_BIN/p10k/init
@@ -12,6 +19,15 @@ source $LOCAL_BIN/bash_comp
 source $LOCAL_BIN/fpath_init
 source $LOCAL_BIN/tmux_session_init
 eval "$(mcfly init zsh)"
-source $LOCAL_BIN/asdf_init
+# source $LOCAL_BIN/asdf_init
+# source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+
+export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
+# source /opt/homebrew/opt/asdf/libexec/asdf.sh
+eval "$(direnv hook zsh)"
+eval "$(/opt/homebrew/bin/mise activate zsh)"
 source $LOCAL_BIN/pnpm_init
 source $LOCAL_BIN/p10k/load
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

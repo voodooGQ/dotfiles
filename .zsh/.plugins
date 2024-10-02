@@ -24,9 +24,7 @@ plugins=(
   tmuxinator
   vi-mode
   vundle
-  zsh-asdf-prompt
   1password
   zsh-256color
-  zsh-asdf-direnv
   zsh-ask
 )
