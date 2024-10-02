@@ -284,4 +284,5 @@
   "application.shellEnvironmentResolutionTimeout": 25,
   "workbench.colorTheme": "Dark Purple Flat",
   "workbench.iconTheme": "material-icon-theme",
+  "github.copilot.editor.enableAutoCompletions": true,
 }
