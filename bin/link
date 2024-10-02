@@ -29,7 +29,7 @@ FILES=(
   ".vimrc.bundles"
   ".vimrc_background"
   ".yamllint"
-  ".zsh_custom"
+  ".zsh"
   ".zshrc"
   "Brewfile"
   "Library/Application Support/Alfred/Workflows"

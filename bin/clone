@@ -19,13 +19,15 @@ function clone() {
 }
 
 # System
+clone VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 clone tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 
 # ZSH
-clone CurryEleison/zsh-asdf-prompt $ZSH_CUSTOM/plugins/zsh-asdf-prompt
+# clone CurryEleison/zsh-asdf-prompt $ZSH_CUSTOM/plugins/zsh-asdf-prompt
 clone chrissicool/zsh-256color $ZSH_CUSTOM/plugins/zsh-256color
 clone Licheam/zsh-ask $ZSH_CUSTOM/plugins/zsh-ask
-clone redxtech/zsh-asdf-direnv $ZSH_CUSTOM/plugins/zsh-asdf-direnv
+# clone redxtech/zsh-asdf-direnv $ZSH_CUSTOM/plugins/zsh-asdf-direnv
+clone romkatv/powerlevel10k.git $HOME/powerlevel10k
 clone voodooGQ/notes $HOME/Documents/Notes
 
 # Personal
