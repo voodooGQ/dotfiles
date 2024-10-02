@@ -3,7 +3,6 @@ tap 'argoproj/tap'
 tap 'homebrew/bundle'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
-tap 'kajabi/kjctl', 'git@github.com:Kajabi/kjctl.git'
 tap 'nicoverbruggen/homebrew-cask'
 tap 'puma/puma'
 tap 'stripe/stripe-cli'
@@ -11,7 +10,8 @@ tap 'ynqa/tap'
 
 # Core
 brew 'argocd' # ArgoCD
-brew 'asdf' # Version manager
+brew 'mise'
+# brew 'asdf' # Version manager
 brew 'awscli' # AWS CLI
 brew 'bat' # Cat with wings
 brew 'coreutils' # macOS are outdated
@@ -29,7 +29,6 @@ brew 'htop' # Better top
 brew 'imagemagick' # ImageMagick
 brew 'jnv' # JSON navigator
 brew 'jq' # JSON processor
-brew 'kjctl' # KJCTL
 brew 'kustomize' # Kustomize
 brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
@@ -157,7 +156,7 @@ vscode 'johnpapa.vscode-peacock' # Peacock
 vscode 'ms-azuretools.vscode-docker' # Docker
 vscode 'ms-kubernetes-tools.vscode-kubernetes-tools' # Kubernetes
 vscode 'ms-vscode-remote.remote-containers' # Remote containers
-vscode 'nguyenngoclong.asdf' # ASDF
+# vscode 'nguyenngoclong.asdf' # ASDF
 vscode 'sharashchandradesai.simple-scratch' # Scratch Pads
 vscode 'solomonkinard.git-blame' # Git Blame
 vscode 'vortizhe.simple-ruby-erb' # Ruby ERB
