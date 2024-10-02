@@ -1,0 +1,4 @@
+name: ipa-scripts
+root: ~/Code/github.com/Kajabi/ipa-scripts
+windows:
+  - editor: code .

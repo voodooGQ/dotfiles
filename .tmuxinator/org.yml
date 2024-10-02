@@ -1,0 +1,4 @@
+name: org
+root: ~/Code/github.com/Kajabi/org
+windows:
+  - editor: code .

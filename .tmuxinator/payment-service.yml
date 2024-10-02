@@ -1,0 +1,4 @@
+name: payment-service
+root: ~/Code/github.com/Kajabi/payment-service
+windows:
+  - editor: code .
