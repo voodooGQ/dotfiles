@@ -2,4 +2,4 @@
 
 fpath=(${ASDF_DIR}/completions $fpath)
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
-source /usr/local/opt/asdf/libexec/asdf.sh
+source $(brew --prefix asdf)/libexec/asdf.sh

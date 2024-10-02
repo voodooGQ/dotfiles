@@ -1,0 +1,6 @@
+#!/bin/sh
+
+PROFILE=SSOAWS-Dev-Admin
+LOG_GROUP=/aws/lambda/$1
+LOG_STREAM=`aws logs describe-log-streams --log-group-name $LOG_GROUP --max-items 1 --order-by LastEventTime --descending --query logStreams[].logStreamName --output text --profile $PROFILE | head -n 1`
+aws logs get-log-events --log-group-name $LOG_GROUP --log-stream-name $LOG_STREAM --query events[].message --output json --profile $PROFILE | python -m json.tool
