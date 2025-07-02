@@ -19,11 +19,8 @@ source $LOCAL_BIN/bash_comp
 source $LOCAL_BIN/fpath_init
 source $LOCAL_BIN/tmux_session_init
 eval "$(mcfly init zsh)"
-# source $LOCAL_BIN/asdf_init
-# source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
 export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
-# source /opt/homebrew/opt/asdf/libexec/asdf.sh
 eval "$(direnv hook zsh)"
 eval "$(/opt/homebrew/bin/mise activate zsh)"
 source $LOCAL_BIN/pnpm_init

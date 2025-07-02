@@ -1,4 +1,0 @@
-name: s3-tagging
-root: ~/Code/github.com/Kajabi/s3_tagging
-windows:
-  - editor: code .

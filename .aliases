@@ -23,7 +23,6 @@ alias mv='mv -i' # Prompt before overwriting
 alias open='open -a "ForkLift"' # Open in ForkLift instead of Finder
 alias pi="ssh pi@192.168.1.35" # SSH into PiHole
 alias port="sudo lsof -i" # See pids for a port running
-alias qe="kjctl service-request quality-engineering" # Create a ticket for QE
 alias rm='rm -i' # Prompt before removing
 alias tf="terraform" # Terraform
 alias tg="terragrunt" # Terragrunt

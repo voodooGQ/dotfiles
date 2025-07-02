@@ -1,4 +1,0 @@
-name: pine
-root: ~/Code/github.com/Kajabi/pine
-windows:
-  - editor: code .

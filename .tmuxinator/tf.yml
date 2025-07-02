@@ -1,4 +1,0 @@
-name: tf
-root: ~/Code/github.com/Kajabi/terraform
-windows:
-  - editor: code .

@@ -1,4 +1,0 @@
-name: ipa-interviews
-root: ~/Code/github.com/Kajabi/ipa-interviews
-windows:
-  - editor: code .

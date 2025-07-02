@@ -1,8 +1,5 @@
 # Taps
 tap 'argoproj/tap'
-tap 'homebrew/bundle'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
 tap 'nicoverbruggen/homebrew-cask'
 tap 'puma/puma'
 tap 'stripe/stripe-cli'
@@ -11,7 +8,6 @@ tap 'ynqa/tap'
 # Core
 brew 'argocd' # ArgoCD
 brew 'mise'
-# brew 'asdf' # Version manager
 brew 'awscli' # AWS CLI
 brew 'bat' # Cat with wings
 brew 'coreutils' # macOS are outdated
@@ -103,7 +99,8 @@ cask 'font-tinos-nerd-font'
 cask 'font-ubuntu-mono-nerd-font'
 cask 'font-ubuntu-nerd-font'
 cask 'font-victor-mono-nerd-font'
-cask 'homebrew/cask-fonts/font-fontawesome' # Font Awesome
+cask 'font-fontawesome' # Font Awesome
+cask 'font-awesome-terminal-fonts' # Font Awesome Terminal
 
 # Apps
 cask '1password' # 1Password
@@ -133,8 +130,6 @@ cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom unless alr
 # Mac Apple Store
 # https://github.com/mas-cli/mas/issues/498
 # mas 'iBar-Menubar icon control tool', id: '-2146090692' # Menubar icon control
-mas 'Boop', id: 1518425043 # Various developer tools
-mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
 mas 'ColorSlurp', id: 1287239339 # Color picker
 mas 'Dropover - Easier Drag & Drop', id: 1355679052 # Easier Drag & Drop
 mas 'Magnet', id: 441258766 # Window manager
@@ -156,7 +151,6 @@ vscode 'johnpapa.vscode-peacock' # Peacock
 vscode 'ms-azuretools.vscode-docker' # Docker
 vscode 'ms-kubernetes-tools.vscode-kubernetes-tools' # Kubernetes
 vscode 'ms-vscode-remote.remote-containers' # Remote containers
-# vscode 'nguyenngoclong.asdf' # ASDF
 vscode 'sharashchandradesai.simple-scratch' # Scratch Pads
 vscode 'solomonkinard.git-blame' # Git Blame
 vscode 'vortizhe.simple-ruby-erb' # Ruby ERB

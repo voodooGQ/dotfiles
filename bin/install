@@ -36,10 +36,6 @@ brew update
 chmod a+x $ROOT/bin/brew
 source $ROOT/bin/brew
 
-# ASDF Dir Env
-# asdf plugin-add direnv
-# asdf direnv setup --shell zsh --version latest
-
 # Get cURL certs in the right place
 mkdir -p $HOME/.certs
 wget -O $HOME/.certs/cacert.pem https://curl.se/ca/cacert.pem

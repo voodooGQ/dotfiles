@@ -1,4 +1,0 @@
-name: qe-automation
-root: ~/Code/github.com/Kajabi/qe-automation
-windows:
-  - editor: code .

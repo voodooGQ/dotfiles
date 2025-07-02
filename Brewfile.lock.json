@@ -4,9 +4,6 @@
       "argoproj/tap": {
         "revision": "e8b04ee8b260b5675cd646d8acbbe3e32a9924f5"
       },
-      "homebrew/bundle": {
-        "revision": "0376dd6111035567c966171332f5099aa7d1632b"
-      },
       "homebrew/cask-fonts": {
         "revision": "120847cb1d159b7dedc0137897f8702a96dbc134"
       },
@@ -2173,7 +2170,6 @@
       "ms-azuretools.vscode-docker": null,
       "ms-kubernetes-tools.vscode-kubernetes-tools": null,
       "ms-vscode-remote.remote-containers": null,
-      "nguyenngoclong.asdf": null,
       "sharashchandradesai.simple-scratch": null,
       "solomonkinard.git-blame": null,
       "vortizhe.simple-ruby-erb": null,

@@ -6,7 +6,7 @@ echo "Cloning repositories..."
 ROOT=$HOME
 CODE=$ROOT/Code
 PERSONAL=$CODE/github.com/voodooGQ
-KAJABI=$CODE/github.com/Kajabi
+GETDX=$CODE/github.com/GETDX
 
 function clone() {
   echo "Cloning $1 into $2..."
@@ -23,26 +23,12 @@ clone VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 clone tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 
 # ZSH
-# clone CurryEleison/zsh-asdf-prompt $ZSH_CUSTOM/plugins/zsh-asdf-prompt
 clone chrissicool/zsh-256color $ZSH_CUSTOM/plugins/zsh-256color
 clone Licheam/zsh-ask $ZSH_CUSTOM/plugins/zsh-ask
-# clone redxtech/zsh-asdf-direnv $ZSH_CUSTOM/plugins/zsh-asdf-direnv
 clone romkatv/powerlevel10k.git $HOME/powerlevel10k
 clone voodooGQ/notes $HOME/Documents/Notes
 
 # Personal
 clone voodooGQ/dotfiles $PERSONAL/dotfiles
 
-# Kajabi
-clone Kajabi/ipa-interviews $KAJABI/ipa-interviews
-clone Kajabi/js-mono-automation-project $KAJABI/js-mono-automation-project
-clone Kajabi/kajabi-products $KAJABI/kajabi-products
-clone Kajabi/kjctl $KAJABI/kjctl
-clone Kajabi/kubernetes $KAJABI/kubernetes
-clone Kajabi/pine $KAJABI/pine
-clone Kajabi/radiator $KAJABI/radiator
-clone Kajabi/radiator-manifests $KAJABI/radiator-manifests
-clone Kajabi/radiator-techdocs-action $KAJABI/radiator-techdocs-action
-clone Kajabi/sage-lib $KAJABI/sage-lib
-clone Kajabi/standard-model-serverless $KAJABI/standard-model-serverless
-clone Kajabi/terraform $KAJABI/terraform
+# GetDX
