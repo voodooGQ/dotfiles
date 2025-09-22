@@ -1,4 +1,4 @@
-export SYSTEM_NAME="smitty" # Name of the System
+export SYSTEM_NAME=$(scutil --get ComputerName) # Name of the System
 export AWS_REGION=us-east-1 # Default AWS Region
 export BASE16_SHELL=$HOME/.config/base16-shell/ # Base16 Shell
 export BROWSER='/usr/bin/open -a "/Applications/Brave Browser.app"' # Default Browser

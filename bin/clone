@@ -5,8 +5,6 @@ echo "Cloning repositories..."
 
 ROOT=$HOME
 CODE=$ROOT/Code
-PERSONAL=$CODE/github.com/voodooGQ
-GETDX=$CODE/github.com/GETDX
 
 function clone() {
   echo "Cloning $1 into $2..."
@@ -26,9 +24,3 @@ clone tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 clone chrissicool/zsh-256color $ZSH_CUSTOM/plugins/zsh-256color
 clone Licheam/zsh-ask $ZSH_CUSTOM/plugins/zsh-ask
 clone romkatv/powerlevel10k.git $HOME/powerlevel10k
-clone voodooGQ/notes $HOME/Documents/Notes
-
-# Personal
-clone voodooGQ/dotfiles $PERSONAL/dotfiles
-
-# GetDX

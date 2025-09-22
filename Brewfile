@@ -1,12 +1,4 @@
-# Taps
-tap 'argoproj/tap'
-tap 'nicoverbruggen/homebrew-cask'
-tap 'puma/puma'
-tap 'stripe/stripe-cli'
-tap 'ynqa/tap'
-
 # Core
-brew 'argocd' # ArgoCD
 brew 'mise'
 brew 'awscli' # AWS CLI
 brew 'bat' # Cat with wings
@@ -25,14 +17,13 @@ brew 'htop' # Better top
 brew 'imagemagick' # ImageMagick
 brew 'jnv' # JSON navigator
 brew 'jq' # JSON processor
-brew 'kustomize' # Kustomize
 brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
 brew 'minikube' # Minikube
 brew 'mkcert' # Local SSL
 brew 'nss' # NSS
 brew 'overmind' # Procfile manager
-brew 'postgresql@12', restart_service: true # PG 12
+brew 'postgresql@17', restart_service: true # PG 17 
 brew 'python' # Python
 brew 'reattach-to-user-namespace' # Tmux copy paste
 brew 'redis', restart_service: true # Redis
@@ -41,7 +32,6 @@ brew 'ripgrep-all' # Ripgrep all
 brew 'tfenv' # Terraform version manager
 brew 'tmux' # Tmux
 brew 'tmuxinator' # Tmux profiles
-brew 'vault' # Vault
 brew 'wget' # Wget
 brew 'yamllint' # YAML linter
 brew 'zsh' # Zsh
@@ -104,57 +94,32 @@ cask 'font-awesome-terminal-fonts' # Font Awesome Terminal
 
 # Apps
 cask '1password' # 1Password
-cask 'adobe-creative-cloud' # Adobe Creative Cloud
-cask 'alfred' # Alfred
-cask 'aws-vpn-client' # AWS VPN
-cask 'brave-browser' # Brave Browser
-cask 'caffeine' # Caffeine
-cask 'dash' # Dash
-cask 'dbngin' # Database manager
-cask 'docker' # Docker
+cask 'docker-desktop' # Docker
 cask 'forklift' # Forklift
-cask 'github' # Github Desktop
-cask 'imageoptim' # Optimize images # Rest client
+cask 'imageoptim' # Optimize images
 cask 'iterm2' # iTerm2
-cask 'numi' # Calculator
 cask 'obsidian' # Obsidian
-cask 'plex' # Plex
 cask 'shottr' # Screenshot
-cask 'slack' unless system ".local/bin/installed Slack.app" # Slack unless already installed
-cask 'spotify' # Spotify
+cask 'tableplus' # TablePlus
 cask 'the-unarchiver' # Unarchiver
-cask 'visual-studio-code' # VSCode
-cask 'wireshark'# Wireshark
-cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom unless already installed
+cask 'wireshark-app'# Wireshark
 
 # Mac Apple Store
-# https://github.com/mas-cli/mas/issues/498
-# mas 'iBar-Menubar icon control tool', id: '-2146090692' # Menubar icon control
 mas 'ColorSlurp', id: 1287239339 # Color picker
-mas 'Dropover - Easier Drag & Drop', id: 1355679052 # Easier Drag & Drop
 mas 'Magnet', id: 441258766 # Window manager
-mas 'Noizio - Calm, Meditate, Sleep', id: 928871589 # White Noise
-mas 'Trello', id: 1278508951 # Trello
 
 # VSCode extensions
 vscode 'britesnow.vscode-toggle-quotes' # Toggle quotes
 vscode 'christian-kohler.npm-intellisense' # NPM Intellisense
 vscode 'dbaeumer.vscode-eslint' # ESLint
-vscode 'deerawan.vscode-dash' # Dash
 vscode 'esbenp.prettier-vscode' # Prettier
-vscode 'github.copilot' # Copilot
-vscode 'github.copilot-chat' # Copilot chat
 vscode 'golang.go' # Go
 vscode 'irongeek.vscode-env' # .env
-vscode 'ivhernandez.vscode-plist' # PList Editor
 vscode 'johnpapa.vscode-peacock' # Peacock
 vscode 'ms-azuretools.vscode-docker' # Docker
 vscode 'ms-kubernetes-tools.vscode-kubernetes-tools' # Kubernetes
-vscode 'ms-vscode-remote.remote-containers' # Remote containers
-vscode 'sharashchandradesai.simple-scratch' # Scratch Pads
 vscode 'solomonkinard.git-blame' # Git Blame
 vscode 'vortizhe.simple-ruby-erb' # Ruby ERB
 vscode 'vscodevim.vim' # Vim
 vscode 'yoavbls.pretty-ts-errors' # Pretty TS errors
-vscode 'jannisberndt.dark-orange' # Dark Orange theme
 vscode 'pkief.material-icon-theme' # Material icons

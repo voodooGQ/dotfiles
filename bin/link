@@ -34,10 +34,10 @@ FILES=(
   "Brewfile"
   "Library/Application Support/Alfred/Workflows"
   # VSCode
-  "Library/Application Support/Code/User/snippets"
-  "Library/Application Support/Code/User/argv.json"
-  "Library/Application Support/Code/User/keybindings.json"
-  "Library/Application Support/Code/User/settings.json"
+  "Library/Application Support/VSCodium/User/snippets"
+  "Library/Application Support/VSCodium/User/argv.json"
+  "Library/Application Support/VSCodium/User/keybindings.json"
+  "Library/Application Support/VSCodium/User/settings.json"
 )
 
 # Link files

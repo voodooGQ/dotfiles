@@ -15,5 +15,5 @@ path+=("/usr/bin")
 path+=("/usr/local/bin")
 path+=("/usr/local/sbin")
 path+=("/usr/sbin")
-path+=("/usr/local/opt/postgresql@12/bin")
+path+=("/usr/local/opt/postgresql@17/bin")
 export PATH
