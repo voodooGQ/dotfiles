@@ -16,6 +16,7 @@ FILES=(
   ".htoprc"
   ".inputrc"
   ".irbrc"
+  ".iterm"
   ".local"
   ".macos"
   ".npmrc"
