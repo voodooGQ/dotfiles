@@ -17,13 +17,14 @@ brew 'htop' # Better top
 brew 'imagemagick' # ImageMagick
 brew 'jnv' # JSON navigator
 brew 'jq' # JSON processor
+brew 'k9s' # Kubernetes Visualizer
 brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
 brew 'minikube' # Minikube
 brew 'mkcert' # Local SSL
 brew 'nss' # NSS
 brew 'overmind' # Procfile manager
-brew 'postgresql@17', restart_service: true # PG 17 
+brew 'postgresql@17', restart_service: true # PG 17
 brew 'python' # Python
 brew 'reattach-to-user-namespace' # Tmux copy paste
 brew 'redis', restart_service: true # Redis
