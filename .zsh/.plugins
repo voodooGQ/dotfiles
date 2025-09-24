@@ -25,6 +25,4 @@ plugins=(
   vi-mode
   vundle
   1password
-  zsh-256color
-  zsh-ask
 )

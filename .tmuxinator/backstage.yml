@@ -1,0 +1,5 @@
+name: backstage
+root: ~/Code/github.com/Banno/backstage
+windows:
+  - editor: code .
+  - terminal: git status

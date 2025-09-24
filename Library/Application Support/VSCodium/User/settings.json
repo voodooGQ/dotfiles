@@ -282,7 +282,7 @@
   "vim.vimrc.enable": true,
   "redhat.telemetry.enabled": false,
   "application.shellEnvironmentResolutionTimeout": 25,
-  "workbench.colorTheme": "Banner (rainglow)",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Darkside (rainglow)",
   "github.copilot.editor.enableAutoCompletions": true,
+  "material-icon-theme.folders.theme": "specific",
 }
