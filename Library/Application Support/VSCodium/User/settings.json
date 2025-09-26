@@ -285,4 +285,5 @@
   "workbench.colorTheme": "Darkside (rainglow)",
   "github.copilot.editor.enableAutoCompletions": true,
   "material-icon-theme.folders.theme": "specific",
+  "docker.extension.enableComposeLanguageServer": false,
 }
