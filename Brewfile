@@ -13,11 +13,13 @@ brew 'git-delta' # Better diff for git
 brew 'glow' # Markdown reader
 brew 'golang' # Go
 brew 'gpg' # GPG
+brew 'helm' # Helm
 brew 'htop' # Better top
 brew 'imagemagick' # ImageMagick
 brew 'jnv' # JSON navigator
 brew 'jq' # JSON processor
 brew 'k9s' # Kubernetes Visualizer
+brew 'kubectl' # Kubernetes CLI
 brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
 brew 'minikube' # Minikube
