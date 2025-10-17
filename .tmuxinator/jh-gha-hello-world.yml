@@ -1,0 +1,5 @@
+name: jh-gha-hello-world
+root: ~/Code/github.com/Banno/demo-jh-gha-hello-world
+windows:
+  - editor: code .
+  - terminal: git status

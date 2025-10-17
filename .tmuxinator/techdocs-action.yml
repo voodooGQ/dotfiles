@@ -1,0 +1,5 @@
+name: techdocs-action
+root: ~/Code/github.com/Banno/gha-action-publish-techdocs
+windows:
+  - editor: code .
+  - terminal: git status

@@ -39,6 +39,7 @@
 
 [push]
   default = simple
+	autoSetupRemote = true
 
 [diff]
   colorMoved = default
@@ -59,3 +60,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[pull]
+	rebase = true

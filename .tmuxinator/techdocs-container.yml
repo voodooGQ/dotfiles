@@ -1,0 +1,5 @@
+name: techdocs-container
+root: ~/Code/github.com/Banno/techdocs-container
+windows:
+  - editor: code .
+  - terminal: git status
