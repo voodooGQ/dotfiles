@@ -1,6 +1,7 @@
 [user]
 	name = Shane (Smitty) Smith
 	email = SmiSmith@jackhenry.com
+	signingkey = 589398D14F2BFE7A4E254F733F0B9A335FE62F4F
 
 [core]
 	excludesfile = ~/.gitignore_global
@@ -63,3 +64,5 @@
 	required = true
 [pull]
 	rebase = true
+[commit]
+	gpgsign = true

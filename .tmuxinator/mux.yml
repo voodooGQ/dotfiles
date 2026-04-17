@@ -1,0 +1,5 @@
+name: mux
+root: ~/.tmuxinator
+windows:
+  - editor: code .
+  - terminal: git status

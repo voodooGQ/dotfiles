@@ -21,3 +21,5 @@ export ZSH=$HOME/.oh-my-zsh # Path to Oh My Zsh
 export ZSH_CUSTOM=$HOME/.zsh # Path to Zsh Custom
 export ZSH_DISABLE_COMPFIX=true # Disable compfix
 export VSCODE_EXTENSIONS="$HOME/Library/Application\ Support/VSCodium/User/extensions.json" # Path to VSCode Extensions
+export ARTIFACTORY_USERNAME=SmiSmith@jackhenry.com
+export GPG_TTY=$(tty)

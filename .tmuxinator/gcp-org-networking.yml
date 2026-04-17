@@ -1,0 +1,5 @@
+name: gcp-org-networking
+root: ~/Code/github.com/Banno/gcp-org-networking
+windows:
+  - editor: code .
+  - terminal: git status

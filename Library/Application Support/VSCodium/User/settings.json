@@ -3,48 +3,48 @@
   "peacock.favoriteColors": [
     {
       "name": "Gruvbox Dark - Red",
-      "value": "#cc241d"
+      "value": "#cc241d",
     },
     {
       "name": "Gruvbox Dark - Green",
-      "value": "#98971a"
+      "value": "#98971a",
     },
     {
       "name": "Gruvbox Dark - Yellow",
-      "value": "#d79921"
+      "value": "#d79921",
     },
     {
       "name": "Gruvbox Dark - Blue",
-      "value": "#458588"
+      "value": "#458588",
     },
     {
       "name": "Gruvbox Dark - Purple",
-      "value": "#b16286"
+      "value": "#b16286",
     },
     {
       "name": "Gruvbox Dark - Aqua",
-      "value": "#689d6a"
+      "value": "#689d6a",
     },
     {
       "name": "Gruvbox Dark - Orange",
-      "value": "#d65d0e"
-    }
+      "value": "#d65d0e",
+    },
   ],
   "editor.rulers": [
     {
       "column": 100,
-      "color": "#452505"
-    }
+      "color": "#452505",
+    },
   ],
   "workbench.startupEditor": "newUntitledFile",
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "vscode.typescript-language-features",
   },
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.tslint": "explicit",
-    "source.fixAll.prettier": "explicit"
+    "source.fixAll.prettier": "explicit",
   },
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.settings.enableNaturalLanguageSearch": false,
@@ -52,19 +52,14 @@
   "files.trimTrailingWhitespace": true,
   "javascript.preferences.quoteStyle": "single",
   "dash.languageIdToDocsetMap": {
-    "typescript": [
-      "angular",
-      "typescript",
-      "javascript",
-      "lodash",
-      "awsjs"
-    ]
+    "typescript": ["angular", "typescript", "javascript", "lodash", "awsjs"],
   },
   "explorer.confirmDelete": false,
   "files.associations": {
     ".vimrc.bundles": "viml",
     "config": "shellscript",
-    "*.erb": "erb"
+    "*.erb": "erb",
+    ".clinerules": "markdown",
   },
   "explorer.confirmDragAndDrop": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -102,6 +97,7 @@
     "amazoncognito",
     "Arns",
     "awscli",
+    "banno",
     "Bibimbap",
     "bootcamp",
     "buildspec",
@@ -109,6 +105,7 @@
     "cfront",
     "chipotle",
     "ciphertext",
+    "cldinf",
     "cloudformation",
     "cloudwatch",
     "codebuild",
@@ -119,21 +116,33 @@
     "creds",
     "crhelper",
     "decodable",
+    "Defineable",
+    "deployables",
     "devtool",
     "distributionid",
     "distro",
     "dynamodb",
+    "endfor",
+    "entrancy",
     "envvars",
+    "glightbox",
     "gmail",
     "Gochujang",
     "Interop",
+    "jackhenry",
+    "jackhenryorigin",
+    "jhadigitalcore",
+    "jhaea",
+    "jsmith",
     "Kubernetes",
     "kustomization",
     "kustomize",
     "Lefthook",
     "lsremote",
+    "luxon",
     "memoized",
     "middlewares",
+    "mkdocs",
     "mkdtemp",
     "mktemp",
     "mockdev",
@@ -147,19 +156,26 @@
     "Onica",
     "onicagroup",
     "openid",
+    "permissioned",
     "pexpect",
     "pipenv",
+    "PKCE",
     "platcorp",
     "popd",
+    "postpack",
     "precommit",
     "pushd",
     "pylint",
+    "pymdownx",
     "quotemark",
     "readonly",
     "rearchitecting",
     "recurse",
+    "Retryable",
+    "roadiehq",
     "Rollbar",
     "Rubocop",
+    "scaffolder",
     "serializer",
     "shaneallensmith",
     "signin",
@@ -167,15 +183,21 @@
     "ssmith",
     "staticsite",
     "stepfunctions",
+    "superfences",
+    "techdocs",
     "Terraform's",
+    "testuser",
     "thisisfine",
     "titlecase",
     "tslib",
+    "typedocs",
     "unmarshall",
+    "usercd",
+    "venv",
     "verifiedpermissions",
     "voodooGQ",
     "whichenv",
-    "yamllint"
+    "yamllint",
   ],
   "explorer.openEditors.visible": 5,
   "explorer.autoReveal": false,
@@ -207,7 +229,7 @@
     "!Sub sequence",
     "!ImportValue sequence",
     "!Split sequence",
-    "!vault"
+    "!vault",
   ],
   "yaml.format.enable": true,
   "diffEditor.renderSideBySide": false,
@@ -222,7 +244,8 @@
     "vs-kubernetes.draft-path.linux": "/home/SmiSmith/.vs-kubernetes/tools/draft/linux-amd64/draft",
     "vscode-kubernetes.kubectl-path-mac": "/Users/SmiSmith/.vs-kubernetes/tools/kubectl/kubectl",
     "vscode-kubernetes.helm-path-mac": "/Users/SmiSmith/.vs-kubernetes/tools/helm/darwin-arm64/helm",
-    "vscode-kubernetes.minikube-path-mac": "/Users/SmiSmith/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+    "vscode-kubernetes.minikube-path-mac": "/Users/SmiSmith/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vs-kubernetes.minikube-show-information-expiration": "2026-08-19T21:19:11.899Z",
   },
   "python.linting.pylintUseMinimalCheckers": false,
   "smartsemicolon.autoLineChange": false,
@@ -235,17 +258,17 @@
   "ruby.useLanguageServer": true, // use the internal language server (see below)
   "ruby.lint": {
     "rubocop": {
-      "useBundler": true // enable rubocop via bundler
+      "useBundler": true, // enable rubocop via bundler
     },
     "reek": {
-      "useBundler": true // enable reek via bundler
-    }
+      "useBundler": true, // enable reek via bundler
+    },
   },
   "ruby.format": "rubocop",
   "python.showStartPage": false,
   "tabnine.experimentalAutoImports": true, // use rubocop for formatting
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "vscode.json-language-features",
   },
   "liveshare.authenticationProvider": "GitHub",
   "ansible.validate.executablePath": "ansible-lint", // use rubocop for formatting
@@ -270,10 +293,10 @@
           "keyword.operator.new.js", // new
         ],
         "settings": {
-          "fontStyle": "italic"
-        }
-      }
-    ]
+          "fontStyle": "italic",
+        },
+      },
+    ],
   },
   "workbench.editor.tabActionLocation": "left",
   "javascript.suggest.completeJSDocs": false,
@@ -284,7 +307,7 @@
   "vim.vimrc.enable": true,
   "redhat.telemetry.enabled": false,
   "application.shellEnvironmentResolutionTimeout": 25,
-  "workbench.colorTheme": "Github Contrast (rainglow)",
+  "workbench.colorTheme": "Peacock (rainglow)",
   "github.copilot.editor.enableAutoCompletions": true,
   "material-icon-theme.folders.theme": "specific",
   "docker.extension.enableComposeLanguageServer": false,
@@ -295,21 +318,21 @@
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
-      "strings": true
+      "strings": true,
     },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "yaml.schemas": {
-    "file:///Users/SmiSmith/.vscode-oss/extensions/atlassian.atlascode-3.8.20-universal/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "atlascode.bitbucket.explorer.enabled": false,
   "atlascode.helpExplorerEnabled": false,
   "cSpell.enabledNotifications": {
     "Average Word Length too Long": false,
     "Lines too Long": false,
-    "Maximum Word Length Exceeded": false
+    "Maximum Word Length Exceeded": false,
   },
+  "atlascode.bitbucket.enabled": false,
+  "claudeCode.preferredLocation": "panel",
+  "comments.openView": "never",
 }

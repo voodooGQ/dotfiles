@@ -1,0 +1,5 @@
+name: validator-action
+root: ~/Code/github.com/Banno/gha-action-backstage-entity-validator
+windows:
+  - editor: code .
+  - terminal: git status

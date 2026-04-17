@@ -1,0 +1,4 @@
+name: notes
+root: ~/Documents/JackHenry
+windows:
+  - editor: code .

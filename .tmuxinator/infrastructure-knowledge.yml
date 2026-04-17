@@ -1,0 +1,5 @@
+name: infrastructure-knowledge
+root: ~/Code/github.com/Banno/infrastructure-knowledge
+windows:
+  - editor: code .
+  - terminal: git status

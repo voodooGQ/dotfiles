@@ -1,0 +1,5 @@
+name: backstage-templates
+root: ~/Code/github.com/Banno/nebula-backstage-templates
+windows:
+  - editor: code .
+  - terminal: git status

@@ -1,3 +1,10 @@
+# Tap
+tap "hashicorp/tap"
+
+# Cask
+cask 'gcloud-cli'
+
+
 # Core
 brew 'mise'
 brew 'awscli' # AWS CLI
@@ -13,6 +20,7 @@ brew 'git-delta' # Better diff for git
 brew 'glow' # Markdown reader
 brew 'golang' # Go
 brew 'gpg' # GPG
+brew 'hashicorp/tap/vault'
 brew 'helm' # Helm
 brew 'htop' # Better top
 brew 'imagemagick' # ImageMagick
@@ -23,6 +31,7 @@ brew 'kubectl' # Kubernetes CLI
 brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
 brew 'minikube' # Minikube
+brew 'netcat'
 brew 'mkcert' # Local SSL
 brew 'nss' # NSS
 brew 'overmind' # Procfile manager
@@ -35,6 +44,7 @@ brew 'ripgrep-all' # Ripgrep all
 brew 'tfenv' # Terraform version manager
 brew 'tmux' # Tmux
 brew 'tmuxinator' # Tmux profiles
+brew 'tmuxinator-completion'
 brew 'wget' # Wget
 brew 'yamllint' # YAML linter
 brew 'zsh' # Zsh
@@ -77,7 +87,7 @@ cask 'font-meslo-lg-nerd-font'
 cask 'font-monofur-nerd-font'
 cask 'font-monoid-nerd-font'
 cask 'font-mononoki-nerd-font'
-cask 'font-mplus-nerd-font'
+cask 'font-m+-nerd-font'
 cask 'font-noto-nerd-font'
 cask 'font-open-dyslexic-nerd-font'
 cask 'font-overpass-nerd-font'

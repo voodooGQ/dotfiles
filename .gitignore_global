@@ -3,6 +3,7 @@
 *.swp
 *.iml
 /_local
+/.local
 
 node_modules/*
 
@@ -14,3 +15,7 @@ node_modules/*
 .vscode
 .webpack
 .kube
+.claude
+.envrc
+.clinerules
+.agents

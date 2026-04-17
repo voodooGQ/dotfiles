@@ -462,5 +462,19 @@
     "key": "cmd+/",
     "command": "-toggleExplainMode",
     "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+shift+cmd+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "revealInExplorer"
   }
 ]

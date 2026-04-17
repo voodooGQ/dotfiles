@@ -1,0 +1,5 @@
+name: nebula-devex-interviews
+root: ~/Code/github.com/Banno/nebula-devex-interviews
+windows:
+  - editor: code .
+  - terminal: git status

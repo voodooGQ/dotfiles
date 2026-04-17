@@ -17,12 +17,12 @@ plugins=(
   python
   postgres
   rake
-  rbenv
   ruby
   sudo
   tmux
   tmuxinator
   vi-mode
   vundle
+  yarn
   1password
 )
