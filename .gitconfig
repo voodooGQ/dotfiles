@@ -37,7 +37,7 @@
 	changelog = "!f() { git log ${1:-main}..${2:-HEAD} --pretty=format:\"%an <%ae>|%ad|%s\" --date=short | sort -t\"|\" -k1,1 -k2,2 | awk -F\"|\" \"{if(author!=\\$1){author=\\$1; date=\\\"\\\"; print \\\"\\\\n\\\"author} if(date!=\\$2){date=\\$2; print \\\"  \\\"\\$2} print \\\"    - \\\"\\$3}\"; }; f"
 
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 
 [push]
   default = simple
@@ -66,3 +66,5 @@
 	rebase = true
 [commit]
 	gpgsign = true
+[http]
+	postBuffer = 524288000

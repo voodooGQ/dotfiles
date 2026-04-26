@@ -12,10 +12,16 @@ node_modules/*
 
 .orig
 
-.vscode
 .webpack
 .kube
-.claude
 .envrc
-.clinerules
-.agents
+.tmuxinator.yml
+
+## TEMPORARY
+.cline/*
+.clinerules/*
+.clineignore
+.claude/*
+.agents/*
+.vscode/*
+

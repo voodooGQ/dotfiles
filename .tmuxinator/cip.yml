@@ -1,0 +1,5 @@
+name: cip
+root: ~/Code/github.com/Banno/common-infrastructure-platform
+windows:
+  - editor: code .
+  - terminal: git status

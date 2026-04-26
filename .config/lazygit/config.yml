@@ -1,0 +1,14 @@
+git:
+  overrideGpg: true
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
+  branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline {{branchName}} --"
+
+gui:
+  nerdFontsVersion: "3"
+  showFileTree: true
+  showRandomTip: false
+
+os:
+  editPreset: "nvim"

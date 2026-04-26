@@ -1,5 +1,15 @@
 name: backstage
 root: ~/Code/github.com/Banno/backstage
+on_project_start: /opt/homebrew/bin/codium .vscode/backstage.code-workspace
+startup_window: term
+
 windows:
-  - editor: code .
-  - terminal: git status
+  - claude: claude .
+  - logs:
+      layout: "2664,463x27,0,0[463x12,0,0,0,181,463x14,0,13{232x14,0,13,184,230x14,233,13,185}]"
+      panes:
+        - tail -n +1 -f logs/backend.log
+        - tail -n +1 -f logs/database.log
+        - tail -n +1 -f logs/frontend.log
+  - git: lazygit
+  - term:

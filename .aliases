@@ -3,7 +3,6 @@ alias :so="source ~/.zshrc" # Source the Zsh Config
 alias be="bundle exec" # Run a command with Bundler
 alias cat="PAGER=none bat" # No pager, run bat
 alias claude="npx -y @banno/jh-code --no-sandbox claude"
-alias code="code --extensions-dir $HOME/.vscode/extensions --user-data-dir $HOME/Library/Application\ Support/VSCodium/User"
 alias code="codium" # VSCodium
 alias cp='cp -i' # Prompt before overwriting
 alias dockerclean="docker rm -vf $(docker ps -aq); docker rmi -f $(docker images -aq); docker system prune -a --volumes;"
@@ -18,6 +17,7 @@ alias hub="gh" # GitHub CLI instead of hub
 alias json="jnv" # JSON Viewer
 alias la="ls -A" # List All
 alias ldot='ls -ld .*' # List Dot Files
+alias lg="lazygit"
 alias ll="ls -la" # List Long
 alias ls="eza --long --header --git" # Enhanced ls
 alias mkdir='mkdir -p' # Make Directories along path
